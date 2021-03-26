@@ -1,0 +1,15 @@
+updateIntervalInTicks: 80
+name: "§eСимулятор"
+lines:
+- "§fУровень: §6%level% Ур."
+- "§fРебитхов: §d%rebirth%"
+- "§fОпыт: §b%player_exp%"
+- ""
+- "§fБитсов:§d %bits%"
+- ""
+- "§fСрубленно:§e %broke_blocks%"
+- "§fЗверей:§e %kills_mobs%"
+- "§fБоссов:§6 %kills_bosses%"
+- "§fУбийств:§c %kills_players%"
+- ""
+- "§fОнлайн:§6 %online%"

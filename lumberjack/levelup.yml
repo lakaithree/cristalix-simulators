@@ -1,0 +1,450 @@
+inventory:
+  title: "Прокачка уровня"
+  context:
+  - "----i----"
+  auto:
+    "-":
+      type: "AIR"
+      amount: 1
+      damage: 0
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+maxLevel:
+- "scrmsg %player% normal §cУ вас максимальный уровень! | §7Используйте§e /rebirth§7, чтобы переродиться"
+- "sound %player% ITEM.FIRECHARGE.USE 1 1"
+stat: "level"
+commandOnFirstJoin: 
+- "getitem %player% normal_axe 1"
+moreMoney:
+- "et %player% Вам нужно больше§6 монет§f, чтобы прокачать уровень!"
+- "sound %player% ITEM.FIRECHARGE.USE 1 1"
+moneyOk: "§a ✔"
+moneyNo: "§c ✖"
+moreStats:
+  "kills_mobs":
+    - "et %player% Вам нужно больше§6 убитых зверей§f, чтобы прокачать уровень!"
+    - "sound %player% ITEM.FIRECHARGE.USE 1 1"
+  "broke_blocks":
+    - "et %player% Вам нужно больше§6 срубленных деревьев§f, чтобы прокачать уровень!"
+    - "sound %player% ITEM.FIRECHARGE.USE 1 1"    
+levels:
+- price: 100
+  guiItem:
+    type: "STONE"
+    amount: 1
+    damage: 0
+    name: ""
+    lore:
+    - "%ready_stat%%current_stat%/%need_stat%"
+    - "%ready_money%%current_money%/%need_money%"
+    enchantment: {}
+    data: "{}"
+    unbreakable: false
+    flags: []
+  commands:
+  - "text %player%"
+  stats:
+    "broke_blocks":
+      count: 10
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"    
+    "kills_mobs":
+      count: 10
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+- price: 2000
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Прокачка уровня: §71§6 ➜§e 2 Уровень"
+    lore:
+    - ""
+    - "§6С новым уровнем вы получите"
+    - "§f + Локация ¨aed130Саванна"
+    - "§f + §b5000 Опыта"
+    - "§f + §c❤❤"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 10 Битсов"
+    - " §6✪ §710% на§b Ключ от Ящика с Питомцами"
+    - " §6✪ §710% на§6 Ключ от Обычного Ящика"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fДеревьев:%ready_broke_blocks% %current_broke_blocks%/%need_broke_blocks%"
+    - "§7 ⊠ §fМобов:%ready_kills_mobs% %current_kills_mobs%/%need_kills_mobs%"
+    - ""
+    - "§e▶ Нажмите, чтобы прокачать уровень" 
+    enchantment: {}
+    data: "{\"other\":\"guild_members_add\"}"
+    unbreakable: false
+    flags: []   
+  commands:
+  - "scrmsg %player% normal §a✔ §6Вы достигли нового уровня | §71 Уровень§6 ➜§e 2 Уровень"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 1 1.5"
+  - "morestats %player% level 1 false"
+  - "morestats %player% bits 10 false"
+  - "chancecmd %player% pets 10"
+  - "chancecmd %player% normal 10"
+  - "morestats %player% player_exp 5000 false"
+  - "toast %player% 2 358 ¨aed130Саванна | §bНовая Локация!"
+  - "toast %player% 2 384 §f + §b5000 Опыта | §bБутылёк с опытом"
+  - "toast %player% 2 260 §f + §c❤❤ | §6Пополнение здоровья!"
+  stats:
+    "broke_blocks":
+      count: 500
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"    
+    "kills_mobs":
+      count: 25
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"       
+
+- price: 18300
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Прокачка уровня: §72§6 ➜§e 3 Уровень"
+    lore:
+    - ""
+    - "§6С новым уровнем вы получите"
+    - "§f + Локация ¨c154c1Виноградники Тосканы"
+    - "§f + §b5000 Опыта"
+    - "§f + §c❤❤"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 10 Битсов"
+    - " §6✪ §710% на§b Ключ от Ящика с Питомцами"
+    - " §6✪ §710% на§6 Ключ от Обычного Ящика"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fДеревьев:%ready_broke_blocks% %current_broke_blocks%/%need_broke_blocks%"
+    - "§7 ⊠ §fМобов:%ready_kills_mobs% %current_kills_mobs%/%need_kills_mobs%"
+    - ""
+    - "§e▶ Нажмите, чтобы прокачать уровень" 
+    enchantment: {}
+    data: "{\"other\":\"guild_members_add\"}"
+    unbreakable: false
+    flags: []   
+  commands:
+  - "scrmsg %player% normal §a✔ §6Вы достигли нового уровня | §72 Уровень§6 ➜§e 3 Уровень"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 1 1.5"
+  - "morestats %player% level 1 false"
+  - "morestats %player% bits 10 false"
+  - "chancecmd %player% pets 10"
+  - "chancecmd %player% normal 10"
+  - "morestats %player% player_exp 5000 false"
+  - "toast %player% 2 358 ¨c154c1Виноградники Тосканы | §bНовая Локация!"  
+  - "toast %player% 2 384 §f + §b5000 Опыта | §bБутылёк с опытом"
+  - "toast %player% 2 260 §f + §c❤❤ | §6Пополнение здоровья!"
+  stats:
+    "broke_blocks":
+      count: 1500
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"    
+    "kills_mobs":
+      count: 60
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"       
+
+- price: 42650
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Прокачка уровня: §73§6 ➜§e 4 Уровень"
+    lore:
+    - ""
+    - "§6С новым уровнем вы получите"
+    - "§f + Локация ¨ff7f50Мадагаскар"
+    - "§f + §b5000 Опыта"
+    - "§f + §c❤❤"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 10 Битсов"
+    - " §6✪ §710% на§b Ключ от Ящика с Питомцами"
+    - " §6✪ §710% на§6 Ключ от Обычного Ящика"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fДеревьев:%ready_broke_blocks% %current_broke_blocks%/%need_broke_blocks%"
+    - "§7 ⊠ §fМобов:%ready_kills_mobs% %current_kills_mobs%/%need_kills_mobs%"
+    - ""
+    - "§e▶ Нажмите, чтобы прокачать уровень" 
+    enchantment: {}
+    data: "{\"other\":\"guild_members_add\"}"
+    unbreakable: false
+    flags: []   
+  commands:
+  - "scrmsg %player% normal §a✔ §6Вы достигли нового уровня | §73 Уровень§6 ➜§e 4 Уровень"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 1 1.5"
+  - "morestats %player% level 1 false"
+  - "morestats %player% bits 10 false"
+  - "chancecmd %player% pets 10"
+  - "chancecmd %player% normal 10"
+  - "morestats %player% player_exp 5000 false"
+  - "toast %player% 2 358 ¨ff7f50Мадагаскар | §bНовая Локация!"
+  - "toast %player% 2 384 §f + §b5000 Опыта | §bБутылёк с опытом"
+  - "toast %player% 2 260 §f + §c❤❤ | §6Пополнение здоровья!"
+  stats:
+    "broke_blocks":
+      count: 5000
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"    
+    "kills_mobs":
+      count: 150
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"       
+
+- price: 247500
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Прокачка уровня: §74§6 ➜§e 5 Уровень"
+    lore:
+    - ""
+    - "§6С новым уровнем вы получите"
+    - "§f + Локация ¨633e07Тёмный Лес"
+    - "§f + §b5000 Опыта"
+    - "§f + §c❤❤"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 10 Битсов"
+    - " §6✪ §710% на§b Ключ от Ящика с Питомцами"
+    - " §6✪ §710% на§6 Ключ от Обычного Ящика"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fДеревьев:%ready_broke_blocks% %current_broke_blocks%/%need_broke_blocks%"
+    - "§7 ⊠ §fМобов:%ready_kills_mobs% %current_kills_mobs%/%need_kills_mobs%"
+    - ""
+    - "§e▶ Нажмите, чтобы прокачать уровень" 
+    enchantment: {}
+    data: "{\"other\":\"guild_members_add\"}"
+    unbreakable: false
+    flags: []   
+  commands:
+  - "scrmsg %player% normal §a✔ §6Вы достигли нового уровня | §74 Уровень§6 ➜§e 5 Уровень"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 1 1.5"
+  - "morestats %player% level 1 false"
+  - "morestats %player% bits 10 false"
+  - "chancecmd %player% pets 10"
+  - "chancecmd %player% normal 10"
+  - "morestats %player% player_exp 5000 false"
+  - "toast %player% 2 358 ¨633e07Тёмный Лес | §bНовая Локация!"
+  - "toast %player% 2 384 §f + §b5000 Опыта | §bБутылёк с опытом"
+  - "toast %player% 2 260 §f + §c❤❤ | §6Пополнение здоровья!"
+  stats:
+    "broke_blocks":
+      count: 15000
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"    
+    "kills_mobs":
+      count: 250
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"  
+
+- price: 972000
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Прокачка уровня: §75§6 ➜§e 6 Уровень"
+    lore:
+    - ""
+    - "§6С новым уровнем вы получите"
+    - "§f + Локация ¨42aaffСнежная Тайга"
+    - "§f + §b5000 Опыта"
+    - "§f + §c❤❤"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 10 Битсов"
+    - " §6✪ §710% на§b Ключ от Ящика с Питомцами"
+    - " §6✪ §710% на§6 Ключ от Обычного Ящика"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fДеревьев:%ready_broke_blocks% %current_broke_blocks%/%need_broke_blocks%"
+    - "§7 ⊠ §fМобов:%ready_kills_mobs% %current_kills_mobs%/%need_kills_mobs%"
+    - ""
+    - "§e▶ Нажмите, чтобы прокачать уровень" 
+    enchantment: {}
+    data: "{\"other\":\"guild_members_add\"}"
+    unbreakable: false
+    flags: []   
+  commands:
+  - "scrmsg %player% normal §a✔ §6Вы достигли нового уровня | §75 Уровень§6 ➜§e 6 Уровень"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 1 1.5"
+  - "morestats %player% level 1 false"
+  - "morestats %player% bits 10 false"
+  - "chancecmd %player% pets 10"
+  - "chancecmd %player% normal 10"
+  - "morestats %player% player_exp 5000 false"
+  - "toast %player% 2 358 ¨42aaffСнежная Тайга | §bНовая Локация!"
+  - "toast %player% 2 384 §f + §b5000 Опыта | §bБутылёк с опытом"
+  - "toast %player% 2 260 §f + §c❤❤ | §6Пополнение здоровья!"
+  stats:
+    "broke_blocks":
+      count: 50000
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"    
+    "kills_mobs":
+      count: 600
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+
+- price: 3250000
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Прокачка уровня: §76§6 ➜§e 7 Уровень"
+    lore:
+    - ""
+    - "§6С новым уровнем вы получите"
+    - "§f + Локация ¨32cd32Джунгли"
+    - "§f + §b5000 Опыта"
+    - "§f + §c❤❤"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 10 Битсов"
+    - " §6✪ §710% на§b Ключ от Ящика с Питомцами"
+    - " §6✪ §710% на§6 Ключ от Обычного Ящика"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fДеревьев:%ready_broke_blocks% %current_broke_blocks%/%need_broke_blocks%"
+    - "§7 ⊠ §fМобов:%ready_kills_mobs% %current_kills_mobs%/%need_kills_mobs%"
+    - ""
+    - "§e▶ Нажмите, чтобы прокачать уровень" 
+    enchantment: {}
+    data: "{\"other\":\"guild_members_add\"}"
+    unbreakable: false
+    flags: []   
+  commands:
+  - "scrmsg %player% normal §a✔ §6Вы достигли нового уровня | §76 Уровень§6 ➜§e 7 Уровень"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 1 1.5"
+  - "morestats %player% level 1 false"
+  - "morestats %player% bits 10 false"
+  - "chancecmd %player% pets 10"
+  - "chancecmd %player% normal 10"
+  - "morestats %player% player_exp 5000 false"
+  - "toast %player% 2 358 ¨32cd32Джунгли | §bНовая Локация!"  
+  - "broad §8[§ai§8]§f Игрок§b %player%§f достиг§6 7 Уровня§f, поздравляем!"
+  - "toast %player% 2 384 §f + §b5000 Опыта | §bБутылёк с опытом"
+  - "toast %player% 2 260 §f + §c❤❤ | §6Пополнение здоровья!"
+  stats:
+    "broke_blocks":
+      count: 140000
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+    "kills_mobs":
+      count: 1000
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+- price: 9750000
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Прокачка уровня: §77§6 ➜§e 8 Уровень"
+    lore:
+    - ""
+    - "§6С новым уровнем вы получите"
+    - "§f + Локация ¨4fa5e2Озёра"
+    - "§f + §b5000 Опыта"
+    - "§f + §c❤❤"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 10 Битсов"
+    - " §6✪ §710% на§b Ключ от Ящика с Питомцами"
+    - " §6✪ §710% на§6 Ключ от Обычного Ящика"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fДеревьев:%ready_broke_blocks% %current_broke_blocks%/%need_broke_blocks%"
+    - "§7 ⊠ §fМобов:%ready_kills_mobs% %current_kills_mobs%/%need_kills_mobs%"
+    - ""
+    - "§e▶ Нажмите, чтобы прокачать уровень" 
+    enchantment: {}
+    data: "{\"other\":\"guild_members_add\"}"
+    unbreakable: false
+    flags: []   
+  commands:
+  - "scrmsg %player% normal §a✔ §6Вы достигли нового уровня | §77 Уровень§6 ➜§e 8 Уровень"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 1 1.5"
+  - "morestats %player% level 1 false"
+  - "morestats %player% bits 10 false"
+  - "chancecmd %player% pets 10"
+  - "chancecmd %player% normal 10"
+  - "morestats %player% player_exp 5000 false"
+  - "toast %player% 2 358 ¨4fa5e2Озёра | §bНовая Локация!"  
+  - "broad §8[§ai§8]§f Игрок§b %player%§f достиг§6 8 Уровня§f, поздравляем!"
+  - "toast %player% 2 384 §f + §b5000 Опыта | §bБутылёк с опытом"
+  - "toast %player% 2 260 §f + §c❤❤ | §6Пополнение здоровья!"
+  stats:
+    "broke_blocks":
+      count: 310000
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"    
+    "kills_mobs":
+      count: 1600
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+- price: 29875000
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Прокачка уровня: §78§6 ➜§e 9 Уровень"
+    lore:
+    - ""
+    - "§6С новым уровнем вы получите"
+    - "§f + Локация ¨d2e2eeАльпы"
+    - "§f + §b5000 Опыта"
+    - "§f + §c❤❤"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 10 Битсов"
+    - " §6✪ §710% на§b Ключ от Ящика с Питомцами"
+    - " §6✪ §710% на§6 Ключ от Обычного Ящика"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fДеревьев:%ready_broke_blocks% %current_broke_blocks%/%need_broke_blocks%"
+    - "§7 ⊠ §fМобов:%ready_kills_mobs% %current_kills_mobs%/%need_kills_mobs%"
+    - ""
+    - "§e▶ Нажмите, чтобы прокачать уровень" 
+    enchantment: {}
+    data: "{\"other\":\"guild_members_add\"}"
+    unbreakable: false
+    flags: []   
+  commands:
+  - "scrmsg %player% normal §a✔ §6Вы достигли нового уровня | §78 Уровень§6 ➜§e 9 Уровень"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 1 1.5"
+  - "morestats %player% level 1 false"
+  - "morestats %player% bits 10 false"
+  - "chancecmd %player% pets 10"
+  - "chancecmd %player% normal 10"
+  - "morestats %player% player_exp 5000 false"
+  - "toast %player% 2 358 ¨d2e2eeАльпы | §bНовая Локация!"  
+  - "broad §8[§ai§8]§f Игрок§b %player%§f достиг§6 9 Уровня§f, поздравляем!"
+  - "toast %player% 2 384 §f + §b5000 Опыта | §bБутылёк с опытом"
+  - "toast %player% 2 260 §f + §c❤❤ | §6Пополнение здоровья!"
+  stats:
+    "broke_blocks":
+      count: 670000
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"    
+    "kills_mobs":
+      count: 2350
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"

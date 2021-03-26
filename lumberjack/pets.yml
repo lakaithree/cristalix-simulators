@@ -1,0 +1,396 @@
+table: "pets"
+slots:
+- x: 0.0
+  y: 0.5
+  z: 0.5
+- x: -2.5
+  y: -0.75
+  z: -1.5
+- x: -1.5
+  y: 0
+  z: 1    
+- x: -1.0
+  y: 1.0
+  z: -1.5  
+- x: -1.5
+  y: -0.25
+  z: -0.5    
+pets:
+  1:
+    small: true
+    name: "§7[Ур. %level%]¨c346ec Ночной Кошмар"
+    helmetOwnerUUID: "d7cc6e54-3906-4550-8b31-4bf05af49540"
+    helmetOwnerTexture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTUzYjdiY2Q1NmYwYjk1Zjg3ZGQ3OWVkMTc2MzZiZWI5ZDgzNDY3NDQwMTQyMjhlYTJmNmIxMTBiMTQ4YzEifX19"
+    helmet:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    chestplate: null
+    leggigs: null
+    boots: null  
+  2:
+    small: true
+    name: "§7[Ур. %level%]¨c346ec Веселый Краб"
+    helmetOwnerUUID: "794ad361-a10e-4114-84e5-82498516e1c3"
+    helmetOwnerTexture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZiNjFmODI2ZGQ2YmZjMWUzMTkxYTgzNjlhZWIwNDM1YzVhNTMzNTU2MzQzMWE1Mzg1ODVhZDAzOWRhMWUwYyJ9fX0="
+    helmet:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    chestplate: null
+    leggigs: null
+    boots: null  
+  3:
+    small: true
+    name: "§7[Ур. %level%]¨c346ec Мууухомор"
+    helmetOwnerUUID: "18ec28f0-f271-47c6-a151-5afaf7e412cf"
+    helmetOwnerTexture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWQ5MDk4Nzk2MmYzYThiZjk0YTE5N2QyYjk1MGNkZjFkZDc4ZDhiOTcyNTc3YmNhY2Q0ZDU4MzhmNzBhNDcyOSJ9fX0="
+    helmet:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    chestplate: null
+    leggigs: null
+    boots: null  
+  4:
+    small: true
+    name: "§7[Ур. %level%]¨fcc12b Дракон"
+    helmetOwnerUUID: "8b889b2f-7134-4278-a67e-d174f412c2a1"
+    helmetOwnerTexture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTJmOWU5N2Y0YmU1MzM2MzRiZDFiM2UzNjc5ZWRlYmZmZmI5ODQwMTNhMWQ1OTAyZmEzYzM1ZDM0MzViYzEwIn19fQ=="
+    helmet:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    chestplate: null
+    leggigs: null
+    boots: null     
+  5:
+    small: true
+    name: "§7[Ур. %level%]¨58d47a Белка"
+    helmetOwnerUUID: "39562d0b-78c2-4191-893f-cb740456aa2b"
+    helmetOwnerTexture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzc2OTU5YTMxMWJiMzRiNGRjMTRhNmEwMzA3MTg1ZTdlZDIyYzk5ZmJhOGVmZGM1NGY3N2Y3NzZlMjk3MzFlIn19fQ=="
+    helmet:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    chestplate: null
+    leggigs: null
+    boots: null
+  6:
+    small: true
+    name: "§7[Ур. %level%]¨46bfef Свинка"
+    helmetOwnerUUID: "e1e1c2e4-1ed2-473d-bde2-3ec718535399"
+    helmetOwnerTexture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjIxNjY4ZWY3Y2I3OWRkOWMyMmNlM2QxZjNmNGNiNmUyNTU5ODkzYjZkZjRhNDY5NTE0ZTY2N2MxNmFhNCJ9fX0="
+    helmet:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    chestplate: null
+    leggigs: null
+    boots: null     
+  7:
+    small: true
+    name: "§7[Ур. %level%]¨46bfef Кустик"
+    helmetOwnerUUID: "0b705a0e-83a6-4a35-8a0c-ce8bf6577204"
+    helmetOwnerTexture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODM3NjVlOGNlMTFhZTZmMTMxYzcyNWMwN2Y1OGYyZDQxMzJkOTg0YWQ2NjM2MDM5YTdhMzZhM2M1MTI3MjEifX19"
+    helmet:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    chestplate: null
+    leggigs: null
+    boots: null
+  8:
+    small: true
+    name: "§7[Ур. %level%]¨46bfef Рыба Клоун"
+    helmetOwnerUUID: "7b314fba-09ab-4ab6-b956-cec6a5fcbed5"
+    helmetOwnerTexture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzZkMTQ5ZTRkNDk5OTI5NjcyZTI3Njg5NDllNjQ3Nzk1OWMyMWU2NTI1NDYxM2IzMjdiNTM4ZGYxZTRkZiJ9fX0="
+    helmet:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    chestplate: null
+    leggigs: null
+    boots: null
+  9:
+    small: true
+    name: "§7[Ур. %level%]¨c346ec Полярный Медведь"
+    helmetOwnerUUID: "9cbf1d20-53c2-4f50-9cfe-5eff34e5360d"
+    helmetOwnerTexture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmFiMTc4ZjVjZGQ3NTBmMGUzNTY4NjBhYTU1MzkxNTNlYjJhYmVjMWUxNDZjYTU3YzY1ZDI1YTVkZjhmZGZlIn19fQ=="
+    helmet:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    chestplate: null
+    leggigs: null
+    boots: null
+  10:
+    small: true
+    name: "§7[Ур. %level%]¨46bfef Мопсик"
+    helmetOwnerUUID: "9655594c-5b1c-48a5-8e12-ffd7e0c735f2"
+    helmetOwnerTexture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDk1MTgzY2E0Y2RkMjk2MjhmZTZjNzIyZjc3OTA4N2I4M2MyMWJhOTdmNDIyNWU0YWQ5YjNlNjE4ZWNjZDMwIn19fQ=="
+    helmet:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    chestplate: null
+    leggigs: null
+    boots: null
+  11:
+    small: true
+    name: "§7[Ур. %level%]¨46bfef Волк"
+    helmetOwnerUUID: "ffb8ee4b-8b89-4cf2-b54d-4a42ea0e8834"
+    helmetOwnerTexture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmY1M2FiYmU1YmI0ZDhiNmVmZGRmMmRmMTBkZDhhOTkzMzRmMjhlYjFiNzBhN2E1N2NjOGMwZjdhZTdhOWQifX19"
+    helmet:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    chestplate: null
+    leggigs: null
+    boots: null  
+  12:
+    small: true
+    name: "§7[Ур. %level%]¨58d47a Попугай"
+    helmetOwnerUUID: "fbddb977-c95d-47c9-a4e1-9cf69d5bc119"
+    helmetOwnerTexture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzEzNWY1ODM4ZTUxNTg1ZTE1OTQyZThmMmYxY2MzNmRhOTYzMDcwZGRkNWJhMzVhZjk1ZWQzN2ViNmMzIn19fQ=="
+    helmet:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    chestplate: null
+    leggigs: null
+    boots: null  
+  13:
+    small: true
+    name: "§7[Ур. %level%]¨fcc12b Пчела"
+    helmetOwnerUUID: "86a8f0d2-2755-4673-a108-a1b6cd81f9fb"
+    helmetOwnerTexture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI3MjRhOWE0Y2RkNjhiYTQ5NDE1NTYwZTViZTQwYjRhMWM0N2NiNWJlMWQ2NmFlZGI1MmEzMGU2MmVmMmQ0NyJ9fX0="
+    helmet:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    chestplate: null
+    leggigs: null
+    boots: null  
+  14:
+    small: true
+    name: "§7[Ур. %level%]¨58d47a Верстак"
+    helmetOwnerUUID: "86815291-661f-41f8-bfb7-9adc5e81daf3"
+    helmetOwnerTexture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmNkYzBmZWI3MDAxZTJjMTBmZDUwNjZlNTAxYjg3ZTNkNjQ3OTMwOTJiODVhNTBjODU2ZDk2MmY4YmU5MmM3OCJ9fX0="
+    helmet:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    chestplate: null
+    leggigs: null
+    boots: null 
+  15:
+    small: true
+    name: "§7[Ур. %level%]¨58d47a Цыпа"
+    helmetOwnerUUID: "8398f5f8-fbd6-47ac-8e96-e5b7acedc803"
+    helmetOwnerTexture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWYyNjg4M2RjMjhhNDljYjU4MmI2MGM2ZGNjZGNhMTczZDQ1ZjdiMWE3Yjg2OTBjYThjZTQzY2RlMGUxMzU4OSJ9fX0="
+    helmet:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    chestplate: null
+    leggigs: null
+    boots: null    
+  16:
+    small: true
+    name: "§7[Ур. %level%]¨58d47a Бревно"
+    helmetOwnerUUID: "e691f444-5596-965c-a73f-0ddd4f588a3b"
+    helmetOwnerTexture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWQxNDlkYzRkNzFmOWE0N2I3MTRhZDgxN2YxNmYzYjU1N2QzMzUzZTBhZTNiY2M0ODExMmFlMmFjZDgyNyJ9fX0="
+    helmet:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    chestplate: null
+    leggigs: null
+    boots: null  
+  17:
+    small: true
+    name: "§7[Ур. %level%]¨fcc12b Фуга"
+    helmetOwnerUUID: "258e3114-368c-48a1-85fd-be580912f0df"
+    helmetOwnerTexture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTcxNTI4NzZiYzNhOTZkZDJhMjI5OTI0NWVkYjNiZWVmNjQ3YzhhNTZhYzg4NTNhNjg3YzNlN2I1ZDhiYiJ9fX0="
+    helmet:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    chestplate: null
+    leggigs: null
+    boots: null  
+  18:
+    small: true
+    name: "§7[Ур. %level%]¨58d47a Ёжик"
+    helmetOwnerUUID: "a212f710-13db-443b-935f-f8f524c8dacc"
+    helmetOwnerTexture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDJkYWE2YmZiZWYyMDQ0MTk3NmIxZTUxNzk2MmUyNzQ0NGRiYjBhZmVmN2VlYjkwMWQzZWNmNjhjMWViNDllNiJ9fX0="
+    helmet:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    chestplate: null
+    leggigs: null
+    boots: null  
+  19:
+    small: true
+    name: "§7[Ур. %level%]¨58d47a Лиса"
+    helmetOwnerUUID: "237a2651-7da8-457a-aaea-3714bcc196a2"
+    helmetOwnerTexture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDg5NTRhNDJlNjllMDg4MWFlNmQyNGQ0MjgxNDU5YzE0NGEwZDVhOTY4YWVkMzVkNmQzZDczYTNjNjVkMjZhIn19fQ=="
+    helmet:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    chestplate: null
+    leggigs: null
+    boots: null 
+  20:
+    small: true
+    name: "§7[Ур. %level%]¨fcc12b Земля"
+    helmetOwnerUUID: "39ac6493-1c2b-456a-96ca-1e94d7d33e48"
+    helmetOwnerTexture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGIwZjNhM2Q2ZjBjZTI0Mjc2MzdmZTYwZGE5ZDZkMGZlYjJkOGRmMGJjZmIyNzI5MWJiNzhjNjAwNjBlZmUzZSJ9fX0="
+    helmet:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    chestplate: null
+    leggigs: null
+    boots: null     
+  21:
+    small: true
+    name: "§7[Ур. %level%]¨fcc12b Сова"
+    helmetOwnerUUID: "c8ee67da-dd09-4c4d-aa56-b85403841361"
+    helmetOwnerTexture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDNlYzVhOWYxODkxYTU1ZjI5MWQwMjdhM2MxMzMzYjUyMjk1MWUxMTNjNWViZjM1NTcwMDM3NmU3NDYzM2MzNyJ9fX0="
+    helmet:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    chestplate: null
+    leggigs: null
+    boots: null                     

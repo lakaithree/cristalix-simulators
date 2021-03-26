@@ -1,0 +1,26 @@
+js: "!function(t){Math.PI,Math.PI,Math.pow,Math.sin;function e(t){return{started:0,duration:0,fromValue:0,value:t,toValue:0,easingFunction:function(t){return\
+  \ t},transit:function(t,e,i){this.fromValue=this.value,this.toValue=t,this.started=System.currentTimeMillis(),this.duration=e,this.running=!0,this.easingFunction=i},update:function(t){if(!this.started)return;let\
+  \ e=1*(t-this.started)/this.duration;e,e>1?(this.value=this.toValue,this.started=0):(e=this.easingFunction(e),this.value=this.fromValue+(this.toValue-this.fromValue)*e)}}}function\
+  \ i(t){let i=t.x||0,n=t.y||0,a=t.color||{a:1},s=a.a||1,l=a.r||1,r=a.g||1,o=a.b||1,h=t.scale||1,u=t.align||[0,0],c=u[0]||0,g=u[1]||0,d=t.origin||[0,0],f=d[0]||0,v=d[1]||0,p=t.rotation||0,w=void\
+  \ 0===t.enabled||t.enabled;return{x:e(i),y:e(n),a:e(s),r:e(l),g:e(r),b:e(o),scale:e(h),alignX:c,alignY:g,originX:f,originY:v,rotation:e(p),enabled:w,lastColor:0,render:function(t,e,i,n,a){var\
+  \ s,l,r,o;w&&(this.x.update(t),this.y.update(t),this.a.update(t),this.r.update(t),this.g.update(t),this.b.update(t),this.scale.update(t),this.rotation.update(t),GL11.glTranslatef(e*this.alignX,i*this.alignY,0),GL11.glScalef(this.scale.value,this.scale.value,1),GL11.glRotatef(this.rotation.value,0,0,1),GL11.glTranslatef(-n*this.originX,-a*this.originY,0),GL11.glTranslatef(this.x.value,this.y.value,0),this.lastColor=(s=this.a.value,l=this.r.value,r=this.g.value,o=this.b.value,255*s<<24|255*l<<16|255*r<<8|255*o))}}}function\
+  \ n(){let t=Draw.getResolution().getScaleFactor(),e=Display.getWidth()/t,i=Display.getHeight()/t;return{factor:t,width:e,height:i,mouseX:Mouse.getX()/t,mouseY:i-Mouse.getY()/t,time:System.currentTimeMillis()}}const\
+  \ a={children:[],onLeftClick:null,onRightClick:null};Events.on(t,\"gui_overlay_render\"\
+  ,function(t){let e=n();GL11.glTranslatef(0,0,-1);for(var i=0;i<a.children.length;i++)a.children[i].render(e.time,e.width,e.height);GL11.glTranslatef(0,0,1)});const\
+  \ s=[{event:\"left_click\",pressed:!1,property:\"onLeftClick\"},{event:\"right_click\"\
+  ,pressed:!1,property:\"onRightClick\"}];Events.on(t,\"game_loop\",function(t){let\
+  \ e=n();e.stackX=0,e.stackY=0,e.stackScale=1;for(var i=0;i<s.length;i++){let t=s[i];if(Mouse.isButtonDown(i)){if(!t.pressed){t.pressed=!0;for(var\
+  \ l=0;l<a.children.length;l++)a.children[l].executeHovered&&a.children[l].executeHovered(e,t.property,e.width,e.height);Events.post(t.event,e)}}else\
+  \ t.pressed=!1}});var l=function(t){let e=i(t),n=t.text||\"\",a=void 0!==t.shadow&&!!t.shadow;return{stack:e,text:n,shadow:a,render:function(t,i,s){e.enabled&&(GL11.glPushMatrix(),this.stack.render(t,i,s,Draw.getStringWidth(this.text),9),Draw.drawString(n,0,0,-1,a),GL11.glPopMatrix())}}}({origin:[.5,.5],align:[.5,0],scale:1,y:8,shadow:!0,text:\"\
+  §fЛокация: %location%\"});a.children.push(l),PluginMessages.on(t,\"snowlocation:unload\"\
+  ,function(e){Events.off(t),PluginMessages.off(t)})}(this);"
+locations:
+  "world": "¨2c8554Лес"
+  "forest2": "¨aed130Саванна"
+  "forest3": "¨c154c1Виноградники Тосканы"
+  "forest4": "¨ff7f50Мадагаскар"
+  "forest5": "¨633e07Тёмный Лес"
+  "forest6": "¨42aaffСнежная Тайга"
+  "forest7": "¨32cd32Джунгли"
+  "forest8": "¨d2e2eeАльпы"
+  "forest9": "¨4fa5e2Озёра"

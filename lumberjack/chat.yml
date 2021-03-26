@@ -1,0 +1,16 @@
+msg: "§8[%world%§8] §7<§e%lvl% Ур.§7> %player% §d%rebirth%%color%»§f %msg%"
+defaultWorld: "§6Другое"
+worlds:
+  "world": "¨2c8554Лес"
+  "forest2": "¨aed130Саванна"
+  "forest3": "¨c154c1Тоскана"
+  "forest4": "¨ff7f50Мадагаскар"
+  "forest5": "¨633e07Т. Лес"
+  "forest6": "¨42aaffТайга"
+  "forest7": "¨32cd32Джунгли"
+  "forest8": "¨d2e2eeАльпы"
+  "forest9": "¨4fa5e2Озёра"
+localchatEnabled: true
+localchatDistance: 50
+localchatWorld: "§bL"
+enabled: true

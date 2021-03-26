@@ -1,0 +1,34 @@
+commandName: "mystats"
+mappings:
+  "%broke_blocks%": "broke_blocks"
+  "%kills_mobs%": "kills_mobs"
+  "%kills_bosses%": "kills_bosses"
+  "%level%": "level"
+  "%rebirth%": "rebirth"
+  "%open_cases%": "open_cases"
+  "%kills_players%": "kills_players"
+  "%deaths%": "deaths"
+  "%rare_items_found%": "rare_items_found"
+  "%epic_items_found%": "epic_items_found"
+  "%legendary_items_found%": "legendary_items_found"
+  "%player_exp%": "player_exp"
+
+message:
+- §f
+- §f §e§lСтатистика:§f Симулятор Лесоруба
+- §f
+- §7  -§f Уровень:§e %level%
+- §7  -§f Ребитхов:§e %rebirth%
+- §7  -§f Опыта:§b %player_exp%
+- §f
+- §7  -§f Срублено деревьев:§e %broke_blocks%
+- §7  -§f Убито зверей:§e %kills_mobs%
+- §7  -§f Убито боссов:§e %kills_bosses%
+- §7  -§f Убито игроков:§e %kills_players%
+- §7  -§f Смертей:§e %deaths%
+- §f
+- §7  -§f Открыто кейсов:§e %open_cases%
+- §7  -§f Найдено редких предметов:§6 %rare_items_found%
+- §7  -§f Найдено эпических предметов:§d %epic_items_found%
+- §7  -§f Найдено легендарных предметов:§e %legendary_items_found%
+- §f

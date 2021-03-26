@@ -1,0 +1,674 @@
+inventory:
+  title: "Внутриигровые покупки"
+  context:
+  - "-jabc--z-"
+  - "-odef--y-"  
+  - "-wnrq--x-"
+  - "---------"
+  - "-3-s2l-4-"
+  - "5-g-m-k-v"
+  auto:
+    "0":
+      type: "STONE"
+      amount: 1
+      damage: 0
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+items:
+  "5":
+    price: 69
+    desk: "Ключ от Ящика с Питомцами"
+    view:
+      type: "TRIPWIRE_HOOK"
+      amount: 3
+      damage: 0
+      name: "§fКлюч от §bЯщика с Питомцами §7x3"
+      lore: 
+        - ""
+        - "§7Получите питомцев, которые помимо своей"
+        - "§7красоты, дадут вам еще и дополнительный"
+        - "§7бустер некоторой, а может даже и всей"
+        - "§7вашей статистики!"
+        - ""
+        - "§cВнимание! Освободите инвентарь!"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за§b %price% кристалликов"
+      enchantment:
+        DAMAGE_ALL: 1
+      data: '{"other":"pets"}'
+      unbreakable: false
+      flags: ['HIDE_ENCHANTS']
+    give: []
+    commands: 
+      - cc give p Pets 3 %player%
+  "4":
+    price: 89
+    desk: "Перк скорости"
+    view:
+      type: "FEATHER"
+      amount: 1
+      damage: 0
+      name: "§bПерк скорости"
+      lore: 
+        - ""
+        - "§7Бегай быстрее чем раньше, догоняй своих"
+        - "§7противников и сделай свою игру намного проще!"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за§b %price% кристалликов"
+      enchantment: {}
+      data: '{"other":"pets"}'
+      unbreakable: false
+      flags: ['HIDE_ENCHANTS','HIDE_ATTRIBUTES']
+    give: []
+    commands: 
+      - speedperk %player%
+  "3":
+    price: 99
+    desk: "Слот для Питомца"
+    view:
+      type: "BONE"
+      amount: 1
+      damage: 0
+      name: "§eСлот для Питомца"
+      lore: 
+        - ""
+        - "§7После покупки вы получите дополнительный"
+        - "§7слот для вашего питомца, максимальное"
+        - "§7количество слотов: 5 слотов"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за§b %price% кристалликов"
+      enchantment: {}
+      data: '{"other":"pets"}'
+      unbreakable: false
+      flags: ['HIDE_ENCHANTS','HIDE_ATTRIBUTES']
+    give: []
+    commands: 
+      - addmaxpet %player% 1
+  "2":
+    price: 69
+    desk: "Супер игрок"
+    view:
+      type: "END_CRYSTAL"
+      amount: 1
+      damage: 0
+      name: "§eСупер игрок"
+      lore: 
+        - ""
+        - "§7Данная подписка дает возможность"
+        - "§7тратить§d Битсы§7, также данную"
+        - "§7подписку можно получить с небольшим"
+        - "§7шансом за ребитх начиная с 50."
+        - ""
+        - "§7А еще у вас будет титул ¨f5ab00✪§7 в чате!"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за§b %price% кристалликов"
+      enchantment: {}
+      data: '{"other":"pets"}'
+      unbreakable: false
+      flags: ['HIDE_ENCHANTS','HIDE_ATTRIBUTES']
+    give: []
+    commands: 
+      - morestats %player% sub 1 
+      - titles %player% 100
+  "y":
+    price: 349
+    desk: "Локальный бустер Всей статистики"
+    view:
+      type: "CHEST"
+      amount: 1
+      damage: 0
+      name: "§fЛокальный бустер§d Всей статистики"
+      lore: 
+        - ""
+        - "§bСписок Бустеров:"
+        - " §7- §fБустер §cЗверей"
+        - " §7- §fБустер §6Блоков"
+        - " §7- §fБустер §bОпыта"
+        - " §7- §fБустер §eМонет"
+        - ""
+        - " §7⊞ §fДлительность§b 4 часа"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за§b %price% кристалликов"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: ['HIDE_ENCHANTS']
+    give: []
+    commands: 
+      - booster player %player% add stats_player_exp 240 1  
+      - booster player %player% add stats_kills_mobs 240 1
+      - booster player %player% add stats_broke_blocks 240 1
+      - booster player %player% add money 240 1
+  "z":
+    price: 349
+    desk: "Глобальный бустер Всей статистики"
+    view:
+      type: "CHEST"
+      amount: 1
+      damage: 0
+      name: "§fГлобальный бустер§d Всей статистики"
+      lore: 
+        - ""
+        - "§bСписок Бустеров:"
+        - " §7- §fБустер §cЗверей"
+        - " §7- §fБустер §6Блоков"
+        - " §7- §fБустер §bОпыта"
+        - " §7- §fБустер §eМонет"
+        - ""
+        - " §7⊞ §fДлительность§b 60 минут"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за§b %price% кристалликов"
+      enchantment: 
+        DAMAGE_ALL: 1
+      data: "{}"
+      unbreakable: false
+      flags: ['HIDE_ENCHANTS']
+    give: []
+    commands: 
+      - booster global add stats_player_exp 60 1
+      - newthanks %player% 60 player_exp  
+      - booster global add stats_kills_mobs 60 1
+      - newthanks %player% 60 kills_mobs
+      - booster global add stats_broke_blocks 60 1
+      - newthanks %player% 60 broke_blocks
+      - booster global add money 60 1
+      - newthanks %player% 60 money            
+  "x":
+    price: 99
+    desk: "Подарочки"
+    view:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§aПодарочки"
+      lore:
+        - ""
+        - "§7После покупки все игроки на сервере"
+        - "§7получат§f Ключ от§b Ящика с Питомцами"
+        - "§7и смогут вас поблагодарить за это!"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за§b %price% кристалликов"
+      data: "{\"skyblock\":\"gift\"}"
+      unbreakable: false
+      flags: []
+    give: []
+    commands: 
+      - newthanks %player% 10 presents
+      - gcmd executeall cc give p Pets 1 <player> 
+      - broadlocal §8[§ai§8]§f Поблагодарите игрока§e %player%§f за подаренные вам подарочки! 㖻
+      - broadlocal §f §f §7Напишите§b /thx§7, чтобы поблагодарить!  
+  "m":
+    price: 79
+    desk: "Копилка"
+    view:
+      type: "GOLD_INGOT"
+      amount: 1
+      damage: 0
+      name: "§6Копилка"
+      lore:
+        - ""
+        - "§7После покупки вы получите предмет,"
+        - "§7с помощью которого сможете поставить"
+        - "§6Копилку§7, чем больше вы нанесете ей"
+        - "§7урона - тем больше получите с нее монет!"
+        - ""
+        - "§cВнимание! Освободите инвентарь!"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за§b %price% кристалликов"
+      data: "{}"
+      unbreakable: false
+      flags: []
+    give: []
+    commands: 
+      - give %player% gold_ingot:0 1 {display:{Name:"§6Копилка",Lore:["§7","§7Ставь§6 Копилку§7 и скорее бей её","§7пока это не сделали другие игроки!","§7","§e▶ Нажмите, чтобы призвать"]},cmd:meco_boss}
+  "v":
+    price: 79
+    desk: "Ключ от Легендарного ящика"
+    view:
+      type: "TRIPWIRE_HOOK"
+      amount: 1
+      damage: 0
+      name: "§fКлюч от§c Легендарного ящика"
+      lore: 
+        - ""
+        - "§7Получайте ценные награды, такие как"
+        - "§dЭпические топоры§7, броню, §dКристаллы"
+        - "§dсохранения§7, пропуски и многое другое!"
+        - ""
+        - "§7§o В отличии от§6§o Обычного ящика§7, тут"
+        - "§7§o находятся только ценные награды!"
+        - ""
+        - "§cВнимание! Освободите инвентарь!"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за§b %price% кристалликов"
+      enchantment: 
+        DAMAGE_ALL: 1
+      data: "{}"
+      unbreakable: false
+      flags: ['HIDE_ENCHANTS']
+    give: []
+    commands: 
+      - cc give p Legendary 1 %player%  
+  "g":
+    price: 69
+    desk: "Ключи от Ящика со спавном Боссов"
+    view:
+      type: "TRIPWIRE_HOOK"
+      amount: 3
+      damage: 0
+      name: "§fКлючи от §dЯщика со спавном Боссов"
+      lore: 
+        - ""
+        - "§7Получи возможность заспавнить одного"
+        - "§7из многочисленных Боссов, убивай их"
+        - "§7и получай ценные награды!"
+        - ""
+        - "§cВнимание! Освободите инвентарь!"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за§b %price% кристалликов"
+      enchantment: 
+        DAMAGE_ALL: 1
+      data: "{}"
+      unbreakable: false
+      flags: ['HIDE_ENCHANTS']
+    give: []
+    commands: 
+      - cc give p Eggs 3 %player%        
+  "l":
+    price: 499
+    desk: "Легендарный топор"
+    view:
+      type: "WOOD_AXE"
+      amount: 1
+      damage: 0
+      name: "§c§lЛЕГЕНДАРНЫЙ ТОПОР"
+      lore: 
+        - "¨ffff99Уровень 1"
+        - ""
+        - "§7Самый лучший топор на сервере! Находи"
+        - "§7больше предметов, руби больше деревьев,"
+        - "§7руби быстрее! Что может быть круче?"
+        - ""
+        - "  §f ¨ffa500▐▐▐▐▐▐▐¨ffdb99▐▐ §7▶ §fСкорость     "
+        - "  §f ¨1f75fe▐▐▐▐▐▐▐¨b8d3ff▐▐ §7▶ §fЭффективность"
+        - "  §f ¨8b00ff▐▐▐▐▐▐▐¨d199ff▐▐ §7▶ §fНаходка      "
+        - ""
+        - "§cВнимание! Освободите инвентарь!"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за§b %price% кристалликов"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: ['HIDE_ENCHANTS','HIDE_ATTRIBUTES']
+    give: []
+    commands: 
+      - getitem %player% legendary_axe 1  
+  "k":
+    price: 69
+    desk: "Ключи от Обычного ящика"
+    view:
+      type: "TRIPWIRE_HOOK"
+      amount: 8
+      damage: 0
+      name: "§fКлючи от§6 Обычного ящика§7 x8"
+      lore: 
+        - ""
+        - "§7Получайте ценные награды, такие как"
+        - "§dЭпические топоры§7, броню, §dКристаллы"
+        - "§dсохранения§7, пропуски и многое другое!"
+        - ""
+        - "§cВнимание! Освободите инвентарь!"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за§b %price% кристалликов"
+      enchantment: 
+        DAMAGE_ALL: 1
+      data: "{}"
+      unbreakable: false
+      flags: ['HIDE_ENCHANTS']
+    give: []
+    commands: 
+      - cc give p Normal 8 %player%
+  "s":
+    price: 129
+    desk: "Свой поставщик"
+    view:
+      type: "BOOK"
+      amount: 1
+      damage: 0
+      name: "§eСвой поставщик"
+      lore: 
+        - ""
+        - "§7Вы можете продавать предметы не через"
+        - "§7лесничих, а с помощью команды§e /sellall"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за§b %price% кристалликов"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: ['HIDE_ENCHANTS']
+    give: []
+    commands: 
+      - sellall add %player% 
+  "a":
+    price: 149
+    desk: "Глобальный бустер Опыта"
+    view:
+      type: "DRAGONS_BREATH"
+      amount: 1
+      damage: 0
+      name: "§fГлобальный бустер§b Опыта"
+      lore: 
+        - ""
+        - "§7Получай в 2 раза больше опыта за"
+        - "§7различные дейтвия! Прокачивайся"
+        - "§7намного быстрее с его помощью."
+        - "§7К тому же, тебя могут поблагодарить"
+        - "§7и ты получишь дополнительную награду!"
+        - ""
+        - " §7⊞ §fДлительность§b 60 минут"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за§b %price% кристалликов"
+      enchantment: 
+        DAMAGE_ALL: 1
+      data: "{}"
+      unbreakable: false
+      flags: ['HIDE_ENCHANTS']
+    give: []
+    commands: 
+      - booster global add stats_player_exp 60 1
+      - newthanks %player% 60 player_exp
+  "b":
+    price: 119
+    desk: "Глобальный бустер Блоков"
+    view:
+      type: "LOG"
+      amount: 1
+      damage: 0
+      name: "§fГлобальный бустер§6 Блоков"
+      lore: 
+        - ""
+        - "§7Получай в 2 раза больше блоков за"
+        - "§7срубания деревьев! Прокачивайся"
+        - "§7намного быстрее с его помощью."
+        - "§7К тому же, тебя могут поблагодарить"
+        - "§7и ты получишь дополнительную награду!"
+        - ""
+        - " §7⊞ §fДлительность§b 60 минут"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за§b %price% кристалликов"
+      enchantment: 
+        DAMAGE_ALL: 1
+      data: "{}"
+      unbreakable: false
+      flags: ['HIDE_ENCHANTS']
+    give: []
+    commands: 
+      - booster global add stats_broke_blocks 60 1
+      - newthanks %player% 60 broke_blocks      
+
+  "c":
+    price: 119
+    desk: "Глобальный бустер Зверей"
+    view:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§fГлобальный бустер§c Зверей"
+      lore: 
+        - ""
+        - "§7Получай в 2 раза больше зверей за"
+        - "§7их убийства... Прокачивайся"
+        - "§7намного быстрее с его помощью."
+        - "§7К тому же, тебя могут поблагодарить"
+        - "§7и ты получишь дополнительную награду!"
+        - ""
+        - " §7⊞ §fДлительность§b 60 минут"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за§b %price% кристалликов"
+      data: "{\"other\":\"pets\"}"
+      unbreakable: false
+      enchantment: 
+        DAMAGE_ALL: 1
+      flags: ['HIDE_ENCHANTS']
+    give: []
+    commands: 
+      - booster global add stats_kills_mobs 60 1
+      - newthanks %player% 60 kills_mobs   
+
+  "d":
+    price: 149
+    desk: "Локальный бустер Опыта"
+    view:
+      type: "DRAGONS_BREATH"
+      amount: 1
+      damage: 0
+      name: "§fЛокальный бустер§b Опыта"
+      lore: 
+        - ""
+        - "§7Получай в 2 раза больше опыта за"
+        - "§7различные дейтвия! Прокачивайся"
+        - "§7намного быстрее с его помощью."
+        - ""
+        - " §7⊞ §fДлительность§b 4 часа"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за§b %price% кристалликов"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    give: []
+    commands: 
+      - booster player %player% add stats_player_exp 240 1
+  "e":
+    price: 119
+    desk: "Локальный бустер Блоков"
+    view:
+      type: "LOG"
+      amount: 1
+      damage: 0
+      name: "§fЛокальный бустер§6 Блоков"
+      lore: 
+        - ""
+        - "§7Получай в 2 раза больше блоков за"
+        - "§7срубания деревьев! Прокачивайся"
+        - "§7намного быстрее с его помощью."
+        - ""
+        - " §7⊞ §fДлительность§b 4 часа"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за§b %price% кристалликов"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    give: []
+    commands: 
+      - booster player %player% add stats_broke_blocks 240 1  
+
+  "f":
+    price: 119
+    desk: "Локальный бустер Зверей"
+    view:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§fЛокальный бустер§c Зверей"
+      lore: 
+        - ""
+        - "§7Получай в 2 раза больше зверей за"
+        - "§7их убийства... Прокачивайся"
+        - "§7намного быстрее с его помощью."
+        - ""
+        - " §7⊞ §fДлительность§b 4 часа"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за§b %price% кристалликов"
+      enchantment: {}
+      data: "{\"other\":\"pets\"}"
+      unbreakable: false
+      flags: []
+    give: []
+    commands: 
+      - booster player %player% add stats_kills_mobs 240 1  
+
+  "j":
+    price: 119
+    desk: "Глобальный бустер Монет"
+    view:
+      type: "GOLD_NUGGET"
+      amount: 1
+      damage: 0
+      name: "§fГлобальный бустер§e Монет"
+      lore: 
+        - ""
+        - "§7Получай в 2 раза больше монет за"
+        - "§7продажу у лесничего... Прокачивайся"
+        - "§7намного быстрее с его помощью."
+        - "§7К тому же, тебя могут поблагодарить"
+        - "§7и ты получишь дополнительную награду!"
+        - ""
+        - " §7⊞ §fДлительность§b 60 минут"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за§b %price% кристалликов"
+      data: "{\"other\":\"pets\"}"
+      unbreakable: false
+      enchantment: 
+        DAMAGE_ALL: 1
+      flags: ['HIDE_ENCHANTS']
+    give: []
+    commands: 
+      - booster global add money 60 1
+      - newthanks %player% 60 money 
+
+  "o":
+    price: 119
+    desk: "Локальный бустер Монет"
+    view:
+      type: "GOLD_NUGGET"
+      amount: 1
+      damage: 0
+      name: "§fЛокальный бустер§e Монет"
+      lore: 
+        - ""
+        - "§7Получай в 2 раза больше монет за"
+        - "§7продажу у лесничего... Прокачивайся"
+        - "§7намного быстрее с его помощью."
+        - ""
+        - " §7⊞ §fДлительность§b 4 часа"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за§b %price% кристалликов"
+      data: "{\"other\":\"pets\"}"
+      unbreakable: false
+      enchantment: {}
+      flags: ['HIDE_ENCHANTS']
+    give: []
+    commands: 
+      - booster player %player% add money 240 1
+
+
+  "n":
+    price: 10
+    desk: "Локальный бустер Опыта (10%)"
+    view:
+      type: "DRAGONS_BREATH"
+      amount: 10
+      damage: 0
+      name: "§fЛокальный бустер§b Опыта"
+      lore: 
+        - ""
+        - "§7Получай на 10% больше опыта за"
+        - "§7различные дейтвия! Прокачивайся"
+        - "§7намного быстрее с его помощью."
+        - ""
+        - " §7⊞ §fДлительность§b 3 часа"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за§b %price% кристалликов"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    give: []
+    commands: 
+      - booster player %player% add stats_player_exp 180 0.1
+
+  "r":
+    price: 10 
+    desk: "Локальный бустер Блоков (10%)"
+    view:
+      type: "LOG"
+      amount: 10
+      damage: 0
+      name: "§fЛокальный бустер§6 Блоков"
+      lore: 
+        - ""
+        - "§7Получай на 10% больше блоков за"
+        - "§7срубания деревьев! Прокачивайся"
+        - "§7намного быстрее с его помощью."
+        - ""
+        - " §7⊞ §fДлительность§b 3 часа"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за§b %price% кристалликов"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    give: []
+    commands: 
+      - booster player %player% add stats_broke_blocks 180 0.1  
+
+  "q":
+    price: 10
+    desk: "Локальный бустер Зверей (10%)"
+    view:
+      type: "CLAY_BALL"
+      amount: 10
+      damage: 0
+      name: "§fЛокальный бустер§c Зверей"
+      lore: 
+        - ""
+        - "§7Получай на 10% больше зверей за"
+        - "§7их убийства... Прокачивайся"
+        - "§7намного быстрее с его помощью."
+        - ""
+        - " §7⊞ §fДлительность§b 3 часа"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за§b %price% кристалликов"
+      enchantment: {}
+      data: "{\"other\":\"pets\"}"
+      unbreakable: false
+      flags: []
+    give: []
+    commands: 
+      - booster player %player% add stats_kills_mobs 180 0.1  
+
+  "w":
+    price: 10
+    desk: "Локальный бустер Монет (10%)"
+    view:
+      type: "GOLD_NUGGET"
+      amount: 10
+      damage: 0
+      name: "§fЛокальный бустер§e Монет"
+      lore: 
+        - ""
+        - "§7Получай на 10% больше монет за"
+        - "§7продажу у лесничего... Прокачивайся"
+        - "§7намного быстрее с его помощью."
+        - ""
+        - " §7⊞ §fДлительность§b 3 часа"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за§b %price% кристалликов"
+      data: "{\"other\":\"pets\"}"
+      unbreakable: false
+      enchantment: {}
+      flags: ['HIDE_ENCHANTS']
+    give: []
+    commands: 
+      - booster player %player% add money 180 0.1
+
+
+
+buyMessage: "§8[§ai§8]§f Игрок %player%§f приобрёл §e%buy%"
+coupon: "§c§m%oldPrice%§b %newPrice%"

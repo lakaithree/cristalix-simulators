@@ -1,0 +1,11 @@
+syncDirs:
+  "mm":
+    from: "/home/lakaithree/G4/mnt/LJ/conf/MythicMobs/Mobs/ExampleMobs.yml"
+    to: "./plugins/MythicMobs/Mobs/ExampleMobs.yml"
+  "cc":
+    from: "/home/config/conf/CrazyCrates/"
+    to: "/home/lakaithree/LJ/LJ-101/plugins/CrazyCrates/"
+  "essentials":
+    from: "/home/lakaithree/G4/mnt/LJ/conf/Essentials/config.yml"
+    to: "./plugins/Essentials/config.yml"    
+  

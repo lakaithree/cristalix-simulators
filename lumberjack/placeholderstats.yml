@@ -1,0 +1,13 @@
+mapping:
+  "%broke_blocks%": "broke_blocks"
+  "%kills_mobs%": "kills_mobs"
+  "%kills_bosses%": "kills_bosses"
+  "%level%": "level"
+  "%open_cases%": "open_cases"
+  "%kills_players%": "kills_players"
+  "%deaths%": "deaths"
+  "%rare_items_found%": "rare_items_found"
+  "%epic_items_found%": "epic_items_found"
+  "%legendary_items_found%": "legendary_items_found"
+  "%player_exp%": "player_exp"
+  "%bits%": "bits"

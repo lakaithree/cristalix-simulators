@@ -1,0 +1,31 @@
+defaultGui:
+  title: "Улучшение"
+  context:
+  - "----i----"
+  auto:
+    "0":
+      type: "STONE"
+      amount: 1
+      damage: 0
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+defaultVisibleStat:
+  "money":
+    line: "%ready% %current%§7/§e%need%"
+    ok: "§a✔"
+    no: "§c✖"
+  "rebirth":
+    line: "%ready% %current%§7/§e%need%"
+    ok: "§a✔"
+    no: "§c✖"
+defaultNeedStatCommands:
+  "money":
+  - "et %player% Вам нужно больше монет для улучшения!"
+  - "sound %player% ITEM.FIRECHARGE.USE 1 1"
+defaultMaxLevelCommands:
+- "et %player% Вы достигли максимального уровня!"
+- "sound %player% ITEM.FIRECHARGE.USE 1 1"

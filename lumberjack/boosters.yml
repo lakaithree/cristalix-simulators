@@ -1,0 +1,9 @@
+infinity: "данный бустер вечный"
+time: "осталось времени: §e%time% минут"
+none: "§8[§ci§8]§f Сейчас нет активных бустеров!"
+message: "§8[§ai§8]§f Активен бустер %type%§f, %time%"
+mapping:
+  "stats_broke_blocks": "§6Срубленных деревьев"
+  "stats_kills_mobs": "§cУбийств зверей" 
+  "stats_player_exp": "§bОпыта"
+  "money": "§eМонет"

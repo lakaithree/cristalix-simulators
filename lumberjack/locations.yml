@@ -1,0 +1,318 @@
+locationsInventory:
+  title: "Локации"
+  context:
+  - "---------"
+  - "----i----"
+  - "---iii---"
+  - "--iiiii--"
+  - "---------"
+  auto:
+    "-":
+      type: "AIR"
+      amount: 1
+      damage: 0
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+disabledLocation:
+  type: "CLAY_BALL"
+  amount: 1
+  damage: 0
+  name: "§cНедоступно"
+  lore:
+  - ""
+  - "§7Ваш уровень слишком мал. Прокачивайте"
+  - "§7свой уровень, чтобы открыть локацию."
+  enchantment: {}
+  data: "{\"other\":\"lock\",\"color\":16735067}"
+  unbreakable: false
+  flags: []
+locations:
+- item:
+    type: "SAPLING"
+    amount: 1
+    damage: 1
+    name: "¨2c8554Хвойный Лес"
+    lore:
+    - ""
+    - "§7Тут всё и начинается.. Ёлочки,"
+    - "§7зайчики - всё мило и уютно!"
+    - "§7Опасайся злых лисиц!! !! !!"
+    - ""
+    - "§7⊠§6 ПвП§c Нет"
+    - "§7⊠§6 Босс§c Нет"
+    - ""
+    - "§7⊠§6 Средняя цена за блок§e 1.65 монета"
+    - ""
+    - "§e▶ Нажмите, чтобы телепортироваться"
+    enchantment: {}
+    data: "{}"
+    unbreakable: false
+    flags: []
+  message: "§8[§ai§8]§f Ищем подходящий сервер..."
+  commandsOnTeleport: 
+    - "realmcmd %player% location_1 10 teleport"
+  x: 0.0
+  y: 70.0
+  z: 0.0
+  yaw: 0.0
+  pitch: 0.0
+  world: "world"
+
+
+- item:
+    type: "SAPLING"
+    amount: 1
+    damage: 4
+    name: "¨aed130Саванна"
+    lore:
+    - ""
+    - "§7Теперь ты попал в жаркий уголок,"
+    - "§7опасные гепарды, большие буйволы!"
+    - "§7Будь осторожен, когда будешь гулять!"
+    - ""
+    - "§7⊠§6 ПвП§c Нет"
+    - "§7⊠§6 Босс§e ¨ffc966Абориген §7(Появляется раз в 2 часа)"
+    - ""
+    - "§7⊠§6 Средняя цена за блок§e 5.13 монет"
+    - ""
+    - "§e▶ Нажмите, чтобы телепортироваться"
+    enchantment: {}
+    data: "{}"
+    unbreakable: false
+    flags: []
+  message: "§8[§ai§8]§f Ищем подходящий сервер..."
+  commandsOnTeleport: 
+    - "realmcmd %player% location_2 10 teleport"
+  x: -4.5
+  y: 70.0
+  z: -2.5
+  yaw: 180.0
+  pitch: 0.0
+  world: "forest2"
+
+- item:
+    type: "RED_ROSE"
+    amount: 1
+    damage: 2
+    name: "¨c154c1Тоскана"
+    lore:
+    - ""
+    - "§7Теперь ты на высоких горах,"
+    - "§7здесь растёт самый вкусный виноград"
+    - "§7в мире, но тут очень опасно! Берегись.."
+    - ""
+    - "§7⊠§6 ПвП§c Нет"
+    - "§7⊠§6 Босс§c ¨8a2be2Виноградный монстр §7(Появляется раз в 2 часа)"
+    - ""
+    - "§7⊠§6 Средняя цена за блок§e 14.85 монет"
+    - ""
+    - "§e▶ Нажмите, чтобы телепортироваться"
+    enchantment: {}
+    data: "{}"
+    unbreakable: false
+    flags: []
+  message: "§8[§ai§8]§f Ищем подходящий сервер..."
+  commandsOnTeleport: 
+    - "realmcmd %player% location_3 10 teleport"
+  x: 47
+  y: 109
+  z: 328
+  yaw: -90.0
+  pitch: 0.0
+  world: "forest3"
+
+- item:
+    type: "SAPLING"
+    amount: 1
+    damage: 5
+    name: "¨ff7f50Мадагаскар"
+    lore:
+    - ""
+    - "§7Этот остров наполнен злыми волками,"
+    - "§7но ещё и могут попасться браконьеры, которые"
+    - "§7их ловят! Будь внимателен и не попадись.."
+    - ""
+    - "§7⊠§6 ПвП§c Нет"
+    - "§7⊠§6 Босс§c ¨dede8cГигантский таракан §7(Появляется раз в 2 часа)"
+    - ""
+    - "§7⊠§6 Средняя цена за блок§e 47.39 монет"
+    - ""
+    - "§e▶ Нажмите, чтобы телепортироваться"
+    enchantment: {}
+    data: "{}"
+    unbreakable: false
+    flags: []
+  message: "§8[§ai§8]§f Ищем подходящий сервер..."
+  commandsOnTeleport: 
+    - "realmcmd %player% location_4 10 teleport"
+  x: -2
+  y: 96
+  z: 13
+  yaw: -180.0
+  pitch: 0.0
+  world: "forest4"
+
+- item:
+    type: "RED_MUSHROOM"
+    amount: 1
+    damage: 0
+    name: "¨633e07Тёмный Лес"
+    lore:
+    - ""
+    - "§7Это лес чудес, тут может произойти"
+    - "§7всё что угодно! Но будь осторожен, ведь"
+    - "§7тут водятся призраки и тёмные чудища!"
+    - ""
+    - "§7⊠§6 ПвП§c §aЕсть"
+    - "§7⊠§6 Босс§c ¨8a2be2Ведьма §7(Появляется раз в 2 часа)"
+    - ""
+    - "§7⊠§6 Средняя цена за блок§e 142.72 монет"
+    - ""
+    - "§e▶ Нажмите, чтобы телепортироваться"
+    enchantment: {}
+    data: "{}"
+    unbreakable: false
+    flags: []
+  message: "§8[§ai§8]§f Ищем подходящий сервер..."
+  commandsOnTeleport: 
+    - "realmcmd %player% location_5 10 teleport"
+  x: 0
+  y: 70
+  z: 1
+  yaw: -180.0
+  pitch: 0.0
+  world: "forest5"
+
+- item:
+    type: "SNOW_BALL"
+    amount: 1
+    damage: 0
+    name: "¨42aaffСнежная Тайга"
+    lore:
+    - ""
+    - "§7Это снежный лес, тут очень холодно и"
+    - "§7оберегайся злых песцов, а также эскимосов, которые"
+    - "§7не любят гостей, не замёрзни!"
+    - ""
+    - "§7⊠§6 ПвП§c §aЕсть"
+    - "§7⊠§6 Босс§c ¨9aceebСнеговик §7(Появляется раз в 2 часа)"
+    - ""
+    - "§7⊠§6 Средняя цена за блок§e 428.16 монет"
+    - ""
+    - "§e▶ Нажмите, чтобы телепортироваться"
+    enchantment: {}
+    data: "{}"
+    unbreakable: false
+    flags: []
+  message: "§8[§ai§8]§f Ищем подходящий сервер..."
+  commandsOnTeleport: 
+    - "realmcmd %player% location_6 10 teleport"
+  x: 12
+  y: 70
+  z: 10
+  yaw: 90.0
+  pitch: 0.0
+  world: "forest6"
+
+
+- item:
+    type: "VINE"
+    amount: 1
+    damage: 0
+    name: "¨32cd32Джунгли"
+    lore:
+    - ""
+    - "§7Эти джунгли так и кишат ядовитыми пауками!"
+    - "§7Помимо этого на деревьях сидят агрессивные"
+    - "§7обезьяны, будь аккуратнее, когда будешь рубить!"
+    - ""
+    - "§7⊠§6 ПвП§c §aЕсть"
+    - "§7⊠§6 Босс§c §eПаук-людоед §7(Появляется раз в 2 часа)"
+    - ""
+    - "§7⊠§6 Средняя цена за блок§e 1370.11 монет"
+    - ""
+    - "§e▶ Нажмите, чтобы телепортироваться"
+    enchantment: {}
+    data: "{}"
+    unbreakable: false
+    flags: []
+  message: "§8[§ai§8]§f Ищем подходящий сервер..."
+  commandsOnTeleport: 
+    - "realmcmd %player% location_7 10 teleport"
+  x: 0
+  y: 70
+  z: -10
+  yaw: 0.0
+  pitch: 0.0
+  world: "forest7"
+
+- item:
+    type: "QUARTZ"
+    amount: 1
+    damage: 0
+    name: "¨d2e2eeАльпы"
+    lore:
+    - ""
+    - "§7Все слышали историю о Снежном человеке, но"
+    - "§7немногим удалось лицезреть его в живую."
+    - "§7Возможно, ты станешь одним из этих везунчиков."
+    - ""
+    - "§7⊠§6 ПвП§c §aЕсть"
+    - "§7⊠§6 Босс§c ¨1faee9Снежный человек §7(Появляется раз в 2 часа)"
+    - ""
+    - "§7⊠§6 Средняя цена за блок§e 3998 монет"
+    - ""
+    - "§e▶ Нажмите, чтобы телепортироваться"
+    enchantment: {}
+    data: "{}"
+    unbreakable: false
+    flags: []
+  message: "§8[§ai§8]§f Ищем подходящий сервер..."
+  commandsOnTeleport: 
+    - "realmcmd %player% location_8 10 teleport"  
+  x: 0
+  y: 70
+  z: -10
+  yaw: 0.0
+  pitch: 0.0
+  world: "forest9"
+
+- item:
+    type: "PRISMARINE_SHARD"
+    amount: 1
+    damage: 0
+    name: "¨4fa5e2Озёра"
+    lore:
+    - ""
+    - "§7Не забудьте взять с собой сапоги,"
+    - "§7ведь тут очень сыро! Ходят слухи, что"
+    - "§7в этих озерах обитает древний Слайм."
+    - ""
+    - "§7⊠§6 ПвП§c §aЕсть"
+    - "§7⊠§6 Босс§c §aСлайм §7(Появляется раз в 2 часа)"
+    - ""
+    - "§7⊠§6 Средняя цена за блок§e 10882 монет"
+    - ""
+    - "§e▶ Нажмите, чтобы телепортироваться"
+    enchantment: {}
+    data: "{}"
+    unbreakable: false
+    flags: []
+  message: "§8[§ai§8]§f Ищем подходящий сервер..."
+  commandsOnTeleport: 
+    - "realmcmd %player% location_9 10 teleport"
+  x: 0
+  y: 70
+  z: -10
+  yaw: 0.0
+  pitch: 0.0
+  world: "forest8"
+
+
+
+hpPerLvl: 4.0
+levelStat: "level"

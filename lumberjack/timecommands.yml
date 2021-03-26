@@ -1,0 +1,10 @@
+commands:
+
+  "local":
+    timingInSeconds: 300
+    commands:
+    - broadlocal §8[§ai§8]§f Возникла проблема? Напишите нам:§b https://vk.me/cri_sim
+  "local_vk":
+    timingInSeconds: 450
+    commands:
+    - broadlocal §8[§ai§8]§f Наша беседа, тут мы проводим различные опросы и берем тестеров:§b https://vk.cc/bZ1BFZ   

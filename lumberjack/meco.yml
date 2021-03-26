@@ -1,0 +1,15 @@
+commands:
+- scrmsg %player% action §6+%money% монет§e За весь рейд:§6 %allmoney% монет
+- sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+messages:
+- broad  
+- broad             §7Игроки опустошили §6Копилку§7 и получили свою награду!
+- broad §f
+- "broad                          §6§l      Итоги§f:"
+- broad §f
+- broad                 §e1. %top1%§7 -§6 %money_top1% §6монет
+- broad                 §e2. %top2%§7 -§6 %money_top2% §6монет
+- broad                 §e3. %top3%§7 -§6 %money_top3% §6монет
+- broad §f
+emptyPlayer: "§cНе существует"
+emptyMoney: "§cНе существует"

@@ -1,0 +1,255 @@
+#file: "../conf/cristalixnpc.js"
+npcs:
+
+
+- world: "forest9"
+  x: 191.5 
+  y: 22
+  z: 255.5
+  skinUrl: "https://webdata.c7x.dev/textures/skin/c04b0ca9-3cd0-11eb-acca-1cb72caa35fd"
+  skinDigest: "sellall"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f" 
+
+- world: "forest8"
+  x: 8.5 
+  y: 71
+  z: 4.5
+  skinUrl: "https://webdata.c7x.dev/textures/skin/c04b0ca9-3cd0-11eb-acca-1cb72caa35fd"
+  skinDigest: "sellall"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f" 
+
+- world: "world"
+  x: -27.5 
+  y: 73
+  z: 1.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/lj/bits.png"
+  skinDigest: "bits"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% bits"
+
+- world: "world"
+  x: 9.5 
+  y: 71
+  z: -9.5
+  skinUrl: "https://webdata.c7x.dev/textures/skin/c04b0ca9-3cd0-11eb-acca-1cb72caa35fd"
+  skinDigest: "sellall"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f"
+
+- world: "forest2"
+  x: 0.5 
+  y: 71
+  z: 12.5
+  skinUrl: "https://webdata.c7x.dev/textures/skin/c04b0ca9-3cd0-11eb-acca-1cb72caa35fd"
+  skinDigest: "sellall"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f" 
+
+- world: "forest3"
+  x: 43.5 
+  y: 110
+  z: 322.5
+  skinUrl: "https://webdata.c7x.dev/textures/skin/c04b0ca9-3cd0-11eb-acca-1cb72caa35fd"
+  skinDigest: "sellall"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f" 
+
+- world: "forest4"
+  x: 1.5 
+  y: 97
+  z: 17.5
+  skinUrl: "https://webdata.c7x.dev/textures/skin/c04b0ca9-3cd0-11eb-acca-1cb72caa35fd"
+  skinDigest: "sellall"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f" 
+
+- world: "forest5"
+  x: -6.5 
+  y: 71
+  z: -7.5
+  skinUrl: "https://webdata.c7x.dev/textures/skin/c04b0ca9-3cd0-11eb-acca-1cb72caa35fd"
+  skinDigest: "sellall"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f" 
+
+- world: "forest6"
+  x: 2.5 
+  y: 71
+  z: -6.5
+  skinUrl: "https://webdata.c7x.dev/textures/skin/c04b0ca9-3cd0-11eb-acca-1cb72caa35fd"
+  skinDigest: "sellall"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f" 
+
+- world: "forest7"
+  x: 1.5 
+  y: 71
+  z: -14.5
+  skinUrl: "https://webdata.c7x.dev/textures/skin/c04b0ca9-3cd0-11eb-acca-1cb72caa35fd"
+  skinDigest: "sellall"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f" 
+
+- world: "world"
+  x: -13.5 
+  y: 75
+  z: -642.5
+  skinUrl: "https://webdata.c7x.dev/textures/skin/c04b0ca9-3cd0-11eb-acca-1cb72caa35fd"
+  skinDigest: "sellall"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f" 
+
+- world: "world"
+  x: -60.5 
+  y: 76
+  z: -621.5
+  skinUrl: "https://webdata.c7x.dev/textures/skin/c04b0ca9-3cd0-11eb-acca-1cb72caa35fd"
+  skinDigest: "sellall"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f" 
+
+- world: "world"
+  x: 34.5
+  y: 70
+  z: 13.5
+  skinUrl: "https://webdata.c7x.dev/textures/skin/f51dec42-3d33-11eb-acca-1cb72caa35fd"
+  skinDigest: "dragonnn"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% locations"    
+
+- world: "world"
+  x: 5.5
+  y: 69
+  z: -25.5
+  skinUrl: "http://webdata.c7x.dev/textures/skin/13081d9f-3a14-11eb-acca-1cb72caa35fd"
+  skinDigest: "driverr"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% loc mega-secret-teleport-lesopilka"
+
+- world: "world"
+  x: 11.5
+  y: 70
+  z: 11.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/lj/help.png"
+  skinDigest: "help"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "ft %player% §6Хранитель§7 >§f Привет, молодой Лесоруб! Бегом рубить деревья... Не забывай про то, что тебе нужна еда, убивай зверей, чтобы добыть её. Больше информации можешь посмотреть в§b /menu"  
+
+- world: "world"
+  x: 50.5
+  y: 75
+  z: -631.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/lj/machine.png"
+  skinDigest: "machine"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% itemtrade 5646de86-eacf-4b01-8962-28c3c52d365c"  
+
+- world: "world"
+  x: 5.5
+  y: 74
+  z: -621.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/lj/machine.png"
+  skinDigest: "machine"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% itemtrade 5646de86-eacf-4b01-8962-28c3c52d365c"    
+
+- world: "world"
+  x: 0.5
+  y: 75
+  z: -650.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/lj/machine.png"
+  skinDigest: "machine"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% itemtrade 5646de86-eacf-4b01-8962-28c3c52d365c"    
+
+- world: "world"
+  x: -46.5
+  y: 76
+  z: -610.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/lj/machine.png"
+  skinDigest: "machine"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% itemtrade 5646de86-eacf-4b01-8962-28c3c52d365c"      
+
+- world: "forest2"
+  x: 0.5
+  y: 70
+  z: -9.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/lj/witch.png"
+  skinDigest: "witch"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "ft %player% §dКолдунья§7 >§f Ищи§5 Пустые пузырьки§f в ящиках и наполняй их моими зельями абсолютно бесплатно!"    
+
+- world: "forest4"
+  x: -11.5
+  y: 96
+  z: 10.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/lj/skull.png"
+  skinDigest: "skull"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sellall e7246d03-cb8a-4e10-b420-e67688df9a83"  

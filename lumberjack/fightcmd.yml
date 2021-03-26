@@ -1,0 +1,124 @@
+mapping:
+  "click":
+    chance: 100
+    commands:
+    - "morestats %player% clicks 1 true"   
+  "wizard":
+    chance: 7
+    commands:
+    - "effect %targetPlayer% minecraft:slowness 5 255 true"    
+    - "effect %targetPlayer% minecraft:nausea 10 200 true"
+    - "st %player% Вы оглушили игрока §6%targetPlayer%"
+    - "sound %player% UI.TOAST.CHALLENGE_COMPLETE 0.2 2"
+    - "et %targetPlayer% Вас оглушил игрок §c%player%"        
+  "money":
+    chance: 10
+    commands:
+    - "randommoney %player% 1 5"  
+    - "sound %player% UI.TOAST.CHALLENGE_COMPLETE 0.2 2"       
+  "kill":
+    chance: 7
+    commands:
+    - "kill %targetPlayer%"
+    - "st %player% Вы забрали душу игрока §6%targetPlayer%"  
+    - "et %targetPlayer% Вашу душу забрал игрок §c%player%" 
+    - "sound %player% UI.TOAST.CHALLENGE_COMPLETE 0.2 2"    
+  "burn":
+    chance: 10
+    commands:
+    - "burn %targetPlayer% 2"
+    - "st %player% Вы подожгли игрока §6%targetPlayer%"  
+    - "et %targetPlayer% Вас подожёг игрок §c%player%" 
+    - "sound %player% UI.TOAST.CHALLENGE_COMPLETE 0.2 2"
+  "heal":
+    chance: 10
+    commands:
+    - "heal %player%"
+    - "st %player% Вы отрегенирировали себе здоровье!" 
+    - "sound %player% UI.TOAST.CHALLENGE_COMPLETE 0.2 2"  
+  "poison":
+    chance: 10
+    commands:
+    - "effect %targetPlayer% minecraft:poison 3 1 true"
+    - "st %player% Вы отравили игрока §6%targetPlayer%"
+    - "sound %player% UI.TOAST.CHALLENGE_COMPLETE 0.2 2"
+    - "et %targetPlayer% Вас отравил игрок §c%player%"    
+  "slow":
+    chance: 10
+    commands:
+    - "effect %targetPlayer% minecraft:slowness 3 255 true"
+    - "st %player% Вы заморозили игрока §6%targetPlayer%"
+    - "sound %player% UI.TOAST.CHALLENGE_COMPLETE 0.2 2" 
+    - "et %targetPlayer% Вас заморозил игрок §c%player%"        
+  "ninja":
+    chance: 10
+    commands:
+    - "effect %player% minecraft:speed 2 5 true"
+    - "effect %player% minecraft:invisibility 2 5 true"
+    - "st %player% Вы вошли в режим§a Ниндзя"
+    - "sound %player% UI.TOAST.CHALLENGE_COMPLETE 0.2 2"  
+  "thor":
+    chance: 10
+    commands:
+    - "thor %targetPlayer%"
+    - "st %player% Вы ударили молнией игрока §6%targetPlayer%"
+    - "sound %player% UI.TOAST.CHALLENGE_COMPLETE 0.2 2"
+    - "et %targetPlayer% Вас ударил молнией игрок §c%player%" 
+  "blind":
+    chance: 10
+    commands:
+    - "effect %targetPlayer% minecraft:blindness 3 255 true"
+    - "st %player% Вы ослепили игрока §6%targetPlayer%"
+    - "sound %player% UI.TOAST.CHALLENGE_COMPLETE 0.2 2"  
+    - "et %targetPlayer% Вас ослепил игрок §c%player%"     
+
+
+
+  "leg_1":
+    chance: 3
+    commands:
+    - "burn %targetPlayer% 2"
+    - "st %player% Вы подожгли игрока §6%targetPlayer%"  
+    - "et %targetPlayer% Вас подожёг игрок §c%player%" 
+    - "sound %player% UI.TOAST.CHALLENGE_COMPLETE 0.2 2"
+  "leg_2":
+    chance: 3
+    commands:
+    - "heal %player%"
+    - "st %player% Вы отрегенирировали себе здоровье!" 
+    - "sound %player% UI.TOAST.CHALLENGE_COMPLETE 0.2 2"  
+  "leg_3":
+    chance: 3
+    commands:
+    - "effect %targetPlayer% minecraft:poison 3 1 true"
+    - "st %player% Вы отравили игрока §6%targetPlayer%"
+    - "sound %player% UI.TOAST.CHALLENGE_COMPLETE 0.2 2"
+    - "et %targetPlayer% Вас отравил игрок §c%player%"    
+  "leg_4":
+    chance: 3
+    commands:
+    - "effect %targetPlayer% minecraft:slowness 3 255 true"
+    - "st %player% Вы заморозили игрока §6%targetPlayer%"
+    - "sound %player% UI.TOAST.CHALLENGE_COMPLETE 0.2 2" 
+    - "et %targetPlayer% Вас заморозил игрок §c%player%"        
+  "leg_5":
+    chance: 3
+    commands:
+    - "effect %player% minecraft:speed 2 5 true"
+    - "effect %player% minecraft:invisibility 2 5 true"
+    - "st %player% Вы вошли в режим§a Ниндзя"
+    - "sound %player% UI.TOAST.CHALLENGE_COMPLETE 0.2 2"  
+  "leg_6":
+    chance: 3
+    commands:
+    - "thor %targetPlayer%"
+    - "st %player% Вы ударили молнией игрока §6%targetPlayer%"
+    - "sound %player% UI.TOAST.CHALLENGE_COMPLETE 0.2 2"
+    - "et %targetPlayer% Вас ударил молнией игрок §c%player%" 
+  "leg_7":
+    chance: 3
+    commands:
+    - "effect %targetPlayer% minecraft:blindness 3 255 true"
+    - "st %player% Вы ослепили игрока §6%targetPlayer%"
+    - "sound %player% UI.TOAST.CHALLENGE_COMPLETE 0.2 2"  
+    - "et %targetPlayer% Вас ослепил игрок §c%player%"     

@@ -1,0 +1,14 @@
+timezone: "GMT+3"
+timers:
+- commands:
+  - "oncecommands booster"
+  perMinuteInHour: []
+  per:
+  - "11:00"
+  - "18:00"
+
+- commands:
+  - "oncecommands events"
+  perMinuteInHour: 
+    - 1
+  per: []

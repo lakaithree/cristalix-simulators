@@ -1,0 +1,6 @@
+client: true
+server: false
+standalone: false
+databaseDir: "spi"
+timingsBefore: 10
+lockSupport: true

@@ -1,0 +1,371 @@
+mapping:
+  "rabbit_1":
+   - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+   - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+   - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 Зайчатина
+  "rabbit_2":
+   - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+   - sound %player% ui.toast.challenge_complete 1 0.5
+   - text %player% §e§lЛегендарный предмет!§6 Вам повезло и вы нашли §eЗаячий Амулет§6, продолжайте в том же духе!
+   - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eЗаячий Амулет   
+   - toast %player% 2 17 §eЛегедарный предмет! | Заячий Амулет
+   - morestats %player% legendary_items_found 1 false
+  "rabbit_3":
+   - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+   - sound %player% ENTITY.PLAYER.LEVELUP 0.5 0.1
+   - text %player% §6§lРедкий предмет!§6 Вам повезло и вы нашли §eЗаячую шкуру§6, продолжайте в том же духе!
+   - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eЗаячья Шкура   
+   - toast %player% 2 17 §6Редкий предмет! | Заячья Шкура
+   - morestats %player% rare_items_found 1 false
+  "bunny_6":
+   - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+   - sound %player% ui.toast.challenge_complete 1 0.5
+   - text %player% §e§lЛегендарный предмет!§6 Вам повезло и вы нашли §eГолова Зайца§6, продолжайте в том же духе!
+   - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eГолова Зайца  
+   - toast %player% 2 17 §eЛегедарный предмет! | Голова Зайца
+   - morestats %player% legendary_items_found 1 false   
+  "foxy_1":  
+   - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+   - sound %player% ENTITY.PLAYER.LEVELUP 0.5 0.1
+   - text %player% §6§lРедкий предмет!§6 Вам повезло и вы нашли §eЛисий мех§6, продолжайте в том же духе!
+   - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eЛисий мех   
+   - toast %player% 2 17 §6Редкий предмет! | Лисий мех
+   - morestats %player% rare_items_found 1 false   
+  "foxy_2":
+   - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+   - sound %player% ENTITY.PLAYER.LEVELUP 0.5 0.1
+   - text %player% §6§lЭпический предмет!§6 Вам повезло и вы нашли §eЗолотой зуб§6, продолжайте в том же духе!
+   - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eЗолотой зуб
+   - toast %player% 2 17 §6Эпический предмет! | Золотой зуб
+   - morestats %player% epic_items_found 1 false
+  "foxy_3":
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 Грибочек
+  "foxy_6":
+   - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+   - sound %player% ui.toast.challenge_complete 1 0.5
+   - text %player% §e§lЛегендарный предмет!§6 Вам повезло и вы нашли §eГолова Лисы§6, продолжайте в том же духе!
+   - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eГолова Лисы 
+   - toast %player% 2 17 §eЛегедарный предмет! | Голова Лисы
+   - morestats %player% legendary_items_found 1 false       
+  "pony_1":
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ENTITY.PLAYER.LEVELUP 0.5 0.1
+    - text %player% §6§lРедкий предмет!§6 Вам повезло и вы нашли §eМех§6, продолжайте в том же духе!
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eМех   
+    - toast %player% 2 17 §6Р��дкий предмет! | Мех
+    - morestats %player% rare_items_found 1 false     
+  "pony_3":
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ENTITY.PLAYER.LEVELUP 0.5 0.1
+    - text %player% §6§lРедкий предмет!§6 Вам повезло и вы нашли §eВолокна пони§6, продолжайте в том же духе!
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eВолокна пони 
+    - toast %player% 2 17 §6Редкий предмет! | Волокна пони
+    - morestats %player% rare_items_found 1 false
+  "pony_4":
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ui.toast.challenge_complete 1 0.5
+    - text %player% §e§lЛегендарный предмет!§6 Вам повезло и вы нашли §eГолова пони§6, продолжайте в том же духе!
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eГолова пони 
+    - toast %player% 2 17 §eЛегедарный предмет! | Голова пони
+    - morestats %player% legendary_items_found 1 false
+  "grape_2":
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 Обломанная палка
+  "grape_1":
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ENTITY.PLAYER.LEVELUP 0.5 0.1
+    - text %player% §6§lРедкий предмет!§6 Вам повезло и вы нашли §eЗасохший виноград§6, продолжайте в том же духе!
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eЗасохший виноград
+    - toast %player% 2 17 §6Редкий предмет! | Засохший виноград
+    - morestats %player% rare_items_found 1 false    
+  "grape_3":
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ui.toast.challenge_complete 1 0.5
+    - text %player% §e§lЛегендарный предмет!§6 Вам повезло и вы нашли §eСочный виноград§6, продолжайте в том же духе!
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eСочный виноград 
+    - toast %player% 2 17 §eЛегедарный предмет! | Сочный виноград
+    - morestats %player% legendary_items_found 1 false
+  "grape_6":
+   - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+   - sound %player% ui.toast.challenge_complete 1 0.5
+   - text %player% §e§lЛегендарный предмет!§6 Вам повезло и вы нашли §eГолова Собирателя Винограда§6, продолжайте в том же духе!
+   - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eГолова Собирателя Винограда
+   - toast %player% 2 17 §eЛегедарный предмет! | Голова Собирателя Винограда
+   - morestats %player% legendary_items_found 1 false      
+  "bandit_1":
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 Мешочек с порохом
+  "bandit_2":
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ENTITY.PLAYER.LEVELUP 0.5 0.1
+    - text %player% §6§lРедкий предмет!§6 Вам повезло и вы нашли §eПули для оружия§6, продолжайте в том же духе!
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eПули для оружия
+    - toast %player% 2 17 §6Редкий предмет! | Пули для оружия
+    - morestats %player% rare_items_found 1 false
+  "bandit_6":
+   - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+   - sound %player% ui.toast.challenge_complete 1 0.5
+   - text %player% §e§lЛегендарный предмет!§6 Вам повезло и вы нашли §eГолова Бандита§6, продолжайте в том же духе!
+   - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eГолова Бандита
+   - toast %player% 2 17 §eЛегедарный предмет! | Голова Бандита
+   - morestats %player% legendary_items_found 1 false     
+  "volk_1":
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ENTITY.PLAYER.LEVELUP 0.5 0.1
+    - text %player% §6§lРедкий предмет!§6 Вам повезло и вы нашли §eВолчья кость§6, продолжайте в том же духе!
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eВолчья кость
+    - toast %player% 2 17 §6Редкий предмет! | Волчья кость
+    - morestats %player% rare_items_found 1 false  
+  "volk_2":
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 Волчье мясо
+  "volk_3":
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ui.toast.challenge_complete 1 0.5
+    - text %player% §e§lЛегендарный предмет!§6 Вам повезло и вы нашли §eГолова волка§6, продолжайте в том же духе!
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eГолова волка
+    - toast %player% 2 17 §eЛегедарный предмет! | Голова волка
+    - morestats %player% legendary_items_found 1 false
+  "horror_1":
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 Ужасающие глаза
+  "horror_2":    
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ENTITY.PLAYER.LEVELUP 0.5 0.1
+    - text %player% §6§lРедкий предмет!§6 Вам повезло и вы нашли §eТвёрдый панцирь§6, продолжайте в том же духе!
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eТвёрдый панцирь
+    - toast %player% 2 17 §6Редкий предмет! | Твёрдый панцирь
+    - morestats %player% rare_items_found 1 false
+  "horror_3":
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ui.toast.challenge_complete 1 0.5
+    - text %player% §e§lЛегендарный предмет!§6 Вам повезло и вы нашли §eСверкающие глаза§6, продолжайте в том же духе!
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eСверкающие глаза
+    - toast %player% 2 17 §eЛегедарный предмет! | Сверкающие глаза
+    - morestats %player% legendary_items_found 1 false
+  "horror_4":
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ui.toast.challenge_complete 1 0.5
+    - text %player% §e§lЛегендарный предмет!§6 Вам повезло и вы нашли §eГолова Ночного Кошмара§6, продолжайте в том же духе!
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eГолова Ночного Кошмара
+    - toast %player% 2 17 §eЛегедарный предмет! | Голова Ночного Кошмара
+    - morestats %player% legendary_items_found 1 false
+  "ghost_1":    
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ENTITY.PLAYER.LEVELUP 0.5 0.1
+    - text %player% §6§lРедкий предмет!§6 Вам повезло и вы нашли §eПорванная ткань§6, продолжайте в том же духе!
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eПорванная ткань
+    - toast %player% 2 17 §6Редкий предмет! | Порванная ткань
+    - morestats %player% rare_items_found 1 false
+  "ghost_2":
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ui.toast.challenge_complete 1 0.5
+    - text %player% §e§lЛегендарный предмет!§6 Вам повезло и вы нашли §eЗабытый дух призрака§6, продолжайте в том же духе!
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eЗабытый дух призрака
+    - toast %player% 2 17 §eЛегедарный предмет! | Забытый дух призрака
+    - morestats %player% legendary_items_found 1 false
+  "ghost_5":
+   - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+   - sound %player% ui.toast.challenge_complete 1 0.5
+   - text %player% §e§lЛегендарный предмет!§6 Вам повезло и вы нашли §eГолова Призрака§6, продолжайте в том же духе!
+   - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eГолова Призрака
+   - toast %player% 2 17 §eЛегедарный предмет! | Голова Призрака
+   - morestats %player% legendary_items_found 1 false     
+  "eskimos_1":
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 Снежок
+  "eskimos_2":    
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ENTITY.PLAYER.LEVELUP 0.5 0.1
+    - text %player% §6§lРедкий предмет!§6 Вам повезло и вы нашли §eКожаная куртка§6, продолжайте в том же духе!
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eКожаная куртка
+    - toast %player% 2 17 §6Редкий предмет! | Кожаная куртка
+    - morestats %player% rare_items_found 1 false
+  "icefox_1":
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 Сырая рыба
+  "icefox_2":
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ui.toast.challenge_complete 1 0.5
+    - text %player% §e§lЛегендарный предмет!§6 Вам повезло и вы нашли §eПозолоченная морковь§6, продолжайте в том же духе!
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eПозолоченная морковь
+    - toast %player% 2 17 §eЛегедарный предмет! | Позолоченная морковь
+    - morestats %player% legendary_items_found 1 false
+  "icefox_6":
+   - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+   - sound %player% ui.toast.challenge_complete 1 0.5
+   - text %player% §e§lЛегендарный предмет!§6 Вам повезло и вы нашли §eГолова Песца§6, продолжайте в том же духе!
+   - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eГолова Песца
+   - toast %player% 2 17 §eЛегедарный предмет! | Голова Песца
+   - morestats %player% legendary_items_found 1 false         
+  "gigant-spider_1":
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 Ядовитая паутина
+  "gigant-spider_2":
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ui.toast.challenge_complete 1 0.5
+    - text %player% §e§lЛегендарный предмет!§6 Вам повезло и вы нашли §eЯдовитый глаз§6, продолжайте в том же духе!
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eЯдовитый глаз
+    - toast %player% 2 17 §eЛегедарный предмет! | Ядовитый глаз
+    - morestats %player% legendary_items_found 1 false
+  "gigant-spider_3":
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ui.toast.challenge_complete 1 0.5
+    - text %player% §e§lЛегендарный предмет!§6 Вам повезло и вы нашли §eГолова Гигантского Паука§6, продолжайте в том же духе!
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eГолова Гигантского Паука
+    - toast %player% 2 17 §eЛегедарный предмет! | Голова Гигантского Паука
+    - morestats %player% legendary_items_found 1 false
+  "monkey_1":
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 Связка бананов
+  "monkey_2":    
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ENTITY.PLAYER.LEVELUP 0.5 0.1
+    - text %player% §6§lРедкий предмет!§6 Вам повезло и вы нашли §eТарзанка обезьян§6, продолжайте в том же духе!
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eТарзанка обезьян
+    - toast %player% 2 17 §6Редкий предмет! | Тарзанка обезьян
+    - morestats %player% rare_items_found 1 false
+  "monkey_6":
+   - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+   - sound %player% ui.toast.challenge_complete 1 0.5
+   - text %player% §e§lЛегендарный предмет!§6 Вам повезло и вы нашли §eГолова Обезьяны§6, продолжайте в том же духе!
+   - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eГолова Обезьяны
+   - toast %player% 2 17 §eЛегедарный предмет! | Голова Обезьяны
+   - morestats %player% legendary_items_found 1 false             
+  "gepard_2":    
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ENTITY.PLAYER.LEVELUP 0.5 0.1
+    - text %player% §6§lРедкий предмет!§6 Вам повезло и вы нашли §eКлык гепарда§6, продолжайте в том же духе!
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eКлык гепарда
+    - toast %player% 2 17 §6Редкий предмет! | Клык гепарда
+    - morestats %player% rare_items_found 1 false
+  "gepard_3":
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 Вяленный лосось
+  "gepard_1":
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ui.toast.challenge_complete 1 0.5
+    - text %player% §e§lЛегендарный предмет!§6 Вам повезло и вы нашли §eГолова Гепарда§6, продолжайте в том же духе!
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eГолова Гепарда
+    - toast %player% 2 17 §eЛегедарный предмет! | Голова Гепарда
+    - morestats %player% legendary_items_found 1 false
+  "byvol_2":
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 Мясо буйвола
+  "byvol_3":    
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ENTITY.PLAYER.LEVELUP 0.5 0.1
+    - text %player% §6§lРедкий предмет!§6 Вам повезло и вы нашли §eПодкова буйвола§6, продолжайте в том же духе!
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eПодкова буйвола
+    - toast %player% 2 17 §6Редкий предмет! | Подкова буйвола
+    - morestats %player% rare_items_found 1 false
+  "byvol_1":
+    - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+    - sound %player% ui.toast.challenge_complete 1 0.5
+    - text %player% §e§lЛегендарный предмет!§6 Вам повезло и вы нашли §eГолова Буйвола§6, продолжайте в том же духе!
+    - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eГолова Буйвола
+    - toast %player% 2 17 §eЛегедарный предмет! | Голова Буйвола
+    - morestats %player% legendary_items_found 1 false       
+  "eskimos_6":
+   - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+   - sound %player% ui.toast.challenge_complete 1 0.5
+   - text %player% §e§lЛегендарный предмет!§6 Вам повезло и вы нашли §eГолова Эскимоса§6, продолжайте в том же духе!
+   - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eГолова Эскимоса
+   - toast %player% 2 17 §eЛегедарный предмет! | Голова Эскимоса
+   - morestats %player% legendary_items_found 1 false     
+  "aborigen_boss":
+   - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+   - sound %player% ENTITY.PLAYER.LEVELUP 0.5 0.1
+   - text %player% §6§lЭпический предмет!§6 Вам повезло и вы нашли §eГолова Аборигена§6, продолжайте в том же духе!
+   - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eГолова Аборигена
+   - toast %player% 2 17 §6Эпический предмет! | Голова Аборигена
+   - morestats %player% epic_items_found 1 false 
+  "aborigen_boss2":
+   - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+   - sound %player% ui.toast.challenge_complete 1 0.5
+   - text %player% §e§lЛегендарный предмет!§6 Вам повезло и вы нашли §eТоченный камень§6, продолжайте в том же духе!
+   - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eТоченный камень
+   - toast %player% 2 17 §eЛегедарный предмет! | Точенный камень
+   - morestats %player% legendary_items_found 1 false
+  "grape_boss":
+   - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+   - sound %player% ENTITY.PLAYER.LEVELUP 0.5 0.1
+   - text %player% §6§lЭпический предмет!§6 Вам повезло и вы нашли §eВиноградные листья§6, продолжайте в том же духе!
+   - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eВиноградные листья
+   - toast %player% 2 17 §6Эпический предмет! | Виноградные листья
+   - morestats %player% epic_items_found 1 false 
+  "grape_boss2":
+   - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+   - sound %player% ui.toast.challenge_complete 1 0.5
+   - text %player% §e§lЛегендарный предмет!§6 Вам повезло и вы нашли §eЦветок спелого винограда§6, продолжайте в том же духе!
+   - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eЦветок спелого винограда
+   - toast %player% 2 17 §eЛегедарный предмет! | Цветок спелого винограда
+   - morestats %player% legendary_items_found 1 false
+  "tarakan_boss":
+   - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+   - sound %player% ENTITY.PLAYER.LEVELUP 0.5 0.1
+   - text %player% §6§lЭпический предмет!§6 Вам повезло и вы нашли §eУсы Огромного Таракана§6, продолжайте в том же духе!
+   - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eУсы Огромного Таракана
+   - toast %player% 2 17 §6Эпический предмет! | Усы Огромного Таракана
+   - morestats %player% legendary_items_found 1 false
+  "tarakan_boss2":
+   - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+   - sound %player% ui.toast.challenge_complete 1 0.5
+   - text %player% §e§lЛегендарный предмет!§6 Вам повезло и вы нашли §eНожка Огромного Таракана§6, продолжайте в том же духе!
+   - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eНожка Огромного Таракана
+   - toast %player% 2 17 §eЛегедарный предмет! | Ножка Огромного Таракана
+   - morestats %player% epic_items_found 1 false 
+  "witch_boss":
+   - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+   - sound %player% ENTITY.PLAYER.LEVELUP 0.5 0.1
+   - text %player% §6§lЭпический предмет!§6 Вам повезло и вы нашли §eКрыло летучей мыши§6, продолжайте в том же духе!
+   - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eКрыло летучей мыши
+   - toast %player% 2 17 §6Эпический предмет! | Крыло летучей мыши
+   - morestats %player% legendary_items_found 1 false
+  "witch_boss2":
+   - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+   - sound %player% ui.toast.challenge_complete 1 0.5
+   - text %player% §e§lЛегендарный предмет!§6 Вам повезло и вы нашли §eТаинственная книга Ведьмы§6, продолжайте в том же духе!
+   - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eТаинственная книга Ведьмы
+   - toast %player% 2 17 §eЛегедарный предмет! | Таинственная книга Ведьмы
+   - morestats %player% epic_items_found 1 false 
+  "snowman_boss":
+   - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+   - sound %player% ENTITY.PLAYER.LEVELUP 0.5 0.1
+   - text %player% §6§lЭпический предмет!§6 Вам повезло и вы нашли §eВедро Снеговика§6, продолжайте в том же духе!
+   - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eВедро Снеговика
+   - toast %player% 2 17 §6Эпический предмет! | Ведро Снеговика
+   - morestats %player% legendary_items_found 1 false
+  "snowman2_boss":
+   - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+   - sound %player% ui.toast.challenge_complete 1 0.5
+   - text %player% §e§lЛегендарный предмет!§6 Вам повезло и вы нашли §eМорковка Снеговика§6, продолжайте в том же духе!
+   - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eМорковка Снеговика
+   - toast %player% 2 17 §eЛегедарный предмет! | Морковка Снеговика
+   - morestats %player% epic_items_found 1 false 
+  "spider-ludoed_boss":
+   - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+   - sound %player% ENTITY.PLAYER.LEVELUP 0.5 0.1
+   - text %player% §6§lЭпический предмет!§6 Вам повезло и вы нашли §eЯдовитая паутина Паука-Людоеда§6, продолжайте в том же духе!
+   - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eЯдовитая паутина Паука-Людоеда
+   - toast %player% 2 17 §6Эпический предмет! | Ядовитая паутина Паука-Людоеда
+   - morestats %player% legendary_items_found 1 false
+  "Man-eating-spider_bottle_boss":
+   - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+   - sound %player% ui.toast.challenge_complete 1 0.5
+   - text %player% §e§lЛегендарный предмет!§6 Вам повезло и вы нашли §eБутылка слюни Паука-Людоеда§6, продолжайте в том же духе!
+   - scrmsg %player% action §eОхота на зверей§6 ➜ §f+1 §eБутылка слюни Паука-Людоеда
+   - toast %player% 2 17 §eЛегедарный предмет! | Бутылка слюни Паука-Людоеда
+   - morestats %player% epic_items_found 1 false                                                 
