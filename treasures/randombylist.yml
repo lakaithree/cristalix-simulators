@@ -1,0 +1,74 @@
+randomCommands:
+  "kek":
+    1:
+    - "getitem %player% treas_1 1"
+    - "scrmsg %player% normal  |  §fТы нашел:§e Корону Снежной Королевы!"
+    - "sound %player% entity.player.levelup 1 0.8"
+    2:
+    - "getitem %player% treas_2 1"
+    - "scrmsg %player% normal  |  §fТы нашел:§e Корону Королевы!"
+    - "sound %player% entity.player.levelup 1 0.8"
+    3:
+    - "getitem %player% treas_3 1"
+    - "scrmsg %player% normal  |  §fТы нашел:§e Раковину Наутилуса!"
+    - "sound %player% entity.player.levelup 1 0.8"
+    4:
+    - "getitem %player% treas_4 1"
+    - "scrmsg %player% normal  |  §fТы нашел:§e Кость!"
+    - "sound %player% entity.player.levelup 1 0.8"
+    5:
+    - "getitem %player% treas_5 1"
+    - "scrmsg %player% normal  |  §fТы нашел:§e Древнюю миску!"
+    - "sound %player% entity.player.levelup 1 0.8"
+    6:
+    - "getitem %player% treas_6 1"
+    - "scrmsg %player% normal  |  §fТы нашел:§e Золотую медаль!"
+    - "sound %player% entity.player.levelup 1 0.8"
+    7:
+    - "getitem %player% treas_7 1"
+    - "scrmsg %player% normal  |  §fТы нашел:§e Кубок!"
+    - "sound %player% entity.player.levelup 1 0.8"
+    8:
+    - "getitem %player% treas_8 1"
+    - "scrmsg %player% normal  |  §fТы нашел:§e Золотую монету!"
+    - "sound %player% entity.player.levelup 1 0.8"
+    9:
+    - "getitem %player% treas_9 1"
+    - "scrmsg %player% normal  |  §fТы нашел:§e Древний Свиток!"
+    - "sound %player% entity.player.levelup 1 0.8"
+    10:
+    - "getitem %player% treas_10 1"
+    - "scrmsg %player% normal  |  §fТы нашел:§e Древнюю Японскую Катану!"
+    - "sound %player% entity.player.levelup 1 0.8"
+    11:
+    - "getitem %player% treas_11 1"
+    - "scrmsg %player% normal  |  §fТы нашел:§e Щиток Древней Черепахи!"
+    - "sound %player% entity.player.levelup 1 0.8"
+    12:
+    - "getitem %player% treas_8 1"
+    - "scrmsg %player% normal  |  §fТы нашел:§e Золотую монету!"
+    - "sound %player% entity.player.levelup 1 0.8"
+    13:
+    - "getitem %player% treas_8 1"
+    - "scrmsg %player% normal  |  §fТы нашел:§e Золотую монету!"
+    - "sound %player% entity.player.levelup 1 0.8"
+    14:
+    - "getitem %player% treas_4 1"
+    - "scrmsg %player% normal  |  §fТы нашел:§e Кость!"
+    - "sound %player% entity.player.levelup 1 0.8"
+    15:
+    - "getitem %player% treas_4 1"
+    - "scrmsg %player% normal  |  §fТы нашел:§e Кость!"
+    - "sound %player% entity.player.levelup 1 0.8"
+    16:
+    - "getitem %player% treas_4 1"
+    - "scrmsg %player% normal  |  §fТы нашел:§e Кость!"
+    - "sound %player% entity.player.levelup 1 0.8"
+    17:
+    - "getitem %player% treas_5 1"
+    - "scrmsg %player% normal  |  §fТы нашел:§e Древнюю миску!"
+    - "sound %player% entity.player.levelup 1 0.8"
+    18:
+    - "getitem %player% treas_5 1"
+    - "scrmsg %player% normal  |  §fТы нашел:§e Древнюю миску!"
+    - "sound %player% entity.player.levelup 1 0.8"

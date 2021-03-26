@@ -1,0 +1,17 @@
+updateIntervalInTicks: 20
+name: "¨ffd700Симулятор "
+lines:
+- "§fУровень: §6%level%"
+- "§fОпыт: §b%player_exp%"
+- "§fРебитх:§d %rebirth%"
+- ""
+- "§fБитсов:§d %bits%"
+- "§fАркадные очки:§e %arcade_points%"
+- ""
+- "§fРюкзак:§a %dnk%§7/%max_dnk%"
+- ""
+- "§fКлючи:§6 %key%"
+- "§fДобыто:§e %blocks%"
+- "§fСокровищ:§6 %treas%"
+- ""
+- "§fОнлайн:§6 %online%"

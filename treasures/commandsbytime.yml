@@ -1,0 +1,13 @@
+timezone: "GMT+3"
+timers:
+- commands:
+  - "eventstats treas start"
+  perMinuteInHour:
+  - 0
+  per: []
+- commands:
+  - "eventstats treas calculate"
+  - "timety 100 eventstats treas end"
+  perMinuteInHour:
+  - 5
+  per: []  

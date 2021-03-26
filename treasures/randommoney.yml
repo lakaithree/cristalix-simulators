@@ -1,0 +1,4 @@
+moneycmd:
+- "st %player% Поздравляем! Вы получили§6 %money% монет§f, они помогут тебе в прокачке!"
+- "sound %player% ENTITY.PLAYER.LEVELUP 1 1.5"
+- "softeco %player% %money%"

@@ -1,0 +1,339 @@
+inventory:
+  title: "Прокачка уровня"
+  context:
+  - "----i----"
+  auto:
+    "-":
+      type: "AIR"
+      amount: 1
+      damage: 0
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+maxLevel:
+- "scrmsg %player% normal §cУ вас максимальный уровень! | §7Используйте /rebirth, чтобы переродиться"
+- "sound %player% ITEM.FIRECHARGE.USE 1 1"
+stat: "level"
+commandOnFirstJoin: 
+- "getitem %player% normal_shovel 1"
+- "getitem %player% normal_pickaxe 1"
+moreMoney:
+- "et %player% Вам нужно больше§6 монет§f, чтобы прокачать уровень!"
+- "sound %player% ITEM.FIRECHARGE.USE 1 1"
+moneyOk: "§a ✔"
+moneyNo: "§c ✖"
+moreStats:
+  "blocks":
+    - "et %player% Вам нужно больше§6 блоков§f, чтобы прокачать уровень!"
+    - "sound %player% ITEM.FIRECHARGE.USE 1 1"
+hpPerLevel: 0         
+levels:
+- price: 100
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Прокачка уровня: §71§6 ➜§e 2 Уровень"
+    lore:
+    - ""
+    - "§6С новым уровнем вы получите"
+    - "§f + Доступ к новой Локации"
+    - "§f + §b5000 Опыта"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 5 Битсов"
+    - " §6✪ §725% на§b Ключ от Ящика с Питомцами"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fБлоки:%ready_blocks% %current_blocks%/%need_blocks%"
+    - "§7 ⊠ §fСокровища:%ready_treas% %current_treas%/%need_treas%"
+    - ""
+    - "§e▶ Нажмите, чтобы прокачать уровень" 
+    enchantment: {}
+    data: "{\"other\":\"guild_members_add\"}"
+    unbreakable: false
+    flags: []   
+  commands:
+  - "scrmsg %player% normal §a✔ §6Вы достигли нового уровня | §71 Уровень§6 ➜§e 2 Уровень"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 1 1.5"
+  - "morestats %player% level 1 false"
+  - "morestats %player% bits 5 false"
+  - "chancecmd %player% pets 25"
+  - "morestats %player% player_exp 5000 false"
+  - "toast %player% 2 384 §f + §b5000 Опыта | §bБутылёк с опытом"
+  stats:
+    "blocks":
+      count: 750
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"  
+    "treas":
+      count: 20
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"  
+- price: 1000
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Прокачка уровня: §71§6 ➜§e 2 Уровень"
+    lore:
+    - ""
+    - "§6С новым уровнем вы получите"
+    - "§f + Доступ к новой Локации"
+    - "§f + §b5000 Опыта"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 5 Битсов"
+    - " §6✪ §725% на§b Ключ от Ящика с Питомцами"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fБлоки:%ready_blocks% %current_blocks%/%need_blocks%"
+    - "§7 ⊠ §fСокровища:%ready_treas% %current_treas%/%need_treas%"
+    - ""
+    - "§e▶ Нажмите, чтобы прокачать уровень" 
+    enchantment: {}
+    data: "{\"other\":\"guild_members_add\"}"
+    unbreakable: false
+    flags: []   
+  commands:
+  - "scrmsg %player% normal §a✔ §6Вы достигли нового уровня | §71 Уровень§6 ➜§e 2 Уровень"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 1 1.5"
+  - "morestats %player% level 1 false"
+  - "morestats %player% bits 5 false"
+  - "chancecmd %player% pets 25"
+  - "morestats %player% player_exp 5000 false"
+  - "toast %player% 2 384 §f + §b5000 Опыта | §bБутылёк с опытом"
+  stats:
+    "blocks":
+      count: 1500
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+    "treas":
+      count: 45
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"  
+- price: 2500
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Прокачка уровня: §72§6 ➜§e 3 Уровень"
+    lore:
+    - ""
+    - "§6С новым уровнем вы получите"
+    - "§f + Доступ к новой Локации"
+    - "§f + §b5000 Опыта"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 5 Битсов"
+    - " §6✪ §725% на§b Ключ от Ящика с Питомцами"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fБлоки:%ready_blocks% %current_blocks%/%need_blocks%"
+    - "§7 ⊠ §fСокровища:%ready_treas% %current_treas%/%need_treas%"
+    - ""
+    - "§e▶ Нажмите, чтобы прокачать уровень" 
+    enchantment: {}
+    data: "{\"other\":\"guild_members_add\"}"
+    unbreakable: false
+    flags: []   
+  commands:
+  - "scrmsg %player% normal §a✔ §6Вы достигли нового уровня | §72 Уровень§6 ➜§e 3 Уровень"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 1 1.5"
+  - "morestats %player% level 1 false"
+  - "morestats %player% bits 5 false"
+  - "chancecmd %player% pets 25"
+  - "morestats %player% player_exp 5000 false"
+  - "toast %player% 2 384 §f + §b5000 Опыта | §bБутылёк с опытом"
+  stats:
+    "blocks":
+      count: 3500
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+    "treas":
+      count: 105
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"  
+- price: 7500
+
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Прокачка уровня: §73§6 ➜§e 4 Уровень"
+    lore:
+    - ""
+    - "§6С новым уровнем вы получите"
+    - "§f + Доступ к новой Локации"
+    - "§f + §b5000 Опыта"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 5 Битсов"
+    - " §6✪ §725% на§b Ключ от Ящика с Питомцами"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fБлоки:%ready_blocks% %current_blocks%/%need_blocks%"
+    - "§7 ⊠ §fСокровища:%ready_treas% %current_treas%/%need_treas%"
+    - ""
+    - "§e▶ Нажмите, чтобы прокачать уровень" 
+    enchantment: {}
+    data: "{\"other\":\"guild_members_add\"}"
+    unbreakable: false
+    flags: []   
+  commands:
+  - "scrmsg %player% normal §a✔ §6Вы достигли нового уровня | §73 Уровень§6 ➜§e 4 Уровень"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 1 1.5"
+  - "morestats %player% level 1 false"
+  - "morestats %player% bits 5 false"
+  - "chancecmd %player% pets 25"
+  - "morestats %player% player_exp 5000 false"
+  - "toast %player% 2 384 §f + §b5000 Опыта | §bБутылёк с опытом"
+  stats: 
+    "blocks":
+      count: 6000
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+    "treas":
+      count: 150
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"  
+- price: 15625
+
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Прокачка уровня: §74§6 ➜§e 5 Уровень"
+    lore:
+    - ""
+    - "§6С новым уровнем вы получите"
+    - "§f + Доступ к новой Локации"
+    - "§f + §b5000 Опыта"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 5 Битсов"
+    - " §6✪ §725% на§b Ключ от Ящика с Питомцами"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fБлоки:%ready_blocks% %current_blocks%/%need_blocks%"
+    - "§7 ⊠ §fСокровища:%ready_treas% %current_treas%/%need_treas%"
+    - ""
+    - "§e▶ Нажмите, чтобы прокачать уровень" 
+    enchantment: {}
+    data: "{\"other\":\"guild_members_add\"}"
+    unbreakable: false
+    flags: []   
+  commands:
+  - "scrmsg %player% normal §a✔ §6Вы достигли нового уровня | §74 Уровень§6 ➜§e 5 Уровень"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 1 1.5"
+  - "morestats %player% level 1 false"
+  - "morestats %player% bits 5 false"
+  - "chancecmd %player% pets 25"
+  - "morestats %player% player_exp 5000 false"
+  - "toast %player% 2 384 §f + §b5000 Опыта | §bБутылёк с опытом"
+  stats:
+    "blocks":
+      count: 8500
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+    "treas":
+      count: 175
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"  
+- price: 39000
+
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Прокачка уровня: §75§6 ➜§e 6 Уровень"
+    lore:
+    - ""
+    - "§6С новым уровнем вы получите"
+    - "§f + Доступ к новой Локации"
+    - "§f + §b5000 Опыта"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 5 Битсов"
+    - " §6✪ §725% на§b Ключ от Ящика с Питомцами"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fБлоки:%ready_blocks% %current_blocks%/%need_blocks%"
+    - "§7 ⊠ §fСокровища:%ready_treas% %current_treas%/%need_treas%"
+    - ""
+    - "§e▶ Нажмите, чтобы прокачать уровень" 
+    enchantment: {}
+    data: "{\"other\":\"guild_members_add\"}"
+    unbreakable: false
+    flags: []   
+  commands:
+  - "scrmsg %player% normal §a✔ §6Вы достигли нового уровня | §75 Уровень§6 ➜§e 6 Уровень"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 1 1.5"
+  - "morestats %player% level 1 false"
+  - "morestats %player% bits 5 false"
+  - "chancecmd %player% pets 25"
+  - "morestats %player% player_exp 5000 false"
+  - "toast %player% 2 384 §f + §b5000 Опыта | §bБутылёк с опытом"
+  stats:
+    "blocks":
+      count: 15000
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+    "treas":
+      count: 315
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"  
+- price: 150000
+
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Прокачка уровня: §76§6 ➜§e 7 Уровень"
+    lore:
+    - ""
+    - "§6С новым уровнем вы получите"
+    - "§f + Доступ к новой Локации"
+    - "§f + §b5000 Опыта"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 5 Битсов"
+    - " §6✪ §725% на§b Ключ от Ящика с Питомцами"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fБлоки:%ready_blocks% %current_blocks%/%need_blocks%"
+    - "§7 ⊠ §fСокровища:%ready_treas% %current_treas%/%need_treas%"
+    - ""
+    - "§e▶ Нажмите, чтобы прокачать уровень" 
+    enchantment: {}
+    data: "{\"other\":\"guild_members_add\"}"
+    unbreakable: false
+    flags: []   
+  commands:
+  - "scrmsg %player% normal §a✔ §6Вы достигли нового уровня | §76 Уровень§6 ➜§e 7 Уровень"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 1 1.5"
+  - "morestats %player% level 1 false"
+  - "morestats %player% bits 5 false"
+  - "chancecmd %player% pets 25"
+  - "morestats %player% player_exp 5000 false"
+  - "toast %player% 2 384 §f + §b5000 Опыта | §bБутылёк с опытом"
+  stats:
+    "blocks":
+      count: 25000
+      readyOk: "§a ✔"
+      readyNo: "§c ✖" 
+    "treas":
+      count: 405
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"  
+      

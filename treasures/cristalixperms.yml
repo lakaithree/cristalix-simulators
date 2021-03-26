@@ -1,0 +1,4 @@
+checkTick: 20
+checkPerm: "DefaultConfigPerm"
+default:
+- "essentials.spawn"

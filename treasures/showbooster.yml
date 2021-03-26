@@ -1,0 +1,8 @@
+boosters:
+  "money": "%money%"
+  "stats_exploded": "%stats_exploded%"
+  "stats_blocks": "%stats_blocks%"
+  "stats_player_exp": "%stats_player_exp%"
+  "stats_treas": "%stats_treas%"
+  "stats_arcade_points": "%arcade_points%"
+str: " Опыт:§b х%stats_player_exp%§f, Монеты:§e х%money%§f, §fБлоки:§c х%stats_blocks%§f,§f Сокровища:§6 x%stats_treas%"

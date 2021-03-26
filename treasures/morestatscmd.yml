@@ -1,0 +1,17 @@
+commandName: "mystats"
+mappings:
+  "%blocks%": "blocks"
+  "%rebirth%": "rebirth"
+  "%player_exp%": "player_exp"
+  "%level%": "level"
+  "%treasures%": "treas"
+
+message:
+- §f
+- §f §e§lСтатистика:§f Симулятор Сокровищ
+- §f
+- §7  -§f Добыто:§e %blocks%
+- §7  -§f Ребитх:§e %rebirth%
+- §7  -§f Опыта:§b %player_exp%
+- §7  -§f Уровень:§e %level%
+- §7  -§f Сокровищ:§6 %treasures%

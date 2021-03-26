@@ -1,0 +1,5 @@
+cpsLimit: 20
+blockLimit: 25
+blockKick: 100
+commandsOnBan:
+- "gcmd minecraft:ban %player% 3.1"

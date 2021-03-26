@@ -1,0 +1,1097 @@
+fullInventory:
+  - text %player% у вас полный инвентарь!
+
+axes:
+  "nbt":
+    "world":
+    - material: "SAND"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 35
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 1
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        - chancecmd %player% key 0.1
+        
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    - material: "SANDSTONE"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 35
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 2
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        - chancecmd %player% key 0.1
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    - material: "SAND"
+      meta: 1
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 5
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    "location_2":   
+    - material: "COBBLESTONE"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 3
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    - material: "MOSSY_COBBLESTONE"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 4
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    - material: "STONE"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 3
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    "location_3":
+    - material: "RED_SANDSTONE"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 5
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    - material: "SAND"
+      meta: 1
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 5
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    - material: "SAND"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 5
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+
+    "location_4":
+    - material: "NETHERRACK"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 6
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    - material: "SOUL_SAND"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 6
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    "location_5":
+    - material: "MYCEL"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 7
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    - material: "NETHER_BRICK"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 8
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    "location_6":  
+    - material: "END_BRICKS"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 9
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    - material: "ENDER_STONE"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 9
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    - material: "PURPUR_BLOCK"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 9
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    "location_7":
+    - material: "PACKED_ICE"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 9
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    - material: "SNOW_BLOCK"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 9
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    - material: "SNOW"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 9
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+  "leg":
+    "world":
+    - material: "SAND"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 15
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 1
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        - chancecmd %player% key 1.5
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    - material: "SANDSTONE"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 15
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 2
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        - chancecmd %player% key 1.5
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    - material: "SAND"
+      meta: 1
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 5
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        - chancecmd %player% key 1.5
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    "location_2":   
+    - material: "COBBLESTONE"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 3
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        - chancecmd %player% key 1.5
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    - material: "MOSSY_COBBLESTONE"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 4
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        - chancecmd %player% key 1.5
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    - material: "STONE"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 3
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        - chancecmd %player% key 1.5
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    "location_3":
+    - material: "RED_SANDSTONE"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 5
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        - chancecmd %player% key 1.5
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    - material: "SAND"
+      meta: 1
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 5
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        - chancecmd %player% key 1.5
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    - material: "SAND"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 5
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        - chancecmd %player% key 1.5
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+
+    "location_4":
+    - material: "NETHERRACK"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 6
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        - chancecmd %player% key 1.5
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    - material: "SOUL_SAND"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 6
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        - chancecmd %player% key 1.5
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    "location_5":
+    - material: "MYCEL"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 7
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        - chancecmd %player% key 1.5
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    - material: "NETHER_BRICK"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 8
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        - chancecmd %player% key 1.5
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    "location_6":  
+    - material: "END_BRICKS"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 9
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        - chancecmd %player% key 1.5
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    - material: "ENDER_STONE"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 9
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        - chancecmd %player% key 1.5
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    - material: "PURPUR_BLOCK"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 9
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        - chancecmd %player% key 1.5
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    "location_7":
+    - material: "PACKED_ICE"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 9
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        - chancecmd %player% key 1.5
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    - material: "SNOW_BLOCK"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 9
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        - chancecmd %player% key 1.5
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+    - material: "SNOW"
+      meta: 0
+      replace: "AIR"
+      replaceTime: 25
+      drops:
+      - item:
+          type: "AIR"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+        chance: 1
+        command:
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 1
+        - sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+        - morestats %player% blocks 1 true
+        - dnkadd %player% 9
+        - morestats %player% player_exp 1 true
+        - scrmsg %player% action §eДобыча§6 ➜ §f+1 Блок
+        - chancecmd %player% key 1.5
+        animation: false
+      triTime: 5
+      triBlocks: 0
+      triCooldownInTicks: 0
+      
+defaultAxe:
+  "world":
+  - material: "LOG"
+    meta: 13
+    replace: "OBSIDIAN"
+    replaceTime: 3
+    drops:
+    - item:
+        type: "STONE"
+        amount: 1
+        damage: 0
+        name: ""
+        lore: []
+        enchantment: {}
+        data: "{}"
+        unbreakable: false
+        flags: []
+      chance: 1
+      command:
+      - "say %player% hello"
+      animation: false
+    triTime: 5
+    triBlocks: 3
+    triCooldownInTicks: 5
+triCooldownCommands:
+- "text %player% %kd%"

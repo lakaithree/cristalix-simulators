@@ -1,0 +1,15 @@
+mapping:
+  "pets":
+  - "cc give p Pets 1 %player%"
+  - "st %player% Удача на вашей стороне, вы получили дополнительную награду за уровень!"
+  "normal":
+  - "cc give p Normal 1 %player%"
+  - "st %player% Удача на вашей стороне, вы получили дополнительную награду за уровень!"  
+  "slot":
+  - "addmaxpet %player% 1"
+  - "st %player% Удача на вашей стороне, вы получили дополнительную слот для питомца!"    
+  "key":
+  - "cc give p Normal 1 %player%"
+  "treas":
+  - "randombylist kek %player%"
+  - "scrmsg BaggiYT normal  | §fТы нашел копая, сокровище!" 

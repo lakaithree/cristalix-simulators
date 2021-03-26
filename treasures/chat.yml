@@ -1,0 +1,15 @@
+msg: "§8[%world%§8] §7<§6%lvl% Ур.§7> %player% %rebirth%%color%»§f %msg%"
+defaultWorld: "§6Другое"
+worlds:
+  "world": "§eПляж"
+  "location_2": "§7Пещера"
+  "location_3": "§6Пустыня"
+  "location_4": "§4Ад"
+  "location_5": "§7§lТемный замок"
+  "location_6": "¨dbcf94Край"
+  "location_7": "¨1bb5c9Озеро"
+  "arcade": "§aАркада"
+localchatEnabled: true
+localchatDistance: 5000
+localchatWorld: "§bL"
+enabled: true

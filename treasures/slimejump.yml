@@ -1,0 +1,5 @@
+jumpCooldownInMillis: 1000
+mapping:
+  "SLIME_BLOCK":
+    multiply: 2.0
+    y: 2.0

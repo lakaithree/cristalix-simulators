@@ -1,0 +1,11 @@
+mapping:
+  "%level%": "level"
+  "%rebirth%": "rebirth"
+  "%player_exp%": "player_exp"
+  "%bits%": "bits"
+  "%exploded%": "exploded"
+  "%blocks%": "blocks"
+  "%treas%": "treas"
+  "%key%": "key"
+  "%arcade_points%": "arcade_points"
+

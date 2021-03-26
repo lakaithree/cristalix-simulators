@@ -1,0 +1,349 @@
+npcs:
+- world: "world"
+  x: -4.5
+  y: 71
+  z: -15.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/sk/parrot.png"
+  skinDigest: "parrot"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% arcade"
+- world: "world"
+  x: 6.5
+  y: 69
+  z: -17.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/sk/sk_skin_1.png"
+  skinDigest: "sk_skin_2"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% dnksell 2bef303f-4f0d-40d7-860f-807cfa3d2e83"  
+  - "morestats %player% npc_clicks_sellblocks 1 false"
+- world: "world"
+  x: -9.5
+  y: 69.0
+  z: 14.5
+  skinUrl: http://ilyafx.ru/lakai/sim/sk/sk_skin_4.png"
+  skinDigest: "sk_skin_s4"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f"  
+  - "morestats %player% npc_clicks_selltreas 1 false"
+- world: "world"
+  x: 11.5
+  y: 69.0
+  z: 13.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/sk/sk_skin_3.png"
+  skinDigest: "sk_skin_s3"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% dnk"  
+  - "morestats %player% npc_clicks_bagupgrade 1 false"
+- world: "world"
+  x: 7.5
+  y: 69.0
+  z: 17.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/sk/sk_skin_2.png"
+  skinDigest: "sk_skin_s2"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% upgrade"  
+  - "morestats %player% npc_clicks_itemupgrade 1 false"
+- world: "location_2"
+  x: 6.5
+  y: 69
+  z: -17.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/sk/sk_skin_1.png"
+  skinDigest: "sk_skin_2"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% dnksell 2bef303f-4f0d-40d7-860f-807cfa3d2e83"  
+  - "morestats %player% npc_clicks_sellblocks 1 false"
+- world: "location_2"
+  x: -9.5
+  y: 69.0
+  z: 14.5
+  skinUrl: http://ilyafx.ru/lakai/sim/sk/sk_skin_4.png"
+  skinDigest: "sk_skin_s4"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f"  
+  - "morestats %player% npc_clicks_selltreas 1 false"
+- world: "location_2"
+  x: 11.5
+  y: 69.0
+  z: 13.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/sk/sk_skin_3.png"
+  skinDigest: "sk_skin_s3"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% dnk"  
+  - "morestats %player% npc_clicks_bagupgrade 1 false"
+- world: "location_2"
+  x: 7.5
+  y: 69.0
+  z: 17.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/sk/sk_skin_2.png"
+  skinDigest: "sk_skin_s2"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% upgrade"  
+  - "morestats %player% npc_clicks_itemupgrade 1 false"
+- world: "location_3"
+  x: 6.5
+  y: 69
+  z: -17.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/sk/sk_skin_1.png"
+  skinDigest: "sk_skin_2"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% dnksell 2bef303f-4f0d-40d7-860f-807cfa3d2e83"  
+  - "morestats %player% npc_clicks_sellblocks 1 false"
+- world: "location_3"
+  x: -9.5
+  y: 69.0
+  z: 14.5
+  skinUrl: http://ilyafx.ru/lakai/sim/sk/sk_skin_4.png"
+  skinDigest: "sk_skin_s4"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f"  
+  - "morestats %player% npc_clicks_selltreas 1 false"
+- world: "location_3"
+  x: 11.5
+  y: 69.0
+  z: 13.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/sk/sk_skin_3.png"
+  skinDigest: "sk_skin_s3"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% dnk"  
+  - "morestats %player% npc_clicks_bagupgrade 1 false"
+- world: "location_3"
+  x: 7.5
+  y: 69.0
+  z: 17.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/sk/sk_skin_2.png"
+  skinDigest: "sk_skin_s2"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% upgrade"  
+  - "morestats %player% npc_clicks_itemupgrade 1 false"
+- world: "location_4"
+  x: 6.5
+  y: 69
+  z: -17.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/sk/sk_skin_1.png"
+  skinDigest: "sk_skin_2"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% dnksell 2bef303f-4f0d-40d7-860f-807cfa3d2e83"  
+  - "morestats %player% npc_clicks_sellblocks 1 false"
+- world: "location_4"
+  x: -9.5
+  y: 69.0
+  z: 14.5
+  skinUrl: http://ilyafx.ru/lakai/sim/sk/sk_skin_4.png"
+  skinDigest: "sk_skin_s4"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f"  
+  - "morestats %player% npc_clicks_selltreas 1 false"
+- world: "location_4"
+  x: 11.5
+  y: 69.0
+  z: 13.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/sk/sk_skin_3.png"
+  skinDigest: "sk_skin_s3"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% dnk"  
+  - "morestats %player% npc_clicks_bagupgrade 1 false"
+- world: "location_4"
+  x: 7.5
+  y: 69.0
+  z: 17.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/sk/sk_skin_2.png"
+  skinDigest: "sk_skin_s2"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% upgrade"  
+  - "morestats %player% npc_clicks_itemupgrade 1 false"
+- world: "location_5"
+  x: 6.5
+  y: 69
+  z: -17.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/sk/sk_skin_1.png"
+  skinDigest: "sk_skin_2"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% dnksell 2bef303f-4f0d-40d7-860f-807cfa3d2e83"  
+  - "morestats %player% npc_clicks_sellblocks 1 false"
+- world: "location_5"
+  x: -9.5
+  y: 69.0
+  z: 14.5
+  skinUrl: http://ilyafx.ru/lakai/sim/sk/sk_skin_4.png"
+  skinDigest: "sk_skin_s4"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f"  
+  - "morestats %player% npc_clicks_selltreas 1 false"
+- world: "location_5"
+  x: 11.5
+  y: 69.0
+  z: 13.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/sk/sk_skin_3.png"
+  skinDigest: "sk_skin_s3"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% dnk"  
+  - "morestats %player% npc_clicks_bagupgrade 1 false"
+- world: "location_5"
+  x: 7.5
+  y: 69.0
+  z: 17.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/sk/sk_skin_2.png"
+  skinDigest: "sk_skin_s2"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% upgrade"  
+  - "morestats %player% npc_clicks_itemupgrade 1 false"
+- world: "location_6"
+  x: 6.5
+  y: 69
+  z: -17.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/sk/sk_skin_1.png"
+  skinDigest: "sk_skin_2"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% dnksell 2bef303f-4f0d-40d7-860f-807cfa3d2e83"  
+  - "morestats %player% npc_clicks_sellblocks 1 false"
+- world: "location_6"
+  x: -9.5
+  y: 69.0
+  z: 14.5
+  skinUrl: http://ilyafx.ru/lakai/sim/sk/sk_skin_4.png"
+  skinDigest: "sk_skin_s4"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f"  
+  - "morestats %player% npc_clicks_selltreas 1 false"
+- world: "location_6"
+  x: 11.5
+  y: 69.0
+  z: 13.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/sk/sk_skin_3.png"
+  skinDigest: "sk_skin_s3"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% dnk"  
+  - "morestats %player% npc_clicks_bagupgrade 1 false"
+- world: "location_6"
+  x: 7.5
+  y: 69.0
+  z: 17.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/sk/sk_skin_2.png"
+  skinDigest: "sk_skin_s2"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% upgrade"  
+  - "morestats %player% npc_clicks_itemupgrade 1 false"
+- world: "location_7"
+  x: 6.5
+  y: 69
+  z: -17.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/sk/sk_skin_1.png"
+  skinDigest: "sk_skin_2"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% dnksell 2bef303f-4f0d-40d7-860f-807cfa3d2e83"  
+  - "morestats %player% npc_clicks_sellblocks 1 false"
+- world: "location_7"
+  x: -9.5
+  y: 69.0
+  z: 14.5
+  skinUrl: http://ilyafx.ru/lakai/sim/sk/sk_skin_4.png"
+  skinDigest: "sk_skin_s4"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f"  
+  - "morestats %player% npc_clicks_selltreas 1 false"
+- world: "location_7"
+  x: 11.5
+  y: 69.0
+  z: 13.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/sk/sk_skin_3.png"
+  skinDigest: "sk_skin_s3"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% dnk"  
+  - "morestats %player% npc_clicks_bagupgrade 1 false"
+- world: "location_7"
+  x: 7.5
+  y: 69.0
+  z: 17.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/sk/sk_skin_2.png"
+  skinDigest: "sk_skin_s2"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% upgrade"  
+  - "morestats %player% npc_clicks_itemupgrade 1 false"            
+

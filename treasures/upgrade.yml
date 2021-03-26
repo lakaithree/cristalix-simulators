@@ -1,0 +1,3070 @@
+
+
+
+inventory:
+  title: "Улучшение предмета"
+  context:
+  - "----i----"
+
+maxLevel:
+- "et %player% Предмет имеет максимальный уровень!"
+formula:
+  "money": 
+    formula: "1.81*(last+75)"
+    readyOk: "§a ✔"
+    readyNo: "§c ✖"  
+  "money_normal_shovel":
+    formula: "1.81*(last+50)"
+    readyOk: "§a ✔"
+    readyNo: "§c ✖"  
+  "clicks": 
+    formula: "5*(last+50000)"
+    readyOk: "§a ✔"
+    readyNo: "§c ✖"               
+moneyOk: "§a ✔"
+moneyNo: "§c ✖"
+moreMoney:
+- "et %player% У вас недостаточно монет для улучшения предмета!"
+moreStats:
+  "kills_mobs":
+  - "et %player% Вам нужно больше убитых существ!"   
+  "clicks":
+  - "et %player% Вам нужно больше ударов!"   
+itemNone:
+- "et %player% Возьмите предмет в руку, чтобы улучшить его!"
+items:
+  "crystal":
+  - item:
+      type: "CHORUS_FRUIT_POPPED"
+      amount: 1
+      damage: 0
+      name: "§dКристалл Сохранения"
+      lore: 
+        - ""
+        - "§7Используйте его кликнув§d Кристаллом§7 по"
+        - "§7своей Кирке, чтобы сохранить её уровень"
+        - "§7при своём будующем перерождении!"
+        - ""
+        - "§dЭпический предмет"
+      enchantment: {}
+      data: "{\"rebirth_add_crystals\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте кирку, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили кирку!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"  
+    #Просто чтобы было легче +-=-=-=-=-=-=-=-=-=-=--=--==--=--=-=-=-=-=-=-=-=-==--==-=--=-=-=-=-=-=-=-=
+  "normal_pickaxe":   #Уровень 1
+  - item:
+      type: "WOOD_PICKAXE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная кирка"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная кирка для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: {}
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте кирку, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили кирку!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_pickaxe 1 false"   
+    - "morestats %player% upgrade_pickaxe 1 false"   
+    - "morestats %player% upgrade_item 1 false"   
+  - item:          #Уровень 2
+      type: "WOOD_PICKAXE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная кирка"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная кирка для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: 
+        DIG_SPEED: 1
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте кирку, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили кирку!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_pickaxe 1 false"   
+    - "morestats %player% upgrade_pickaxe 1 false"   
+    - "morestats %player% upgrade_item 1 false"   
+  - item:
+      type: "WOOD_PICKAXE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная кирка"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная кирка для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: 
+        DIG_SPEED: 2
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте кирку, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили кирку!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_pickaxe 1 false"   
+    - "morestats %player% upgrade_pickaxe 1 false"   
+    - "morestats %player% upgrade_item 1 false"   
+
+  - item:
+      type: "WOOD_PICKAXE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная кирка"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная кирка для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: 
+        DIG_SPEED: 3
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте кирку, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили кирку!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_pickaxe 1 false"   
+    - "morestats %player% upgrade_pickaxe 1 false"   
+    - "morestats %player% upgrade_item 1 false"   
+
+  - item:
+      type: "STONE_PICKAXE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная кирка"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная кирка для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: {}
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте кирку, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили кирку!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_pickaxe 1 false"   
+    - "morestats %player% upgrade_pickaxe 1 false"   
+    - "morestats %player% upgrade_item 1 false"   
+
+  - item:
+      type: "STONE_PICKAXE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная кирка"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная кирка для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: 
+        DIG_SPEED: 1
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте кирку, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили кирку!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_pickaxe 1 false"   
+    - "morestats %player% upgrade_pickaxe 1 false"   
+    - "morestats %player% upgrade_item 1 false"   
+
+  - item:
+      type: "STONE_PICKAXE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная кирка"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная кирка для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: 
+        DIG_SPEED: 2
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте кирку, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили кирку!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_pickaxe 1 false"   
+    - "morestats %player% upgrade_pickaxe 1 false"   
+    - "morestats %player% upgrade_item 1 false"   
+
+  - item:
+      type: "STONE_PICKAXE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная кирка"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная кирка для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: 
+        DIG_SPEED: 3
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте кирку, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили кирку!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_pickaxe 1 false"   
+    - "morestats %player% upgrade_pickaxe 1 false"   
+    - "morestats %player% upgrade_item 1 false"   
+
+  - item:
+      type: "IRON_PICKAXE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная кирка"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная кирка для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: {}
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте кирку, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили кирку!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_pickaxe 1 false"   
+    - "morestats %player% upgrade_pickaxe 1 false"   
+    - "morestats %player% upgrade_item 1 false"   
+
+  - item:
+      type: "IRON_PICKAXE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная кирка"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная кирка для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: 
+        DIG_SPEED: 1
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте кирку, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили кирку!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_pickaxe 1 false"   
+    - "morestats %player% upgrade_pickaxe 1 false"   
+    - "morestats %player% upgrade_item 1 false"   
+
+  - item:
+      type: "IRON_PICKAXE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная кирка"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная кирка для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: 
+        DIG_SPEED: 2
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте кирку, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили кирку!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_pickaxe 1 false"   
+    - "morestats %player% upgrade_pickaxe 1 false"   
+    - "morestats %player% upgrade_item 1 false"   
+
+  - item:
+      type: "IRON_PICKAXE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная кирка"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная кирка для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: 
+        DIG_SPEED: 3
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте кирку, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили кирку!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_pickaxe 1 false"   
+    - "morestats %player% upgrade_pickaxe 1 false"   
+    - "morestats %player% upgrade_item 1 false"   
+
+  - item:
+      type: "IRON_PICKAXE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная кирка"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная кирка для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: 
+        DIG_SPEED: 4
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте кирку, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили кирку!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_pickaxe 1 false"   
+    - "morestats %player% upgrade_pickaxe 1 false"   
+    - "morestats %player% upgrade_item 1 false"   
+
+  - item:
+      type: "DIAMOND_PICKAXE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная кирка"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная кирка для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: {}
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте кирку, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили кирку!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_pickaxe 1 false"   
+    - "morestats %player% upgrade_pickaxe 1 false"   
+    - "morestats %player% upgrade_item 1 false"   
+
+  - item:
+      type: "DIAMOND_PICKAXE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная кирка"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная кирка для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: 
+        DIG_SPEED: 1
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте кирку, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили кирку!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_pickaxe 1 false"   
+    - "morestats %player% upgrade_pickaxe 1 false"   
+    - "morestats %player% upgrade_item 1 false"   
+
+  - item:
+      type: "DIAMOND_PICKAXE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная кирка"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная кирка для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: 
+        DIG_SPEED: 2 
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте кирку, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили кирку!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_pickaxe 1 false"   
+    - "morestats %player% upgrade_pickaxe 1 false"   
+    - "morestats %player% upgrade_item 1 false"   
+
+  - item:
+      type: "DIAMOND_PICKAXE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная кирка"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная кирка для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: 
+        DIG_SPEED: 3
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте кирку, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили кирку!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_pickaxe 1 false"   
+    - "morestats %player% upgrade_pickaxe 1 false"   
+    - "morestats %player% upgrade_item 1 false"   
+
+  - item:
+      type: "DIAMOND_PICKAXE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная кирка"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная кирка для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: 
+        DIG_SPEED: 4
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте кирку, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили кирку!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_pickaxe 1 false"   
+    - "morestats %player% upgrade_pickaxe 1 false"   
+    - "morestats %player% upgrade_item 1 false"   
+
+  "normal_shovel":   #Уровень 1
+  - item:
+      type: "WOOD_SPADE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная лопата"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная лопата для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: {}
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money_normal_shovel
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    - "morestats %player% upgrade_normal_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"   
+
+  - item:
+      type: "WOOD_SPADE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная лопата"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная лопата для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: 
+        DIG_SPEED: 1
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money_normal_shovel
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+
+  - item:
+      type: "WOOD_SPADE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная лопата"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная лопата для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: 
+        DIG_SPEED: 2
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money_normal_shovel
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+
+  - item:
+      type: "WOOD_SPADE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная лопата"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная лопата для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: 
+        DIG_SPEED: 3
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money_normal_shovel
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+
+  - item:
+      type: "STONE_SPADE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная лопата"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная лопата для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: {}
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money_normal_shovel
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+
+  - item:
+      type: "STONE_SPADE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная лопата"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная лопата для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: 
+        DIG_SPEED: 1
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money_normal_shovel
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+
+  - item:
+      type: "STONE_SPADE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная лопата"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная лопата для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: 
+        DIG_SPEED: 2
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money_normal_shovel
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+
+  - item:
+      type: "STONE_SPADE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная лопата"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная лопата для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: 
+        DIG_SPEED: 3
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money_normal_shovel
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+
+  - item:
+      type: "IRON_SPADE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная лопата"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная лопата для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: {}
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money_normal_shovel
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+
+  - item:
+      type: "IRON_SPADE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная лопата"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная лопата для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: 
+        DIG_SPEED: 1
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money_normal_shovel
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+
+  - item:
+      type: "IRON_SPADE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная лопата"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная лопата для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: 
+        DIG_SPEED: 2
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money_normal_shovel
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+
+  - item:
+      type: "IRON_SPADE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная лопата"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная лопата для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: 
+        DIG_SPEED: 3
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money_normal_shovel
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+
+  - item:
+      type: "IRON_SPADE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная лопата"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная лопата для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: 
+        DIG_SPEED: 4
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money_normal_shovel
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+
+  - item:
+      type: "DIAMOND_SPADE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная лопата"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная лопата для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: {}
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money_normal_shovel
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+
+  - item:
+      type: "DIAMOND_SPADE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная лопата"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная лопата для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: 
+        DIG_SPEED: 1
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money_normal_shovel
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+
+  - item:
+      type: "DIAMOND_SPADE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная лопата"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная лопата для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: 
+        DIG_SPEED: 2
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money_normal_shovel
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+
+  - item:
+      type: "DIAMOND_SPADE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная лопата"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная лопата для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: 
+        DIG_SPEED: 3
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money_normal_shovel
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+  
+  - item:
+      type: "DIAMOND_SPADE"
+      amount: 1
+      damage: 0
+      name: "§7Обычная лопата"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Обычная лопата для добычи."
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: 
+        DIG_SPEED: 4
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money_normal_shovel 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_normal_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+  "speed_pickaxe":   #Уровень 1
+  - item:
+      type: "WOOD_PICKAXE"
+      amount: 1
+      damage: 0
+      name: "§7Кирка скорости"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Кирка, но она копает очень быстро!"
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DIG_SPEED: 4
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте кирку, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили кирку!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_speed_pickaxe 1 false"   
+    - "morestats %player% upgrade_pickaxe 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+
+  - item:
+      type: "WOOD_PICKAXE"
+      amount: 1
+      damage: 0
+      name: "§7Кирка скорости"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Кирка, но она копает очень быстро!"
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DIG_SPEED: 5
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте кирку, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили кирку!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_speed_pickaxe 1 false"   
+    - "morestats %player% upgrade_pickaxe 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+
+  - item:
+      type: "WOOD_PICKAXE"
+      amount: 1
+      damage: 0
+      name: "§7Кирка скорости"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Кирка, но она копает очень быстро!"
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DIG_SPEED: 6
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте кирку, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили кирку!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_speed_pickaxe 1 false"   
+    - "morestats %player% upgrade_pickaxe 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+
+  - item:
+      type: "WOOD_PICKAXE"
+      amount: 1
+      damage: 0
+      name: "§7Кирка скорости"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Кирка, но она копает очень быстро!"
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DIG_SPEED: 7
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте кирку, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили кирку!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_speed_pickaxe 1 false"   
+    - "morestats %player% upgrade_pickaxe 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+  - item:
+      type: "WOOD_PICKAXE"
+      amount: 1
+      damage: 0
+      name: "§7Кирка скорости"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Кирка, но она копает очень быстро!"
+        - "§7Повышайте уровень своей кирки,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DIG_SPEED: 8
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте кирку, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили кирку!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    - "morestats %player% upgrade_speed_pickaxe 1 false"   
+    - "morestats %player% upgrade_pickaxe 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+
+  "speed_shovel":   #Уровень 1
+  - item:
+      type: "WOOD_SPADE"
+      amount: 1
+      damage: 0
+      name: "§7Лопата скорости"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Лопата, но она копает очень быстро!"
+        - "§7Повышайте уровень своей лопаты,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DIG_SPEED: 4
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_speed_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+
+  - item:
+      type: "WOOD_SPADE"
+      amount: 1
+      damage: 0
+      name: "§7Лопата скорости"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Лопата, но она копает очень быстро!"
+        - "§7Повышайте уровень своей лопаты,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DIG_SPEED: 5
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_speed_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+
+  - item:
+      type: "WOOD_SPADE"
+      amount: 1
+      damage: 0
+      name: "§7Лопата скорости"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Лопата, но она копает очень быстро!"
+        - "§7Повышайте уровень своей лопаты,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DIG_SPEED: 6
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_speed_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+
+  - item:
+      type: "WOOD_SPADE"
+      amount: 1
+      damage: 0
+      name: "§7Лопата скорости"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Лопата, но она копает очень быстро!"
+        - "§7Повышайте уровень своей лопаты,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DIG_SPEED: 7
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_speed_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+  - item:
+      type: "WOOD_SPADE"
+      amount: 1
+      damage: 0
+      name: "§7Лопата скорости"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Лопата, но она копает очень быстро!"
+        - "§7Повышайте уровень своей лопаты,"
+        - "§7чтобы она копала быстрее!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DIG_SPEED: 8
+      data: "{\"nbt\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_speed_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+
+  "treas_1":   #Уровень 1
+  - item:
+      type: "STICK"
+      amount: 1
+      damage: 0
+      name: "§7Корона Снежной Королевы"
+      lore: 
+        - ""
+        - "§7Дорогое и древнее сокровище!"
+        - "§7Продай сокровище у §6Пирата"
+        - ""
+        - "§dЭпический предмет"
+      enchantment: {}
+      data: "{\"nbt\":1, \"skotoboinya\":\"crown0\", \"price\":1500}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_speed_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"
+  "treas_2":   #Уровень 1
+  - item:
+      type: "STICK"
+      amount: 1
+      damage: 0
+      name: "§7Корона Королевы"
+      lore: 
+        - ""
+        - "§7Дорогое и древнее сокровище!"
+        - "§7Продай сокровище у §6Пирата"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"nbt\":1, \"skotoboinya\":\"crown\", \"price\":750}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_speed_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+  "treas_3":   #Уровень 1
+  - item:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§7Раковина Наутилуса"
+      lore: 
+        - ""
+        - "§7Дорогое и древнее сокровище!"
+        - "§7Продай сокровище у §6Пирата"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"nbt\":1, \"museum\":\"sink\", \"price\":850}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_speed_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false" 
+  "treas_4":   #Уровень 1
+  - item:
+      type: "EMERALD"
+      amount: 1
+      damage: 0
+      name: "§7Кость"
+      lore: 
+        - ""
+        - "§7Дорогое и древнее сокровище!"
+        - "§7Продай сокровище у §6Пирата"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"nbt\":1, \"skotoboinya\":\"loot0\", \"price\":250}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_speed_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false" 
+
+  "treas_5":   #Уровень 1
+  - item:
+      type: "BOWL"
+      amount: 1
+      damage: 0
+      name: "§7Древняя миска"
+      lore: 
+        - ""
+        - "§7Дорогое и древнее сокровище!"
+        - "§7Продай сокровище у §6Пирата"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"nbt\":1, \"skotoboinya\":\"bowl\", \"price\":500}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_speed_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+  "treas_6":   #Уровень 1
+  - item:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§eЗолотая медаль"
+      lore: 
+        - ""
+        - "§7Дорогое и древнее сокровище!"
+        - "§7Продай сокровище у §6Пирата"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"nbt\":1, \"other\":\"achievements\", \"price\":650}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_speed_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+  "treas_7":   #Уровень 1
+  - item:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§eКубок"
+      lore: 
+        - ""
+        - "§7Дорогое и древнее сокровище!"
+        - "§7Продай сокровище у §6Пирата"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"nbt\":1, \"other\":\"collection\", \"price\":900}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_speed_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+  "treas_8":   #Уровень 1
+  - item:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§eЗолотая монета"
+      lore: 
+        - ""
+        - "§7Дорогое и древнее сокровище!"
+        - "§7Продай сокровище у §6Пирата"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"nbt\":1, \"other\":\"coin\", \"price\":300}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_speed_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+  "treas_9":   #Уровень 1
+  - item:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§eДревний свиток"
+      lore: 
+        - ""
+        - "§7Дорогое и древнее сокровище!"
+        - "§7Продай сокровище у §6Пирата"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"nbt\":1, \"other\":\"quests\", \"price\":900}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_speed_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+  "treas_10":   #Уровень 1
+  - item:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§eДревняя Японская Катана"
+      lore: 
+        - ""
+        - "§7Дорогое и древнее сокровище!"
+        - "§7Продай сокровище у §6Пирата"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"nbt\":1, \"weapons\":\"claymore\", \"price\":1255}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_speed_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+  "treas_11":   #Уровень 1
+  - item:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§eЩиток древней черепахи"
+      lore: 
+        - ""
+        - "§7Дорогое и древнее сокровище!"
+        - "§7Продай сокровище у §6Пирата"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"nbt\":1, \"anarcy\":\"scute\", \"price\":455}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+    - "morestats %player% upgrade_speed_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+  "donate_shovel":   #Уровень 1
+  - item:
+      type: "GOLD_SPADE"
+      amount: 1
+      damage: 0
+      name: "§eЛегендарная лопата"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Легендарная лопата для добычи."
+        - "§7Имеет пассивные возможности:,"
+        - "§aШанс получить сокровище из блока."
+        - "§aКопает быстрее всех с 1-го уровня."
+        - "§aПовышенный шанс найти сундук!"
+        - ""
+        - "§eЛегендарный предмет"
+      enchantment: 
+        DIG_SPEED: 10
+      data: "{\"nbt\":1 , \"sk_help\":2 , \"leg\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money_normal_shovel
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    - "morestats %player% upgrade_normal_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"   
+  "luck_pickaxe":   #Уровень 1
+  - item:
+      type: "IRON_PICKAXE"
+      amount: 1
+      damage: 0
+      name: "§aКирка Удачи"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Кирка удачи для добычи."
+        - "§7Её нельзя улучшить!"
+        - "§aПовышенный шанс найти сундук!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DIG_SPEED: 3
+      data: "{\"nbt\":1 , \"sk_help\":2}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money_normal_shovel
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    - "morestats %player% upgrade_normal_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+   
+  "luck_shovel":   #Уровень 1
+  - item:
+      type: "IRON_SPADE"
+      amount: 1
+      damage: 0
+      name: "§aЛопата Удачи"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Лопата удачи для добычи."
+        - "§7Её нельзя улучшить!"
+        - "§aПовышенный шанс найти сундук!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DIG_SPEED: 10
+      data: "{\"nbt\":1 , \"sk_help\":2}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money_normal_shovel
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    - "morestats %player% upgrade_normal_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"   
+  "donate_pickaxe":   #Уровень 1
+  - item:
+      type: "GOLD_PICKAXE"
+      amount: 1
+      damage: 0
+      name: "§eЛегендарная кирка"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Легендарная кирка для добычи."
+        - "§7Имеет пассивные возможности:,"
+        - "§aШанс получить сокровище из блока."
+        - "§aКопает быстрее всех с 1-го уровня."
+        - "§aПовышенный шанс найти сундук!"
+        - ""
+        - "§eЛегендарный предмет"
+      enchantment: 
+        DIG_SPEED: 10
+      data: "{\"nbt\":1 , \"sk_help\":2 , \"leg\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money_normal_shovel
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    - "morestats %player% upgrade_normal_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+  "metal1":   #Уровень 1
+  - item:
+      type: "PAPER"
+      amount: 1
+      damage: 0
+      name: "§eКарта сокровищ!"
+      lore: 
+        - ""
+        - "§7Повышает шанс найти сокровище!"
+        - "§7Шанс найти сокровище: §e10% "
+        - "§aДержи предмет в второй руке!"
+        - ""
+        - "§dЭпический предмет"
+      enchantment: 
+        DIG_SPEED: 10
+      data: "{\"nbt\":1 , \"sk_help\":5}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money_normal_shovel
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    - "morestats %player% upgrade_normal_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"  
+  "metal2":   #Уровень 1
+  - item:
+      type: "DOUBLE_PLANT"
+      amount: 1
+      damage: 3
+      name: "§eКлевер"
+      lore: 
+        - ""
+        - "§7Повышает шанс найти сокровище!"
+        - "§7Шанс найти сокровище: §e15% "
+        - "§aДержи предмет в второй руке!"
+        - ""
+        - "§dЭпический предмет"
+      enchantment: 
+        DIG_SPEED: 10
+      data: "{\"nbt\":1 , \"sk_help\":2}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money_normal_shovel
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    - "morestats %player% upgrade_normal_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false" 
+
+  "icon":   #Уровень 1
+  - item:
+      type: "DIAMOND_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cСимулятор Катаны"
+      lore: 
+        - ""
+        - "§7Сражайся с игроками на PvP арене, прокачивай"
+        - "§7свою катану и зарабатывай больше монет!"        
+        - "REALM:SIM"
+      enchantment: {}
+      data: "{\"weapons\":\"dragon\"}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "DIAMOND_SWORD"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money_normal_shovel
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    - "morestats %player% upgrade_normal_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false" 
+  "icon1":   #Уровень 1
+  - item:
+      type: "DIAMOND_SWORD"
+      amount: 1
+      damage: 0
+      name: "§aСимуляторы"
+      lore: 
+        - "§7Небольшие интересные режимы - то"
+        - "§7что надо, чтобы не заскучать! Раз в"
+        - "§7несколько недель мы будем открывать"
+        - "§7новый симулятор специально для вас!"
+        - ""
+        - "§bАктивные симуляторы"
+        - "§7 ⊞ §cСимулятор Катаны"
+        - "§7  §o Сражайся с игроками на PvP арене, прокачивай"
+        - "§7  §o свою катану и зарабатывай больше монет!"        
+        - ""
+        - "§7 ⊞ §eСимулятор Сокровищ"
+        - "§7  §o Йо-хо-хо, и бутылка рому! Самый дорогой симулятор!"
+        - "§7  §o Десятки сокровищ, сможешь найти все?"
+        - "CATEGORY:SIMULATORS"
+      enchantment: {}
+      data: "{\"weapons\":\"dragon\"}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money_normal_shovel
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    - "morestats %player% upgrade_normal_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false" 

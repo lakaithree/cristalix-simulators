@@ -1,0 +1,15 @@
+chance: 8
+helpChances:
+  2: 15.0
+  1: 35.0
+helpItemNBT: "sk_help"
+hasteStat: "key"
+replace: "CHEST"
+commandsSet:
+- "scrmsg %player% normal  |  §eВы нашли сундук с сокровищами!"
+- "sound %player% block.chest.open 10.5 0.1"
+commandsBreak:
+- "randombylist kek %player%"
+- "morestats %player% event_treas 1 false"
+- "sound %player% block.chest.close 10.5 0.8"
+- "morestats %player% treas 1 true"

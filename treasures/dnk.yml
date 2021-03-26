@@ -1,0 +1,49 @@
+dnk:
+  1: 50
+  2: 125
+  3: 200
+  4: 410
+  5: 610
+  6: 755
+  7: 900
+  8: 1000
+  9: 1900
+  10: 3000
+  11: 5600
+  12: 8900
+  13: 11500
+ 
+table: "dnk"
+maxDnkCommands:
+- scrmsg %player% normal §f | §cВы заполнили свой рюкзак, продайте его у §6Торговца
+command: "dnksell"
+arg: "2bef303f-4f0d-40d7-860f-807cfa3d2e83"
+okCommands:
+- "st %player% Вы продали §b%dnk% §fблоков собирайте ещё!"
+- "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+emptyCommands:
+- "et %player% У вас нет блоков, которые можно продать!"
+upgradeCommand: "dnk"
+upgradable:
+  defaultTier:
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить рюкзак"
+      lore:
+      - ""
+      - "§7Улучшайте вместимость и вы сможете"
+      - "§7держать больше блоков одновременно!"
+      - ""  
+      - "§7 ⊠ §fЦена: %money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить"
+      enchantment: {}
+      data: '{"other":"bag"}'
+      unbreakable: false
+      flags: []
+    commandsOnBuy:
+    - "dnkcontrol %player% addLevel"
+    formula:
+      "money": "1000 + previous * 1.5"
