@@ -1,1 +1,1 @@
-# cristalix-simulators
+# Конфигурация модулей 
