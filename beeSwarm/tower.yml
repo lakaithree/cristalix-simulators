@@ -1,0 +1,8 @@
+client:
+  enabled: true
+  name: "client-468"
+  host: " "
+  port: 
+server:
+  enabled: false
+  port: 

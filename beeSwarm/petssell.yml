@@ -1,0 +1,522 @@
+inventory:
+  title: "Продажа"
+  context:
+  - "---------"  
+  - "-xxxxxxx-"  
+  - "pxxxxxxxn"  
+  - "-xxxxxxx-"
+  - "---------"
+  auto:
+    "0":
+      type: "STONE"
+      amount: 1
+      damage: 0
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+nextPage:
+  type: "CLAY_BALL"
+  amount: 1
+  damage: 0
+  name: "§eДалее"
+  lore: []
+  enchantment: {}
+  data: '{"other":"arrow_right"}'
+  unbreakable: false
+  flags: []
+previousPage:
+  type: "CLAY_BALL"
+  amount: 1
+  damage: 0
+  name: "§eНазад"
+  lore: []
+  enchantment: {}
+  data: '{"other":"arrow_left"}'
+  unbreakable: false
+  flags: []   
+
+pets:
+  1:
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨58d47a Пчела"
+      lore:
+      - "¨58d47aОбычный"  
+      - ""
+      - "§7За продажу вы получите"
+      - "§7 ⊠ §62% от вашего баланса"
+      - "§7 ⊠ §d1 битс"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§b Опыт"
+      - ""        
+      - "§e▶ Нажмите§f ПКМ§e, чтобы §cПРОДАТЬ"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    cmd:
+    - "st %player% Вы успешно продали пчелу!"
+    - "randommoney %player% 1.9 2"
+    - "morestats %player% bits 1 false"
+  2:
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨58d47a Медоносная пчела"
+      lore:
+      - "¨58d47aОбычный"  
+      - ""
+      - "§7За продажу вы получите"
+      - "§7 ⊠ §62% от вашего баланса"
+      - "§7 ⊠ §d1 битс"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§b Опыт"
+      - ""        
+      - "§e▶ Нажмите§f ПКМ§e, чтобы §cПРОДАТЬ"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    cmd:
+    - "st %player% Вы успешно продали пчелу!"
+    - "randommoney %player% 1.9 2"
+    - "morestats %player% bits 1 false"
+  3:
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨58d47a Пчела-Плотник"
+      lore:
+      - "¨58d47aОбычный"  
+      - ""
+      - "§7За продажу вы получите"
+      - "§7 ⊠ §62% от вашего баланса"
+      - "§7 ⊠ §d1 битс"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§c Мобы"
+      - ""        
+      - "§e▶ Нажмите§f ПКМ§e, чтобы §cПРОДАТЬ"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    cmd:
+    - "st %player% Вы успешно продали пчелу!"
+    - "randommoney %player% 1.9 2"
+    - "morestats %player% bits 1 false"
+  4:
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨58d47a Галиктид"
+      lore:
+      - "¨58d47aОбычный"  
+      - ""
+      - "§7За продажу вы получите"
+      - "§7 ⊠ §62% от вашего баланса"
+      - "§7 ⊠ §d1 битс"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§6 Удары"
+      - ""        
+      - "§e▶ Нажмите§f ПКМ§e, чтобы §cПРОДАТЬ"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    cmd:
+    - "st %player% Вы успешно продали пчелу!"
+    - "randommoney %player% 1.9 2"
+    - "morestats %player% bits 1 false"
+  5:
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨58d47a Горная пчела"
+      lore:
+      - "¨58d47aОбычный"  
+      - ""
+      - "§7За продажу вы получите"
+      - "§7 ⊠ §62% от вашего баланса"
+      - "§7 ⊠ §d1 битс"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§e Монеты"
+      - ""        
+      - "§e▶ Нажмите§f ПКМ§e, чтобы §cПРОДАТЬ"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    cmd:
+    - "st %player% Вы успешно продали пчелу!"
+    - "randommoney %player% 1.9 2"
+    - "morestats %player% bits 1 false"
+  6:
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨46bfef Потемневшая пчела"
+      lore:
+      - "¨46bfefРедкий"  
+      - ""
+      - "§7За продажу вы получите"
+      - "§7 ⊠ §65% от вашего баланса"
+      - "§7 ⊠ §d2 битса"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§c Мобы"
+      - " §f⊞§b Опыт"
+      - ""        
+      - "§e▶ Нажмите§f ПКМ§e, чтобы §cПРОДАТЬ"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    cmd:
+    - "st %player% Вы успешно продали пчелу!"
+    - "randommoney %player% 4.9 5"
+    - "morestats %player% bits 2 false"
+  7:
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨46bfef Скромная пчела"
+      lore:
+      - "¨46bfefРедкий"  
+      - ""
+      - "§7За продажу вы получите"
+      - "§7 ⊠ §65% от вашего баланса"
+      - "§7 ⊠ §d2 битса"
+      - ""
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§e Монеты"
+      - " §f⊞§b Опыт"
+      - ""        
+      - "§e▶ Нажмите§f ПКМ§e, чтобы §cПРОДАТЬ"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    cmd:
+    - "st %player% Вы успешно продали пчелу!"
+    - "randommoney %player% 4.9 5"
+    - "morestats %player% bits 2 false"
+  8:
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨46bfef Спектральная пчела"
+      lore:
+      - "¨46bfefРедкий"  
+      - ""
+      - "§7За продажу вы получите"
+      - "§7 ⊠ §65% от вашего баланса"
+      - "§7 ⊠ §d2 битса"
+      - ""
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§e Монеты"
+      - " §f⊞§c Мобы"
+      - ""        
+      - "§e▶ Нажмите§f ПКМ§e, чтобы §cПРОДАТЬ"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    cmd:
+    - "st %player% Вы успешно продали пчелу!"
+    - "randommoney %player% 4.9 5"
+    - "morestats %player% bits 2 false"
+  9:
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨46bfef Призрачная пчела"
+      lore:
+      - "¨46bfefРедкий"  
+      - ""
+      - "§7За продажу вы получите"
+      - "§7 ⊠ §65% от вашего баланса"
+      - "§7 ⊠ §d2 битса"
+      - ""
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§6 Удары"
+      - " §f⊞§c Мобы"
+      - ""        
+      - "§e▶ Нажмите§f ПКМ§e, чтобы §cПРОДАТЬ"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    cmd:
+    - "st %player% Вы успешно продали пчелу!"
+    - "randommoney %player% 4.9 5"
+    - "morestats %player% bits 2 false"
+  10:
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨c346ec Мстительная пчела"
+      lore:
+      - "¨c346ecЭпический"  
+      - ""
+      - "§7За продажу вы получите"
+      - "§7 ⊠ §68% от вашего баланса"
+      - "§7 ⊠ §d5 битс"
+      - ""
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§6 Удары"
+      - " §f⊞§b Опыт"
+      - " §f⊞§c Мобы"
+      - ""        
+      - "§e▶ Нажмите§f ПКМ§e, чтобы §cПРОДАТЬ"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    cmd:
+    - "st %player% Вы успешно продали пчелу!"
+    - "randommoney %player% 7.9 8"
+    - "morestats %player% bits 5 false"
+  11:
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨c346ec Демоническая пчела"
+      lore:
+      - "¨c346ecЭпический"  
+      - ""
+      - "§7За продажу вы получите"
+      - "§7 ⊠ §68% от вашего баланса"
+      - "§7 ⊠ §d5 битс"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§c Мобы"
+      - " §f⊞§6 Удары"
+      - " §f⊞§e Монеты"
+      - ""        
+      - "§e▶ Нажмите§f ПКМ§e, чтобы §cПРОДАТЬ"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    cmd:
+    - "st %player% Вы успешно продали пчелу!"
+    - "randommoney %player% 7.9 8"
+    - "morestats %player% bits 5 false"
+  12:
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨c346ec Монашеская пчела"
+      lore:
+      - "¨c346ecЭпический"  
+      - ""
+      - "§7За продажу вы получите"
+      - "§7 ⊠ §68% от вашего баланса"
+      - "§7 ⊠ §d5 битс"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§e Монеты"
+      - " §f⊞§b Опыт"
+      - " §f⊞§c Мобы"
+      - ""        
+      - "§e▶ Нажмите§f ПКМ§e, чтобы §cПРОДАТЬ"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    cmd:
+    - "st %player% Вы успешно продали пчелу!"
+    - "randommoney %player% 7.9 8"
+    - "morestats %player% bits 5 false"
+  13:
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨c346ec Тропическая пчела"
+      lore:
+      - "¨c346ecЭпический" 
+      - ""
+      - "§7За продажу вы получите"
+      - "§7 ⊠ §68% от вашего баланса"
+      - "§7 ⊠ §d5 битс"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§e Монеты"
+      - " §f⊞§b Опыт"
+      - " §f⊞§6 Удары"
+      - ""        
+      - "§e▶ Нажмите§f ПКМ§e, чтобы §cПРОДАТЬ"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    cmd:
+    - "st %player% Вы успешно продали пчелу!"
+    - "randommoney %player% 7.9 8"
+    - "morestats %player% bits 5 false"
+  14:
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨fcc12b Пчела края"
+      lore:
+      - "¨fcc12bЛегендарный"   
+      - ""
+      - "§7За продажу вы получите"
+      - "§7 ⊠ §615% от вашего баланса"
+      - "§7 ⊠ §d15 битс"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§e Монеты"
+      - " §f⊞§b Опыт"
+      - " §f⊞§c Мобы"
+      - " §f⊞§6 Удары"
+      - ""        
+      - "§e▶ Нажмите§f ПКМ§e, чтобы §cПРОДАТЬ"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    cmd:
+    - "st %player% Вы успешно продали пчелу!"
+    - "randommoney %player% 14.9 15"
+    - "morestats %player% bits 15 false"
+  15:
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨fcc12b Укромная пчела"
+      lore:
+      - "¨fcc12bЛегендарный"  
+      - ""
+      - "§7За продажу вы получите"
+      - "§7 ⊠ §615% от вашего баланса"
+      - "§7 ⊠ §d15 битс"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§e Монеты"
+      - " §f⊞§b Опыт"
+      - " §f⊞§c Мобы"
+      - " §f⊞§6 Удары"
+      - ""        
+      - "§e▶ Нажмите§f ПКМ§e, чтобы §cПРОДАТЬ"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    cmd:
+    - "st %player% Вы успешно продали пчелу!"
+    - "randommoney %player% 14.9 15"
+    - "morestats %player% bits 15 false"
+  16:
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨fcc12b Пчела богатств"
+      lore:
+      - "¨fcc12bЛегендарный"   
+      - ""
+      - "§7За продажу вы получите"
+      - "§7 ⊠ §615% от вашего баланса"
+      - "§7 ⊠ §d15 битс"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§e Монеты"
+      - " §f⊞§b Опыт"
+      - " §f⊞§c Мобы"
+      - " §f⊞§6 Удары"
+      - ""        
+      - "§e▶ Нажмите§f ПКМ§e, чтобы §cПРОДАТЬ"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    cmd:
+    - "st %player% Вы успешно продали пчелу!"
+    - "randommoney %player% 14.9 15"
+    - "morestats %player% bits 15 false"
+  17:
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨fcc12b Пчела роскоши"
+      lore:
+      - "¨fcc12bЛегендарный"   
+      - ""
+      - "§7За продажу вы получите"
+      - "§7 ⊠ §615% от вашего баланса"
+      - "§7 ⊠ §d15 битс"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§e Монеты"
+      - " §f⊞§b Опыт"
+      - " §f⊞§c Мобы"
+      - " §f⊞§6 Удары"
+      - ""        
+      - "§e▶ Нажмите§f ПКМ§e, чтобы §cПРОДАТЬ"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    cmd:
+    - "st %player% Вы успешно продали пчелу!"
+    - "randommoney %player% 14.9 15"
+    - "morestats %player% bits 15 false"
+  18:
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨f03f55 Пчела-Овечка"
+      lore:
+      - "¨f03f55Мифический"   
+      - ""
+      - "§7За продажу вы получите"
+      - "§7 ⊠ §645% от вашего баланса"
+      - "§7 ⊠ §d75 битс"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§e Монеты"
+      - " §f⊞§b Опыт"
+      - " §f⊞§c Мобы"
+      - " §f⊞§6 Удары"
+      - ""        
+      - "§e▶ Нажмите§f ПКМ§e, чтобы §cПРОДАТЬ"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    cmd:
+    - "st %player% Вы успешно продали пчелу!"
+    - "randommoney %player% 44.9 45"
+    - "morestats %player% bits 75 false"

@@ -1,0 +1,82 @@
+pets:
+  1:
+    boostersPerLevel:
+      "stats_player_exp": 0.1
+  2:
+    boostersPerLevel:
+      "stats_player_exp": 0.1
+  3:
+    boostersPerLevel:
+      "stats_kills_mobs": 0.1
+  4:
+    boostersPerLevel:
+      "stats_clicks": 0.1
+  5:
+    boostersPerLevel:
+      "money": 0.1
+  6:
+    boostersPerLevel:
+      "stats_kills_mobs": 0.1
+      "stats_player_exp": 0.1      
+  7:
+    boostersPerLevel:
+      "money": 0.1
+      "stats_player_exp": 0.1
+  8:
+    boostersPerLevel:
+      "money": 0.1
+      "stats_kills_mobs": 0.1
+  9:
+    boostersPerLevel:
+      "stats_clicks": 0.1
+      "stats_kills_mobs": 0.1
+  10:
+    boostersPerLevel:
+      "stats_player_exp": 0.1
+      "stats_clicks": 0.1
+      "stats_kills_mobs": 0.1
+  11:
+    boostersPerLevel:
+      "money": 0.1
+      "stats_clicks": 0.1
+      "stats_kills_mobs": 0.1  
+  12:
+    boostersPerLevel:
+      "stats_player_exp": 0.1
+      "money": 0.1
+      "stats_kills_mobs": 0.1
+  13:
+    boostersPerLevel:
+      "stats_player_exp": 0.1
+      "stats_clicks": 0.1
+      "money": 0.1 
+  14:
+    boostersPerLevel:
+      "money": 0.1
+      "stats_player_exp": 0.1
+      "stats_clicks": 0.1
+      "stats_kills_mobs": 0.1
+  15:
+    boostersPerLevel:
+      "money": 0.1
+      "stats_player_exp": 0.1
+      "stats_clicks": 0.1
+      "stats_kills_mobs": 0.1
+  16:
+    boostersPerLevel:
+      "money": 0.1
+      "stats_player_exp": 0.1
+      "stats_clicks": 0.1
+      "stats_kills_mobs": 0.1
+  17:
+    boostersPerLevel:
+      "money": 0.1
+      "stats_player_exp": 0.1
+      "stats_clicks": 0.1
+      "stats_kills_mobs": 0.1
+  18:
+    boostersPerLevel:
+      "money": 0.2
+      "stats_player_exp": 0.2
+      "stats_clicks": 0.2
+      "stats_kills_mobs": 0.2

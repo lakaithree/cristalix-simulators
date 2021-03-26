@@ -1,0 +1,36 @@
+mapping:
+  "pets":
+  - "cc give p Common 1 %player%"
+  - "st %player% Удача на вашей стороне, вы получили дополнительную награду за уровень!"
+  "normal":
+  - "cc give p Normal 1 %player%"
+  - "st %player% Удача на вашей стороне, вы получили дополнительную награду за уровень!"  
+  "slot":
+  - "addmaxpet %player% 1"
+  - "st %player% Удача на вашей стороне, вы получили дополнительную слот для питомца!"    
+  "money_axe":
+  - "randommoney %player% 1 3"
+  "stats-hoe":
+  - "morestats %player% clicks 1 true" 
+  "doubble-hoe-1":
+  - "dnkadd %player% 1" 
+  "doubble-hoe-2":
+  - "dnkadd %player% 2"
+  "doubble-hoe-4":
+  - "dnkadd %player% 4"
+  "doubble-hoe-7":
+  - "dnkadd %player% 7"
+  "doubble-hoe-10":
+  - "dnkadd %player% 10"
+  "donate-hoe-pet":
+  - "chancecmd %player% dpet 40"
+  "donate-hoe-key":
+  - "chancecmd %player% dkey 40"
+  "hoe-key":
+  - "chancecmd %player% dkey 1"
+  "dpet":
+  - "cc give p Common 1 %player%"
+  "dkey":
+  - "cc give p Normal 1 %player%"
+  "key":
+  - "cc give p Normal 1 %player%"

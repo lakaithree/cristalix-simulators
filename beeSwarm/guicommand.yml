@@ -1,0 +1,1068 @@
+commands:
+  
+  "wut":
+    inventory:
+      title: "админская супер пупер панель"
+      context:
+      - "---------"
+      - "-1-2-3-4-"
+      - "---------"
+      - "---6-5---"
+      - "---------"
+      auto:
+        "0":
+          type: "STONE"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+    items:
+    - char: "1"
+      item:
+        type: "CLAY_BALL"
+        amount: 1
+        damage: 0
+        name: "§eГлобальные бусты на час"
+        lore: []
+        enchantment: {}
+        data: '{"other":"tochka"}'
+        unbreakable: false
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+      needStats:
+        admin: 
+          count: 1
+          error: 
+            - "et %player% А вам нельзя ммм"
+      commands:
+      - booster global add stats_player_exp 60 1
+      - newthanks %player% 60 player_exp  
+      - booster global add stats_kills_mobs 60 1
+      - newthanks %player% 60 kills_mobs
+      - booster global add stats_clicks 60 1
+      - newthanks %player% 60 clicks
+      - booster global add money 60 1
+      - newthanks %player% 60 money  
+
+    - char: "2"
+      item:
+        type: "CLAY_BALL"
+        amount: 1
+        damage: 0
+        name: "§eГлобальные бусты на 3 часа"
+        lore: []
+        enchantment: {}
+        data: '{"other":"tochka"}'
+        unbreakable: false
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+      needStats:
+        admin: 
+          count: 1
+          error: 
+            - "et %player% А вам нельзя ммм"
+      commands:
+      - booster global add stats_player_exp 180 1
+      - newthanks %player% 180 player_exp  
+      - booster global add stats_kills_mobs 180 1
+      - newthanks %player% 180 kills_mobs
+      - booster global add stats_clicks 180 1
+      - newthanks %player% 180 clicks
+      - booster global add money 180 1
+      - newthanks %player% 180 money  
+
+    - char: "3"
+      item:
+        type: "CLAY_BALL"
+        amount: 1
+        damage: 0
+        name: "§eВсем ключики с петами"
+        lore: []
+        enchantment: {}
+        data: '{"other":"tochka"}'
+        unbreakable: false
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+      needStats:
+        admin: 
+          count: 1
+          error: 
+            - "et %player% А вам нельзя ммм"
+      commands:
+      - gcmd executeall cc give p Common 1 <player>
+
+    - char: "4"
+      item:
+        type: "CLAY_BALL"
+        amount: 1
+        damage: 0
+        name: "§eВсем обычные ключики"
+        lore: []
+        enchantment: {}
+        data: '{"other":"tochka"}'
+        unbreakable: false
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+      needStats:
+        admin: 
+          count: 1
+          error: 
+            - "et %player% А вам нельзя ммм"
+      commands:
+      - gcmd executeall cc give p Normal 1 <player>
+
+    - char: "5"
+      item:
+        type: "CLAY_BALL"
+        amount: 1
+        damage: 0
+        name: "§eЗапуск эвента:§f Сбор цветочков"
+        lore: []
+        enchantment: {}
+        data: '{"other":"tochka"}'
+        unbreakable: false
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+      needStats:
+        admin: 
+          count: 1
+          error: 
+            - "et %player% А вам нельзя ммм"
+      commands:
+      - "eventstats clicks start"
+      - "timety 6000 eventstats clicks calculate"
+      - "timety 6100 eventstats clicks end"
+
+    - char: "6"
+      item:
+        type: "CLAY_BALL"
+        amount: 1
+        damage: 0
+        name: "§eЗапуск эвента:§f Охотничий Сезон"
+        lore: []
+        enchantment: {}
+        data: '{"other":"tochka"}'
+        unbreakable: false
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+      needStats:
+        admin: 
+          count: 1
+          error: 
+            - "et %player% А вам нельзя ммм"
+      commands:
+      - "eventstats mobs start"
+      - "timety 6000 eventstats mobs calculate"
+      - "timety 6100 eventstats mobs end"   
+  "beetrade":
+    arg: "3089411e-2c69-11e8-b5ea-1cb72caa35fd"
+    inventory:
+      title: "Переработка"
+      context:
+      - "---------"
+      - "-1-2-3-4-"
+      - "---------"
+      auto:
+        "0":
+          type: "STONE"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+    items:
+    - char: "1"
+      item:
+        type: "GLOWSTONE_DUST"
+        amount: 6
+        damage: 0
+        name: "§eПыльца"
+        lore: 
+          - ""
+          - "§7Создайте сироп с помощью этой"
+          - "§7пыльцы или же продайте и"
+          - "§7получите много монет за это!"
+          - ""
+          - "§dЭпический предмет"
+        enchantment: {}
+        data: "{\"pilca\":1,\"price\":100}"
+        unbreakable: true
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+      commands:
+      - "dnktrade %player% trade-1"  
+    - char: "2"
+      item:
+        type: "GLASS_BOTTLE"
+        amount: 6
+        damage: 0
+        name: "§eСироп"
+        lore: 
+          - ""
+          - "§7Создайте цветочный мёд с помощью"
+          - "§7этого сиропа или же продайте и"
+          - "§7получите много монет за это!"
+          - ""
+          - "§dЭпический предмет"
+        enchantment: {}
+        data: "{\"syrop\":1,\"price\":1000,\"color\":16770560}"
+        unbreakable: true
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE","HIDE_ENCHANTS"]   
+      commands:
+      - "dnktrade %player% trade-2"  
+    - char: "3"
+      item:
+        type: "DRAGONS_BREATH"
+        amount: 6
+        damage: 0
+        name: "§eМёд"
+        lore: 
+          - ""
+          - "§7Создайте пчелиный улей с помощью"
+          - "§7этого мёда или же продайте и"
+          - "§7получите много монет за это!"
+          - ""
+          - "§dЭпический предмет"
+        enchantment: {}
+        data: "{\"med\":1,\"price\":10000,\"color\":16770560}"
+        unbreakable: true
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE","HIDE_ENCHANTS"]  
+      commands:
+      - "dnktrade %player% trade-3"  
+    - char: "4"
+      item:
+        type: "SKULL_ITEM"
+        amount: 6
+        damage: 3
+        name: "§6Улей"
+        lore: 
+          - ""
+          - "§7Пчелы производят очень много мёда,"
+          - "§7поэтому вы можете продать этот"
+          - "§7предмет за очень-очень дорого!"
+          - ""
+          - "§eЛегендарный предмет"
+        enchantment: {}
+        data: '{"beehouse":1,"price":25000,"SkullOwner":{"Id":"135a5d53-52f4-4602-8112-64765708765a","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjU2MzU4YzA1NmJlYTdlYjYxNGJmMzE1ZGU3ZmFkZmUyMzhhNjdkZDU1NzY0MjU0YjAyNzdmYjYyMGU4ZjNiYiJ9fX0="}]}}}'
+        unbreakable: true
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE","HIDE_ENCHANTS"]      
+      commands:
+      - "dnktrade %player% trade-4"     
+  "звездочка":
+    inventory:
+      title: "Звездочка"
+      context:
+      - "---------"
+      - "----h---"
+      - "---------"
+      auto:
+        "0":
+          type: "STONE"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+    items:
+    - char: "h"
+      item:
+        type: "GOLD_BLOCK"
+        amount: 1
+        damage: 0
+        name: "§eПолучить звездочку§7 (Потом /suffixes)"
+        lore: []
+        enchantment: {}
+        data: '{"weapons":"claymore"}'
+        unbreakable: false
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+      needStats:
+        sub: 
+          count: 1
+          error: 
+            - "et %player% А вам нельзя ммм"
+      commands:
+      - "st %player% Выдали выдали выдали выдали выдали!!!"  
+      - "titles %player% 100"  
+      - "sound %player% UI.BUTTON.CLICK 1 1"  
+
+
+  "bits":
+    inventory:
+      title: "Магазин Битсов"
+      context:
+      - "---------"
+      - "--12q34--"
+      - "---------"
+      - "--5-6-7--"
+      - "---------"
+      auto:
+        "0":
+          type: "STONE"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+    items:
+    - char: "q"
+      item:
+        type: "RED_SHULKER_BOX"
+        amount: 1
+        damage: 0
+        name: "§cРюкзак"
+        lore: 
+        - ""
+        - "§7Рюкзак поможет тебе переносить"
+        - "§7намного больше вещей, чем вы"
+        - "§7можете держать у себя в инвентаре!"
+        - ""
+        - "§f䂉§6Для этого действия необходим§f 3 ребитха"
+        - ""
+        - "§cВнимание! Освободите инвентарь!"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за §d150 битсов"
+        enchantment: {}
+        data: "{}"
+        unbreakable: false
+        flags: ["HIDE_ATTRIBUTES", "HIDE_ENCHANTS"] 
+      needStats:
+        rebirth: 
+          count: 3
+          error: 
+            - "et %player% Недостаточный уровень ребитха!"  
+        bits: 
+          count: 150
+          error: 
+            - "et %player% Вам нужно больше битсов!" 
+        sub: 
+          count: 1
+          error: 
+            - "et %player% Вам нужна подписка Супер Игрок!"         
+      commands:
+      - "sound %player% UI.BUTTON.CLICK 1 1" 
+      - "morestats %player% bits -150"
+      - "getitem %player% bag 1" 
+      - "text %player% §dЖрец§7 >§f Спасибо за покупку, удачной игры!"
+    - char: "5"
+      item:    
+        type: "SHEARS"
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+        amount: 1
+        damage: 0
+        name: "§6✪ Денежные ножницы ✪ "
+        lore: 
+          - "¨ffff99Уровень 1"
+          - ""
+          - "§7Это твои, только твои ножницы!"
+          - "§7С их помощью ты можешь добывать"
+          - "§7очень много цветочков! Улучшай его"
+          - "§7и ты сможешь делать это эффективнее!"
+          - ""
+          - "§7§oЭти ножницы дают вам возможность получать"
+          - "§7§oнемного монет, пока вы срезайте цветы!"
+          - ""
+          - "§dУровень после ребитха:§f 1 уровень"
+          - ""
+          - "§7Вы можете сохранить уровень предмета, после"
+          - "§7ребитха, используя§d Кристаллы Сохранения"
+          - ""
+          - "§dЭпический предмет"
+          - ""
+          - "§cВнимание! Освободите инвентарь!"
+          - ""
+          - "§e▶ Нажмите, чтобы купить за §d1250 битсов"
+      needStats:
+        bits: 
+          count: 1250
+          error: 
+            - "et %player% Вам нужно больше битсов!"  
+        sub: 
+          count: 1
+          error: 
+            - "et %player% Вам нужна подписка Супер Игрок!"        
+      commands:
+      - "sound %player% UI.BUTTON.CLICK 1 1" 
+      - "morestats %player% bits -1250"
+      - "getitem %player% money-hoe 1"
+      - "text %player% §dЖрец§7 >§f Спасибо за покупку, удачной игры!"      
+
+    - char: "6"
+      item:
+        type: "SHEARS"
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+        amount: 1
+        damage: 0
+        name: "§b❖ Механические ножницы ❖ "
+        lore: 
+          - "¨ffff99Уровень 1"
+          - ""
+          - "§7Это твои, только твои ножницы!"
+          - "§7С их помощью ты можешь добывать"
+          - "§7очень много цветочков! Улучшай его"
+          - "§7и ты сможешь делать это эффективнее!"
+          - ""
+          - "§7§oЭти ножницы дают вам возможность получать"
+          - "§7§oв 2 раза больше цветов в вашу"
+          - "§7§oстатистику, с шансом 50%, при сборе!"
+          - ""
+          - "§dУровень после ребитха:§f 1 уровень"
+          - ""
+          - "§dЭпический предмет"
+          - ""
+          - "§cВнимание! Освободите инвентарь!"
+          - ""
+          - "§e▶ Нажмите, чтобы купить за §d575 битсов"
+      needStats:
+        bits: 
+          count: 575
+          error: 
+            - "et %player% Вам нужно больше битсов!"    
+        sub: 
+          count: 1
+          error: 
+            - "et %player% Вам нужна подписка Супер Игрок!"      
+      commands:
+      - "sound %player% UI.BUTTON.CLICK 1 1" 
+      - "morestats %player% bits -575"
+      - "getitem %player% stats-hoe 1"
+      - "text %player% §dЖрец§7 >§f Спасибо за покупку, удачной игры!"  
+      
+    - char: "7"
+      item:
+        type: "SHEARS"
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+        amount: 1
+        damage: 0
+        name: "§d❖ Удлиненные ножницы ❖ "
+        lore: 
+          - "¨ffff99Уровень 1"
+          - ""
+          - "§7Это твои, только твои ножницы!"
+          - "§7С их помощью ты можешь добывать"
+          - "§7очень много цветочков! Улучшай его"
+          - "§7и ты сможешь делать это эффективнее!"
+          - ""
+          - "§7§oЭти ножницы дают вам возможность собирать"
+          - "§7§oв 2 раза больше цветов, если соседний"
+          - "§7§oсоседние блоки засажены ими!"
+          - ""
+          - "§dУровень после ребитха:§f 1 уровень"
+          - ""
+          - "§dЭпический предмет"
+          - ""
+          - "§cВнимание! Освободите инвентарь!"
+          - ""
+          - "§e▶ Нажмите, чтобы купить за §d1250 битсов"
+      needStats:
+        bits: 
+          count: 1250
+          error: 
+            - "et %player% Вам нужно больше битсов!"    
+        sub: 
+          count: 1
+          error: 
+            - "et %player% Вам нужна подписка Супер Игрок!"      
+      commands:
+      - "sound %player% UI.BUTTON.CLICK 1 1" 
+      - "morestats %player% bits -1250"
+      - "getitem %player% doubble-hoe 1"
+      - "text %player% §dЖрец§7 >§f Спасибо за покупку, удачной игры!"  
+
+    - char: "1"
+      item:
+        type: "GOLD_NUGGET"
+        amount: 1
+        damage: 0
+        name: "§fЛокальный бустер §eМонет"
+        lore: 
+        - ""
+        - "§7Получай в 2 раза больше монет за"
+        - "§7продажу у лесничего... Прокачивайся"
+        - "§7намного быстрее с его помощью."
+        - ""
+        - " §7⊞ §fДлительность§b 2 часа"
+        - ""
+        - "§f䂉§6Для этого действия необходим§f 1 ребитх"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за §d75 битсов"
+        enchantment: {}
+        data: '{}'
+        unbreakable: false
+        flags: ["HIDE_ATTRIBUTES", "HIDE_ENCHANTS"] 
+      needStats:
+        rebirth: 
+          count: 1
+          error: 
+            - "et %player% Недостаточный уровень ребитха!"  
+        bits: 
+          count: 75
+          error: 
+            - "et %player% Вам нужно больше битсов!"  
+        sub: 
+          count: 1
+          error: 
+            - "et %player% Вам нужна подписка Супер Игрок!"        
+      commands:
+      - "sound %player% UI.BUTTON.CLICK 1 1" 
+      - "morestats %player% bits -75"
+      - "booster player %player% add money 120 1"
+      - "text %player% §dЖрец§7 >§f Спасибо за покупку, удачной игры!"
+    - char: "2"
+      item:
+        type: "DRAGONS_BREATH"
+        amount: 1
+        damage: 0
+        name: "§fЛокальный бустер §bОпыта"
+        lore: 
+        - ""
+        - "§7Получай в 2 раза больше опыта за"
+        - "§7различные дейтвия! Прокачивайся"
+        - "§7намного быстрее с его помощью."
+        - ""
+        - " §7⊞ §fДлительность§b 2 часа"
+        - ""
+        - "§f䂉§6Для этого действия необходим§f 1 ребитх"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за §d75 битсов"
+        enchantment: {}
+        data: '{}'
+        unbreakable: false
+        flags: ["HIDE_ATTRIBUTES", "HIDE_ENCHANTS"] 
+      needStats:
+        rebirth: 
+          count: 1
+          error: 
+            - "et %player% Недостаточный уровень ребитха!"  
+        bits: 
+          count: 75
+          error: 
+            - "et %player% Вам нужно больше битсов!"   
+        sub: 
+          count: 1
+          error: 
+            - "et %player% Вам нужна подписка Супер Игрок!"       
+      commands:
+      - "sound %player% UI.BUTTON.CLICK 1 1" 
+      - "morestats %player% bits -75"
+      - "booster player %player% add stats_player_exp 120 1"
+      - "text %player% §dЖрец§7 >§f Спасибо за покупку, удачной игры!"
+    - char: "3"
+      item:
+        type: "RED_ROSE"
+        amount: 1
+        damage: 0
+        name: "§fЛокальный бустер §6Цветов"
+        lore: 
+        - ""
+        - "§7Получай в 2 раза больше цветов за"
+        - "§7активность! Прокачивайся"
+        - "§7намного быстрее с его помощью."
+        - ""
+        - " §7⊞ §fДлительность§b 2 часа"
+        - ""
+        - "§f䂉§6Для этого действия необходим§f 1 ребитх"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за §d75 битсов"
+        enchantment: {}
+        data: '{}'
+        unbreakable: false
+        flags: ["HIDE_ATTRIBUTES", "HIDE_ENCHANTS"] 
+      needStats:
+        rebirth: 
+          count: 1
+          error: 
+            - "et %player% Недостаточный уровень ребитха!"  
+        bits: 
+          count: 75
+          error: 
+            - "et %player% Вам нужно больше битсов!" 
+        sub: 
+          count: 1
+          error: 
+            - "et %player% Вам нужна подписка Супер Игрок!"         
+      commands:
+      - "sound %player% UI.BUTTON.CLICK 1 1" 
+      - "morestats %player% bits -75"
+      - "booster player %player% add stats_broke_blocks 120 1"
+      - "text %player% §dЖрец§7 >§f Спасибо за покупку, удачной игры!"
+    - char: "4"
+      item:
+        type: "CLAY_BALL"
+        amount: 1
+        damage: 0
+        name: "§fЛокальный бустер §cМобов"
+        lore: 
+        - ""
+        - "§7Получай в 2 раза больше мобов за"
+        - "§7их убийство... Прокачивайся"
+        - "§7намного быстрее с его помощью."
+        - ""
+        - " §7⊞ §fДлительность§b 2 часа"
+        - ""
+        - "§f䂉§6Для этого действия необходим§f 1 ребитх"
+        - ""
+        - "§e▶ Нажмите, чтобы купить за §d75 битсов"
+        enchantment: {}
+        data: "{\"other\":\"pets\"}"
+        unbreakable: false
+        flags: ["HIDE_ATTRIBUTES", "HIDE_ENCHANTS"] 
+      needStats:
+        rebirth: 
+          count: 1
+          error: 
+            - "et %player% Недостаточный уровень ребитха!"  
+        bits: 
+          count: 75
+          error: 
+            - "et %player% Вам нужно больше битсов!"  
+        sub: 
+          count: 1
+          error: 
+            - "et %player% Вам нужна подписка Супер Игрок!"        
+      commands:
+      - "sound %player% UI.BUTTON.CLICK 1 1" 
+      - "morestats %player% bits -75"
+      - "booster player %player% add stats_kills_mobs 120 1"
+      - "text %player% §dЖрец§7 >§f Спасибо за покупку, удачной игры!"
+  "settings":
+    inventory:
+      title: "Настройки"
+      context:
+      - "---------"
+      - "----h----"
+      - "---------"
+      auto:
+        "0":
+          type: "STONE"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+    items:
+    - char: "h"
+      item:
+        type: "TOTEM"
+        amount: 1
+        damage: 0
+        name: "§bСкрыть игроков"
+        lore: 
+          - ""
+          - "§7Внимание! После скрытия вы не будете видеть"
+          - "§7игроков, не советуем вам идти на PvP арену,"
+          - "§7когда у вас выключена данная настройка!"
+          - ""
+          - "§e▶ Нажмите, чтобы изменить"
+        enchantment: {}
+        data: '{"other":"player1"}'
+        unbreakable: false
+        flags: []
+      commands:
+      - "sudo %player% hide"   
+      - "sound %player% UI.BUTTON.CLICK 1 1"      
+  "events":
+    inventory:
+      title: "Эвенты"
+      context:
+      - "---------"
+      - "--1---2--"
+      - "----3----"
+      - "---------"
+      auto:
+        "0":
+          type: "STONE"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+    items:
+    - char: "1"
+      item:
+        type: "SHEARS"
+        amount: 1
+        damage: 0
+        name: "§aСбор цветочков"
+        lore: 
+          - ""
+          - "§7Соберите больше всех цветочков за§6 5 минут§7 и"
+          - "§7если вы войдете в топ 3 этого эвента - то"
+          - "§7сможете получить хорошую награду!"
+          - ""
+          - "§e▶ Активируется каждый час"
+        enchantment:
+          DAMAGE_ALL: 1
+        data: '{}'
+        unbreakable: false
+        flags: ['HIDE_ENCHANTS','HIDE_ATTRIBUTES']
+      commands:
+      - "" 
+    - char: "2"
+      item:
+        type: "LEATHER"
+        amount: 1
+        damage: 0
+        name: "§cОхотничий Сезон"
+        lore: 
+          - ""
+          - "§7Охотьтесь на мобов и убейте больше всех за"
+          - "§65 минут§7, §7если вы войдете в топ 3 этого"
+          - "§7эвента - то §7сможете получить хорошую награду!"
+          - ""
+          - "§e▶ Активируется каждый час"
+        enchantment: {}
+        data: '{}'
+        unbreakable: false
+        flags: []
+      commands:
+      - "" 
+    - char: "3"
+      item:
+        type: "GOLD_INGOT"
+        amount: 1
+        damage: 0
+        name: "§eСчастливый Час"
+        lore: 
+          - ""
+          - "§7Каждый день в определенное время, на сервере"
+          - "§7включается §6Буст §7всей статистики, но для его получения"
+          - "§7вы должны находится в игре §cДО §7активации события."
+          - ""
+          - "§e▶ Каждый день в 11:00 и 18:00 часов по МСК"
+        enchantment: {}
+        data: '{}'
+        unbreakable: false
+        flags: []
+      commands:
+      - "" 
+    
+  "menu":
+    inventory:
+      title: "Симулятор Пчеловода"
+      context:
+      - "----q-1--"
+      - "b-------p"
+      - "----e----"
+      - "--w---r--"
+      - "s---d---t"
+      auto:
+        "0":
+          type: "STONE"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+    items:   
+    - char: "d"
+      item:
+        type: "SHEARS"
+        amount: 1
+        damage: 0
+        name: "§6Стартовые Ножницы"
+        lore: 
+          - "§8Быстрый доступ: /ножницы"
+          - ""
+          - "§7Не получил или случайнно выкинул"
+          - "§7свои стартовые ножницы? Не отчаивайся!"
+          - "§7Мы с радостью выдадим тебе новые."
+          - ""
+          - "§e▶ Нажмите, чтобы продолжить"
+        enchantment: {}
+        data: '{"other":"reload"}'
+        unbreakable: false
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+      commands:
+      - "sudo %player% ножницы"
+    - char: "1"
+      item:
+        type: "GOLD_INGOT"
+        amount: 1
+        damage: 0
+        name: "§eПродажа пчел"
+        lore: 
+          - ""
+          - "§7Если у вас в улье скопилось слишком"
+          - "§7много пчел, то вы можете продать часть"
+          - "§7из них и получить награду!"
+          - ""
+          - "§e▶ Нажмите, чтобы продолжить"
+        enchantment: {}
+        data: '{}'
+        unbreakable: false
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+      commands:
+      - "petssell %player%"
+    - char: "s"
+      item:
+        type: "CLAY_BALL"
+        amount: 1
+        damage: 0
+        name: "§eНастройки"
+        lore: 
+          - "§8Быстрый доступ: /settings"
+          - ""
+          - "§7Здесь вы можете настроить некоторые"
+          - "§7оповещения, а также скрыть игроков!"
+          - ""
+          - "§e▶ Нажмите, чтобы посмотреть"
+        enchantment: {}
+        data: '{"other":"settings"}'
+        unbreakable: false
+        flags: []
+      commands:
+      - "sudo %player% settings"                  
+    - char: "b"
+      item:
+        type: "CLAY_BALL"
+        amount: 1
+        damage: 0
+        name: "§6События"
+        lore: 
+          - "§8Быстрый доступ: /events"
+          - ""
+          - "§7Время от времени на сервере появляются"
+          - "§7различные события, поучаствовав в которых"
+          - "§7ты сможешь получить хорошие награды!"
+          - ""
+          - "§e▶ Нажмите, чтобы посмотреть"
+        enchantment: {}
+        data: '{"other":"collection"}'
+        unbreakable: false
+        flags: []
+      commands:
+      - "sudo %player% events"       
+    - char: "p"
+      item:
+        type: "SKULL_ITEM"
+        amount: 1
+        damage: 3
+        name: "§eПчёлы"
+        lore: 
+          - "§8Быстрый доступ: /pet"
+          - ""
+          - "§7Открывайте новых пчел из§e Пчелиных"
+          - "§eЯиц§7, они дадут вам дополнительный"
+          - "§7бустер, также вы сможете прокачать их"
+          - "§7и они будут мопогать вам в поле!"
+          - ""
+          - "§e▶ Нажмите, чтобы посмотреть"
+        enchantment: {}
+        data: '{"SkullOwner":{"Id":"135a5d53-52f4-4602-8112-64765708765a","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjU2MzU4YzA1NmJlYTdlYjYxNGJmMzE1ZGU3ZmFkZmUyMzhhNjdkZDU1NzY0MjU0YjAyNzdmYjYyMGU4ZjNiYiJ9fX0="}]}}}'
+        unbreakable: false
+        flags: []
+      commands:
+      - "sudo %player% pet"      
+    - char: "q"
+      item:
+        type: "CLAY_BALL"
+        amount: 1
+        damage: 0
+        name: "§bЛокации"
+        lore: 
+          - "§8Быстрый доступ: /locations"
+          - ""
+          - "§7Чем выше локация, тем больше заработок"
+          - "§7на ней, а значит и быстрее ваш рост!"
+          - "§7Посмотри и поиграй на всех них!"
+          - ""
+          - "§e▶ Нажмите, чтобы посмотреть"
+        enchantment: {}
+        data: '{"other":"guild_world"}'
+        unbreakable: false
+        flags: []
+      commands:
+      - "sudo %player% locations"
+
+    - char: "w"
+      item:
+        type: "SHEARS"
+        amount: 1
+        damage: 0
+        name: "§aНожницы"
+        lore: 
+          - "§8Быстрый доступ: /upgrade"
+          - ""
+          - "§7Прокачивай свои ножницы и фарми"
+          - "§7намного быстрее, чем раньше!"
+          - ""
+          - "§7Также, сущесвует много различных ножниц,"
+          - "§7по ходу игры ты сможешь испробовать"
+          - "§7их все! Каждый вид ножниц имеет уникальные"
+          - "§7характеристики, подходяще для"
+          - "§7определенных целей! "
+          - ""
+          - "  §f⊞ §aСадовые ножницы"
+          - "  §f⊞ §6⚡ §eСкоростные Ножницы §6⚡"
+          - "  §f⊞ §5§k123§d Мистические ножницы §5§k321"
+          - "  §f⊞ §6✪ Денежные ножницы ✪"
+          - "  §f⊞ §b❖ Механические ножницы ❖"
+          - "  §f⊞ §d❖ Удлиненные ножницы ❖"
+          - ""
+          - "  §7Также существуют§c Легендарные Ножницы§7,"
+          - "  §7которые можно приобрести в§f /donate"
+          - ""
+          - "§e▶ Нажмите, чтобы прокачать ножницы"
+          - "§e  Нужно держать ножницы в руке!"
+        enchantment:
+          DAMAGE_ALL: 1
+        data: '{}'
+        unbreakable: false
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+      commands:
+      - "sudo %player% upgrade"      
+
+
+    - char: "e"
+      item:
+        type: "CLAY_BALL"
+        amount: 1
+        damage: 0
+        name: "§dПерерождение"
+        lore: 
+          - "§8Быстрый доступ: /rebirth"
+          - ""
+          - "§7Дошёл до конца и хочешь попробовать всё"
+          - "§7с начала? Это будет также увлекательно,"
+          - "§7как и до этого! К тому же ты получишь"
+          - "§7различные дополнительные бустеры к"
+          - "§7своей последующей статистики!"
+          - ""
+          - "§7Используй§d Кристаллы Сохранения§7, которые"
+          - "§7ты можешь получать убивая игроков, или купив"
+          - "§7в /donate, они помогут сохранить уровень ножниц"
+          - "§7при перерождении и это поможет тебе начать всё"
+          - "§7намного проще, чем это было в начале игры!"
+          - ""
+          - "§e▶ Нажмите, чтобы переродиться"
+        enchantment: {}
+        data: '{"other":"reload"}'
+        unbreakable: false
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+      commands:
+      - "sudo %player% rebirth"      
+
+
+    - char: "r"
+      item:
+        type: "EXP_BOTTLE"
+        amount: 1
+        damage: 0
+        name: "§6Уровень"
+        lore: 
+          - "§8Быстрый доступ: /level"
+          - ""
+          - "§7Прокачивай свой уровень и открывай новые"
+          - "§7локации, также ты получишь за это много"
+          - "§bОпыта§7, а ещё получишь шанс на§6 Ключ"
+          - "§6от Обычного Ящика§7 или§e Яйцо Пчелы"
+          - ""
+          - "§e▶ Нажмите, чтобы прокачать уровень"
+        enchantment: {}
+        data: '{"other":"reload"}'
+        unbreakable: false
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+      commands:
+      - "sudo %player% level"      
+
+    - char: "t"
+      item:
+        type: "CLAY_BALL"
+        amount: 1
+        damage: 0
+        name: "§bВнутриигровые покупки"
+        lore: 
+          - "§8Быстрый доступ: /donate"
+          - ""
+          - "§7Покупай ценные предметы и уникальные"
+          - "§7возможности, ускорь свою игру!"
+          - ""
+          - "§750% потраченных кристалликов вернется"
+          - "§7вам на счёт после закрытия симулятора!"
+          - ""
+          - "§e▶ Нажмите, чтобы посмотреть"
+        enchantment: {}
+        data: '{"other":"guild_bank"}'
+        unbreakable: false
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+      commands:
+      - "sudo %player% donate"        
+  "white":
+    inventory:
+      title: "Шо?"
+      context:
+      - "---------"
+      - "----h---"
+      - "---------"
+      auto:
+        "0":
+          type: "STONE"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+    items:
+    - char: "h"
+      item:
+        type: "TOTEM"
+        amount: 1
+        damage: 0
+        name: "§aWhiteNights"
+        lore: []
+        enchantment: {}
+        data: '{}'
+        unbreakable: false
+        flags: []
+      commands:
+      - "" 
+  "ножницы":
+    inventory:
+      title: "Бесплатно"
+      context:
+      - "---------"
+      - "----h---"
+      - "---------"
+      auto:
+        "0":
+          type: "STONE"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+    items:
+    - char: "h"
+      item:
+        type: "TOTEM"
+        amount: 1
+        damage: 0
+        name: "§aНажмите, чтобы получить ножницы"
+        lore: []
+        enchantment: {}
+        data: '{"other":"player1"}'
+        unbreakable: false
+        flags: []
+      commands:
+      - "getitem %player% normal-hoe 1"   

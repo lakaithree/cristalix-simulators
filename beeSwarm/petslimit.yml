@@ -1,0 +1,5 @@
+table: "petslimit"
+maxPets: 30
+defaultLimit: 10
+onLimitCommands:
+- "text %player% limit ._."

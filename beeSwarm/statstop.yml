@@ -1,0 +1,233 @@
+client: true
+table: "morestats"
+tops:
+  "player_exp": 15
+  "rebirth": 15
+  "clicks": 15
+timingsInMillis: 60000000
+topsVisible:
+  "clicks":
+    world: "world"
+    x: -34.9
+    y: 85.85
+    z: 418.97
+    rotation: 180
+    tableNick: "§lНик"
+    tableResult: "§7§lОпыт"
+    scale: 2
+    positionX: 0
+    positionY: 0
+    dimensionX: 317.0
+    dimensionY: 0.0
+    tableDimensionX: 0.0
+    tableDimensionY: 5.0
+    dataScale: 1.0
+    format: "§b%result%"
+    solo:
+      world: "world"
+      x: -34
+      y: 85.85
+      z: 418.97
+      rotation: 180
+      tableName: "#"
+      scale: 2
+      dataScale: 1
+      positionX: 0
+      positionY: 1
+      tableDimensionX: 0
+      tableDimensionY: 5
+      dimensionX: 40
+      dimensionY: 0  
+  "player_exp":
+    world: "world"
+    x: -41
+    y: 85.85
+    z: 380.03
+    rotation: 0
+    tableNick: "§lНик"
+    tableResult: "§7§lОпыт"
+    scale: 2
+    positionX: 0
+    positionY: 0
+    dimensionX: 317.0
+    dimensionY: 0.0
+    tableDimensionX: 0.0
+    tableDimensionY: 5.0
+    dataScale: 1.0
+    format: "§b%result%"
+    solo:
+      world: "world"
+      x: -41.9
+      y: 85.85
+      z: 380.03
+      rotation: 0
+      tableName: "#"
+      scale: 2
+      dataScale: 1
+      positionX: 0
+      positionY: 1
+      tableDimensionX: 0
+      tableDimensionY: 5
+      dimensionX: 40
+      dimensionY: 0
+  "rebirth":
+    world: "world"
+    x: -24
+    y: 85.85
+    z: 380.03
+    rotation: 0
+    tableNick: "§lНик"
+    tableResult: "§7§lРебитх"
+    scale: 2
+    positionX: 0
+    positionY: 0
+    dimensionX: 317.0
+    dimensionY: 0.0
+    tableDimensionX: 0.0
+    tableDimensionY: 5.0
+    dataScale: 1.0
+    format: "§d%result%"
+    solo:
+      world: "world"
+      x: -24.9
+      y: 85.85
+      z: 380.03
+      rotation: 0
+      tableName: "#"
+      scale: 2
+      dataScale: 1
+      positionX: 0
+      positionY: 1
+      tableDimensionX: 0
+      tableDimensionY: 5
+      dimensionX: 40
+      dimensionY: 0
+#  "money":
+#    world: "world"
+#    x: -23
+#    y: 85.85
+#    z: 418.03
+#    rotation: 180
+#    tableNick: "§lНик"
+#    tableResult: "§7§lМонет"
+#    scale: 2
+#    positionX: 0
+#    positionY: 0
+#    dimensionX: 317.0
+#    dimensionY: 0.0
+#    tableDimensionX: 0.0
+#    tableDimensionY: 5.0
+#    dataScale: 1.0
+#    format: "§d%result%"
+#    solo:
+#      world: "world"
+#      x: -25
+#      y: 85.85
+#      z: 380.03
+#      rotation: 0
+#      tableName: "#"
+#      scale: 2
+#      dataScale: 1
+#      positionX: 0
+#      positionY: 1
+#      tableDimensionX: 0
+#      tableDimensionY: 5
+#      dimensionX: 40
+#      dimensionY: 0
+  
+updateTimings: 300000
+texts:
+- world: "world"
+  x: -39.5
+  y: 86.85
+  z: 380.03
+  dimensionX: 0.0
+  dimensionY: 4.0
+  scale: 1
+  rotation: 0
+  lines:
+  - scale: 3
+    align: 1
+    str: ¨fae7b5§lЛидеры по Опыту
+    positionX: 133.0
+    positionY: 20.0
+- world: "world"
+  x: -22.5
+  y: 86.85
+  z: 380.03
+  dimensionX: 0.0
+  dimensionY: 4.0
+  scale: 1
+  rotation: 0
+  lines:
+  - scale: 3
+    align: 1
+    str: ¨fae7b5§lЛидеры по Ребитхам
+    positionX: 133.0
+    positionY: 20.0
+- world: "world"
+  x: -19.5
+  y: 86.85
+  z: 418.97
+  dimensionX: 0.0
+  dimensionY: 4.0
+  scale: 1
+  rotation: 180
+  lines:
+  - scale: 3
+    align: 1
+    str: ¨fae7b5§lЛидеры по Деньгам
+    positionX: 133.0
+    positionY: 20.0
+- world: "world"
+  x: -36.5
+  y: 86.85
+  z: 418.97
+  dimensionX: 0.0
+  dimensionY: 4.0
+  scale: 1
+  rotation: 180
+  lines:
+  - scale: 3
+    align: 1
+    str: ¨fae7b5§lЛидеры по Цветочкам
+    positionX: 133.0
+    positionY: 20.0
+- world: "world"
+  x: -31
+  y: 85
+  z: 379
+  dimensionX: 3.0
+  dimensionY: 1.0
+  scale: 1
+  rotation: 0
+  lines:
+  - scale: 2
+    align: 1
+    str: "§6§lОбычный Ящик"
+    positionX: 133.0
+    positionY: 20.0
+  - scale: 2
+    align: 1
+    str: "§7Нажмите, чтобы открыть"
+    positionX: 130.0
+    positionY: 45.0
+- world: "world"
+  x: -28
+  y: 85
+  z: 420
+  dimensionX: 3.0
+  dimensionY: 1.0
+  scale: 1
+  rotation: 180
+  lines:
+  - scale: 2
+    align: 1
+    str: "§c§lЛегендарный Ящик"
+    positionX: 133.0
+    positionY: 20.0
+  - scale: 2
+    align: 1
+    str: "§7Нажмите, чтобы открыть"
+    positionX: 130.0
+    positionY: 45.0

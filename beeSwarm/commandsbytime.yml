@@ -1,0 +1,24 @@
+timezone: "GMT+3"
+timers:
+- commands:
+  - "broadlocal  "
+  - "broadlocal §6§l                   Начался Счастливый час!"
+  - "broadlocal "
+  - "broadlocal §7                Вам добавлен бустер х2 на всю статистику!"        
+  - "broadlocal §7               Заходите в игру каждый день в§f 11:00§7 и§f 18:00 "
+  - "broadlocal §7                    и прокачивайтесь намного быстрее!"
+  - "broadlocal  "
+  - "executeall booster player <player> add stats_player_exp 60 1"  
+  - "executeall booster player <player> add stats_kills_mobs 60 1"
+  - "executeall booster player <player> add stats_clicks 60 1"
+  - "executeall booster player <player> add money 60 1"
+  perMinuteInHour: []
+  per:
+  - "11:00"
+  - "18:00"
+
+- commands:
+  - "randombylist events"
+  perMinuteInHour: 
+    - 1
+  per: []

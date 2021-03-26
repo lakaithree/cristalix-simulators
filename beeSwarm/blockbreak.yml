@@ -1,0 +1,1539 @@
+x-item-rose-0: &red-rose-0
+  item:
+    type: AIR
+    amount: 1
+    damage: 0
+    name: "РОЗА-0"
+    lore:
+    - ""
+    enchantment: {}
+    data: "{\"price\":300}"
+    unbreakable: false
+    flags: []
+  chance: 6000
+  animation: false
+  command:
+  - dnkadd %player% 1
+  - chancecmd %player% hoe-key 0.1
+  - morestats %player% player_exp 0.5 true
+  - morestats %player% clicks 1 true
+  - morestats %player% eventclicks 1 true
+  
+x-item-rose-1: &red-rose-1
+  item:
+    type: AIR
+    amount: 1
+    damage: 0
+    name: "РОЗА-1"
+    lore:
+    - ""
+    enchantment: {}
+    data: "{\"price\":300}"
+    unbreakable: false
+    flags: []
+  chance: 6000
+  animation: false
+  command:
+  - dnkadd %player% 2
+  - chancecmd %player% hoe-key 0.1
+  - morestats %player% player_exp 1 true
+  - morestats %player% clicks 1 true
+  - morestats %player% eventclicks 1 true
+
+  
+x-item-rose-3: &red-rose-3
+  item:
+    type: AIR
+    amount: 1
+    damage: 0
+    name: "РОЗА-3"
+    lore:
+    - ""
+    enchantment: {}
+    data: "{\"price\":300}"
+    unbreakable: false
+    flags: []
+  chance: 6000
+  animation: false
+  command:
+  - dnkadd %player% 4
+  - chancecmd %player% hoe-key 0.1
+  - morestats %player% player_exp 1.5 true
+  - morestats %player% clicks 1 true
+  - morestats %player% eventclicks 1 true
+  
+x-item-rose-7: &red-rose-7
+  item:
+    type: AIR
+    amount: 1
+    damage: 0
+    name: "РОЗА-7"
+    lore:
+    - ""
+    enchantment: {}
+    data: "{\"price\":300}"
+    unbreakable: false
+    flags: []
+  chance: 6000
+  animation: false
+  command:
+  - dnkadd %player% 10
+  - chancecmd %player% hoe-key 0.1
+  - morestats %player% player_exp 3 true
+  - morestats %player% clicks 1 true
+  - morestats %player% eventclicks 1 true
+  
+x-item-rose-8: &red-rose-8
+  item:
+    type: AIR
+    amount: 1
+    damage: 0
+    name: "РОЗА-8"
+    lore:
+    - ""
+    enchantment: {}
+    data: "{\"price\":300}"
+    unbreakable: false
+    flags: []
+  chance: 6000
+  animation: false
+  command:
+  - dnkadd %player% 7
+  - chancecmd %player% hoe-key 0.1
+  - morestats %player% player_exp 2 true
+  - morestats %player% clicks 1 true
+  - morestats %player% eventclicks 1 true
+
+x-item-rosa: &rosa
+  item:
+    type: POTION
+    amount: 1 
+    damage: 0
+    name: "¨57b6e7Роса"
+    lore:
+    - ''
+    - "§7Капля росы с лепистка цветка."
+    - "§7Ее можно просто продать или"
+    - "§7использовать для переработки на"
+    - "§7¨7cca32Лесной поляне"
+    - ''
+    - "§5Эпический предмет"
+    enchantment: {}
+    data: "{\"price\":300}"
+    unbreakable: false
+    flags: []
+  chance: 7
+  animation: true
+  command:
+  - dnkadd %player% 1
+  - morestats %player% player_exp 0.5 true
+  - morestats %player% clicks 1 true
+  - morestats %player% eventclicks 1 true
+  - scrmsg %player% action §eДобыча цветков§6 ➜ ¨57b6e7+1 Роса
+  
+x-item-mak-common: &mak-common
+  item:
+    type: INK_SACK
+    amount: 1 
+    damage: 1
+    name: "¨ff5733Маковые листья"
+    lore:
+    - ''
+    - "§7Опавшие листья красного мака."
+    - "§7На первый взгляд вполне обычный листок,"
+    - "§7но возможно он чего-то да стоит!"
+    - ''
+    - "§aОбычный предмет"
+    enchantment: {}
+    data: "{\"price\":40}"
+    unbreakable: false
+    flags: []
+  chance: 40
+  animation: true
+  command:
+  - dnkadd %player% 1
+  - morestats %player% player_exp 0.5 true
+  - morestats %player% clicks 1 true
+  - morestats %player% eventclicks 1 true
+  - scrmsg %player% action §eДобыча цветков§6 ➜ ¨ff5733+1 Маковые листья
+  
+x-item-mak-rare: &mak-rare
+  item:
+    type: MELON_SEEDS
+    amount: 1 
+    damage: 0
+    name: "§aМаковое семя"
+    lore:
+    - ''
+    - "§7Из этих семян може выйти"
+    - "§7неплохое масло. Торговцы выложат"
+    - "§7неплохую сумму за них."
+    - ''
+    - "§6Редкий предмет"
+    enchantment: {}
+    data: "{\"price\":100}"
+    unbreakable: false
+    flags: []
+  chance: 15
+  animation: true
+  command:
+  - dnkadd %player% 1
+  - morestats %player% player_exp 0.5 true
+  - morestats %player% clicks 1 true
+  - morestats %player% eventclicks 1 true
+  - scrmsg %player% action §eДобыча цветков§6 ➜ §a+1 Маковое семя
+  - toast %player% 2 17 §6Редкий Предмет! | §aМаковое семя
+  
+x-item-mak-legend: &mak-legend
+  item:
+    type: POTION
+    amount: 1 
+    damage: 0
+    name: "§eМаковое масло"
+    lore:
+    - ''
+    - "§7Сделанное из маковых семян,"
+    - "§7чистейшее масло. Ценители выкупят"
+    - "§7его с большим удовольствием!"
+    - ''
+    - "§eЛегендарный предмет"
+    enchantment: {}
+    data: "{\"price\":400}"
+    unbreakable: false
+    flags: []
+  chance: 4
+  animation: true
+  command:
+  - dnkadd %player% 1
+  - morestats %player% player_exp 0.5 true
+  - morestats %player% clicks 1 true
+  - morestats %player% eventclicks 1 true
+  - scrmsg %player% action §eДобыча цветков§6 ➜ §e+1 Маковое масло
+  - toast %player% 2 17 §e§lЛегендарный §e§lпредмет! | §eМаковое масло
+  
+x-item-orxideya-common: &orxideya-common
+  item:
+    type: INK_SACK
+    amount: 1 
+    damage: 12
+    name: "§bЛепесток синей орхидеи"
+    lore:
+    - ''
+    - "§7Опавшие листья синей орхидеи,"
+    - "§7которые выглядят весьма неплохо."
+    - "§7Возможно их удастся продать!"
+    - ''
+    - "§aОбычный предмет"
+    enchantment: {}
+    data: "{\"price\":80}"
+    unbreakable: false
+    flags: []
+  chance: 40
+  animation: true 
+  command:
+  - dnkadd %player% 2
+  - morestats %player% player_exp 1 true
+  - morestats %player% clicks 1 true
+  - morestats %player% eventclicks 1 true
+  - scrmsg %player% action §eДобыча цветков§6 ➜ §b+1 Лепесток синей орхидеи
+   
+   
+x-item-orxideya-rare: &orxideya-rare
+  item:
+    type: INK_SACK
+    amount: 1
+    damage: 3
+    name: "§8Семена орхидеи"
+    lore:
+    - ''
+    - "§7Из этой крошки может"
+    - "§7вырасти прекрасная орхидея!"
+    - "§7Любители цветов оценят."
+    - ''
+    - "§6Редкий предмет"
+    enchantment: {}
+    data: "{\"price\":200}"
+    unbreakable: false
+    flags: []
+  chance: 15
+  animation: true  
+  command:
+  - dnkadd %player% 2
+  - morestats %player% player_exp 1 true
+  - morestats %player% clicks 1 true
+  - morestats %player% eventclicks 1 true
+  - scrmsg %player% action §eДобыча цветков§6 ➜ §8+1 Семена орхидеи
+  - toast %player% 2 17 §6Редкий Предмет! | §8Семена орхидеи
+  
+x-item-orxideya-legend: &orxideya-legend
+  item:
+    type: FIREWORK_CHARGE
+    amount: 1
+    damage: 0
+    name: "§7Пыльник орхидеи"
+    lore:
+    - ''
+    - "§7Пыльник орхидеи, в котором"
+    - "§7возможно еще осталось"
+    - "§7немного пыльцы!"
+    - ''
+    - "§eЛегендарный предмет"
+    enchantment: {}
+    data: "{\"price\":800}"
+    unbreakable: false
+    flags: []
+  chance: 4
+  animation: true
+  command:
+  - dnkadd %player% 2
+  - morestats %player% player_exp 1 true
+  - morestats %player% clicks 1 true
+  - morestats %player% eventclicks 1 true
+  - scrmsg %player% action §eДобыча цветков§6 ➜ §7+1 Пыльник орхидеи
+  - toast %player% 2 17 §e§lЛегендарный §e§lпредмет! | §7Пыльник орхидеи
+  
+x-item-vasilek-common: &vasilek-common
+  item:
+    type: INK_SACK
+    amount: 1
+    damage: 7
+    name: "§3Листья василька"
+    lore:
+    - ''
+    - "§7Опавшие листья василька."
+    - "§7Их достаточно много, за"
+    - "§7такое количество должны"
+    - "§7заплатить не мало!"
+    - ''
+    - "§aОбычный предмет"
+    enchantment: {}
+    data: "{\"price\":125}"
+    unbreakable: false
+    flags: []
+  chance: 40
+  animation: true
+  command:
+  - dnkadd %player% 4
+  - morestats %player% player_exp 1.5 true
+  - morestats %player% clicks 1 true
+  - morestats %player% eventclicks 1 true
+  - scrmsg %player% action §eДобыча цветков§6 ➜ §3+1 Листья василька
+  
+x-item-vasilek-rare: &vasilek-rare
+  item:
+    type: SEEDS
+    amount: 1 
+    damage: 0
+    name: "§aСемя василька"
+    lore:
+    - ''
+    - "§7С этой крошки может"
+    - "§7вырасти великолепный василек!"
+    - "§7Можно попробовать продать его"
+    - "§7ценителям травянистых цветов"
+    - ''
+    - "§6Редкий предмет"
+    enchantment: {}
+    data: "{\"price\":325}"
+    unbreakable: false
+    flags: []
+  chance: 15
+  animation: true
+  command:
+  - dnkadd %player% 4
+  - morestats %player% player_exp 1.5 true
+  - morestats %player% clicks 1 true
+  - morestats %player% eventclicks 1 true
+  - scrmsg %player% action §eДобыча цветков§6 ➜ §a+1 Семя василька
+  - toast %player% 2 17 §6Редкий Предмет! | §aСемя василька
+ 
+x-item-vasilek-legend: &vasilek-legend
+  item:
+    type: POTION
+    amount: 1 
+    damage: 0
+    name: "§9Экстракт василька"
+    lore:
+    - ''
+    - "§7Экстаркт василька используют"
+    - "§7в косметологии, должно быть"
+    - "§7за него дадут большую сумму!"
+    - ''
+    - "§eЛегендарный предмет"
+    enchantment: {}
+    data: "{\"price\":1250}"
+    unbreakable: false
+    flags: []
+  chance: 4
+  animation: true 
+  command:
+  - dnkadd %player% 4
+  - morestats %player% player_exp 1.5 true
+  - morestats %player% clicks 1 true
+  - morestats %player% eventclicks 1 true
+  - scrmsg %player% action §eДобыча цветков§6 ➜ §9+1 Экстракт василька
+  - toast %player% 2 17 §e§lЛегендарный §e§lпредмет! | §9Экстракт василька
+
+x-item-romashka-common: &romashka-common
+  item:
+    type: INK_SACK
+    amount: 1
+    damage: 15
+    name: "§fЛистья ромашки"
+    lore:
+    - ''
+    - "§7Белоснежные листья ромашек.."
+    - "§7Возможно найдутся любители,"
+    - "§7готовые купить их для своих изделий."
+    - ''
+    - "§aОбычный предмет"
+    enchantment: {}
+    data: "{\"price\":160}"
+    unbreakable: false
+    flags: []
+  chance: 40
+  animation: true
+  command:
+  - dnkadd %player% 7
+  - morestats %player% player_exp 2 true
+  - morestats %player% clicks 1 true
+  - morestats %player% eventclicks 1 true
+  - scrmsg %player% action §eДобыча цветков§f ➜ §f+1 Листья ромашки
+  
+x-item-romashka-rare: &romashka-rare
+  item:
+    type: PUMPKIN_SEEDS
+    amount: 1 
+    damage: 0
+    name: "§bСемянка ромашки"
+    lore:
+    - ''
+    - "§7Домохозяйки любят выращивать"
+    - "§7ромашки у себя дома. Думаю, эти"
+    - "§7семяна быстро найдут своих покупателей."
+    - ''
+    - "§6Редкий предмет"
+    enchantment: {}
+    data: "{\"price\":400}"
+    unbreakable: false
+    flags: []
+  chance: 15
+  animation: true
+  command:
+  - dnkadd %player% 7
+  - morestats %player% player_exp 2 true
+  - morestats %player% clicks 1 true
+  - morestats %player% eventclicks 1 true
+  - scrmsg %player% action §eДобыча цветков§f ➜ §b+1 Семянка ромашки
+  - toast %player% 2 17 §6Редкий Предмет! | §bСемянка ромашки
+  
+x-item-romashka-legend: &romashka-legend
+  item:
+    type: DOUBLE_PLANT
+    amount: 1 
+    damage: 0
+    name: "§6Соцветие ромашки"
+    lore:
+    - ''
+    - "§7Красивое соцветие, цвета яркого"
+    - "§7солнца. Возможно, на нем осталась"
+    - "§7часть пыльцы."
+    - ''
+    - "§eЛегендарный предмет"
+    enchantment: {}
+    data: "{\"price\":1750}"
+    unbreakable: false
+    flags: []
+  chance: 4
+  animation: true 
+  command:
+  - dnkadd %player% 7
+  - morestats %player% player_exp 2 true
+  - morestats %player% clicks 1 true
+  - morestats %player% eventclicks 1 true
+  - scrmsg %player% action §eДобыча цветков§f ➜ §6+1 Соцветие ромашки
+  - toast %player% 2 17 §e§lЛегендарный §e§lпредмет! | §6Соцветие ромашки
+  
+x-item-tylpan-common: &tylpan-common
+  item:
+    type: INK_SACK
+    amount: 1
+    damage: 13
+    name: "§dЛистья тюльпана"
+    lore:
+    - ''
+    - "§7Смотря на них только и"
+    - "§7приходит в голову: романтика, любовь.."
+    - "§7Я точно знаю кому их продать!"
+    - ''
+    - "§aОбычный предмет"
+    enchantment: {}
+    data: "{\"price\":225}"
+    unbreakable: false
+    flags: []
+  chance: 40
+  animation: true
+  command:
+  - dnkadd %player% 10
+  - morestats %player% player_exp 3 true
+  - morestats %player% clicks 1 true
+  - morestats %player% eventclicks 1 true
+  - scrmsg %player% action §eДобыча цветков§6 ➜ §d+1 Листья тюльпана
+  
+x-item-tylpan-rare: &tylpan-rare
+  item:
+    type: CHORUS_FRUIT_POPPED
+    amount: 1
+    damage: 0
+    name: "§7Коробочка тюльпана"
+    lore:
+    - ''
+    - "§7Интересно, что будет если"
+    - "§7ее раскрыть? Нет, точно нет."
+    - "§7Лучше продать ее, может"
+    - "§7чего-то да будет стоить!"
+    - ''
+    - "§6Редкий предмет"
+    enchantment: {}
+    data: "{\"price\":400}"
+    unbreakable: false
+    flags: []
+  chance: 9
+  animation: true
+  command:
+  - dnkadd %player% 10
+  - morestats %player% player_exp 3 true
+  - morestats %player% clicks 1 true
+  - morestats %player% eventclicks 1 true
+  - scrmsg %player% action §eДобыча цветков§6 ➜ §7+1 Коробочка тюльпана
+  - toast %player% 2 17 §6Редкий Предмет! | §7Коробочка тюльпана
+  
+  
+x-item-tylpan-legend: &tylpan-legend
+  item:
+    type: DEAD_BUSH
+    amount: 1
+    damage: 0
+    name: "§8Корень тюльпана"
+    lore:
+    - ''
+    - "§7Прекрасный корень зрелого"
+    - "§7тюльпана, который часто используют"
+    - "§7для различных заваров. Уйдет с руками!"
+    - ''
+    - "§eЛегендарный предмет"
+    enchantment: {}
+    data: "{\"price\":2500}"
+    unbreakable: false
+    flags: []
+  chance: 4
+  animation: true
+  command:
+  - dnkadd %player% 10
+  - morestats %player% player_exp 3 true
+  - morestats %player% clicks 1 true
+  - morestats %player% eventclicks 1 true
+  - scrmsg %player% action §eДобыча цветков§6 ➜ §8+1 Корень тюльпана
+  - toast %player% 2 17 §e§lЛегендарный §e§lпредмет! | §8Корень тюльпана
+  
+
+axes:
+  donate-hoe:
+      "*":
+      - material: RED_ROSE
+        meta: 0
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - item:
+            type: AIR
+            amount: 1
+            damage: 0
+            name: "РОЗА-0"
+            lore:
+            - ""
+            enchantment: {}
+            data: "{\"price\":300}"
+            unbreakable: false
+            flags: []
+          chance: 6000
+          animation: false
+          command:
+          - dnkadd %player% 1
+          - morestats %player% player_exp 0.5 true
+          - morestats %player% clicks 1 true
+          - morestats %player% eventclicks 1 true
+          - chancecmd %player% money_axe 0.1
+          - chancecmd %player% donate-hoe-pet 0.1
+          - chancecmd %player% donate-hoe-key 0.1
+          - chancecmd %player% doubble-hoe-1 50
+          - chancecmd %player% stats-hoe 50
+        - *mak-common
+        - *mak-rare
+        - *mak-legend
+        triTime: 1
+        triBlocks: 2
+        triCooldownInTicks: 0
+      - material: RED_ROSE
+        meta: 1
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - item:
+            type: AIR
+            amount: 1
+            damage: 0
+            name: "РОЗА-1"
+            lore:
+            - ""
+            enchantment: {}
+            data: "{\"price\":300}"
+            unbreakable: false
+            flags: []
+          chance: 6000
+          animation: false
+          command:
+          - dnkadd %player% 2
+          - morestats %player% player_exp 1 true
+          - morestats %player% clicks 1 true
+          - morestats %player% eventclicks 1 true
+          - morestats %player% player_exp 0.5 true
+          - morestats %player% clicks 1 true
+          - morestats %player% eventclicks 1 true
+          - chancecmd %player% money_axe 0.1
+          - chancecmd %player% donate-hoe-pet 0.1
+          - chancecmd %player% donate-hoe-key 0.1
+          - chancecmd %player% doubble-hoe-2 50
+          - chancecmd %player% stats-hoe 50
+        - *orxideya-common
+        - *orxideya-rare
+        - *orxideya-legend
+        triTime: 1
+        triBlocks: 2
+        triCooldownInTicks: 0
+      - material: RED_ROSE
+        meta: 3
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - item:
+            type: AIR
+            amount: 1
+            damage: 0
+            name: "РОЗА-1"
+            lore:
+            - ""
+            enchantment: {}
+            data: "{\"price\":300}"
+            unbreakable: false
+            flags: []
+          chance: 6000
+          animation: false
+          command:
+          - dnkadd %player% 4
+          - morestats %player% player_exp 1.5 true
+          - morestats %player% clicks 1 true
+          - morestats %player% eventclicks 1 true
+          - morestats %player% player_exp 0.5 true
+          - morestats %player% clicks 1 true
+          - morestats %player% eventclicks 1 true
+          - chancecmd %player% money_axe 0.1
+          - chancecmd %player% donate-hoe-pet 0.1
+          - chancecmd %player% donate-hoe-key 0.1
+          - chancecmd %player% doubble-hoe-4 50
+          - chancecmd %player% stats-hoe 50
+        - *vasilek-common
+        - *vasilek-rare
+        - *vasilek-legend
+        triTime: 1
+        triBlocks: 2
+        triCooldownInTicks: 0
+      - material: RED_ROSE
+        meta: 7
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - item:
+            type: AIR
+            amount: 1
+            damage: 0
+            name: "РОЗА-1"
+            lore:
+            - ""
+            enchantment: {}
+            data: "{\"price\":300}"
+            unbreakable: false
+            flags: []
+          chance: 6000
+          animation: false
+          command:
+          - dnkadd %player% 10
+          - morestats %player% player_exp 3 true
+          - morestats %player% clicks 1 true
+          - morestats %player% eventclicks 1 true
+          - morestats %player% player_exp 0.5 true
+          - morestats %player% clicks 1 true
+          - morestats %player% eventclicks 1 true
+          - chancecmd %player% money_axe 0.1
+          - chancecmd %player% donate-hoe-pet 0.1
+          - chancecmd %player% donate-hoe-key 0.1
+          - chancecmd %player% doubble-hoe-10 50
+          - chancecmd %player% stats-hoe 50
+        - *romashka-common
+        - *romashka-rare
+        - *romashka-legend
+        triTime: 1
+        triBlocks: 2
+        triCooldownInTicks: 0
+      - material: RED_ROSE
+        meta: 8
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - item:
+            type: AIR
+            amount: 1
+            damage: 0
+            name: "РОЗА-1"
+            lore:
+            - ""
+            enchantment: {}
+            data: "{\"price\":300}"
+            unbreakable: false
+            flags: []
+          chance: 6000
+          animation: false
+          command:
+          - dnkadd %player% 7
+          - morestats %player% player_exp 2 true
+          - morestats %player% clicks 1 true
+          - morestats %player% eventclicks 1 true
+          - morestats %player% player_exp 0.5 true
+          - morestats %player% clicks 1 true
+          - morestats %player% eventclicks 1 true
+          - chancecmd %player% money_axe 0.1
+          - chancecmd %player% donate-hoe-pet 0.1
+          - chancecmd %player% donate-hoe-key 0.1
+          - chancecmd %player% doubble-hoe-7 50
+          - chancecmd %player% stats-hoe 50
+        - *tylpan-common
+        - *tylpan-rare
+        - *tylpan-legend
+        triTime: 1
+        triBlocks: 2
+        triCooldownInTicks: 0
+  stats-hoe:
+      "*":
+      - material: RED_ROSE
+        meta: 0
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - item:
+            type: AIR
+            amount: 1
+            damage: 0
+            name: "РОЗА-0"
+            lore:
+            - ""
+            enchantment: {}
+            data: "{\"price\":300}"
+            unbreakable: false
+            flags: []
+          chance: 6000
+          animation: false
+          command:
+          - dnkadd %player% 1
+          - chancecmd %player% hoe-key 0.1
+          - morestats %player% player_exp 0.5 true
+          - morestats %player% clicks 1 true
+          - morestats %player% eventclicks 1 true
+          - chancecmd %player% stats-hoe 50
+        - *mak-common
+        - *mak-rare
+        - *mak-legend
+        triTime: 1
+        triBlocks: 0
+        triCooldownInTicks: 0
+      - material: RED_ROSE
+        meta: 1
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - item:
+            type: AIR
+            amount: 1
+            damage: 0
+            name: "РОЗА-0"
+            lore:
+            - ""
+            enchantment: {}
+            data: "{\"price\":300}"
+            unbreakable: false
+            flags: []
+          chance: 6000
+          animation: false
+          command:
+          - dnkadd %player% 2
+          - chancecmd %player% hoe-key 0.1
+          - morestats %player% player_exp 1 true
+          - morestats %player% clicks 1 true
+          - morestats %player% eventclicks 1 true
+          - chancecmd %player% stats-hoe 50
+        - *orxideya-common
+        - *orxideya-rare
+        - *orxideya-legend
+        triTime: 1
+        triBlocks: 0
+        triCooldownInTicks: 0
+      - material: RED_ROSE
+        meta: 3
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - item:
+            type: AIR
+            amount: 1
+            damage: 0
+            name: "РОЗА-0"
+            lore:
+            - ""
+            enchantment: {}
+            data: "{\"price\":300}"
+            unbreakable: false
+            flags: []
+          chance: 6000
+          animation: false
+          command:
+          - dnkadd %player% 4
+          - chancecmd %player% hoe-key 0.1
+          - morestats %player% player_exp 1.5 true
+          - morestats %player% clicks 1 true
+          - morestats %player% eventclicks 1 true
+          - chancecmd %player% stats-hoe 50
+        - *vasilek-common
+        - *vasilek-rare
+        - *vasilek-legend
+        triTime: 1
+        triBlocks: 0
+        triCooldownInTicks: 0
+      - material: RED_ROSE
+        meta: 7
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - item:
+            type: AIR
+            amount: 1
+            damage: 0
+            name: "РОЗА-0"
+            lore:
+            - ""
+            enchantment: {}
+            data: "{\"price\":300}"
+            unbreakable: false
+            flags: []
+          chance: 6000
+          animation: false
+          command:
+          - dnkadd %player% 10
+          - chancecmd %player% hoe-key 0.1
+          - morestats %player% player_exp 3 true
+          - morestats %player% clicks 1 true
+          - morestats %player% eventclicks 1 true
+          - chancecmd %player% stats-hoe 50
+        - *romashka-common
+        - *romashka-rare
+        - *romashka-legend
+        triTime: 1
+        triBlocks: 0
+        triCooldownInTicks: 0
+      - material: RED_ROSE
+        meta: 8
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - item:
+            type: AIR
+            amount: 1
+            damage: 0
+            name: "РОЗА-0"
+            lore:
+            - ""
+            enchantment: {}
+            data: "{\"price\":300}"
+            unbreakable: false
+            flags: []
+          chance: 6000
+          animation: false
+          command:
+          - dnkadd %player% 7
+          - chancecmd %player% hoe-key 0.1
+          - morestats %player% player_exp 2 true
+          - morestats %player% clicks 1 true
+          - morestats %player% eventclicks 1 true
+          - chancecmd %player% stats-hoe 50
+        - *tylpan-common
+        - *tylpan-rare
+        - *tylpan-legend
+        triTime: 1
+        triBlocks: 0
+        triCooldownInTicks: 0
+  doubble-hoe:
+      "*":
+      - material: RED_ROSE
+        meta: 0
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - item:
+            type: AIR
+            amount: 1
+            damage: 0
+            name: "РОЗА-0"
+            lore:
+            - ""
+            enchantment: {}
+            data: "{\"price\":300}"
+            unbreakable: false
+            flags: []
+          chance: 6000
+          animation: false
+          command:
+          - dnkadd %player% 1
+          - chancecmd %player% hoe-key 0.1
+          - morestats %player% player_exp 0.5 true
+          - morestats %player% clicks 1 true
+          - morestats %player% eventclicks 1 true
+          - chancecmd %player% doubble-hoe-1 50
+        - *mak-common
+        - *mak-rare
+        - *mak-legend
+        triTime: 1
+        triBlocks: 0
+        triCooldownInTicks: 0
+      - material: RED_ROSE
+        meta: 1
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - item:
+            type: AIR
+            amount: 1
+            damage: 0
+            name: "РОЗА-0"
+            lore:
+            - ""
+            enchantment: {}
+            data: "{\"price\":300}"
+            unbreakable: false
+            flags: []
+          chance: 6000
+          animation: false
+          command:
+          - dnkadd %player% 2
+          - chancecmd %player% hoe-key 0.1
+          - morestats %player% player_exp 1 true
+          - morestats %player% clicks 1 true
+          - morestats %player% eventclicks 1 true
+          - chancecmd %player% doubble-hoe-2 50
+        - *orxideya-common
+        - *orxideya-rare
+        - *orxideya-legend
+        triTime: 1
+        triBlocks: 0
+        triCooldownInTicks: 0
+      - material: RED_ROSE
+        meta: 3
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - item:
+            type: AIR
+            amount: 1
+            damage: 0
+            name: "РОЗА-0"
+            lore:
+            - ""
+            enchantment: {}
+            data: "{\"price\":300}"
+            unbreakable: false
+            flags: []
+          chance: 6000
+          animation: false
+          command:
+          - dnkadd %player% 4
+          - chancecmd %player% hoe-key 0.1
+          - morestats %player% player_exp 1.5 true
+          - morestats %player% clicks 1 true
+          - morestats %player% eventclicks 1 true
+          - chancecmd %player% doubble-hoe-4 50
+        - *vasilek-common
+        - *vasilek-rare
+        - *vasilek-legend
+        triTime: 1
+        triBlocks: 0
+        triCooldownInTicks: 0
+      - material: RED_ROSE
+        meta: 7
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - item:
+            type: AIR
+            amount: 1
+            damage: 0
+            name: "РОЗА-0"
+            lore:
+            - ""
+            enchantment: {}
+            data: "{\"price\":300}"
+            unbreakable: false
+            flags: []
+          chance: 6000
+          animation: false
+          command:
+          - dnkadd %player% 10
+          - chancecmd %player% hoe-key 0.1
+          - morestats %player% player_exp 3 true
+          - morestats %player% clicks 1 true
+          - morestats %player% eventclicks 1 true
+          - chancecmd %player% doubble-hoe-10 50
+        - *romashka-common
+        - *romashka-rare
+        - *romashka-legend
+        triTime: 1
+        triBlocks: 0
+        triCooldownInTicks: 0
+      - material: RED_ROSE
+        meta: 8
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - item:
+            type: AIR
+            amount: 1
+            damage: 0
+            name: "РОЗА-0"
+            lore:
+            - ""
+            enchantment: {}
+            data: "{\"price\":300}"
+            unbreakable: false
+            flags: []
+          chance: 6000
+          animation: false
+          command:
+          - dnkadd %player% 7
+          - chancecmd %player% hoe-key 0.1
+          - morestats %player% player_exp 2 true
+          - morestats %player% clicks 1 true
+          - morestats %player% eventclicks 1 true
+          - chancecmd %player% doubble-hoe-7 50
+        - *tylpan-common
+        - *tylpan-rare
+        - *tylpan-legend
+        triTime: 1
+        triBlocks: 0
+        triCooldownInTicks: 0
+  money-hoe:
+      "*":
+      - material: RED_ROSE
+        meta: 0
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - item:
+            type: AIR
+            amount: 1
+            damage: 0
+            name: "РОЗА-0"
+            lore:
+            - ""
+            enchantment: {}
+            data: "{\"price\":300}"
+            unbreakable: false
+            flags: []
+          chance: 6000
+          animation: false
+          command:
+          - dnkadd %player% 1
+          - chancecmd %player% hoe-key 0.1
+          - morestats %player% player_exp 0.5 true
+          - morestats %player% clicks 1 true
+          - morestats %player% eventclicks 1 true
+          - chancecmd %player% money_axe 0.1
+        - *mak-common
+        - *mak-rare
+        - *mak-legend
+        triTime: 1
+        triBlocks: 0
+        triCooldownInTicks: 0
+      - material: RED_ROSE
+        meta: 1
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - item:
+            type: AIR
+            amount: 1
+            damage: 0
+            name: "РОЗА-0"
+            lore:
+            - ""
+            enchantment: {}
+            data: "{\"price\":300}"
+            unbreakable: false
+            flags: []
+          chance: 6000
+          animation: false
+          command:
+          - dnkadd %player% 2
+          - chancecmd %player% hoe-key 0.1
+          - morestats %player% player_exp 1 true
+          - morestats %player% clicks 1 true
+          - morestats %player% eventclicks 1 true
+          - chancecmd %player% money_axe 0.1
+        - *orxideya-common
+        - *orxideya-rare
+        - *orxideya-legend
+        triTime: 1
+        triBlocks: 0
+        triCooldownInTicks: 0
+      - material: RED_ROSE
+        meta: 3
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - item:
+            type: AIR
+            amount: 1
+            damage: 0
+            name: "РОЗА-0"
+            lore:
+            - ""
+            enchantment: {}
+            data: "{\"price\":300}"
+            unbreakable: false
+            flags: []
+          chance: 6000
+          animation: false
+          command:
+          - dnkadd %player% 4
+          - chancecmd %player% hoe-key 0.1
+          - morestats %player% player_exp 1.5 true
+          - morestats %player% clicks 1 true
+          - morestats %player% eventclicks 1 true
+          - chancecmd %player% money_axe 0.1
+        - *vasilek-common
+        - *vasilek-rare
+        - *vasilek-legend
+        triTime: 1
+        triBlocks: 0
+        triCooldownInTicks: 0
+      - material: RED_ROSE
+        meta: 7
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - item:
+            type: AIR
+            amount: 1
+            damage: 0
+            name: "РОЗА-0"
+            lore:
+            - ""
+            enchantment: {}
+            data: "{\"price\":300}"
+            unbreakable: false
+            flags: []
+          chance: 6000
+          animation: false
+          command:
+          - dnkadd %player% 10
+          - chancecmd %player% hoe-key 0.1
+          - morestats %player% player_exp 3 true
+          - morestats %player% clicks 1 true
+          - morestats %player% eventclicks 1 true
+          - chancecmd %player% money_axe 0.1
+        - *romashka-common
+        - *romashka-rare
+        - *romashka-legend
+        triTime: 1
+        triBlocks: 0
+        triCooldownInTicks: 0
+      - material: RED_ROSE
+        meta: 8
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - item:
+            type: AIR
+            amount: 1
+            damage: 0
+            name: "РОЗА-0"
+            lore:
+            - ""
+            enchantment: {}
+            data: "{\"price\":300}"
+            unbreakable: false
+            flags: []
+          chance: 6000
+          animation: false
+          command:
+          - dnkadd %player% 7
+          - chancecmd %player% hoe-key 0.1
+          - morestats %player% player_exp 2 true
+          - morestats %player% clicks 1 true
+          - morestats %player% eventclicks 1 true
+          - chancecmd %player% money_axe 0.1
+        - *tylpan-common
+        - *tylpan-rare
+        - *tylpan-legend
+        triTime: 1
+        triBlocks: 0
+        triCooldownInTicks: 0
+  speed-hoe:
+      "*":
+      - material: RED_ROSE
+        meta: 0
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - *red-rose-0
+        - *mak-common
+        - *mak-rare
+        - *mak-legend
+        triTime: 1
+        triBlocks: 3
+        triCooldownInTicks: 0
+      - material: RED_ROSE
+        meta: 1
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - *red-rose-1
+        - *orxideya-common
+        - *orxideya-rare
+        - *orxideya-legend
+        triTime: 1
+        triBlocks: 3
+        triCooldownInTicks: 0
+      - material: RED_ROSE
+        meta: 3
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - *red-rose-3
+        - *vasilek-common
+        - *vasilek-rare
+        - *vasilek-legend
+        triTime: 1
+        triBlocks: 3
+        triCooldownInTicks: 0
+      - material: RED_ROSE
+        meta: 7
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - *red-rose-7
+        - *romashka-common
+        - *romashka-rare
+        - *romashka-legend
+        triTime: 1
+        triBlocks: 3
+        triCooldownInTicks: 0
+      - material: RED_ROSE
+        meta: 8
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - *red-rose-8
+        - *tylpan-common
+        - *tylpan-rare
+        - *tylpan-legend
+        triTime: 1
+        triBlocks: 3
+        triCooldownInTicks: 0
+  mistic-hoe: #Мистические ножницы
+      "*":
+      - material: RED_ROSE
+        meta: 0
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - item:
+            type: AIR
+            amount: 1
+            damage: 0
+            name: "РОЗА-0"
+            lore:
+            - ""
+            enchantment: {}
+            data: "{\"price\":300}"
+            unbreakable: false
+            flags: []
+          chance: 5500
+          animation: false
+          command:
+          - dnkadd %player% 1
+          - chancecmd %player% hoe-key 0.1
+          - morestats %player% player_exp 0.5 true
+          - morestats %player% clicks 1 true
+          - morestats %player% eventclicks 1 true
+        - *mak-common
+        - *mak-rare
+        - *mak-legend
+        triTime: 1
+        triBlocks: 1
+        triCooldownInTicks: 0
+      - material: RED_ROSE
+        meta: 1
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - item:
+            type: AIR
+            amount: 1
+            damage: 0
+            name: "РОЗА-0"
+            lore:
+            - ""
+            enchantment: {}
+            data: "{\"price\":300}"
+            unbreakable: false
+            flags: []
+          chance: 5500
+          animation: false
+          command:
+          - dnkadd %player% 2
+          - chancecmd %player% hoe-key 0.1
+          - morestats %player% player_exp 1 true
+          - morestats %player% clicks 1 true
+          - morestats %player% eventclicks 1 true
+        - *orxideya-common
+        - *orxideya-rare
+        - *orxideya-legend
+        triTime: 1
+        triBlocks: 1
+        triCooldownInTicks: 0
+      - material: RED_ROSE
+        meta: 3
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - item:
+            type: AIR
+            amount: 1
+            damage: 0
+            name: "РОЗА-0"
+            lore:
+            - ""
+            enchantment: {}
+            data: "{\"price\":300}"
+            unbreakable: false
+            flags: []
+          chance: 5500
+          animation: false
+          command:
+          - dnkadd %player% 4
+          - chancecmd %player% hoe-key 0.1
+          - morestats %player% player_exp 1.5 true
+          - morestats %player% clicks 1 true
+          - morestats %player% eventclicks 1 true
+        - *vasilek-common
+        - *vasilek-rare
+        - *vasilek-legend
+        triTime: 1
+        triBlocks: 1
+        triCooldownInTicks: 0
+      - material: RED_ROSE
+        meta: 7
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - item:
+            type: AIR
+            amount: 1
+            damage: 0
+            name: "РОЗА-0"
+            lore:
+            - ""
+            enchantment: {}
+            data: "{\"price\":300}"
+            unbreakable: false
+            flags: []
+          chance: 5500
+          animation: false
+          command:
+          - dnkadd %player% 10
+          - chancecmd %player% hoe-key 0.1
+          - morestats %player% player_exp 3 true
+          - morestats %player% clicks 1 true
+          - morestats %player% eventclicks 1 true
+        - *romashka-common
+        - *romashka-rare
+        - *romashka-legend
+        triTime: 1
+        triBlocks: 1
+        triCooldownInTicks: 0
+      - material: RED_ROSE
+        meta: 8
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - item:
+            type: AIR
+            amount: 1
+            damage: 0
+            name: "РОЗА-0"
+            lore:
+            - ""
+            enchantment: {}
+            data: "{\"price\":300}"
+            unbreakable: false
+            flags: []
+          chance: 5500
+          animation: false
+          command:
+          - dnkadd %player% 7
+          - chancecmd %player% hoe-key 0.1
+          - morestats %player% player_exp 2 true
+          - morestats %player% clicks 1 true
+          - morestats %player% eventclicks 1 true
+        - *tylpan-common
+        - *tylpan-rare
+        - *tylpan-legend
+        triTime: 1
+        triBlocks: 1
+        triCooldownInTicks: 0
+  normal-hoe: #Обычные ножницы
+      "*":
+      - material: RED_ROSE
+        meta: 0
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - *red-rose-0
+        - *mak-common
+        - *mak-rare
+        - *mak-legend
+        triTime: 1
+        triBlocks: 0
+        triCooldownInTicks: 0
+      - material: RED_ROSE
+        meta: 1
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - *red-rose-1
+        - *orxideya-common
+        - *orxideya-rare
+        - *orxideya-legend
+        triTime: 1
+        triBlocks: 0
+        triCooldownInTicks: 0
+      - material: RED_ROSE
+        meta: 3
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - *red-rose-3
+        - *vasilek-common
+        - *vasilek-rare
+        - *vasilek-legend
+        triTime: 1
+        triBlocks: 0
+        triCooldownInTicks: 0
+      - material: RED_ROSE
+        meta: 7
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - *red-rose-7
+        - *romashka-common
+        - *romashka-rare
+        - *romashka-legend
+        triTime: 1
+        triBlocks: 0
+        triCooldownInTicks: 0
+      - material: RED_ROSE
+        meta: 8
+        replace: AIR
+        replaceTime: 5
+        drops:
+        - *red-rose-8
+        - *tylpan-common
+        - *tylpan-rare
+        - *tylpan-legend
+        triTime: 1
+        triBlocks: 0
+        triCooldownInTicks: 0
+      
+defaultAxe: #Рука
+  "*":
+  - material: RED_ROSE #Мак
+    meta: 0
+    replace: AIR
+    replaceTime: 5
+    drops:
+    - *rosa
+    - *red-rose-0
+    - *mak-common
+    - *mak-rare
+    - *mak-legend
+    triTime: 0
+    triBlocks: 0
+    triCooldownInTicks: 0
+  - material: RED_ROSE #Орхидея
+    meta: 1
+    replace: AIR
+    replaceTime: 5
+    drops:
+    - *red-rose-1
+    - *orxideya-common
+    - *orxideya-rare
+    - *orxideya-legend
+    triTime: 0
+    triBlocks: 0
+    triCooldownInTicks: 0
+  - material: RED_ROSE #Василек
+    meta: 3
+    replace: AIR
+    replaceTime: 5
+    drops:
+    - *red-rose-3
+    - *vasilek-common
+    - *vasilek-rare
+    - *vasilek-legend
+    triTime: 0
+    triBlocks: 0
+    triCooldownInTicks: 0
+  - material: RED_ROSE #Ромашка
+    meta: 8
+    replace: AIR
+    replaceTime: 5
+    drops:
+    - *red-rose-7
+    - *romashka-common
+    - *romashka-rare
+    - *romashka-legend
+    triTime: 0
+    triBlocks: 0
+    triCooldownInTicks: 0
+  - material: RED_ROSE #Тюльпан
+    meta: 7
+    replace: AIR
+    replaceTime: 5
+    drops:
+    - *red-rose-8
+    - *tylpan-common
+    - *tylpan-rare
+    - *tylpan-legend
+    triTime: 0
+    triBlocks: 0
+    triCooldownInTicks: 0
+triCooldownCommands:
+- text %player% §8[§ci§8]§f Вы сможете использовать ножницы через §6%kd%
+- sound %player% ENTITY.BAT.TAKEOFF 0.5 1
+- sound %player% ENTITY.ENDEREYE.DEATH 1 0.5

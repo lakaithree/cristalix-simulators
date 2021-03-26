@@ -1,0 +1,6 @@
+boosters:
+  "money": "%money%"
+  "stats_kills_mobs": "%stats_kills_mobs%"
+  "stats_player_exp": "%stats_player_exp%"
+  "stats_clicks": "%stats_clicks%"
+str: " Опыт:§b х%stats_player_exp%§f, Монеты:§e х%money%§f, Цветы: §6x%stats_clicks%§f, Мобы:§c х%stats_kills_mobs%"

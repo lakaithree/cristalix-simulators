@@ -1,0 +1,46 @@
+nbt:
+  "offhand_money":
+    "money":
+      1: 1.0
+      2: 2.0
+      3: 3.0
+      4: 4.0
+  "offhand_exp":
+    "stats_player_exp":
+      1: 1.0
+      2: 2.0
+      3: 3.0
+      4: 4.0
+  "offhand_mobs":
+    "stats_kills_mobs":
+      1: 1.0
+      2: 2.0
+      3: 3.0
+      4: 4.0
+  "offhand_clicks":
+    "stats_clicks":
+      1: 1.0
+      2: 2.0
+      3: 3.0
+      4: 4.0
+  "offhand_all":
+    "money":
+      1: 1.5
+      2: 2.0
+      3: 3.0
+      4: 4.0
+    "stats_player_exp":
+      1: 1.5
+      2: 2.0
+      3: 3.0
+      4: 4.0
+    "stats_kills_mobs":
+      1: 1.5
+      2: 2.0
+      3: 3.0
+      4: 4.0
+    "stats_clicks":
+      1: 1.5
+      2: 2.0
+      3: 3.0
+      4: 4.0

@@ -1,0 +1,206 @@
+#file: "../conf/cristalixnpc.js"
+npcs:
+
+- world: "world"
+  x: -12.5
+  y: 82
+  z: 391.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/bee/naked_bee.png"
+  skinDigest: "naked_bee"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% dnksell 2bef303f-4f0d-40d7-860f-807cfa3d2e83"
+  
+- world: "world"
+  x: -47.5
+  y: 85
+  z: 391.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/bee/jock_bee.png"
+  skinDigest: "jock_beee"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% upgrade"
+  
+- world: "world"
+  x: -47.5
+  y: 85
+  z: 407.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/bee/notrobobee.png"
+  skinDigest: "notrobobee"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% dnk"
+  
+- world: "world"
+  x: -12.5
+  y: 82
+  z: 407.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/bee/angry_bee.png"
+  skinDigest: "angry_bee"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f"
+  
+- world: "location_2"
+  x: -37.5
+  y: 81
+  z: 399.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/bee/angry_bee.png"
+  skinDigest: "angry_bee"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f"
+  
+- world: "location_2"
+  x: -29.5
+  y: 81
+  z: 407.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/bee/naked_bee.png"
+  skinDigest: "naked_bee"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% dnksell 2bef303f-4f0d-40d7-860f-807cfa3d2e83"
+  
+- world: "location_3"
+  x: -36.5
+  y: 81
+  z: 399.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/bee/angry_bee.png"
+  skinDigest: "angry_bee"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f"
+  
+- world: "location_3"
+  x: -29.5
+  y: 81
+  z: 406.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/bee/naked_bee.png"
+  skinDigest: "naked_bee"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% dnksell 2bef303f-4f0d-40d7-860f-807cfa3d2e83"
+  
+- world: "location_2"
+  x: -29.5
+  y: 81
+  z: 391.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/bee/fat_bee2.png"
+  skinDigest: "fat_bee2"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% beetrade 3089411e-2c69-11e8-b5ea-1cb72caa35fd"
+  
+- world: "world"
+  x: -22.5
+  y: 81
+  z: 406.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/bee/fat_bee2.png"
+  skinDigest: "fat_bee2"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% menu"
+  
+- world: "world"
+  x: 95
+  y: 67
+  z: 278
+  skinUrl: "http://ilyafx.ru/lakai/sim/bee/fat_bee2.png"
+  skinDigest: "fat_bee2"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% itemtrade 5646de86-eacf-4b01-8962-28c3c52d365c"
+
+- world: "location_4"
+  x: -36.5
+  y: 81
+  z: 399.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/bee/angry_bee.png"
+  skinDigest: "angry_bee"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f"
+  
+- world: "location_4"
+  x: -29.5
+  y: 81
+  z: 406.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/bee/naked_bee.png"
+  skinDigest: "naked_bee"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% dnksell 2bef303f-4f0d-40d7-860f-807cfa3d2e83"  
+
+- world: "location_5"
+  x: -36.5
+  y: 81
+  z: 399.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/bee/angry_bee.png"
+  skinDigest: "angry_bee"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f"
+  
+- world: "location_5"
+  x: -29.5
+  y: 81
+  z: 406.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/bee/naked_bee.png"
+  skinDigest: "naked_bee"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% dnksell 2bef303f-4f0d-40d7-860f-807cfa3d2e83"   
+
+- world: "location_6"
+  x: -36.5
+  y: 81
+  z: 399.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/bee/angry_bee.png"
+  skinDigest: "angry_bee"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f"
+  
+- world: "location_6"
+  x: -29.5
+  y: 81
+  z: 406.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/bee/naked_bee.png"
+  skinDigest: "naked_bee"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% dnksell 2bef303f-4f0d-40d7-860f-807cfa3d2e83"   

@@ -1,0 +1,4 @@
+client: true
+server: false
+standalone: false
+databaseDir: "spi"

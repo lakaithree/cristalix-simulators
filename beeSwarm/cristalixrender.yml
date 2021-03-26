@@ -1,0 +1,48 @@
+texts:
+- world: "world"
+  cords:
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  dimensionX: 1.0
+  dimensionY: 1.0
+  scale: 1.0
+  rotation: 0
+  lines:
+  - scale: 1
+    align: 1
+    x: 0.0
+    y: 0.0
+    text: "line"
+tops:
+- world: "world"
+  tableNick: "nick"
+  tableValue: "value"
+  cords:
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  positionX: 1.0
+  positionY: 1.0
+  dimensionX: 1.0
+  dimensionY: 1.0
+  tableDimensionX: 1.0
+  tableDimensionY: 1.0
+  dataScale: 1.0
+  scale: 1
+  rotation: 0
+  format: "%value%"
+  cooldownInSeconds: 180
+  sqlHandler: "handler"
+  numberTop:
+    tableName: "#"
+    cords:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    positionX: 1.0
+    positionY: 1.0
+    dimensionX: 1.0
+    dimensionY: 1.0
+    tableDimensionX: 1.0
+    tableDimensionY: 1.0

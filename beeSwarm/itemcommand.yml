@@ -1,0 +1,158 @@
+mapping:
+  "speed":
+  - "speedperk %player%"
+  - "removeitem %player% 1"
+
+  "bits-pass-5":
+  - "morestats %player% bits 5 false"
+  - "toast %player% 2 373 +5 | Битсы"
+  - "removeitem %player% 1"
+  
+  "bits-pass-10":
+  - "morestats %player% bits 10 false"
+  - "toast %player% 2 373 +10 | Битсы"
+  - "removeitem %player% 1"
+  
+  "bits-pass-25":
+  - "morestats %player% bits 25 false"
+  - "toast %player% 2 373 +25 | Битсы"
+  - "removeitem %player% 1"
+  
+  "bits-pass-50":
+  - "morestats %player% bits 50 false"
+  - "toast %player% 2 373 +50 | Битсы"
+  - "removeitem %player% 1"
+  
+  "bits-pass-100":
+  - "morestats %player% bits 100 false"
+  - "toast %player% 2 373 +100 | Битсы"
+  - "removeitem %player% 1"
+  
+  "bag_s":
+  - "randommoney %player% 1 10"
+  - "toast %player% 2 373 Как они блестят! | Горсть монет"
+  - "removeitem %player% 1"
+
+  "bag_b":
+  - "randommoney %player% 15 35"
+  - "toast %player% 2 373 Как они блестят! | Мешок монет"
+  - "removeitem %player% 1"
+  
+  "potion_1":
+  - "st %player% Вы выпили§b Скоростное зелье§f, работайте намного быстрее!"    
+  - "effect %player% speed 3600 3 true"
+  - "effect %player% haste 3600 3 true"
+  - "toast %player% 2 373 Работайте быстрее! | Скоростное зелье"
+  - "sound %player% ENTITY.WITCH.DRINK 1 0.5"
+  - "sound %player% ENTITY.WITCH.THROW 1 2"
+  - "removeitem %player% 1"
+
+  "potion_2":
+  - "st %player% Вы выпили§6 Зелье бодрости§f, будьте здоровы!"    
+  - "effect %player% health_boost 3600 4 true"
+  - "effect %player% regeneration 3600 1 true"
+  - "toast %player% 2 373 Будьте здоровы! | Зелье бодрости"
+  - "sound %player% ENTITY.WITCH.DRINK 1 0.5"
+  - "sound %player% ENTITY.WITCH.THROW 1 2"
+  - "removeitem %player% 1"
+
+  "potion_3":
+  - "st %player% Вы выпили§a Кроличье зелье§f, скачи как кролик!"    
+  - "effect %player% jump_boost 3600 1 true"
+  - "toast %player% 2 373 Скачи как кролик! | Кроличье зелье"
+  - "sound %player% ENTITY.WITCH.DRINK 1 0.5"
+  - "sound %player% ENTITY.WITCH.THROW 1 2"
+  - "removeitem %player% 1"
+
+  "potion_4":
+  - "st %player% Вы выпили§9 Черепашье зелье§f, будь медленее, но гораздо сильнее!"    
+  - "effect %player% strength 3600 1 true"
+  - "effect %player% slowness 3600 1 true"
+  - "effect %player% resistance 3600 1 true"
+  - "toast %player% 2 373 Будь силён! | Черепашье зелье"
+  - "sound %player% ENTITY.WITCH.DRINK 1 0.5"
+  - "sound %player% ENTITY.WITCH.THROW 1 2"
+  - "removeitem %player% 1"
+
+  "potion_5":
+  - "st %player% Вы выпили§6 Орлиное зелье§f, вы видите ночью как днём!"    
+  - "effect %player% night_vision 3600 4 true"
+  - "toast %player% 2 373 Вы видите даже ночью! | Орлиное зелье"
+  - "sound %player% ENTITY.WITCH.DRINK 1 0.5"
+  - "sound %player% ENTITY.WITCH.THROW 1 2"
+  - "removeitem %player% 1"
+
+  "potion_6":
+  - "st %player% Вы выпили§5 Защитное зелье§f, с этим зельем вас не пробьет никто!"    
+  - "effect %player% resistance 3600 1 true"
+  - "effect %player% regeneration 3600 1 true"
+  - "toast %player% 2 373 Защити себя! | Защитное зелье"
+  - "sound %player% ENTITY.WITCH.DRINK 1 0.5"
+  - "sound %player% ENTITY.WITCH.THROW 1 2"
+  - "removeitem %player% 1"
+
+  "potion_7":
+  - "st %player% Вы выпили §cЗ§6е§eл§aь§bе §dб§cо§eг§aа§f, это божественное зелье!"
+  - "effect %player% resistance 3600 1 true"
+  - "effect %player% regeneration 3600 1 true"
+  - "effect %player% speed 3600 1 true"
+  - "effect %player% strength 3600 1 true"
+  - "effect %player% jump_boost 3600 1 true"
+  - "effect %player% night_vision 3600 4 true"
+  - "toast %player% 2 373 Ты подобен богу! | §cЗ§6е§eл§aь§bе §dб§cо§eг§aа"
+  - "sound %player% ENTITY.WITCH.DRINK 1 0.5"
+  - "sound %player% ENTITY.WITCH.THROW 1 2"
+  - "removeitem %player% 1"  
+
+  "meco_boss":
+  - "sound %player% ENTITY.WITCH.THROW 1 1"  
+  - "scrmsg %player% normal §eВы призвали §cБосса | §7Бегите на локацию и убивайте, координаты в чате"    
+  - "st %player% Вы успешно поставили §6Копилку"
+  - "broadlocal §8[§ai§8]§f Игрок &e%player%§f поставил §6Копилку§f, чем больше наносишь ей урона - тем больше монет!"
+  - "mm m spawn meco-boss 1 %cords%"
+  - "removeitem %player% 1" 
+
+  "boss_2":
+  - "sound %player% ENTITY.WITCH.THROW 1 1"  
+  - "scrmsg %player% normal §eВы призвали §cБосса | §7Бегите на локацию и убивайте, координаты в чате"    
+  - "broadlocal §8[§ai§8]§f Игрок &e%player%§f призвал босса!"
+  - "mm m spawn boss-forest-2 1 forest2,70,71,-2"
+  - "removeitem %player% 1" 
+
+  "boss_3":
+  - "sound %player% ENTITY.WITCH.THROW 1 1"  
+  - "scrmsg %player% normal §eВы призвали §cБосса | §7Бегите на локацию и убивайте, координаты в чате"    
+  - "broadlocal §8[§ai§8]§f Игрок &e%player%§f призвал босса!"
+  - "mm m spawn boss-forest-3 1 forest3,112,97,237"
+  - "removeitem %player% 1" 
+
+  "boss_4":
+  - "sound %player% ENTITY.WITCH.THROW 1 1"  
+  - "scrmsg %player% normal §eВы призвали §cБосса | §7Бегите на локацию и убивайте, координаты в чате"    
+  - "broadlocal §8[§ai§8]§f Игрок &e%player%§f призвал босса!"
+  - "mm m spawn boss-forest-4 1 forest4,72,97,-19"
+  - "removeitem %player% 1" 
+
+  "boss_5":
+  - "sound %player% ENTITY.WITCH.THROW 1 1"  
+  - "scrmsg %player% normal §eВы призвали §cБосса | §7Бегите на локацию и убивайте, координаты в чате"    
+  - "broadlocal §8[§ai§8]§f Игрок &e%player%§f призвал босса!"
+  - "mm m spawn boss-forest-5 1 forest5,75,73,63"
+  - "removeitem %player% 1" 
+
+  "boss_6":
+  - "sound %player% ENTITY.WITCH.THROW 1 1"  
+  - "scrmsg %player% normal §eВы призвали §cБосса | §7Бегите на локацию и убивайте, координаты в чате"    
+  - "broadlocal §8[§ai§8]§f Игрок &e%player%§f призвал босса!"
+  - "mm m spawn boss-forest-6 1 forest6,-77,74,-34"
+  - "removeitem %player% 1" 
+
+  "boss_7":
+  - "sound %player% ENTITY.WITCH.THROW 1 1"  
+  - "scrmsg %player% normal §eВы призвали §cБосса | §7Бегите на локацию и убивайте, координаты в чате"
+  - "broadlocal §8[§ai§8]§f Игрок &e%player%§f призвал босса!"
+  - "mm m spawn boss-forest-7 1 forest7,-30,68,-97"
+  - "removeitem %player% 1" 
+
+  "menu":
+  - "sudo %player% guide"

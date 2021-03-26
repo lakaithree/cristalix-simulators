@@ -1,0 +1,6887 @@
+x-item-normal-hoe: &normal-hoe
+    item:
+      type: "SHEARS"
+      amount: 1
+      damage: 0
+      name: "§aСадовые Ножницы"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "§7Улучшайте свои ножницы и это позволит вам"
+        - "§7получать больше цветочков во время сбора."
+        - "§7Фарми быстрее с новыми ножницами!"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Вы можете сохранить уровень предмета, после"
+        - "§7ребитха, используя§d Кристаллы Сохранения"
+        - ""
+        - "§aОбычный предмет"
+      enchantment: {}
+      data: "{\"rebirth_crystals\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    setLevelNbt: "level"
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    formula:
+      - clicks
+        
+x-item-mistic-hoe: &mistic-hoe
+    item:
+      type: "SHEARS"
+      amount: 1
+      damage: 0
+      name: "§5§k123§d Мистические ножницы §5§k321"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "§7Улучшайте свои ножницы и это позволит вам"
+        - "§7получать больше цветочков во время сбора."
+        - "§7Фарми быстрее с новыми ножницами!"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Вы можете сохранить уровень предмета, после"
+        - "§7ребитха, используя§d Кристаллы Сохранения"
+        - ""
+        - "§7 ⊞ Повышенный шанс выпадения редких предметов"
+        - "§7 ⊞ Добыча цветков в области 2 блоков"
+        - ""
+        - "§dЭпический предмет"
+      enchantment:
+        DAMAGE_ALL: 1
+      data: "{\"rebirth_crystals\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    setLevelNbt: "level"
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    formula:
+      - clicks
+        
+x-item-speed-hoe: &speed-hoe
+    item:
+      type: "SHEARS"
+      amount: 1
+      damage: 0
+      name: "§6⚡ §eСкоростные Ножницы §6⚡"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "§7Улучшайте свои ножницы и это позволит вам"
+        - "§7получать больше цветочков во время сбора."
+        - "§7Фарми быстрее с новыми ножницами!"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Вы можете сохранить уровень предмета, после"
+        - "§7ребитха, используя§d Кристаллы Сохранения"
+        - ""
+        - "§7 ⊞ Добыча цветков в области 4 блоков"
+        - "§7 ⊞ Быстрый фарм §6Ударов"
+        - ""
+        - "§dЭпический предмет"
+      enchantment:
+        DAMAGE_ALL: 1
+      data: "{\"rebirth_crystals\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    formula:
+      - clicks
+    setLevelNbt: "level"
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+
+x-item-money-hoe: &money-hoe
+    item:
+      type: "SHEARS"
+      amount: 1
+      damage: 0
+      name: "§6✪ Денежные ножницы ✪ "
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "§7Улучшайте свои ножницы и это позволит вам"
+        - "§7получать больше цветочков во время сбора."
+        - "§7Фарми быстрее с новыми ножницами!"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Вы можете сохранить уровень предмета, после"
+        - "§7ребитха, используя§d Кристаллы Сохранения"
+        - ""
+        - "§7 ⊞ Шанс получить дополнительные деньги"
+        - ""
+        - "§dЭпический предмет"
+      enchantment:
+        DAMAGE_ALL: 1
+      data: "{\"rebirth_crystals\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    formula:
+      - clicks
+    setLevelNbt: "level"
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    
+x-item-doubble-hoe: &doubble-hoe
+    item:
+      type: "SHEARS"
+      amount: 1
+      damage: 0
+      name: "§d❖ Удлиненные ножницы ❖ "
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "§7Улучшайте свои ножницы и это позволит вам"
+        - "§7получать больше цветочков во время сбора."
+        - "§7Фарми быстрее с новыми ножницами!"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Вы можете сохранить уровень предмета, после"
+        - "§7ребитха, используя§d Кристаллы Сохранения"
+        - ""
+        - "§7 ⊞ Шанс получить 2х §f㕳§7 в сумку"
+        - ""
+        - "§dЭпический предмет"
+      enchantment:
+        DAMAGE_ALL: 1
+      data: "{\"rebirth_crystals\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    formula:
+      - clicks
+    setLevelNbt: "level"
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    
+x-item-stats-hoe: &stats-hoe
+    item:
+      type: "SHEARS"
+      amount: 1
+      damage: 0
+      name: "§b❖ Механические ножницы ❖ "
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "§7Улучшайте свои ножницы и это позволит вам"
+        - "§7получать больше цветочков во время сбора."
+        - "§7Фарми быстрее с новыми ножницами!"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Вы можете сохранить уровень предмета, после"
+        - "§7ребитха, используя§d Кристаллы Сохранения"
+        - ""
+        - "§7 ⊞ Шанс получить 2х цветы в статистику"
+        - ""
+        - "§dЭпический предмет"
+      enchantment:
+        DAMAGE_ALL: 1
+      data: "{\"rebirth_crystals\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    formula:
+      - clicks
+    setLevelNbt: "level"
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    
+x-item-donate-hoe: &donate-hoe
+    item:
+      type: "SHEARS"
+      amount: 1
+      damage: 0
+      name: "§cЛегендарные ножницы"
+      lore: 
+        - "¨ffff99Уровень %level%"
+        - ""
+        - "§7Улучшайте свои ножницы и это позволит вам"
+        - "§7получать больше цветочков во время сбора."
+        - "§7Фарми быстрее с новыми ножницами!"
+        - ""
+        - "%rebirth_crystals%"
+        - ""
+        - "§7Вы можете сохранить уровень предмета, после"
+        - "§7ребитха, используя§d Кристаллы Сохранения"
+        - ""
+        - "§7 ⊞ Добыча цветков в области 3 блоков"
+        - "§7 ⊞ Шанс получить 2х цветы в статистику"
+        - "§7 ⊞ Шанс получить 2х §f㕳§7 в сумку"
+        - "§7 ⊞ Шанс получить дополнительные деньги"
+        - "§7 ⊞ Шанс получить Обычное яйцо Пчелы"
+        - "§7 ⊞ Повышенный шанс на редкие предметы"
+        - ""
+        - "§dЭпический предмет"
+      enchantment:
+        DAMAGE_ALL: 1
+      data: "{\"rebirth_crystals\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    formula:
+      - clicks
+    setLevelNbt: "level"
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+
+inventory:
+  title: "Улучшение предмета"
+  context:
+  - "----i----"
+  auto:
+    "0":
+      type: "STONE"
+      amount: 1
+      damage: 0
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+maxLevel:
+- "et %player% Предмет имеет максимальный уровень!"
+formula:
+  "money": 
+    formula: "1.35*(last+125)"
+    readyOk: "§a ✔"
+    readyNo: "§c ✖" 
+  "clicks": 
+    formula: "1.3*(level*400)"
+    readyOk: "§a ✔"
+    readyNo: "§c ✖"               
+moneyOk: "§a ✔"
+moneyNo: "§c ✖"
+moreMoney:
+- "et %player% У вас недостаточно монет для улучшения предмета!"
+moreStats:
+  "kills_mobs":
+  - "et %player% Вам нужно больше убитых существ!"   
+  "clicks":
+  - "et %player% Вам нужно больше ударов!"  
+itemNone:
+- "et %player% Возьмите предмет в руку, чтобы улучшить его!"
+items:
+  "crystal":
+  - item:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§dКристалл Сохранения"
+      lore: 
+        - ""
+        - "§7Используйте его кликнув§d Кристаллом§7 по"
+        - "§7своим ножницам, чтобы сохранить их уровень"
+        - "§7при своём будующем перерождении!"
+        - ""
+        - "§dЭпический предмет"
+      enchantment: {}
+      data: '{"rebirth_add_crystals":1,"simulators":"save_crystal","rebirth_save":1}'
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте кирку, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили кирку!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"  
+  "bag":
+  - item:
+      type: "RED_SHULKER_BOX"
+      amount: 1
+      damage: 0
+      name: "§cРюкзак"
+      lore: 
+        - ""
+        - "§7Рюкзак поможет тебе переносить"
+        - "§7намного больше вещей, чем вы"
+        - "§7можете держать у себя в инвентаре!"
+        - ""
+        - "§eЛегендарный предмет"
+      enchantment: {}
+      data: '{"rebith_bag_save":1}'
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 100    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"  
+  "sword":
+  - item:
+      type: "WOOD_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 1"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 100    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "WOOD_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 2"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DAMAGE_ALL: 1
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "WOOD_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 3"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DAMAGE_ALL: 2
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 3500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "WOOD_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 4"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DAMAGE_ALL: 3
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 8500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "STONE_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 5"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 14500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "WOOD_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 6"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DAMAGE_ALL: 4
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 24500   
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "WOOD_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 7"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DAMAGE_ALL: 5
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 37500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "STONE_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 8"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DAMAGE_ALL: 1
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 54500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "IRON_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 9"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 67500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "WOOD_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 10"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DAMAGE_ALL: 6
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 87500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "STONE_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 11"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DAMAGE_ALL: 2
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 125000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "WOOD_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 12"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DAMAGE_ALL: 7
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 190000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "STONE_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 13"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DAMAGE_ALL: 3
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 275000   
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "IRON_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 14"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DAMAGE_ALL: 1
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 385000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "DIAMOND_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 15"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 455000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "STONE_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 16"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DAMAGE_ALL: 4
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 535000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "IRON_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 17"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DAMAGE_ALL: 2
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 625000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "STONE_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 18"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DAMAGE_ALL: 5
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 710000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "IRON_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 19"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DAMAGE_ALL: 3
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 835000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "STONE_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 20"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DAMAGE_ALL: 6
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 950000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "DIAMOND_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 21"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DAMAGE_ALL: 1
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 1150000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "IRON_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 22"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DAMAGE_ALL: 4
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 1320000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "STONE_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 23"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DAMAGE_ALL: 7
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 1475000   
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "DIAMOND_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 24"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DAMAGE_ALL: 2
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 1600000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "IRON_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 25"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DAMAGE_ALL: 5
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 1825000   
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "DIAMOND_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 26"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DAMAGE_ALL: 3
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 2100000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "IRON_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 27"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DAMAGE_ALL: 6
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 2400000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "DIAMOND_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 28"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DAMAGE_ALL: 4
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 2650000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "IRON_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 29"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DAMAGE_ALL: 7
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 2850000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "DIAMOND_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 30"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DAMAGE_ALL: 5
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 3150000   
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "DIAMOND_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 31"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DAMAGE_ALL: 6
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 3350000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "DIAMOND_SWORD"
+      amount: 1
+      damage: 0
+      name: "§cМеч"
+      lore: 
+        - "¨ffff99Уровень 32"
+        - ""
+        - "§7Убивай зверей, а также боссом"
+        - "§7намного эффективнее с этим мечем."
+        - "§7Чем выше уровень, тем больше урон!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        DAMAGE_ALL: 7
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 3600000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"    
+  "boots":
+  - item:
+      type: "LEATHER_BOOTS"
+      amount: 1
+      damage: 0
+      name: "§eТапки"
+      lore: 
+        - "¨ffff99Уровень 1"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 100    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"      
+  - item:
+      type: "LEATHER_BOOTS"
+      amount: 1
+      damage: 0
+      name: "§eТапки"
+      lore: 
+        - "¨ffff99Уровень 2"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 1
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "LEATHER_BOOTS"
+      amount: 1
+      damage: 0
+      name: "§eТапки"
+      lore: 
+        - "¨ffff99Уровень 3"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 2
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 1500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"   
+  - item:
+      type: "LEATHER_BOOTS"
+      amount: 1
+      damage: 0
+      name: "§eТапки"
+      lore: 
+        - "¨ffff99Уровень 4"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 3
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 3000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "CHAINMAIL_BOOTS"
+      amount: 1
+      damage: 0
+      name: "§eТапки"
+      lore: 
+        - "¨ffff99Уровень 5"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 7500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "CHAINMAIL_BOOTS"
+      amount: 1
+      damage: 0
+      name: "§eТапки"
+      lore: 
+        - "¨ffff99Уровень 6"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 1
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 12500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "CHAINMAIL_BOOTS"
+      amount: 1
+      damage: 0
+      name: "§eТапки"
+      lore: 
+        - "¨ffff99Уровень 7"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 2
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 18500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "CHAINMAIL_BOOTS"
+      amount: 1
+      damage: 0
+      name: "§eТапки"
+      lore: 
+        - "¨ffff99Уровень 8"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 3
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 25500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"        
+  - item:
+      type: "IRON_BOOTS"
+      amount: 1
+      damage: 0
+      name: "§eТапки"
+      lore: 
+        - "¨ffff99Уровень 9"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 50000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"    
+  - item:
+      type: "IRON_BOOTS"
+      amount: 1
+      damage: 0
+      name: "§eТапки"
+      lore: 
+        - "¨ffff99Уровень 10"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 1
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 85500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "IRON_BOOTS"
+      amount: 1
+      damage: 0
+      name: "§eТапки"
+      lore: 
+        - "¨ffff99Уровень 11"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 2
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 125000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "IRON_BOOTS"
+      amount: 1
+      damage: 0
+      name: "§eТапки"
+      lore: 
+        - "¨ffff99Уровень 12"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 3
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 190000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "DIAMOND_BOOTS"
+      amount: 1
+      damage: 0
+      name: "§eТапки"
+      lore: 
+        - "¨ffff99Уровень 13"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 320000   
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "DIAMOND_BOOTS"
+      amount: 1
+      damage: 0
+      name: "§eТапки"
+      lore: 
+        - "¨ffff99Уровень 14"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 1
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 475000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "DIAMOND_BOOTS"
+      amount: 1
+      damage: 0
+      name: "§eТапки"
+      lore: 
+        - "¨ffff99Уровень 15"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 2
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 610000  
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "DIAMOND_BOOTS"
+      amount: 1
+      damage: 0
+      name: "§eТапки"
+      lore: 
+        - "¨ffff99Уровень 16"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 3
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 780000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "DIAMOND_BOOTS"
+      amount: 1
+      damage: 0
+      name: "§eТапки"
+      lore: 
+        - "¨ffff99Уровень 17"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 4
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 950000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "DIAMOND_BOOTS"
+      amount: 1
+      damage: 0
+      name: "§eТапки"
+      lore: 
+        - "¨ffff99Уровень 18"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 5
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 1250000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"    
+  "leggings":
+  - item:
+      type: "LEATHER_LEGGINGS"
+      amount: 1
+      damage: 0
+      name: "§eШтаны"
+      lore: 
+        - "¨ffff99Уровень 1"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§7§o Для улучшения нужна статистика найденных предметов"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 100    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"      
+  - item:
+      type: "LEATHER_LEGGINGS"
+      amount: 1
+      damage: 0
+      name: "§eШтаны"
+      lore: 
+        - "¨ffff99Уровень 2"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 1
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "LEATHER_LEGGINGS"
+      amount: 1
+      damage: 0
+      name: "§eШтаны"
+      lore: 
+        - "¨ffff99Уровень 3"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 2
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 1500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"   
+  - item:
+      type: "LEATHER_LEGGINGS"
+      amount: 1
+      damage: 0
+      name: "§eШтаны"
+      lore: 
+        - "¨ffff99Уровень 4"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 3
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 3000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "CHAINMAIL_LEGGINGS"
+      amount: 1
+      damage: 0
+      name: "§eШтаны"
+      lore: 
+        - "¨ffff99Уровень 5"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 7500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "CHAINMAIL_LEGGINGS"
+      amount: 1
+      damage: 0
+      name: "§eШтаны"
+      lore: 
+        - "¨ffff99Уровень 6"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 1
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 12500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "CHAINMAIL_LEGGINGS"
+      amount: 1
+      damage: 0
+      name: "§eШтаны"
+      lore: 
+        - "¨ffff99Уровень 7"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 2
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 18500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "CHAINMAIL_LEGGINGS"
+      amount: 1
+      damage: 0
+      name: "§eШтаны"
+      lore: 
+        - "¨ffff99Уровень 8"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 3
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 25500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"        
+  - item:
+      type: "IRON_LEGGINGS"
+      amount: 1
+      damage: 0
+      name: "§eШтаны"
+      lore: 
+        - "¨ffff99Уровень 9"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 50000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"    
+  - item:
+      type: "IRON_LEGGINGS"
+      amount: 1
+      damage: 0
+      name: "§eШтаны"
+      lore: 
+        - "¨ffff99Уровень 10"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 1
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 85500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "IRON_LEGGINGS"
+      amount: 1
+      damage: 0
+      name: "§eШтаны"
+      lore: 
+        - "¨ffff99Уровень 11"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 2
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 125000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "IRON_LEGGINGS"
+      amount: 1
+      damage: 0
+      name: "§eШтаны"
+      lore: 
+        - "¨ffff99Уровень 12"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 3
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 190000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "DIAMOND_LEGGINGS"
+      amount: 1
+      damage: 0
+      name: "§eШтаны"
+      lore: 
+        - "¨ffff99Уровень 13"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 320000   
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "DIAMOND_LEGGINGS"
+      amount: 1
+      damage: 0
+      name: "§eШтаны"
+      lore: 
+        - "¨ffff99Уровень 14"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 1
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 475000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "DIAMOND_LEGGINGS"
+      amount: 1
+      damage: 0
+      name: "§eШтаны"
+      lore: 
+        - "¨ffff99Уровень 15"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 2
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 610000  
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "DIAMOND_LEGGINGS"
+      amount: 1
+      damage: 0
+      name: "§eШтаны"
+      lore: 
+        - "¨ffff99Уровень 16"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 3
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 780000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "DIAMOND_LEGGINGS"
+      amount: 1
+      damage: 0
+      name: "§eШтаны"
+      lore: 
+        - "¨ffff99Уровень 17"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 4
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 950000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "DIAMOND_LEGGINGS"
+      amount: 1
+      damage: 0
+      name: "§eШтаны"
+      lore: 
+        - "¨ffff99Уровень 18"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 5
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 1250000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"    
+  "chestplate":
+  - item:
+      type: "LEATHER_CHESTPLATE"
+      amount: 1
+      damage: 0
+      name: "§eКуртка"
+      lore: 
+        - "¨ffff99Уровень 1"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§7§o Для улучшения нужна статистика найденных предметов"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 100    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"      
+  - item:
+      type: "LEATHER_CHESTPLATE"
+      amount: 1
+      damage: 0
+      name: "§eКуртка"
+      lore: 
+        - "¨ffff99Уровень 2"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 1
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "LEATHER_CHESTPLATE"
+      amount: 1
+      damage: 0
+      name: "§eКуртка"
+      lore: 
+        - "¨ffff99Уровень 3"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 2
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 1500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"   
+  - item:
+      type: "LEATHER_CHESTPLATE"
+      amount: 1
+      damage: 0
+      name: "§eКуртка"
+      lore: 
+        - "¨ffff99Уровень 4"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 3
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 3000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "CHAINMAIL_CHESTPLATE"
+      amount: 1
+      damage: 0
+      name: "§eКуртка"
+      lore: 
+        - "¨ffff99Уровень 5"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 7500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "CHAINMAIL_CHESTPLATE"
+      amount: 1
+      damage: 0
+      name: "§eКуртка"
+      lore: 
+        - "¨ffff99Уровень 6"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 1
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 12500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "CHAINMAIL_CHESTPLATE"
+      amount: 1
+      damage: 0
+      name: "§eКуртка"
+      lore: 
+        - "¨ffff99Уровень 7"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 2
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 18500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "CHAINMAIL_CHESTPLATE"
+      amount: 1
+      damage: 0
+      name: "§eКуртка"
+      lore: 
+        - "¨ffff99Уровень 8"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 3
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 25500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"        
+  - item:
+      type: "IRON_CHESTPLATE"
+      amount: 1
+      damage: 0
+      name: "§eКуртка"
+      lore: 
+        - "¨ffff99Уровень 9"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 50000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"    
+  - item:
+      type: "IRON_CHESTPLATE"
+      amount: 1
+      damage: 0
+      name: "§eКуртка"
+      lore: 
+        - "¨ffff99Уровень 10"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 1
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 85500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "IRON_CHESTPLATE"
+      amount: 1
+      damage: 0
+      name: "§eКуртка"
+      lore: 
+        - "¨ffff99Уровень 11"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 2
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 125000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "IRON_CHESTPLATE"
+      amount: 1
+      damage: 0
+      name: "§eКуртка"
+      lore: 
+        - "¨ffff99Уровень 12"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 3
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 190000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "DIAMOND_CHESTPLATE"
+      amount: 1
+      damage: 0
+      name: "§eКуртка"
+      lore: 
+        - "¨ffff99Уровень 13"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 320000   
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "DIAMOND_CHESTPLATE"
+      amount: 1
+      damage: 0
+      name: "§eКуртка"
+      lore: 
+        - "¨ffff99Уровень 14"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 1
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 475000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "DIAMOND_CHESTPLATE"
+      amount: 1
+      damage: 0
+      name: "§eКуртка"
+      lore: 
+        - "¨ffff99Уровень 15"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 2
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 610000  
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "DIAMOND_CHESTPLATE"
+      amount: 1
+      damage: 0
+      name: "§eКуртка"
+      lore: 
+        - "¨ffff99Уровень 16"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 3
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 780000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "DIAMOND_CHESTPLATE"
+      amount: 1
+      damage: 0
+      name: "§eКуртка"
+      lore: 
+        - "¨ffff99Уровень 17"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 4
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 950000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "DIAMOND_CHESTPLATE"
+      amount: 1
+      damage: 0
+      name: "§eКуртка"
+      lore: 
+        - "¨ffff99Уровень 18"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 5
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 1250000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"    
+  "helmet":
+  - item:
+      type: "LEATHER_HELMET"
+      amount: 1
+      damage: 0
+      name: "§eШапочка"
+      lore: 
+        - "¨ffff99Уровень 1"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§7§o Для улучшения нужна статистика найденных предметов"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 100    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"      
+  - item:
+      type: "LEATHER_HELMET"
+      amount: 1
+      damage: 0
+      name: "§eШапочка"
+      lore: 
+        - "¨ffff99Уровень 2"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 1
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "LEATHER_HELMET"
+      amount: 1
+      damage: 0
+      name: "§eШапочка"
+      lore: 
+        - "¨ffff99Уровень 3"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 2
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 1500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"   
+  - item:
+      type: "LEATHER_HELMET"
+      amount: 1
+      damage: 0
+      name: "§eШапочка"
+      lore: 
+        - "¨ffff99Уровень 4"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 3
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 3000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "CHAINMAIL_HELMET"
+      amount: 1
+      damage: 0
+      name: "§eШапочка"
+      lore: 
+        - "¨ffff99Уровень 5"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 7500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "CHAINMAIL_HELMET"
+      amount: 1
+      damage: 0
+      name: "§eШапочка"
+      lore: 
+        - "¨ffff99Уровень 6"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 1
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 12500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "CHAINMAIL_HELMET"
+      amount: 1
+      damage: 0
+      name: "§eШапочка"
+      lore: 
+        - "¨ffff99Уровень 7"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 2
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 18500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "CHAINMAIL_HELMET"
+      amount: 1
+      damage: 0
+      name: "§eШапочка"
+      lore: 
+        - "¨ffff99Уровень 8"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 3
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 25500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"        
+  - item:
+      type: "IRON_HELMET"
+      amount: 1
+      damage: 0
+      name: "§eШапочка"
+      lore: 
+        - "¨ffff99Уровень 9"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 50000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"    
+  - item:
+      type: "IRON_HELMET"
+      amount: 1
+      damage: 0
+      name: "§eШапочка"
+      lore: 
+        - "¨ffff99Уровень 10"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 1
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 85500    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "IRON_HELMET"
+      amount: 1
+      damage: 0
+      name: "§eШапочка"
+      lore: 
+        - "¨ffff99Уровень 11"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 2
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 125000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "IRON_HELMET"
+      amount: 1
+      damage: 0
+      name: "§eШапочка"
+      lore: 
+        - "¨ffff99Уровень 12"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 3
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 190000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "DIAMOND_HELMET"
+      amount: 1
+      damage: 0
+      name: "§eШапочка"
+      lore: 
+        - "¨ffff99Уровень 13"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: {}
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 320000   
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "DIAMOND_HELMET"
+      amount: 1
+      damage: 0
+      name: "§eШапочка"
+      lore: 
+        - "¨ffff99Уровень 14"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 1
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 475000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "DIAMOND_HELMET"
+      amount: 1
+      damage: 0
+      name: "§eШапочка"
+      lore: 
+        - "¨ffff99Уровень 15"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 2
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 610000  
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "DIAMOND_HELMET"
+      amount: 1
+      damage: 0
+      name: "§eШапочка"
+      lore: 
+        - "¨ffff99Уровень 16"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 3
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 780000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"
+  - item:
+      type: "DIAMOND_HELMET"
+      amount: 1
+      damage: 0
+      name: "§eШапочка"
+      lore: 
+        - "¨ffff99Уровень 17"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 4
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 950000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+  - item:
+      type: "DIAMOND_HELMET"
+      amount: 1
+      damage: 0
+      name: "§eШапочка"
+      lore: 
+        - "¨ffff99Уровень 18"
+        - ""
+        - "§7Защити своё тело от зверей и"
+        - "§7различных опасностей! Чем лучше"
+        - "§7твоя броня тем труднее тебя убить!"
+        - ""
+        - "§6Редкий предмет"
+      enchantment: 
+        PROTECTION_ENVIRONMENTAL: 5
+      data: "{\"rebirth_save\":0,\"disabledrop\":1}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    price: 1250000    
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    stats:
+      "rare_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖" 
+      "epic_items_found":
+        count: 0
+        readyOk: "§a ✔"
+        readyNo: "§c ✖"               
+  "donate-hoe":
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  - *donate-hoe
+  "doubble-hoe":
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  - *doubble-hoe
+  "stats-hoe":
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  - *stats-hoe
+  "money-hoe":
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  - *money-hoe
+  "speed-hoe":
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  - *speed-hoe
+  "mistic-hoe":
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  - *mistic-hoe
+  "normal-hoe":
+  - *normal-hoe
+  - *normal-hoe
+  - *normal-hoe
+  - *normal-hoe
+  - *normal-hoe
+  - *normal-hoe
+  - *normal-hoe
+  - *normal-hoe
+  - *normal-hoe
+  - *normal-hoe
+  - *normal-hoe
+  - *normal-hoe
+  - *normal-hoe
+  - *normal-hoe
+  - *normal-hoe
+  - *normal-hoe
+  - *normal-hoe
+  - *normal-hoe
+  - *normal-hoe
+  - *normal-hoe
+  - *normal-hoe
+  - *normal-hoe
+  - *normal-hoe
+  - *normal-hoe
+  - *normal-hoe
+  - *normal-hoe
+  - *normal-hoe
+  - *normal-hoe
+  - *normal-hoe
+  - *normal-hoe
+
+  "item-1":
+  - item:
+      type: "GLOWSTONE_DUST"
+      amount: 6
+      damage: 0
+      name: "§eПыльца"
+      lore: 
+        - ""
+        - "§7Создайте сироп с помощью этой"
+        - "§7пыльцы или же продайте и"
+        - "§7получите много монет за это!"
+        - ""
+        - "§dЭпический предмет"
+      enchantment: {}
+      data: "{\"pilca\":1,\"price\":100}"
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    formula:
+      - clicks
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"  
+  "bits-pass-100":
+  - item:
+      type: "PAPER"
+      amount: 1
+      damage: 0
+      name: "§dЧек с Битсами [100]"
+      lore: 
+        - ""
+        - "§7Используй этот чек и получи"
+        - "§7указанную сумму §dБитсов"
+        - ""
+        - "§dЭпический предмет"
+      enchantment: 
+        DAMAGE_ALL: 1
+      data: '{"cmd":"bits-pass-100","rebirth_save":1}'
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES","HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    formula:
+      - clicks
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+  "bits-pass-50":
+  - item:
+      type: "PAPER"
+      amount: 1
+      damage: 0
+      name: "§dЧек с Битсами [50]"
+      lore: 
+        - ""
+        - "§7Используй этот чек и получи"
+        - "§7указанную сумму §dБитсов"
+        - ""
+        - "§dЭпический предмет"
+      enchantment: 
+        DAMAGE_ALL: 1
+      data: '{"cmd":"bits-pass-50","rebirth_save":1}'
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES","HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    formula:
+      - clicks
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+  "bits-pass-25":
+  - item:
+      type: "PAPER"
+      amount: 1
+      damage: 0
+      name: "§dЧек с Битсами [25]"
+      lore: 
+        - ""
+        - "§7Используй этот чек и получи"
+        - "§7указанную сумму §dБитсов"
+        - ""
+        - "§dЭпический предмет"
+      enchantment: 
+        DAMAGE_ALL: 1
+      data: '{"cmd":"bits-pass-25","rebirth_save":1}'
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES","HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    formula:
+      - clicks
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+  "bits-pass-10":
+  - item:
+      type: "PAPER"
+      amount: 1
+      damage: 0
+      name: "§dЧек с Битсами [10]"
+      lore: 
+        - ""
+        - "§7Используй этот чек и получи"
+        - "§7указанную сумму §dБитсов"
+        - ""
+        - "§dЭпический предмет"
+      enchantment: 
+        DAMAGE_ALL: 1
+      data: '{"cmd":"bits-pass-10","rebirth_save":1}'
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES","HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    formula:
+      - clicks
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+  "bits-pass-5":
+  - item:
+      type: "PAPER"
+      amount: 1
+      damage: 0
+      name: "§dЧек с Битсами [5]"
+      lore: 
+        - ""
+        - "§7Используй этот чек и получи"
+        - "§7указанную сумму §dБитсов"
+        - ""
+        - "§dЭпический предмет"
+      enchantment: 
+        DAMAGE_ALL: 1
+      data: '{"cmd":"bits-pass-5","rebirth_save":1}'
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES","HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    formula:
+      - clicks
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+  "speed":
+  - item:
+      type: "PAPER"
+      amount: 1
+      damage: 0
+      name: "§bПерк скорости"
+      lore: 
+        - ""
+        - "§7Используй ПКМ по земле"
+        - "§7и активируй перк скорости."
+        - "§7НЕ используй, если он у тебя уже есть."
+        - ""
+        - "§dЭпический предмет"
+      enchantment: 
+        DAMAGE_ALL: 1
+      data: '{"cmd":"speed","rebirth_save":1}'
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES","HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    formula:
+      - clicks
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+  "pass-500":
+  - item:
+      type: "PAPER"
+      amount: 1
+      damage: 0
+      name: "§aДенежный чек [500$]"
+      lore: 
+        - ""
+        - "§7Покажи этот чек §6Собирателю"
+        - "§7и он выдаст тебе деньги."
+        - ""
+        - "§aОбычный предмет"
+      enchantment: {}
+      data: '{"price":500,"rebirth_save":1}'
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES","HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    formula:
+      - clicks
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+  "pass-1000":
+  - item:
+      type: "PAPER"
+      amount: 1
+      damage: 0
+      name: "§aДенежный чек [1000$]"
+      lore: 
+        - ""
+        - "§7Покажи этот чек §6Собирателю"
+        - "§7и он выдаст тебе деньги."
+        - ""
+        - "§aОбычный предмет"
+      enchantment: {}
+      data: '{"price":1000,"rebirth_save":1}'
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES","HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    formula:
+      - clicks
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+  "pass-2000":
+  - item:
+      type: "PAPER"
+      amount: 1
+      damage: 0
+      name: "§aДенежный чек [2000$]"
+      lore: 
+        - ""
+        - "§7Покажи этот чек §6Собирателю"
+        - "§7и он выдаст тебе деньги."
+        - ""
+        - "§aОбычный предмет"
+      enchantment: {}
+      data: '{"price":2000,"rebirth_save":1}'
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES","HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    formula:
+      - clicks
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+  "pass-3000":
+  - item:
+      type: "PAPER"
+      amount: 1
+      damage: 0
+      name: "§aДенежный чек [3000$]"
+      lore: 
+        - ""
+        - "§7Покажи этот чек §6Собирателю"
+        - "§7и он выдаст тебе деньги."
+        - ""
+        - "§aОбычный предмет"
+      enchantment: {}
+      data: '{"price":3000,"rebirth_save":1}'
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES","HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    formula:
+      - clicks
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+  "pass-5000":
+  - item:
+      type: "PAPER"
+      amount: 1
+      damage: 0
+      name: "§aДенежный чек [5000$]"
+      lore: 
+        - ""
+        - "§7Покажи этот чек §6Собирателю"
+        - "§7и он выдаст тебе деньги."
+        - ""
+        - "§aОбычный предмет"
+      enchantment: {}
+      data: '{"price":5000,"rebirth_save":1}'
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES","HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    formula:
+      - clicks
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+  "pass-10000":
+  - item:
+      type: "PAPER"
+      amount: 1
+      damage: 0
+      name: "§aДенежный чек [10000$]"
+      lore: 
+        - ""
+        - "§7Покажи этот чек §6Собирателю"
+        - "§7и он выдаст тебе деньги."
+        - ""
+        - "§aОбычный предмет"
+      enchantment: {}
+      data: '{"price":10000,"rebirth_save":1}'
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES","HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    formula:
+      - clicks
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+  "gapple":
+  - item:
+      type: "GOLDEN_APPLE"
+      amount: 1
+      damage: 0
+      name: "§bЗолотое яблоко"
+      lore: []
+      enchantment: {}
+      data: '{"rebirth_save":1}'
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES","HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    formula:
+      - clicks
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+  "gapplen":
+  - item:
+      type: "GOLDEN_APPLE"
+      amount: 1
+      damage: 1
+      name: "§dЗолотое яблоко"
+      lore: []
+      enchantment: {}
+      data: '{"rebirth_save":1}'
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES","HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    formula:
+      - clicks
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+  "bread":
+  - item:
+      type: "BREAD"
+      amount: 16
+      damage: 0
+      name: "§fХлеб"
+      lore: []
+      enchantment: {}
+      data: '{"rebirth_save":1}'
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES","HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    formula:
+      - clicks
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+  "bag_s":
+  - item:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§6Горсть монет"
+      lore: 
+        - ""
+        - "§7Получи монет в размере от 1 до 10%"
+        - "§7монет от своего баланса!"
+        - ""
+        - "§e▶ Нажми по земле для акцивации"
+      enchantment: {}
+      data: '{"other":"bag1","cmd":"bag_s","rebirth_save":1}'
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    formula:
+      - clicks
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+  "bag_b":
+  - item:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§6Мешок монет"
+      lore: 
+        - ""
+        - "§7Получи монет в размере от 1 до 10%"
+        - "§7монет от своего баланса!"
+        - ""
+        - "§e▶ Нажми по земле для акцивации"
+      enchantment: {}
+      data: '{"other":"bag1","cmd":"bag_b","rebirth_save":1}'
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    formula:
+      - clicks
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+  "offhand_money":
+  - item:
+      type: "GOLD_INGOT"
+      amount: 1
+      damage: 0
+      name: "§eРеликвия богатства"
+      lore: 
+        - "§7§oВизуально бустер не всегда отображается"
+        - ""
+        - "§7Если находится в левой руке,"
+        - "§7то дает бонусы, указанные ниже."
+        - ""
+        - "§7Бонусы реликвии"
+        - ""
+        - "§7 ⊞ §eБустер монет 1х"
+      enchantment: {}
+      data: '{"offhand_money":2,"rebirth_save":1}'
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    formula:
+      - clicks
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+  "offhand_exp":
+  - item:
+      type: "PRISMARINE_SHARD"
+      amount: 1
+      damage: 0
+      name: "§bРеликвия просвящения"
+      lore: 
+        - "§7§oВизуально бустер не всегда отображается"
+        - ""
+        - "§7Если находится в левой руке,"
+        - "§7то дает бонусы, указанные ниже."
+        - ""
+        - "§7Бонусы реликвии"
+        - ""
+        - "§7 ⊞ §bБустер опыта 1х"
+      enchantment: {}
+      data: '{"offhand_exp":1,"rebirth_save":1}'
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    formula:
+      - clicks
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+  "offhand_mobs":
+  - item:
+      type: "BLAZE_POWDER"
+      amount: 1
+      damage: 0
+      name: "§bРеликвия охотника"
+      lore: 
+        - "§7§oВизуально бустер не всегда отображается"
+        - ""
+        - "§7Если находится в левой руке,"
+        - "§7то дает бонусы, указанные ниже."
+        - ""
+        - "§7Бонусы реликвии"
+        - ""
+        - "§7 ⊞ §cБустер мобов 1х"
+      enchantment: {}
+      data: '{"offhand_mobs":1,"rebirth_save":1}'
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    formula:
+      - clicks
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+  "offhand_clicks":
+  - item:
+      type: "IRON_NUGGET"
+      amount: 1
+      damage: 0
+      name: "§6Реликвия флориста"
+      lore: 
+        - "§7§oВизуально бустер не всегда отображается"
+        - ""
+        - "§7Если находится в левой руке,"
+        - "§7то дает бонусы, указанные ниже."
+        - ""
+        - "§7Бонусы реликвии"
+        - ""
+        - "§7 ⊞ §6Бустер Цветов 1х"
+      enchantment: {}
+      data: '{"offhand_clicks":1,"rebirth_save":1}'
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    formula:
+      - clicks
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+  "offhand_all":
+  - item:
+      type: "NETHER_STAR"
+      amount: 1
+      damage: 0
+      name: "§dРеликвия всего"
+      lore: 
+        - "§7§oВизуально бустер не всегда отображается"
+        - ""
+        - "§7Если находится в левой руке,"
+        - "§7то дает бонусы, указанные ниже."
+        - ""
+        - "§7Бонусы реликвии"
+        - ""
+        - "§7 ⊞ §bБустер опыта 1.5х"
+        - "§7 ⊞ §eБустер монет 1.5х"
+        - "§7 ⊞ §6Бустер Цветов 1.5х"
+        - "§7 ⊞ §cБустер мобов 1.5х"
+      enchantment: {}
+      data: '{"offhand_all":1,"rebirth_save":1}'
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE","HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте предметы и получайте более"
+      - "§7хорошие их версии! Сделай свою игру"
+      - "§7намного проще и увлекательнее!"  
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - "§7 ⊠ §fУдары:%ready_clicks% %current_clicks%/%need_clicks%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money
+    formula:
+      - clicks
+    commands:
+    - "st %player% Вы успешно улучшили предмет!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+  "icon":   #Уровень 1
+  - item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§eСимулятор Пчеловода"
+      lore: 
+        - ""
+        - "§7Выращивай пчёл, выходи с ними на луга и"
+        - "§7прокачивай их, они будут приносить всё"
+        - "§7больше и больше различных ресурсов!"        
+        - "REALM:AH"
+      enchantment: {}
+      data: '{"SkullOwner":{"Id":"658b47f7-fdfd-4a77-bb35-77c0f9ed2ba8","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTg3NDc4N2UzNjE1OWU0ZDc0ZGI1ZTI1YmFiYTk4N2I2NjVkY2M4OTBiZTlmMjYyYmIwY2JjZjVkMDFiODJiNiJ9fX0="}]}}}'
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "DIAMOND_SWORD"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money_normal_shovel
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    - "morestats %player% upgrade_normal_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false" 
+  "icon1":   #Уровень 1
+  - item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§aСимуляторы"
+      lore: 
+        - "§7Небольшие интересные режимы - то"
+        - "§7что надо, чтобы не заскучать! Раз в"
+        - "§7несколько недель мы будем открывать"
+        - "§7новый симулятор специально для вас!"
+        - ""
+        - "§bАктивные симуляторы"
+        - "§7 ⊞ §eСимулятор Пчеловода"
+        - "§7  §o Выращивай пчёл, выходи с ними на луга и"
+        - "§7  §o прокачивай их, они будут приносить всё"
+        - "§7  §o больше и больше различных ресурсов!"
+        - ""        
+        - "§7 ⊞ §cСимулятор Катаны"
+        - "§7  §o Сражайся с игроками на PvP арене, прокачивай"
+        - "§7  §o свою катану и зарабатывай больше монет!"        
+        - "CATEGORY:SIMULATORS"
+      enchantment: {}
+      data: '{"SkullOwner":{"Id":"658b47f7-fdfd-4a77-bb35-77c0f9ed2ba8","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTg3NDc4N2UzNjE1OWU0ZDc0ZGI1ZTI1YmFiYTk4N2I2NjVkY2M4OTBiZTlmMjYyYmIwY2JjZjVkMDFiODJiNiJ9fX0="}]}}}'
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте лопату, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money_normal_shovel
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили лопату!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+    - "morestats %player% upgrade_normal_shovel 1 false"   
+    - "morestats %player% upgrade_shovel 1 false"   
+    - "morestats %player% upgrade_item 1 false"     

@@ -1,0 +1,32 @@
+mapping:
+  100: "¨f5ab00✪"
+item:
+  type: "CLAY_BALL"
+  amount: 1
+  damage: 0
+  name: "%title%"
+  lore: []
+  enchantment: {}
+  data: '{"other":"tochka"}'
+  unbreakable: false
+  flags: []
+selected: "§8[§ai§8]§f Выбран титул: %title%"
+emptyTitles: "§8[§ci§8]§f У вас нет доступных титулов!"
+inventory:
+  title: "Доступные титулы"
+  context:
+  - "---------"
+  - "-iiiiiii-"
+  - "---------"
+  auto:
+    "0":
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: ""
+      lore: []
+      enchantment: {}
+      data: '{"other":"tochka"}'
+      unbreakable: false
+      flags: []
+table: "activesuffix"

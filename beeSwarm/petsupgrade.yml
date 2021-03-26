@@ -1,0 +1,1350 @@
+selectGui:
+  title: "Питомцы"
+  context:
+  - "---------"  
+  - "-iiiiiii-"  
+  - "piiiiiiin"  
+  - "-iiiiiii-"
+  - "---------"
+  auto:
+    "0":
+      type: "STONE"
+      amount: 1
+      damage: 0
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+fillItem:
+  type: "CLAY_BALL"
+  amount: 1
+  damage: 0
+  name: "§cНеизвестный питомец"
+  lore: 
+    - ""
+    - "§7Открывайте §f§nЯйца с Пчелами§r§7 и"
+    - "§7получайте новых пчел, которые"
+    - "§7будут помогать вам в поле и давать"
+    - "§7бустеры статистики!"
+  enchantment: {}
+  data: '{"other":"lock","color":16519740}'
+  unbreakable: false
+  flags: []
+nextPage:
+  type: "CLAY_BALL"
+  amount: 1
+  damage: 0
+  name: "§eДалее"
+  lore: []
+  enchantment: {}
+  data: '{"other":"arrow_right"}'
+  unbreakable: false
+  flags: []
+previousPage:
+  type: "CLAY_BALL"
+  amount: 1
+  damage: 0
+  name: "§eНазад"
+  lore: []
+  enchantment: {}
+  data: '{"other":"arrow_left"}'
+  unbreakable: false
+  flags: []    
+pets:
+  1:
+    name: "¨58d47a Пчела"
+    maxLevel: 32
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨58d47a Пчела"
+      lore:
+      - "¨58d47aОбычный"  
+      - ""
+      - "§7Пчелы помогают вам собирать цветы."
+      - "§7Вы можете прокачать свою пчелу, с"
+      - "§7каждым новым уровнем она будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§b Опыт"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить пчелу"
+          lore: 
+            - ""
+            - "§7Улучшайте пчел и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Пчела"
+            - "§7за каждый уровень дает вам +5% ко"
+            - "§7всей вашей статистике и эффективнее"
+            - "§7работает в поле!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"
+  2:
+    name: "¨58d47a Медоносная пчела"
+    maxLevel: 32
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨58d47a Медоносная пчела"
+      lore:
+      - "¨58d47aОбычный"  
+      - ""
+      - "§7Пчелы помогают вам собирать цветы."
+      - "§7Вы можете прокачать свою пчелу, с"
+      - "§7каждым новым уровнем она будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§b Опыт"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить пчелу"
+          lore: 
+            - ""
+            - "§7Улучшайте пчел и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Пчела"
+            - "§7за каждый уровень дает вам +5% ко"
+            - "§7всей вашей статистике и эффективнее"
+            - "§7работает в поле!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"
+
+  3:
+    name: "¨58d47a Пчела-Плотник"
+    maxLevel: 32
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨58d47a Пчела-Плотник"
+      lore:
+      - "¨58d47aОбычный"  
+      - ""
+      - "§7Пчелы помогают вам собирать цветы."
+      - "§7Вы можете прокачать свою пчелу, с"
+      - "§7каждым новым уровнем она будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§c Мобы"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить пчелу"
+          lore: 
+            - ""
+            - "§7Улучшайте пчел и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Пчела"
+            - "§7за каждый уровень дает вам +5% ко"
+            - "§7всей вашей статистике и эффективнее"
+            - "§7работает в поле!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"
+
+  4:
+    name: "¨58d47a Галиктид"
+    maxLevel: 32
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨58d47a Галиктид"
+      lore:
+      - "¨58d47aОбычный"  
+      - ""
+      - "§7Пчелы помогают вам собирать цветы."
+      - "§7Вы можете прокачать свою пчелу, с"
+      - "§7каждым новым уровнем она будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§6 Удары"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить пчелу"
+          lore: 
+            - ""
+            - "§7Улучшайте пчел и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Пчела"
+            - "§7за каждый уровень дает вам +5% ко"
+            - "§7всей вашей статистике и эффективнее"
+            - "§7работает в поле!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"
+
+  5:
+    name: "¨58d47a Горная пчела"
+    maxLevel: 32
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨58d47a Горная пчела"
+      lore:
+      - "¨58d47aОбычный"  
+      - ""
+      - "§7Пчелы помогают вам собирать цветы."
+      - "§7Вы можете прокачать свою пчелу, с"
+      - "§7каждым новым уровнем она будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§e Монеты"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить пчелу"
+          lore: 
+            - ""
+            - "§7Улучшайте пчел и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Пчела"
+            - "§7за каждый уровень дает вам +5% ко"
+            - "§7всей вашей статистике и эффективнее"
+            - "§7работает в поле!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"
+
+  6:
+    name: "¨46bfef Потемневшая пчела"
+    maxLevel: 32
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨46bfef Потемневшая пчела"
+      lore:
+      - "¨46bfefРедкий"  
+      - ""
+      - "§7Пчелы помогают вам собирать цветы."
+      - "§7Вы можете прокачать свою пчелу, с"
+      - "§7каждым новым уровнем она будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§c Мобы"
+      - " §f⊞§b Опыт"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить пчелу"
+          lore: 
+            - ""
+            - "§7Улучшайте пчел и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Пчела"
+            - "§7за каждый уровень дает вам +5% ко"
+            - "§7всей вашей статистике и эффективнее"
+            - "§7работает в поле!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"
+
+  7:
+    name: "¨46bfef Скромная пчела"
+    maxLevel: 32
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨46bfef Скромная пчела"
+      lore:
+      - "¨46bfefРедкий"  
+      - ""
+      - "§7Пчелы помогают вам собирать цветы."
+      - "§7Вы можете прокачать свою пчелу, с"
+      - "§7каждым новым уровнем она будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§e Монеты"
+      - " §f⊞§b Опыт"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить пчелу"
+          lore: 
+            - ""
+            - "§7Улучшайте пчел и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Пчела"
+            - "§7за каждый уровень дает вам +5% ко"
+            - "§7всей вашей статистике и эффективнее"
+            - "§7работает в поле!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"
+
+  8:
+    name: "¨46bfef Спектральная пчела"
+    maxLevel: 32
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨46bfef Спектральная пчела"
+      lore:
+      - "¨46bfefРедкий"  
+      - ""
+      - "§7Пчелы помогают вам собирать цветы."
+      - "§7Вы можете прокачать свою пчелу, с"
+      - "§7каждым новым уровнем она будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§e Монеты"
+      - " §f⊞§c Мобы"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить пчелу"
+          lore: 
+            - ""
+            - "§7Улучшайте пчел и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Пчела"
+            - "§7за каждый уровень дает вам +5% ко"
+            - "§7всей вашей статистике и эффективнее"
+            - "§7работает в поле!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"
+
+  9:
+    name: "¨46bfef Призрачная пчела"
+    maxLevel: 32
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨46bfef Призрачная пчела"
+      lore:
+      - "¨46bfefРедкий"  
+      - ""
+      - "§7Пчелы помогают вам собирать цветы."
+      - "§7Вы можете прокачать свою пчелу, с"
+      - "§7каждым новым уровнем она будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§6 Удары"
+      - " §f⊞§c Мобы"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить пчелу"
+          lore: 
+            - ""
+            - "§7Улучшайте пчел и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Пчела"
+            - "§7за каждый уровень дает вам +5% ко"
+            - "§7всей вашей статистике и эффективнее"
+            - "§7работает в поле!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"
+
+  10:
+    name: "¨c346ec Мстительная пчела"
+    maxLevel: 32
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨c346ec Мстительная пчела"
+      lore:
+      - "¨c346ecЭпический"  
+      - ""
+      - "§7Пчелы помогают вам собирать цветы."
+      - "§7Вы можете прокачать свою пчелу, с"
+      - "§7каждым новым уровнем она будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§6 Удары"
+      - " §f⊞§b Опыт"
+      - " §f⊞§c Мобы"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить пчелу"
+          lore: 
+            - ""
+            - "§7Улучшайте пчел и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Пчела"
+            - "§7за каждый уровень дает вам +5% ко"
+            - "§7всей вашей статистике и эффективнее"
+            - "§7работает в поле!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"
+
+  11:
+    name: "¨c346ec Демоническая пчела"
+    maxLevel: 32
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨c346ec Демоническая пчела"
+      lore:
+      - "¨c346ecЭпический"  
+      - ""
+      - "§7Пчелы помогают вам собирать цветы."
+      - "§7Вы можете прокачать свою пчелу, с"
+      - "§7каждым новым уровнем она будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§c Мобы"
+      - " §f⊞§6 Удары"
+      - " §f⊞§e Монеты"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить пчелу"
+          lore: 
+            - ""
+            - "§7Улучшайте пчел и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Пчела"
+            - "§7за каждый уровень дает вам +5% ко"
+            - "§7всей вашей статистике и эффективнее"
+            - "§7работает в поле!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"   
+  12:
+    name: "¨c346ecМонашеская пчела"
+    maxLevel: 32
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨c346ec Монашеская пчела"
+      lore:
+      - "¨c346ecЭпический"  
+      - ""
+      - "§7Пчелы помогают вам собирать цветы."
+      - "§7Вы можете прокачать свою пчелу, с"
+      - "§7каждым новым уровнем она будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§e Монеты"
+      - " §f⊞§b Опыт"
+      - " §f⊞§c Мобы"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить пчелу"
+          lore: 
+            - ""
+            - "§7Улучшайте пчел и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Пчела"
+            - "§7за каждый уровень дает вам +5% ко"
+            - "§7всей вашей статистике и эффективнее"
+            - "§7работает в поле!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"  
+  13:
+    name: "¨c346ec Тропическая пчела"
+    maxLevel: 32
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨c346ec Тропическая пчела"
+      lore:
+      - "¨c346ecЭпический" 
+      - ""
+      - "§7Пчелы помогают вам собирать цветы."
+      - "§7Вы можете прокачать свою пчелу, с"
+      - "§7каждым новым уровнем она будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§e Монеты"
+      - " §f⊞§b Опыт"
+      - " §f⊞§6 Удары"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить пчелу"
+          lore: 
+            - ""
+            - "§7Улучшайте пчел и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Пчела"
+            - "§7за каждый уровень дает вам +5% ко"
+            - "§7всей вашей статистике и эффективнее"
+            - "§7работает в поле!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level" 
+  14:
+    name: "¨fcc12b Пчела края"
+    maxLevel: 32
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨fcc12b Пчела края"
+      lore:
+      - "¨fcc12bЛегендарный"   
+      - ""
+      - "§7Пчелы помогают вам собирать цветы."
+      - "§7Вы можете прокачать свою пчелу, с"
+      - "§7каждым новым уровнем она будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§e Монеты"
+      - " §f⊞§b Опыт"
+      - " §f⊞§c Мобы"
+      - " §f⊞§6 Удары"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить пчелу"
+          lore: 
+            - ""
+            - "§7Улучшайте пчел и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Пчела"
+            - "§7за каждый уровень дает вам +5% ко"
+            - "§7всей вашей статистике и эффективнее"
+            - "§7работает в поле!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"  
+  15:
+    name: "¨fcc12b Укромная пчела"
+    maxLevel: 32
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨fcc12b Укромная пчела"
+      lore:
+      - "¨fcc12bЛегендарный"  
+      - ""
+      - "§7Пчелы помогают вам собирать цветы."
+      - "§7Вы можете прокачать свою пчелу, с"
+      - "§7каждым новым уровнем она будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§e Монеты"
+      - " §f⊞§b Опыт"
+      - " §f⊞§c Мобы"
+      - " §f⊞§6 Удары"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить пчелу"
+          lore: 
+            - ""
+            - "§7Улучшайте пчел и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Пчела"
+            - "§7за каждый уровень дает вам +5% ко"
+            - "§7всей вашей статистике и эффективнее"
+            - "§7работает в поле!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"    
+  16:
+    name: "¨fcc12b Пчела богатств"
+    maxLevel: 32
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨fcc12b Пчела богатств"
+      lore:
+      - "¨fcc12bЛегендарный"   
+      - ""
+      - "§7Пчелы помогают вам собирать цветы."
+      - "§7Вы можете прокачать свою пчелу, с"
+      - "§7каждым новым уровнем она будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§e Монеты"
+      - " §f⊞§b Опыт"
+      - " §f⊞§c Мобы"
+      - " §f⊞§6 Удары"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить пчелу"
+          lore: 
+            - ""
+            - "§7Улучшайте пчел и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Пчела"
+            - "§7за каждый уровень дает вам +5% ко"
+            - "§7всей вашей статистике и эффективнее"
+            - "§7работает в поле!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level" 
+  17:
+    name: "¨fcc12b Пчела роскоши"
+    maxLevel: 32
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨fcc12b Пчела роскоши"
+      lore:
+      - "¨fcc12bЛегендарный"   
+      - ""
+      - "§7Пчелы помогают вам собирать цветы."
+      - "§7Вы можете прокачать свою пчелу, с"
+      - "§7каждым новым уровнем она будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§e Монеты"
+      - " §f⊞§b Опыт"
+      - " §f⊞§c Мобы"
+      - " §f⊞§6 Удары"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить пчелу"
+          lore: 
+            - ""
+            - "§7Улучшайте пчел и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Пчела"
+            - "§7за каждый уровень дает вам +5% ко"
+            - "§7всей вашей статистике и эффективнее"
+            - "§7работает в поле!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"
+  18:
+    name: "¨f03f55 Пчела-Овечка"
+    maxLevel: 32
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨f03f55 Пчела-Овечка"
+      lore:
+      - "¨f03f55Мифический"   
+      - ""
+      - "§7Пчелы помогают вам собирать цветы."
+      - "§7Вы можете прокачать свою пчелу, с"
+      - "§7каждым новым уровнем она будет"
+      - "§7увеличивать ваш бустер на 20%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§e Монеты"
+      - " §f⊞§b Опыт"
+      - " §f⊞§c Мобы"
+      - " §f⊞§6 Удары"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить пчелу"
+          lore: 
+            - ""
+            - "§7Улучшайте пчел и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Пчела"
+            - "§7за каждый уровень дает вам +20% ко"
+            - "§7всей вашей статистике и эффективнее"
+            - "§7работает в поле!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"
+eqiupOk: "§e▶ Нажмите§f ЛКМ§e, чтобы активировать"
+eqiupNo: "§e▶ Нажмите§f ЛКМ§e, чтобы снять"
+quiupOkCommands:
+- "st %player% Вы активировали §7[Ур. %level%]%name%§f, оберегайте еe!"
+- "booster player %player% update money"
+quiupNoCommands:
+- "st %player% Вы сняли §7[Ур. %level%]%name%§f, пускай поспит..."
+- "booster player %player% update money"
+command: "pet"
+defaultMaxPets: 4
+maxPetsTable: "maxpets"
+maxPetsCommands:
+  - "et %player% Вы не можете активировать больше пчел, дополнительные места можно получить за ребитх, а также купить в§b /donate"
+onMaxPets:
+  - "et %player% У вас уже слишком много пчел! Компенсация выдана."
+  - "cc give p Legendary 1 %player%"
+  - "morestats %player% bits 25 false" 

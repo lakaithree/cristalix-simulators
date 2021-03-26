@@ -1,0 +1,69 @@
+dnk:
+  1: 512
+  2: 1024
+  3: 2048
+  4: 4096
+  5: 8192
+  6: 16384
+  7: 32768
+  8: 65536
+  9: 131072
+  10: 262144
+  11: 524288
+  12: 1048576
+  13: 2097152
+  14: 4194304
+  15: 8388608
+  16: 16777216
+ 
+table: "dnk"
+maxDnkCommands:
+- scrmsg %player% normal §f | §cВы собрали максимум §f㕳§c! Продайте их в улье!
+command: "dnksell"
+arg: "2bef303f-4f0d-40d7-860f-807cfa3d2e83"
+okCommands:
+- "st %player% Вы успешно продали все §f㕳!"
+- "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+emptyCommands:
+- "et %player% У вас нет §f㕳§c, который можно продать!"
+upgradeCommand: "dnk"
+upgradable:
+  defaultTier:
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить вместимость"
+      lore:
+      - ""
+      - "§7Улучшайте вместимость и вы сможете"
+      - "§7держать больше §f㕳 §7одновременно!"
+      - ""  
+      - "§7 ⊠ §fЦена: %money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить"
+      enchantment: {}
+      data: '{"other":"bag","color":11529312}'
+      unbreakable: false
+      flags: []
+    commandsOnBuy:
+    - "dnkcontrol %player% addLevel"
+    formula:
+      "money": "10000 + previous * 2"
+  uniqueTiers:
+    -66:
+      guiItem:
+        type: "STONE"
+        amount: 1
+        damage: 0
+        name: ""
+        lore:
+        - "%money%"
+        enchantment: {}
+        data: "{}"
+        unbreakable: false
+        flags: []
+      commandsOnBuy:
+      - "wtf %player%"
+      formula:
+        "money": "10 * previous * level"

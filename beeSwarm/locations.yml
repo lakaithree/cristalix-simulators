@@ -1,0 +1,220 @@
+locationsInventory:
+  title: "Локации"
+  context:
+  - "---------"
+  - "----i----"
+  - "--iiiii--"
+  - "---------"
+  auto:
+    "-":
+      type: "AIR"
+      amount: 1
+      damage: 0
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+disabledLocation:
+  type: "CLAY_BALL"
+  amount: 1
+  damage: 0
+  name: "§cНедоступно"
+  lore:
+  - ""
+  - "§7Ваш уровень слишком мал. Прокачивайте"
+  - "§7свой уровень, чтобы открыть локацию."
+  enchantment: {}
+  data: "{\"other\":\"lock\",\"color\":16735067}"
+  unbreakable: false
+  flags: []
+locations:
+- item:
+    type: "DRAGONS_BREATH"
+    amount: 1
+    damage: 0
+    name: "¨ffdb3bПчелиный луг"
+    lore:
+    - ""
+    - "§7Стартовая локация, усеянная"
+    - "§7прекрасными цветами и наполненная"
+    - "§7различной живностью."
+    - ""
+    - "§7⊠§6 ПвП§c Нет"
+    - "§7⊠§6 Босс§c Нет"
+    - ""
+    - "§7⊠§6 Средняя цена за цветок§e 2.5 монеты"
+    - ""
+    - "§e▶ Нажмите, чтобы телепортироваться"
+    enchantment: 
+        DAMAGE_ALL: 1
+    data: '{"color":15979366}'
+    unbreakable: false
+    flags: ['HIDE_ENCHANTS']
+  message: "§8[§ai§8]§f Ищем подходящий сервер..."
+  commandsOnTeleport: 
+    - "realmcmd %player% location_1 10 teleport"
+  x: -29.5
+  y: 82.0
+  z: 399.5
+  yaw: 270.0
+  pitch: 0.0
+  world: "world"
+
+
+- item:
+    type: "SAPLING"
+    amount: 1
+    damage: 0
+    name: "¨7cca32Лесная поляна"
+    lore:
+    - ""
+    - "§7Поляна в дали от вашего улья,"
+    - "§7но не стоит бояться, ведь на ней растут"
+    - "§7более ценные цветы!"
+    - ""
+    - "§7⊠§6 ПвП§c Нет"
+    - "§7⊠§6 Босс§e ¨a0e24bБогомол §7(Появляется раз в 2 часа)"
+    - ""
+    - "§7⊠§6 Средняя цена за цветок§e 3.2 монеты"
+    - ""
+    - "§e▶ Нажмите, чтобы телепортироваться"
+    enchantment: {}
+    data: "{}"
+    unbreakable: false
+    flags: []
+  message: "§8[§ai§8]§f Ищем подходящий сервер..."
+  commandsOnTeleport: 
+    - "realmcmd %player% location_2 10 teleport"
+  x: -29.5
+  y: 82.0
+  z: 399.5
+  yaw: 180.0
+  pitch: 0.0
+  world: "location_2"
+
+- item:
+    type: "SAPLING"
+    amount: 1
+    damage: 4
+    name: "¨d0e740Саванна"
+    lore:
+    - ""
+    - "§7На этой локации достаточно жарко"
+    - "§7и работа тут может вас измотать, но"
+    - "§7вы с этим справитесь!"
+    - ""
+    - "§7⊠§6 ПвП§c Нет"
+    - "§7⊠§6 Босс§c ¨e9b132Леопард §7(Появляется раз в 2 часа)"
+    - ""
+    - "§7⊠§6 Средняя цена за цветок§e 4.8 монетs"
+    - ""
+    - "§e▶ Нажмите, чтобы телепортироваться"
+    enchantment: {}
+    data: "{}"
+    unbreakable: false
+    flags: []
+  message: "§8[§ai§8]§f Ищем подходящий сервер..."
+  commandsOnTeleport: 
+    - "realmcmd %player% location_3 10 teleport"
+  x: -29.5
+  y: 82.0
+  z: 399.5
+  yaw: -90.0
+  pitch: 0.0
+  world: "location_3"
+
+- item:
+    type: "SLIME_BALL"
+    amount: 1
+    damage: 0
+    name: "¨40b3e7Болото"
+    lore:
+    - ""
+    - "§7Очень сырое и опасное место для"
+    - "§7молодых пчел. Говорят, что полностью усеяно"
+    - "§7редкими цветами!"
+    - ""
+    - "§7⊠§6 ПвП§c Нет"
+    - "§7⊠§6 Босс§c ¨c152dfЗаклинатель §7(Появляется раз в 2 часа)"
+    - ""
+    - "§7⊠§6 Средняя цена за цветов§e 8.1 монет"
+    - ""
+    - "§e▶ Нажмите, чтобы телепортироваться"
+    enchantment: {}
+    data: "{}"
+    unbreakable: false
+    flags: []
+  message: "§8[§ai§8]§f Ищем подходящий сервер..."
+  commandsOnTeleport: 
+    - "realmcmd %player% location_4 10 teleport"
+  x: -29.5
+  y: 82.0
+  z: 399.5
+  yaw: -180.0
+  pitch: 0.0
+  world: "location_4"
+
+- item:
+    type: "SMOOTH_BRICK"
+    amount: 1
+    damage: 2
+    name: "¨7b6f6aУщелье"
+    lore:
+    - ""
+    - "§7Место, полное опасностей, но не "
+    - "§7обделенное редкими ростениями!"
+    - ""
+    - "§7⊠§6 ПвП§c §cНет"
+    - "§7⊠§6 Босс§c - §7(Появляется раз в 2 часа)"
+    - ""
+    - "§7⊠§6 Средняя цена за блок§e 12.3 монет"
+    - ""
+    - "§e▶ Нажмите, чтобы телепортироваться"
+    enchantment: {}
+    data: "{}"
+    unbreakable: false
+    flags: []
+  message: "§8[§ai§8]§f Ищем подходящий сервер..."
+  commandsOnTeleport: 
+    - "realmcmd %player% location_5 10 teleport"
+  x: -29.5
+  y: 82.0
+  z: 399.5
+  yaw: -180.0
+  pitch: 0.0
+  world: "location_5"
+
+- item:
+    type: "SAPLING"
+    amount: 1
+    damage: 2
+    name: "¨bec6d5Берёзовый лес"
+    lore:
+    - ""
+    - "§7Это место, наполненное прекрасными березами!"
+    - "§7Отправляйся на сбор цветов вместе со своими пчелами."
+    - ""
+    - "§7⊠§6 ПвП§c §aЕсть"
+    - "§7⊠§6 Босс§c - §7(Появляется раз в 2 часа)"
+    - ""
+    - "§7⊠§6 Средняя цена за блок§e 14.5 монет"
+    - ""
+    - "§e▶ Нажмите, чтобы телепортироваться"
+    enchantment: {}
+    data: "{}"
+    unbreakable: false
+    flags: []
+  message: "§8[§ai§8]§f Ищем подходящий сервер..."
+  commandsOnTeleport: 
+    - "realmcmd %player% location_6 10 teleport"
+  x: -29.5
+  y: 82.0
+  z: 399.5
+  yaw: 90.0
+  pitch: 0.0
+  world: "location_6"
+
+hpPerLvl: 4.0
+levelStat: "level"

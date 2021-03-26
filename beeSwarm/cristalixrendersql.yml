@@ -1,0 +1,13 @@
+connectors:
+  "connector":
+    host: " "
+    port: 3307
+    user: "lakaithree"
+    password: " "
+    database: " "
+handlers:
+  "handler":
+    connector: "connector"
+    sql: "SELECT * FROM bee_economy ORDER BY money DESC LIMIT 15;"
+    uuid: "player_uuid"
+    value: "money"

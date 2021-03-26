@@ -1,0 +1,10 @@
+randomCommands:
+  "events":
+    50:
+    - "eventstats clicks start"
+    - "timety 6000 eventstats kills calculate"
+    - "timety 6100 eventstats kills end"
+    51:
+    - "eventstats mobs start"
+    - "timety 6000 eventstats mobs calculate"
+    - "timety 6100 eventstats mobs end"

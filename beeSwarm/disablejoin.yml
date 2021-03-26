@@ -1,0 +1,9 @@
+stat: "level"
+mapping:
+  "location_2": 2
+  "location_3": 3
+  "location_4": 4
+  "location_5": 5
+  "location_6": 6
+  "location_7": 7
+message: "§8[§ci§8]§f Ваш уровень слишком мал, чтобы присоединиться на этот сервер!\n  Попробуйте зайти используя§6 Компас§f в хабе!"

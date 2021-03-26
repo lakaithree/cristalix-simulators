@@ -1,0 +1,92 @@
+#axeUsage: "axe"
+pets:
+  1:
+    defaultCooldownInSeconds: 6.0
+    radiusPerLevel: 1
+    countPerLevel: 2
+    cooldownPerLevel: 0.05
+  2:
+    defaultCooldownInSeconds: 6.0
+    radiusPerLevel: 1
+    countPerLevel: 2
+    cooldownPerLevel: 0.05
+  3:
+    defaultCooldownInSeconds: 6.0
+    radiusPerLevel: 1
+    countPerLevel: 2
+    cooldownPerLevel: 0.05
+  4:
+    defaultCooldownInSeconds: 6.0
+    radiusPerLevel: 1
+    countPerLevel: 2
+    cooldownPerLevel: 0.05
+  5:
+    defaultCooldownInSeconds: 6.0
+    radiusPerLevel: 1
+    countPerLevel: 2
+    cooldownPerLevel: 0.05
+  6:
+    defaultCooldownInSeconds: 5.5
+    radiusPerLevel: 1
+    countPerLevel: 3
+    cooldownPerLevel: 0.05
+  7:
+    defaultCooldownInSeconds: 5.5
+    radiusPerLevel: 1
+    countPerLevel: 3
+    cooldownPerLevel: 0.05
+  8:
+    defaultCooldownInSeconds: 5.5
+    radiusPerLevel: 1
+    countPerLevel: 3
+    cooldownPerLevel: 0.05
+  9:
+    defaultCooldownInSeconds: 5.5
+    radiusPerLevel: 1
+    countPerLevel: 3
+    cooldownPerLevel: 0.05
+  10:
+    defaultCooldownInSeconds: 5.25
+    radiusPerLevel: 1
+    countPerLevel: 3
+    cooldownPerLevel: 0.05
+  11:
+    defaultCooldownInSeconds: 5.25
+    radiusPerLevel: 1
+    countPerLevel: 3
+    cooldownPerLevel: 0.05
+  12:
+    defaultCooldownInSeconds: 5.25
+    radiusPerLevel: 1
+    countPerLevel: 3
+    cooldownPerLevel: 0.05
+  13:
+    defaultCooldownInSeconds: 5.25
+    radiusPerLevel: 1
+    countPerLevel: 3
+    cooldownPerLevel: 0.05
+  14:
+    defaultCooldownInSeconds: 5.0
+    radiusPerLevel: 1
+    countPerLevel: 4
+    cooldownPerLevel: 0.05
+  15:
+    defaultCooldownInSeconds: 5.0
+    radiusPerLevel: 1
+    countPerLevel: 4
+    cooldownPerLevel: 0.05
+  16:
+    defaultCooldownInSeconds: 5.0
+    radiusPerLevel: 1
+    countPerLevel: 4
+    cooldownPerLevel: 0.05
+  17:
+    defaultCooldownInSeconds: 5.0
+    radiusPerLevel: 1
+    countPerLevel: 4
+    cooldownPerLevel: 0.05
+  18:
+    defaultCooldownInSeconds: 4.5
+    radiusPerLevel: 1
+    countPerLevel: 5
+    cooldownPerLevel: 0.05
