@@ -1,0 +1,784 @@
+#NPC, которые находятся на карте
+
+#file: "../conf/cristalixnpc.js"
+npcs:
+
+- world: "location_9"
+  x: -6.5
+  y: 70
+  z: -15.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/dnk.png"
+  skinDigest: "dnk"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sell e7c13d3d-ac38-11e8-8374-1cb72caa35fd"
+
+- world: "location_9"
+  x: 7.5
+  y: 70
+  z: -15.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/menu.png"
+  skinDigest: "menu"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% menu"
+
+- world: "location_9"
+  x: 0.5
+  y: 70
+  z: -20.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/master.png"
+  skinDigest: "master"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sudo %player% upgrade"  
+
+- world: "location_9"
+  x: -12.5
+  y: 70
+  z: 24.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/bot.png"
+  skinDigest: "bot"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sudo %player% loc center1"  
+
+- world: "location_9"
+  x: 13.5
+  y: 70
+  z: 24.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/bot.png"
+  skinDigest: "bot"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% loc end" 
+
+- world: "location_8"
+  x: -6.5
+  y: 70
+  z: -15.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/dnk.png"
+  skinDigest: "dnk"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sell e7c13d3d-ac38-11e8-8374-1cb72caa35fd"
+
+- world: "location_8"
+  x: 7.5
+  y: 70
+  z: -15.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/menu.png"
+  skinDigest: "menu"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% menu"
+
+- world: "location_8"
+  x: 0.5
+  y: 70
+  z: -20.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/master.png"
+  skinDigest: "master"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sudo %player% upgrade"  
+
+- world: "location_8"
+  x: -12.5
+  y: 70
+  z: 24.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/bot.png"
+  skinDigest: "bot"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sudo %player% loc center1"  
+
+- world: "location_8"
+  x: 13.5
+  y: 70
+  z: 24.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/bot.png"
+  skinDigest: "bot"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% loc end" 
+
+- world: "village"
+  x: 97.5
+  y: 74
+  z: -37.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/bsmth.png"
+  skinDigest: "bsmth"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% blacksmith 25c0d771-d143-4bf4-abb8-bae19f56198f"
+
+- world: "village"
+  x: 33.5
+  y: 69
+  z: -15.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/posol.png"
+  skinDigest: "posol"
+  skinSlim: true
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% dialog 25c0d771-d143-4bf4-abb8-bae19f56198f"
+
+- world: "village"
+  x: -3.5
+  y: 72
+  z: 23.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/sansey.png"
+  skinDigest: "sansey"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% katanasell kekwtflul1"
+
+- world: "location_7"
+  x: -6.5
+  y: 70
+  z: -15.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/dnk.png"
+  skinDigest: "dnk"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sell e7c13d3d-ac38-11e8-8374-1cb72caa35fd"
+
+- world: "location_7"
+  x: 7.5
+  y: 70
+  z: -15.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/menu.png"
+  skinDigest: "menu"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% menu"
+
+- world: "location_7"
+  x: 0.5
+  y: 70
+  z: -20.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/master.png"
+  skinDigest: "master"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sudo %player% upgrade"  
+
+- world: "location_7"
+  x: -12.5
+  y: 70
+  z: 24.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/bot.png"
+  skinDigest: "bot"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sudo %player% loc center1"  
+
+- world: "location_7"
+  x: 13.5
+  y: 70
+  z: 24.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/bot.png"
+  skinDigest: "bot"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% loc end" 
+
+- world: "location_6"
+  x: -6.5
+  y: 70
+  z: -15.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/dnk.png"
+  skinDigest: "dnk"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sell e7c13d3d-ac38-11e8-8374-1cb72caa35fd"
+
+- world: "location_6"
+  x: 7.5
+  y: 70
+  z: -15.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/menu.png"
+  skinDigest: "menu"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% menu"
+
+- world: "location_6"
+  x: 0.5
+  y: 70
+  z: -20.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/master.png"
+  skinDigest: "master"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% upgrade"  
+
+- world: "location_6"
+  x: -12.5
+  y: 70
+  z: 24.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/bot.png"
+  skinDigest: "bot"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% loc center1"  
+
+- world: "location_6"
+  x: 13.5
+  y: 70
+  z: 24.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/bot.png"
+  skinDigest: "bot"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% loc end" 
+
+- world: "location_5"
+  x: -6.5
+  y: 70
+  z: -15.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/dnk.png"
+  skinDigest: "dnk"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sell e7c13d3d-ac38-11e8-8374-1cb72caa35fd"
+
+- world: "location_5"
+  x: 7.5
+  y: 70
+  z: -15.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/menu.png"
+  skinDigest: "menu"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% menu"
+
+- world: "location_5"
+  x: 0.5
+  y: 70
+  z: -20.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/master.png"
+  skinDigest: "master"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% upgrade"  
+
+- world: "location_5"
+  x: -12.5
+  y: 70
+  z: 24.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/bot.png"
+  skinDigest: "bot"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% loc center1"  
+
+- world: "location_5"
+  x: 13.5
+  y: 70
+  z: 24.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/bot.png"
+  skinDigest: "bot"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% loc end" 
+
+- world: "location_4"
+  x: -6.5
+  y: 70
+  z: -15.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/dnk.png"
+  skinDigest: "dnk"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sell e7c13d3d-ac38-11e8-8374-1cb72caa35fd"
+
+- world: "location_4"
+  x: 7.5
+  y: 70
+  z: -15.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/menu.png"
+  skinDigest: "menu"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% menu"
+
+- world: "location_4"
+  x: 0.5
+  y: 70
+  z: -20.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/master.png"
+  skinDigest: "master"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% upgrade"  
+
+- world: "location_4"
+  x: -12.5
+  y: 70
+  z: 24.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/bot.png"
+  skinDigest: "bot"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% loc center1"  
+
+- world: "location_4"
+  x: 13.5
+  y: 70
+  z: 24.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/bot.png"
+  skinDigest: "bot"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% loc end" 
+
+- world: "location_3"
+  x: -6.5
+  y: 70
+  z: -15.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/dnk.png"
+  skinDigest: "dnk"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sell e7c13d3d-ac38-11e8-8374-1cb72caa35fd"
+
+- world: "location_3"
+  x: 7.5
+  y: 70
+  z: -15.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/menu.png"
+  skinDigest: "menu"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% menu"
+
+- world: "location_3"
+  x: 0.5
+  y: 70
+  z: -20.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/master.png"
+  skinDigest: "master"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% upgrade"  
+
+- world: "location_3"
+  x: -12.5
+  y: 70
+  z: 24.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/bot.png"
+  skinDigest: "bot"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% loc center1"  
+
+- world: "location_3"
+  x: 13.5
+  y: 70
+  z: 24.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/bot.png"
+  skinDigest: "bot"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% loc end" 
+
+- world: "location_2"
+  x: -6.5
+  y: 70
+  z: -15.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/dnk.png"
+  skinDigest: "dnk"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sell e7c13d3d-ac38-11e8-8374-1cb72caa35fd"
+
+- world: "location_2"
+  x: 7.5
+  y: 70
+  z: -15.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/menu.png"
+  skinDigest: "menu"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% menu"
+
+- world: "location_2"
+  x: 0.5
+  y: 70
+  z: -20.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/master.png"
+  skinDigest: "master"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% upgrade"  
+
+- world: "location_2"
+  x: -12.5
+  y: 70
+  z: 24.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/bot.png"
+  skinDigest: "bot"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% loc center1"  
+
+- world: "location_2"
+  x: 13.5
+  y: 70
+  z: 24.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/bot.png"
+  skinDigest: "bot"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% loc end"  
+
+- world: "world"
+  x: -6.5
+  y: 70
+  z: -15.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/dnk.png"
+  skinDigest: "dnk"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% sell e7c13d3d-ac38-11e8-8374-1cb72caa35fd"
+
+- world: "world"
+  x: 7.5
+  y: 70
+  z: -15.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/menu.png"
+  skinDigest: "menu"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% menu"
+
+- world: "world"
+  x: 0.5
+  y: 70
+  z: -20.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/master.png"
+  skinDigest: "master"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% upgrade"  
+
+- world: "world"
+  x: -12.5
+  y: 70
+  z: 24.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/bot.png"
+  skinDigest: "bot"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% loc center1"  
+
+- world: "world"
+  x: 13.5
+  y: 70
+  z: 24.5
+  skinUrl: "http://ilyafx.ru/lakai/sim/ks/bot.png"
+  skinDigest: "bot"
+  skinSlim: false
+  displayName: "§7Нажмите"
+  headRotation: true
+  clickCommands:
+  - "sudo %player% loc end"  
+
+#- world: "forest2"
+#  x: 0.5 
+#  y: 71
+#  z: 12.5
+#  skinUrl: "https://webdata.c7x.dev/textures/skin/c04b0ca9-3cd0-11eb-acca-1cb72caa35fd"
+#  skinDigest: "sellall"
+#  skinSlim: false
+#  displayName: "§7Нажмите"
+#  headRotation: true
+#  clickCommands:
+#  - "sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f" 
+#
+#- world: "forest3"
+#  x: 43.5 
+#  y: 110
+#  z: 322.5
+#  skinUrl: "https://webdata.c7x.dev/textures/skin/c04b0ca9-3cd0-11eb-acca-1cb72caa35fd"
+#  skinDigest: "sellall"
+#  skinSlim: false
+#  displayName: "§7Нажмите"
+#  headRotation: true
+#  clickCommands:
+#  - "sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f" 
+#
+#- world: "forest4"
+#  x: 1.5 
+#  y: 97
+#  z: 17.5
+#  skinUrl: "https://webdata.c7x.dev/textures/skin/c04b0ca9-3cd0-11eb-acca-1cb72caa35fd"
+#  skinDigest: "sellall"
+#  skinSlim: false
+#  displayName: "§7Нажмите"
+#  headRotation: true
+#  clickCommands:
+#  - "sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f" 
+#
+#- world: "forest5"
+#  x: -6.5 
+#  y: 71
+#  z: -7.5
+#  skinUrl: "https://webdata.c7x.dev/textures/skin/c04b0ca9-3cd0-11eb-acca-1cb72caa35fd"
+#  skinDigest: "sellall"
+#  skinSlim: false
+#  displayName: "§7Нажмите"
+#  headRotation: true
+#  clickCommands:
+#  - "sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f" 
+#
+#- world: "forest6"
+#  x: 2.5 
+#  y: 71
+#  z: -6.5
+#  skinUrl: "https://webdata.c7x.dev/textures/skin/c04b0ca9-3cd0-11eb-acca-1cb72caa35fd"
+#  skinDigest: "sellall"
+#  skinSlim: false
+#  displayName: "§7Нажмите"
+#  headRotation: true
+#  clickCommands:
+#  - "sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f" 
+#
+#- world: "forest7"
+#  x: 1.5 
+#  y: 71
+#  z: -14.5
+#  skinUrl: "https://webdata.c7x.dev/textures/skin/c04b0ca9-3cd0-11eb-acca-1cb72caa35fd"
+#  skinDigest: "sellall"
+#  skinSlim: false
+#  displayName: "§7Нажмите"
+#  headRotation: true
+#  clickCommands:
+#  - "sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f" 
+#
+#- world: "world"
+#  x: -13.5 
+#  y: 75
+#  z: -642.5
+#  skinUrl: "https://webdata.c7x.dev/textures/skin/c04b0ca9-3cd0-11eb-acca-1cb72caa35fd"
+#  skinDigest: "sellall"
+#  skinSlim: false
+#  displayName: "§7Нажмите"
+#  headRotation: true
+#  clickCommands:
+#  - "sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f" 
+#
+#- world: "world"
+#  x: -60.5 
+#  y: 76
+#  z: -621.5
+#  skinUrl: "https://webdata.c7x.dev/textures/skin/c04b0ca9-3cd0-11eb-acca-1cb72caa35fd"
+#  skinDigest: "sellall"
+#  skinSlim: false
+#  displayName: "§7Нажмите"
+#  headRotation: true
+#  clickCommands:
+#  - "sellall f7c7b20b-e541-4fad-96bf-0c69ce10551f" 
+#
+#- world: "world"
+#  x: 34.5
+#  y: 70
+#  z: 13.5
+#  skinUrl: "https://webdata.c7x.dev/textures/skin/f51dec42-3d33-11eb-acca-1cb72caa35fd"
+#  skinDigest: "dragonnn"
+#  skinSlim: true
+#  displayName: "§7Нажмите"
+#  headRotation: true
+#  clickCommands:
+#  - "locations"    
+#
+#- world: "world"
+#  x: 5.5
+#  y: 69
+#  z: -25.5
+#  skinUrl: "http://webdata.c7x.dev/textures/skin/13081d9f-3a14-11eb-acca-1cb72caa35fd"
+#  skinDigest: "driverr"
+#  skinSlim: false
+#  displayName: "§7Нажмите"
+#  headRotation: true
+#  clickCommands:
+#  - "loc mega-secret-teleport-lesopilka"
+#
+#- world: "world"
+#  x: 11.5
+#  y: 70
+#  z: 11.5
+#  skinUrl: "http://ilyafx.ru/lakai/sim/lj/help.png"
+#  skinDigest: "help"
+#  skinSlim: true
+#  displayName: "§7Нажмите"
+#  headRotation: true
+#  clickCommands:
+#  - "ft %player% §6Хранитель§7 >§f Привет, молодой Лесоруб! Бегом рубить деревья... Не забывай про то, что тебе нужна еда, убивай зверей, чтобы добыть её. Больше информации можешь посмотреть в§b /menu"  
+#
+#- world: "world"
+#  x: 50.5
+#  y: 75
+#  z: -631.5
+#  skinUrl: "http://ilyafx.ru/lakai/sim/lj/machine.png"
+#  skinDigest: "machine"
+#  skinSlim: false
+#  displayName: "§7Нажмите"
+#  headRotation: true
+#  clickCommands:
+#  - "itemtrade 5646de86-eacf-4b01-8962-28c3c52d365c"  
+#
+#- world: "world"
+#  x: 5.5
+#  y: 74
+#  z: -621.5
+#  skinUrl: "http://ilyafx.ru/lakai/sim/lj/machine.png"
+#  skinDigest: "machine"
+#  skinSlim: false
+#  displayName: "§7Нажмите"
+#  headRotation: true
+#  clickCommands:
+#  - "itemtrade 5646de86-eacf-4b01-8962-28c3c52d365c"    
+#
+#- world: "world"
+#  x: 0.5
+#  y: 75
+#  z: -650.5
+#  skinUrl: "http://ilyafx.ru/lakai/sim/lj/machine.png"
+#  skinDigest: "machine"
+#  skinSlim: false
+#  displayName: "§7Нажмите"
+#  headRotation: true
+#  clickCommands:
+#  - "itemtrade 5646de86-eacf-4b01-8962-28c3c52d365c"    
+#
+#- world: "world"
+#  x: -46.5
+#  y: 76
+#  z: -610.5
+#  skinUrl: "http://ilyafx.ru/lakai/sim/lj/machine.png"
+#  skinDigest: "machine"
+#  skinSlim: false
+#  displayName: "§7Нажмите"
+#  headRotation: true
+#  clickCommands:
+#  - "itemtrade 5646de86-eacf-4b01-8962-28c3c52d365c"      
+#
+#- world: "forest2"
+#  x: 0.5
+#  y: 70
+#  z: -9.5
+#  skinUrl: "http://ilyafx.ru/lakai/sim/lj/witch.png"
+#  skinDigest: "witch"
+#  skinSlim: true
+#  displayName: "§7Нажмите"
+#  headRotation: true
+#  clickCommands:
+#  - "ft %player% §dКолдунья§7 >§f Ищи§5 Пустые пузырьки§f в ящиках и наполняй их моими зельями абсолютно бесплатно!"    
+#
+#- world: "forest4"
+#  x: -11.5
+#  y: 96
+#  z: 10.5
+#  skinUrl: "http://ilyafx.ru/lakai/sim/lj/skull.png"
+#  skinDigest: "skull"
+#  skinSlim: false
+#  displayName: "§7Нажмите"
+#  headRotation: true
+#  clickCommands:
+#  - "sellall e7246d03-cb8a-4e10-b420-e67688df9a83"  

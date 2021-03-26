@@ -1,0 +1,8 @@
+mapping:
+  "%level%": "level"
+  "%kills_players%": "kills_players"
+  "%deaths%": "deaths"
+  "%clicks%": "clicks"
+  "%rebirth%": "rebirth"
+  "%player_exp%": "player_exp"
+  "%bits%": "bits"

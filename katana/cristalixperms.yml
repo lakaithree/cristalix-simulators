@@ -1,0 +1,6 @@
+checkTick: 20
+checkPerm: "DefaultConfigPerm"
+default:
+- "essentials.spawn"
+- "chestcommands.open.guide.yml"
+- "chestcommands.open.realms.yml"

@@ -1,0 +1,55 @@
+mapping:
+  "player_exp":
+    executor:
+    - "st %player% Вы успешно поблагодарили всех игроков!"
+    - "eco give %player% 250"
+    - "morestats %player% player_exp 50 false"
+    thanks:
+    - "softeco give %player% 250"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 0.1"
+    - "softeco %player% 250"
+    - "morestats %player% player_exp 50 false"
+    execute:
+    - "broadlocal §8[§ai§8]§f Активен бустер§b Опыта§f от игрока %player%§f, окончание через§e %time% мин."
+    - "broadlocal §f §f §7Напишите§b /thx§7, чтобы поблагодарить!"
+  "clicks":
+    executor:
+    - "st %player% Вы успешно поблагодарили всех игроков!"
+    - "eco give %player% 250"
+    - "morestats %player% player_exp 50 false"
+    thanks:
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 0.1"
+    - "softeco %player% 250"
+    - "morestats %player% player_exp 50 false"
+    execute:
+    - "broadlocal §8[§ai§8]§f Активен бустер§6 Ударов§f от игрока %player%§f, окончание через§e %time% мин."
+    - "broadlocal §f §f §7Напишите§b /thx§7, чтобы поблагодарить!"
+  "kills_players":
+    executor:
+    - "st %player% Вы успешно поблагодарили всех игроков!"
+    - "eco give %player% 250"
+    - "morestats %player% player_exp 50 false"
+    thanks:
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 0.1"
+    - "softeco %player% 250"
+    - "morestats %player% player_exp 50 false"
+    execute:
+    - "broadlocal §8[§ai§8]§f Активен бустер§c Убийств§f от игрока %player%§f, окончание через§e %time% мин."
+    - "broadlocal §f §f §7Напишите§b /thx§7, чтобы поблагодарить!"
+  "money":
+    executor:
+    - "st %player% Вы успешно поблагодарили всех игроков!"
+    - "eco give %player% 250"
+    - "morestats %player% player_exp 50 false"
+    thanks:
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 0.1"
+    - "softeco %player% 250"
+    - "morestats %player% player_exp 50 false"
+    execute:
+    - "broadlocal §8[§ai§8]§f Активен бустер§e Монет§f от игрока %player%§f, окончание через§e %time% мин."
+    - "broadlocal §f §f §7Напишите§b /thx§7, чтобы поблагодарить!"        
+none:
+- "et %player% Вам некого благодарить!"
+already:
+- "et %player% Вы уже отблагодарили всех игроков!"
+spamInTicks: 3000

@@ -1,0 +1,15 @@
+types:
+  "booster":
+    commands:
+    - "broad  "
+    - "broad §6§l                   Начался Счастливый час!"
+    - "broad "
+    - "broad §7                Вам добавлен бустер х2 на всю статистику!"        
+    - "broad §7               Заходите в игру каждый день в§f 11:00§7 и§f 18:00 "
+    - "broad §7                    и прокачивайтесь намного быстрее!"
+    - "broad  "
+    - "booster global add stats_player_exp 60 1"  
+    - "booster global add stats_kills_players 60 1"
+    - "booster global add stats_clicks 60 1"
+    - "booster global add money 60 1"
+    cooldownInMillis: 10000

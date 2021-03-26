@@ -1,0 +1,116 @@
+#Блокировка удара с определенным шансом, когда на игроке броня
+
+mapping:
+  "normal_armor":
+    1:
+      chance: 0.3
+      commands:
+      - "st %targetPlayer% Вы уклонились от удара игрока§e %player%"
+      - "st %player% Игрок§e %targetPlayer%§f отклонился от вашего удара!"
+    2:
+      chance: 0.6
+      commands:
+      - "st %targetPlayer% Вы уклонились от удара игрока§e %player%"
+      - "st %player% Игрок§e %targetPlayer%§f отклонился от вашего удара!"
+    3:
+      chance: 0.9
+      commands:
+      - "st %targetPlayer% Вы уклонились от удара игрока§e %player%"
+      - "st %player% Игрок§e %targetPlayer%§f отклонился от вашего удара!"
+    4:
+      chance: 1.2
+      commands:
+      - "st %targetPlayer% Вы уклонились от удара игрока§e %player%"
+      - "st %player% Игрок§e %targetPlayer%§f отклонился от вашего удара!"
+    5:
+      chance: 1.5
+      commands:
+      - "st %targetPlayer% Вы уклонились от удара игрока§e %player%"
+      - "st %player% Игрок§e %targetPlayer%§f отклонился от вашего удара!"          
+    6:
+      chance: 1.8
+      commands:
+      - "st %targetPlayer% Вы уклонились от удара игрока§e %player%"
+      - "st %player% Игрок§e %targetPlayer%§f отклонился от вашего удара!"
+    7:
+      chance: 2.1
+      commands:
+      - "st %targetPlayer% Вы уклонились от удара игрока§e %player%"
+      - "st %player% Игрок§e %targetPlayer%§f отклонился от вашего удара!"
+    8:
+      chance: 2.4
+      commands:
+      - "st %targetPlayer% Вы уклонились от удара игрока§e %player%"
+      - "st %player% Игрок§e %targetPlayer%§f отклонился от вашего удара!"
+    9:
+      chance: 2.7
+      commands:
+      - "st %targetPlayer% Вы уклонились от удара игрока§e %player%"
+      - "st %player% Игрок§e %targetPlayer%§f отклонился от вашего удара!"
+    10:
+      chance: 3.0
+      commands:
+      - "st %targetPlayer% Вы уклонились от удара игрока§e %player%"
+      - "st %player% Игрок§e %targetPlayer%§f отклонился от вашего удара!"   
+
+  "legendary_armor":
+    1:
+      chance: 0.3
+      commands:
+      - "effect %targetPlayer% minecraft:regeneration 1 2 true"
+      - "st %targetPlayer% Вы уклонились от удара игрока§e %player%"
+      - "st %player% Игрок§e %targetPlayer%§f отклонился от вашего удара!"
+    2:
+      chance: 0.6
+      commands:
+      - "effect %targetPlayer% minecraft:regeneration 1 2 true"
+      - "st %targetPlayer% Вы уклонились от удара игрока§e %player%"
+      - "st %player% Игрок§e %targetPlayer%§f отклонился от вашего удара!"
+    3:
+      chance: 0.9
+      commands:
+      - "effect %targetPlayer% minecraft:regeneration 1 2 true"
+      - "st %targetPlayer% Вы уклонились от удара игрока§e %player%"
+      - "st %player% Игрок§e %targetPlayer%§f отклонился от вашего удара!"
+    4:
+      chance: 1.2
+      commands:
+      - "effect %targetPlayer% minecraft:regeneration 1 2 true"
+      - "st %targetPlayer% Вы уклонились от удара игрока§e %player%"
+      - "st %player% Игрок§e %targetPlayer%§f отклонился от вашего удара!"
+    5:
+      chance: 1.5
+      commands:
+      - "effect %targetPlayer% minecraft:regeneration 1 2 true"
+      - "st %targetPlayer% Вы уклонились от удара игрока§e %player%"
+      - "st %player% Игрок§e %targetPlayer%§f отклонился от вашего удара!"          
+    6:
+      chance: 1.8
+      commands:
+      - "effect %targetPlayer% minecraft:regeneration 1 2 true"
+      - "st %targetPlayer% Вы уклонились от удара игрока§e %player%"
+      - "st %player% Игрок§e %targetPlayer%§f отклонился от вашего удара!"
+    7:
+      chance: 2.1
+      commands:
+      - "effect %targetPlayer% minecraft:regeneration 1 2 true"
+      - "st %targetPlayer% Вы уклонились от удара игрока§e %player%"
+      - "st %player% Игрок§e %targetPlayer%§f отклонился от вашего удара!"
+    8:
+      chance: 2.4
+      commands:
+      - "effect %targetPlayer% minecraft:regeneration 1 2 true"
+      - "st %targetPlayer% Вы уклонились от удара игрока§e %player%"
+      - "st %player% Игрок§e %targetPlayer%§f отклонился от вашего удара!"
+    9:
+      chance: 2.7
+      commands:
+      - "effect %targetPlayer% minecraft:regeneration 1 2 true"
+      - "st %targetPlayer% Вы уклонились от удара игрока§e %player%"
+      - "st %player% Игрок§e %targetPlayer%§f отклонился от вашего удара!"
+    10:
+      chance: 3.0
+      commands:
+      - "effect %targetPlayer% minecraft:regeneration 1 2 true"
+      - "st %targetPlayer% Вы уклонились от удара игрока§e %player%"
+      - "st %player% Игрок§e %targetPlayer%§f отклонился от вашего удара!"            

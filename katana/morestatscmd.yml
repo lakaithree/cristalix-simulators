@@ -1,0 +1,21 @@
+commandName: "mystats"
+mappings:
+  "%level%": "level"
+  "%kills_players%": "kills_players"
+  "%deaths%": "deaths"
+  "%clicks%": "clicks"
+  "%rebirth%": "rebirth"
+  "%player_exp%": "player_exp"
+
+message:
+- §f
+- §f §e§lСтатистика:§f Симулятор Катаны
+- §f
+- §7  -§f Уровень:§e %level%
+- §7  -§f Ребитх:§e %rebirth%
+- §7  -§f Опыта:§b %player_exp%
+- §f
+- §7  -§f Ударов:§e %clicks%
+- §7  -§f Убийств:§e %kills_players%
+- §7  -§f Смертей:§e %deaths%
+- §f

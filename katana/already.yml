@@ -1,0 +1,25 @@
+#Проверяет закончился ли эвент, если игроки убили босса и прошло достаточно 
+#времени для спавна нового, то спавнит его.
+
+mapping:
+  "meco":
+    entityName: "§6Копилка"
+    commands:
+    - mm m s meco-boss 1 world,0.5,67,60.5
+    - mm m s meco-boss 1 location_2,0.5,67,60.5
+    - mm m s meco-boss 1 location_3,0.5,67,60.5
+    - mm m s meco-boss 1 location_4,0.5,67,60.5
+    - mm m s meco-boss 1 location_5,0.5,67,60.5
+    - mm m s meco-boss 1 location_6,0.5,67,60.5
+    - mm m s meco-boss 1 location_7,0.5,67,60.5
+    - mm m s meco-boss 1 location_8,0.5,67,60.5
+    - mm m s meco-boss 1 location_9,0.5,67,60.5
+    - broadlocal §f
+    - broadlocal                           §6§lНачался Эвент:§e Копилка
+    - broadlocal          §7Бегите в центр PvP-Арен, там стоит копилка, за каждый удар 
+    - broadlocal            §7по ней вы будете получать немного монет, побеждает тот,
+    - broadlocal         §7кто ударит копилку большее количество раз, победители получат
+    - broadlocal                §7награду в виде разлинчых ключей от ящиков!
+    - broadlocal §f
+    exists:
+    - "broadlocal §8[§ci§8]§f Так как§6 Копилка§f уже есть на карте, эвент был отменен!"

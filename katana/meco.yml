@@ -1,0 +1,18 @@
+giveMoney: false
+oneHit: true
+commands:
+- scrmsg %player% action §6+%money% удар§e За весь рейд:§6 %allmoney% ударов
+- sound %player% ENTITY.ITEM.PICKUP 0.5 0.1
+- vclick %player%
+- vclick %player%
+- vclick %player%
+- vclick %player%
+- vclick %player%
+messages:
+- "broadlocal  \n             §7Игроки опустошили §6Копилку§7 и получили свою награду!\n §f\n                        §6§l      Итоги§f:\n §f\n                 §e1. %top1%§7 -§6 %money_top1% §6ударов\n                 §e2. %top2%§7 -§6 %money_top2% §6ударов\n                 §e3. %top3%§7 -§6 %money_top3% §6ударов\n §f"
+- "cc give p Normal 1 %top1_raw%"
+- "cc give p Pets 1 %top1_raw%"
+- "cc give p Pets 1 %top2_raw%"
+- "cc give p Pets 1 %top3_raw%"
+emptyPlayer: "§cНе существует"
+emptyMoney: "§cНе существует"

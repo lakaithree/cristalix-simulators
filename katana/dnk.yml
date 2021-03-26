@@ -1,0 +1,74 @@
+#Прокачка вместимости рюкзака
+
+dnk:
+  1: 1000
+  2: 2000
+  3: 4000
+  4: 8000
+  5: 16000
+  6: 32000
+  7: 64000
+  8: 128000
+  9: 256000
+  10: 512000
+  11: 1024000
+  12: 2048000
+  13: 4096000
+  14: 8192000
+  15: 16384000
+  16: 32768000
+  17: 65536000
+  18: 131072000
+  19: 262144000
+  20: 524288000
+table: "dnk"
+maxDnkCommands:
+- scrmsg %player% normal §f | §cВы достигли максимума§f 㾣§c, продайте его у §6Учёного
+command: "dnksell"
+arg: "2bef303f-4f0d-40d7-860f-807cfa3d2e83"
+okCommands:
+- "st %player% Вы продали §b%dnk% §f㾣§f, собирайте ещё!"
+- "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"
+emptyCommands:
+- "et %player% У вас нет 㾣, которое можно продать!"
+upgradeCommand: "dnk"
+upgradable:
+  defaultTier:
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить вместимость"
+      lore:
+      - ""
+      - "§7Улучшайте вместимость и вы сможете"
+      - "§7держать больше§f 㾣§7 одновременно!"
+      - ""  
+      - "§7 ⊠ §fЦена: %money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить"
+      enchantment: {}
+      data: '{"other":"settings1"}'
+      unbreakable: false
+      flags: []
+    commandsOnBuy:
+    - "dnkcontrol %player% addLevel"
+    formula:
+      "money": "10000 + previous * 2"
+  uniqueTiers:
+    -1:
+      guiItem:
+        type: "STONE"
+        amount: 1
+        damage: 0
+        name: ""
+        lore:
+        - "%money%"
+        enchantment: {}
+        data: "{}"
+        unbreakable: false
+        flags: []
+      commandsOnBuy:
+      - "wtf %player%"
+      formula:
+        "money": "10 * previous * level"

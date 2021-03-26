@@ -1,0 +1,1549 @@
+selectGui:
+  title: "Питомцы"
+  context:
+  - "---------"  
+  - "-iiiiiii-"  
+  - "-iiiiiii-"  
+  - "-iiiiiii-"
+  - "---------"
+  auto:
+    "0":
+      type: "STONE"
+      amount: 1
+      damage: 0
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+fillItem:
+  type: "CLAY_BALL"
+  amount: 1
+  damage: 0
+  name: "§cНеизвестный питомец"
+  lore: 
+    - ""
+    - "§7Открывайте§b Ящики с Питомцами§7 и"
+    - "§7открывайте новых питомцев, которые"
+    - "§7будут давать вам всё больше и больше"
+    - "§7бустеров вашей статистики!"
+  enchantment: {}
+  data: '{"other":"lock","color":16519740}'
+  unbreakable: false
+  flags: []
+
+pets:
+  1:
+    name: "¨c346ec Ниндзя"
+    maxLevel: 100
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨c346ec Ниндзя"
+      lore:
+      - "¨c346ecМифический"  
+      - ""
+      - "§7Питомцы дают вам различные бустеры"
+      - "§7вашей статистики, а также монет! Вы"
+      - "§7можете прокачать своего питомца, с"
+      - "§7каждым новым уровнем питомец будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§6 Монеты"
+      - " §f⊞§b Опыт"
+      - " §f⊞§c §cУбийства"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить питомца"
+          lore: 
+            - ""
+            - "§7Улучшайте питомца и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Питомец"
+            - "§7за каждый уровень дает вам +10% к тем"
+            - "§7статистикам, которые доступны питомцу!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"
+
+  2:
+    name: "¨c346ec Печеньки"
+    maxLevel: 100
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨c346ec Печеньки"
+      lore:
+      - "¨c346ecМифический"  
+      - ""
+      - "§7Питомцы дают вам различные бустеры"
+      - "§7вашей статистики, а также монет! Вы"
+      - "§7можете прокачать своего питомца, с"
+      - "§7каждым новым уровнем питомец будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§6 Монеты"
+      - " §f⊞§b Опыт"
+      - " §f⊞§e Удары"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить питомца"
+          lore: 
+            - ""
+            - "§7Улучшайте питомца и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Питомец"
+            - "§7за каждый уровень дает вам +10% к тем"
+            - "§7статистикам, которые доступны питомцу!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"
+
+  3:
+    name: "¨c346ec Мууухомор"
+    maxLevel: 100
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨c346ec Мууухомор"
+      lore:
+      - "¨c346ecМифический"  
+      - ""
+      - "§7Питомцы дают вам различные бустеры"
+      - "§7вашей статистики, а также монет! Вы"
+      - "§7можете прокачать своего питомца, с"
+      - "§7каждым новым уровнем питомец будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§6 Монеты"
+      - " §f⊞§с §cУбийства"
+      - " §f⊞§e Удары"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить питомца"
+          lore: 
+            - ""
+            - "§7Улучшайте питомца и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Питомец"
+            - "§7за каждый уровень дает вам +10% к тем"
+            - "§7статистикам, которые доступны питомцу!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"
+
+  4:
+    name: "¨fcc12b Радуга"
+    maxLevel: 100
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨fcc12b Радуга"
+      lore:
+      - "¨fcc12bЛегендарный"  
+      - ""
+      - "§7Питомцы дают вам различные бустеры"
+      - "§7вашей статистики, а также монет! Вы"
+      - "§7можете прокачать своего питомца, с"
+      - "§7каждым новым уровнем питомец будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§6 Монеты"
+      - " §f⊞§с §cУбийства"
+      - " §f⊞§b Опыт"
+      - " §f⊞§e Удары"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить питомца"
+          lore: 
+            - ""
+            - "§7Улучшайте питомца и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Питомец"
+            - "§7за каждый уровень дает вам +10% к тем"
+            - "§7статистикам, которые доступны питомцу!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"
+
+  5:
+    name: "¨58d47a Сундук"
+    maxLevel: 100
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨58d47a Сундук"
+      lore:
+      - "¨58d47aОбычный"  
+      - ""
+      - "§7Питомцы дают вам различные бустеры"
+      - "§7вашей статистики, а также монет! Вы"
+      - "§7можете прокачать своего питомца, с"
+      - "§7каждым новым уровнем питомец будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§e Удары"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить питомца"
+          lore: 
+            - ""
+            - "§7Улучшайте питомца и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Питомец"
+            - "§7за каждый уровень дает вам +10% к тем"
+            - "§7статистикам, которые доступны питомцу!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"
+
+  6:
+    name: "¨46bfef Свин"
+    maxLevel: 100
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨46bfef Свин"
+      lore:
+      - "¨46bfefРедкий"  
+      - ""
+      - "§7Питомцы дают вам различные бустеры"
+      - "§7вашей статистики, а также монет! Вы"
+      - "§7можете прокачать своего питомца, с"
+      - "§7каждым новым уровнем питомец будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§6 Монеты"
+      - " §f⊞§b Опыт"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить питомца"
+          lore: 
+            - ""
+            - "§7Улучшайте питомца и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Питомец"
+            - "§7за каждый уровень дает вам +10% к тем"
+            - "§7статистикам, которые доступны питомцу!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"
+
+  7:
+    name: "¨46bfef Гоблин"
+    maxLevel: 100
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨46bfef Гоблин"
+      lore:
+      - "¨46bfefРедкий"  
+      - ""
+      - "§7Питомцы дают вам различные бустеры"
+      - "§7вашей статистики, а также монет! Вы"
+      - "§7можете прокачать своего питомца, с"
+      - "§7каждым новым уровнем питомец будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§6 Монеты"
+      - " §f⊞§b Опыт"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить питомца"
+          lore: 
+            - ""
+            - "§7Улучшайте питомца и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Питомец"
+            - "§7за каждый уровень дает вам +10% к тем"
+            - "§7статистикам, которые доступны питомцу!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"
+
+  8:
+    name: "¨46bfef Рыба Клоун"
+    maxLevel: 100
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨46bfef Рыба Клоун"
+      lore:
+      - "¨46bfefРедкий"  
+      - ""
+      - "§7Питомцы дают вам различные бустеры"
+      - "§7вашей статистики, а также монет! Вы"
+      - "§7можете прокачать своего питомца, с"
+      - "§7каждым новым уровнем питомец будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§с §cУбийства"
+      - " §f⊞§e Удары"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить питомца"
+          lore: 
+            - ""
+            - "§7Улучшайте питомца и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Питомец"
+            - "§7за каждый уровень дает вам +10% к тем"
+            - "§7статистикам, которые доступны питомцу!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"
+
+  9:
+    name: "¨c346ec Гомер"
+    maxLevel: 100
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨c346ec Гомер"
+      lore:
+      - "¨c346ecМифический"  
+      - ""
+      - "§7Питомцы дают вам различные бустеры"
+      - "§7вашей статистики, а также монет! Вы"
+      - "§7можете прокачать своего питомца, с"
+      - "§7каждым новым уровнем питомец будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§с §cУбийства"
+      - " §f⊞§b Опыт"
+      - " §f⊞§e Удары"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить питомца"
+          lore: 
+            - ""
+            - "§7Улучшайте питомца и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Питомец"
+            - "§7за каждый уровень дает вам +10% к тем"
+            - "§7статистикам, которые доступны питомцу!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"
+
+  10:
+    name: "¨46bfef Мопсик"
+    maxLevel: 100
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨46bfef Мопсик"
+      lore:
+      - "¨46bfefРедкий"  
+      - ""
+      - "§7Питомцы дают вам различные бустеры"
+      - "§7вашей статистики, а также монет! Вы"
+      - "§7можете прокачать своего питомца, с"
+      - "§7каждым новым уровнем питомец будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§b Опыт"
+      - " §f⊞§e Удары"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить питомца"
+          lore: 
+            - ""
+            - "§7Улучшайте питомца и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Питомец"
+            - "§7за каждый уровень дает вам +10% к тем"
+            - "§7статистикам, которые доступны питомцу!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"
+  11:
+    name: "¨46bfef Крипер"
+    maxLevel: 100
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨46bfef Крипер"
+      lore:
+      - "¨46bfefРедкий"  
+      - ""
+      - "§7Питомцы дают вам различные бустеры"
+      - "§7вашей статистики, а также монет! Вы"
+      - "§7можете прокачать своего питомца, с"
+      - "§7каждым новым уровнем питомец будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§6 Монеты"
+      - " §f⊞§e Удары"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить питомца"
+          lore: 
+            - ""
+            - "§7Улучшайте питомца и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Питомец"
+            - "§7за каждый уровень дает вам +10% к тем"
+            - "§7статистикам, которые доступны питомцу!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"
+
+  12:
+    name: "¨58d47a Попугай"
+    maxLevel: 100
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨58d47a Попугай"
+      lore:
+      - "¨58d47aОбычный"  
+      - ""
+      - "§7Питомцы дают вам различные бустеры"
+      - "§7вашей статистики, а также монет! Вы"
+      - "§7можете прокачать своего питомца, с"
+      - "§7каждым новым уровнем питомец будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§6 Монеты"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить питомца"
+          lore: 
+            - ""
+            - "§7Улучшайте питомца и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Питомец"
+            - "§7за каждый уровень дает вам +10% к тем"
+            - "§7статистикам, которые доступны питомцу!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"
+
+  13:
+    name: "¨fcc12b Пчела"
+    maxLevel: 100
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨fcc12b Пчела"
+      lore:
+      - "¨fcc12bЛегендарный"  
+      - ""
+      - "§7Питомцы дают вам различные бустеры"
+      - "§7вашей статистики, а также монет! Вы"
+      - "§7можете прокачать своего питомца, с"
+      - "§7каждым новым уровнем питомец будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§6 Монеты"
+      - " §f⊞§с §cУбийства"
+      - " §f⊞§b Опыт"
+      - " §f⊞§e Удары"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить питомца"
+          lore: 
+            - ""
+            - "§7Улучшайте питомца и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Питомец"
+            - "§7за каждый уровень дает вам +10% к тем"
+            - "§7статистикам, которые доступны питомцу!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"    
+
+  14:
+    name: "¨58d47a Слон"
+    maxLevel: 100
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨58d47a Слон"
+      lore:
+      - "¨58d47aОбычный"  
+      - ""
+      - "§7Питомцы дают вам различные бустеры"
+      - "§7вашей статистики, а также монет! Вы"
+      - "§7можете прокачать своего питомца, с"
+      - "§7каждым новым уровнем питомец будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§6 Монеты"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить питомца"
+          lore: 
+            - ""
+            - "§7Улучшайте питомца и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Питомец"
+            - "§7за каждый уровень дает вам +10% к тем"
+            - "§7статистикам, которые доступны питомцу!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"  
+
+  15:
+    name: "¨58d47a Цыпа"
+    maxLevel: 100
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨58d47a Цыпа"
+      lore:
+      - "¨58d47aОбычный"  
+      - ""
+      - "§7Питомцы дают вам различные бустеры"
+      - "§7вашей статистики, а также монет! Вы"
+      - "§7можете прокачать своего питомца, с"
+      - "§7каждым новым уровнем питомец будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§b Опыт"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить питомца"
+          lore: 
+            - ""
+            - "§7Улучшайте питомца и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Питомец"
+            - "§7за каждый уровень дает вам +10% к тем"
+            - "§7статистикам, которые доступны питомцу!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"  
+
+  16:
+    name: "¨58d47a Камень"
+    maxLevel: 100
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨58d47a Камень"
+      lore:
+      - "¨58d47aОбычный"  
+      - ""
+      - "§7Питомцы дают вам различные бустеры"
+      - "§7вашей статистики, а также монет! Вы"
+      - "§7можете прокачать своего питомца, с"
+      - "§7каждым новым уровнем питомец будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§b Опыт"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить питомца"
+          lore: 
+            - ""
+            - "§7Улучшайте питомца и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Питомец"
+            - "§7за каждый уровень дает вам +10% к тем"
+            - "§7статистикам, которые доступны питомцу!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"  
+
+  17:
+    name: "¨fcc12b Фуга"
+    maxLevel: 100
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨fcc12b Фуга"
+      lore:
+      - "¨fcc12bЛегендарный"  
+      - ""
+      - "§7Питомцы дают вам различные бустеры"
+      - "§7вашей статистики, а также монет! Вы"
+      - "§7можете прокачать своего питомца, с"
+      - "§7каждым новым уровнем питомец будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§6 Монеты"
+      - " §f⊞§с §cУбийства"
+      - " §f⊞§b Опыт"
+      - " §f⊞§e Удары"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить питомца"
+          lore: 
+            - ""
+            - "§7Улучшайте питомца и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Питомец"
+            - "§7за каждый уровень дает вам +10% к тем"
+            - "§7статистикам, которые доступны питомцу!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"  
+
+  18:
+    name: "¨58d47a Ёжик"
+    maxLevel: 100
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨58d47a Ёжик"
+      lore:
+      - "¨58d47aОбычный"  
+      - ""
+      - "§7Питомцы дают вам различные бустеры"
+      - "§7вашей статистики, а также монет! Вы"
+      - "§7можете прокачать своего питомца, с"
+      - "§7каждым новым уровнем питомец будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§с §cУбийства"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить питомца"
+          lore: 
+            - ""
+            - "§7Улучшайте питомца и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Питомец"
+            - "§7за каждый уровень дает вам +10% к тем"
+            - "§7статистикам, которые доступны питомцу!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"  
+
+  19:
+    name: "¨58d47a Лиса"
+    maxLevel: 100
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨58d47a Лиса"
+      lore:
+      - "¨58d47aОбычный"  
+      - ""
+      - "§7Питомцы дают вам различные бустеры"
+      - "§7вашей статистики, а также монет! Вы"
+      - "§7можете прокачать своего питомца, с"
+      - "§7каждым новым уровнем питомец будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§с §cУбийства"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить питомца"
+          lore: 
+            - ""
+            - "§7Улучшайте питомца и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Питомец"
+            - "§7за каждый уровень дает вам +10% к тем"
+            - "§7статистикам, которые доступны питомцу!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"  
+
+  20:
+    name: "¨fcc12b Земля"
+    maxLevel: 100
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨fcc12b Земля"
+      lore:
+      - "¨fcc12bЛегендарный"  
+      - ""
+      - "§7Питомцы дают вам различные бустеры"
+      - "§7вашей статистики, а также монет! Вы"
+      - "§7можете прокачать своего питомца, с"
+      - "§7каждым новым уровнем питомец будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§6 Монеты"
+      - " §f⊞§с §cУбийства"
+      - " §f⊞§b Опыт"
+      - " §f⊞§e Удары"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить питомца"
+          lore: 
+            - ""
+            - "§7Улучшайте питомца и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Питомец"
+            - "§7за каждый уровень дает вам +10% к тем"
+            - "§7статистикам, которые доступны питомцу!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"  
+
+  21:
+    name: "¨fcc12b Сова"
+    maxLevel: 100
+    item:
+      type: "SKULL_ITEM"
+      amount: 1
+      damage: 3
+      name: "§7[Ур. %level%]¨fcc12b Сова"
+      lore:
+      - "¨fcc12bЛегендарный"  
+      - ""
+      - "§7Питомцы дают вам различные бустеры"
+      - "§7вашей статистики, а также монет! Вы"
+      - "§7можете прокачать своего питомца, с"
+      - "§7каждым новым уровнем питомец будет"
+      - "§7увеличивать ваш бустер на 10%"
+      - ""
+      - "§2⇧ §aБустеры питомца:"
+      - " §f⊞§6 Монеты"
+      - " §f⊞§с §cУбийства"
+      - " §f⊞§b Опыт"
+      - " §f⊞§e Удары"
+      - ""        
+      - "%equip%"
+      - "§e▶ Нажмите§f ПКМ§e, чтобы улучшить"
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+    upgradable:
+      defaultTier:
+        guiItem:
+          type: "CLAY_BALL"
+          amount: 1
+          damage: 0
+          name: "§aУлучшить питомца"
+          lore: 
+            - ""
+            - "§7Улучшайте питомца и получайте больше"
+            - "§7бустеров с каждым новым уровнем. Питомец"
+            - "§7за каждый уровень дает вам +10% к тем"
+            - "§7статистикам, которые доступны питомцу!"
+            - ""
+            - "§7 ⊠ §fЦена: %money%"
+            - ""
+            - "§e▶ Нажмите, чтобы улучшить"
+          enchantment: {}
+          data: '{"other":"pets"}'
+          unbreakable: false
+          flags: []
+        commandsOnBuy:
+        - "st %player% Вы улучшили своего питомца!"
+        - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2" 
+        - "booster player %player% update money"
+        formula:
+          "money": "1.65 * previous + 25000"
+      uniqueTiers:
+        -1:
+          guiItem:
+            type: "STONE"
+            amount: 1
+            damage: 0
+            name: ""
+            lore: []
+            enchantment: {}
+            data: "{}"
+            unbreakable: false
+            flags: []
+          commandsOnBuy:
+          - "wtf %player%"
+          formula:
+            "money": "0 * previous * level"                                                                                                                                                                                                          
+eqiupOk: "§e▶ Нажмите§f ЛКМ§e, чтобы активировать"
+eqiupNo: "§e▶ Нажмите§f ЛКМ§e, чтобы снять"
+quiupOkCommands:
+- "st %player% Вы активировали питомца §7[Ур. %level%]%name%§f, оберегайте его!"
+- "booster player %player% update money"
+quiupNoCommands:
+- "st %player% Вы сняли питомца §7[Ур. %level%]%name%§f, пускай поспит..."
+- "booster player %player% update money"
+command: "pet"
+defaultMaxPets: 2
+maxPetsTable: "maxpets"
+maxPetsCommands:
+  - "et %player% Вы не можете активировать больше питомцев, дополнительные места можно получить за ребитх, а также купить в§b /donate"
+onMaxPets:
+  - "et %player% У вас максимальное количество мест под питомцев!\n   Мы даем вам компенсацию в виде нескольких ключей и монет.."
+  - "softeco %player% 350000"
+  - "cc give p Pets 2 %player%"

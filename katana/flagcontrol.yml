@@ -1,0 +1,51 @@
+world: "events"
+v3Start:
+  x: 73.0
+  y: 80.0
+  z: 58.0
+v3End:
+  x: 79.0
+  y: 95.0
+  z: 64.0
+commandsOnStart:
+- "scrmsg %player% normal §eВы захватываете флаг! | §7Захватите флаг и каждую минуту будете получать награду!"
+- "sound %player% BLOCK.DISPENSER.LAUNCH 1 1.5"
+commandsOnGet:
+- "scrmsg %player% normal §a✔ §fВы захватили флаг! | §7Охраняйте его! Иначе другие игроки смогут захватить его."
+- "broad §8[§ai§8]§f Игрок %readable%§f захватил флаг!"
+- "sound %player% ENTITY.PLAYER.LEVELUP 1 1.5"
+commandsGet:
+- "randommoney %player% 1 10"
+- "chancecmd %player% flag 35"
+timingsGetInTicks: 1200
+commandsOnConflict:
+- "scrmsg %player% action §cКто-то мешает захвату флага!"
+commandsEnd:
+- "scrmsg %player% normal §cВаш флаг захватили! | §7Вы больше не будете получать награду!"
+- "sound %player% ITEM.FIRECHARGE.USE 1 1"
+headX: 0
+headY: 0
+headZ: 17.27
+npcLoc:
+  x: 76.0
+  y: 90.0
+  z: 61.15
+  yaw: 180.0
+  pitch: 90.0
+helmet:
+  type: "BANNER"
+  amount: 1
+  damage: 9
+  name: ""
+  lore: []
+  enchantment: {}
+  data: "{}"
+  unbreakable: false
+  flags: []
+chestplate: null
+leggings: null
+boots: null
+npcSize: 10.0
+small: false
+name: null
+timingsInTicks: 200

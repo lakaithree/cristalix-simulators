@@ -1,0 +1,16 @@
+world: "events"
+v3Start:
+  x: -94.0
+  y: 83.0
+  z: 79.0
+v3End:
+  x: -90.0
+  y: 95.0
+  z: 83.0
+commands:
+- "vclick %player%"
+- "vclick %player%"
+- "vclick %player%"
+- "sound %player% UI.BUTTON.CLICK 1 1"
+conflictCommands:
+- "scrmsg %player% action §cВы не получаете награду, т.к на горе находятся другие игроки!"

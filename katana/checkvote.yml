@@ -1,0 +1,9 @@
+#Проверка выбора настроек игрока
+
+table: "checkvote"
+toggleOn:
+- "st %player% Вы включили отображение ДНК на экране!"
+- "sound %player% UI.BUTTON.CLICK 1 1"
+toggleOff:
+- "st %player% Вы выключили отображение ДНК на экране!"
+- "sound %player% UI.BUTTON.CLICK 1 1"

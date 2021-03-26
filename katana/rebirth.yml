@@ -1,0 +1,5480 @@
+rebirthStat: "rebirth"
+rebirthSaveItemNbt: "rebirth_save"
+rebirthCmdNbt: "rebirth_nbt"
+rebirthCmdMapping:
+  "lol":
+  - "text %player% lol"
+inventory:
+  title: "Перерождение"
+  context:
+  - "----i----"
+  auto:
+    "0":
+      type: "STONE"
+      amount: 1
+      damage: 0
+      name: ""
+      lore: []
+      enchantment: {}
+      data: "{}"
+      unbreakable: false
+      flags: []
+maxRebirth:
+- "et %player% Вы достигли максимального ребитха!"
+moneyOk: "§a ✔"
+moneyNo: "§c ✖" 
+moreMoney:
+- "et %player% Вам нужно больше монет для перерождения!"
+moreStats:
+  "level":
+  - "et %player% Ваш уровень слишком мал, чтобы переродиться!"
+rebirths:
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 1000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 7
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 2000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 7
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 3000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 7
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"  
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 4000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 7
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 5000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 8
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks" 
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 6000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 8
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 7000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 8
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 8000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 8
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"  
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 9000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 8
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 10000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 8
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks" 
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 11000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 8
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 12000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 8
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 13000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 8
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"  
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 14000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 8
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 25000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks" 
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 30000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 35000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 40000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"  
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 45000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 50000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks" 
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 60000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 70000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 80000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"  
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 90000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 100000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"           
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 125000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 150000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 175000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"  
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 300000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 400000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"      
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 500000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks" 
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 600000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks" 
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 700000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks" 
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 800000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks" 
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 1000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks" 
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 1500000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks" 
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 2000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks" 
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 2100000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks" 
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 2400000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks" 
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 2800000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks" 
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 3200000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks" 
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 4000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks" 
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 4500000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks" 
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 5000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks" 
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 5500000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks" 
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 6000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks" 
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 6500000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks" 
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 7000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks" 
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 8000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks" 
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 9000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"                           
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 12000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"  
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 15000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"  
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 20000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"  
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 25000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"  
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 30000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"          
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 35000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"  
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 40000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"  
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 45000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"  
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 50000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"  
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 55000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"          
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 60000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"  
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 65000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"  
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 70000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"  
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 75000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"  
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 80000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"          
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 90000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"  
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 95000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"  
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 100000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"  
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 105000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"  
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 125000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"                
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 145000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"   
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 165000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"     
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 200000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"   
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 250000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"     
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 275000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"   
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 300000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"     
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 350000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"   
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 400000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"     
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 450000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"   
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§f +25%"     
+    - "§7 ⊠§e Монеты§f +25%"
+    - "§7 ⊠§6 Ударов§f +25%"       
+    - "§7 ⊠§b Опыт§f +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 500000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 0.25"
+  - "booster player %player% add stats_clicks * 0.25"
+  - "booster player %player% add money * 0.25"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"         
+
+#1
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§c§l -x10"     
+    - "§7 ⊠§e Монеты§c§l -x10"
+    - "§7 ⊠§6 Ударов§c§l -x10"       
+    - "§7 ⊠§b Опыт§а +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 600000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * -10"
+  - "booster player %player% add stats_clicks * -10"
+  - "booster player %player% add money * -10"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"       
+
+#2
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§c§l -x10"     
+    - "§7 ⊠§e Монеты§c§l -x10"
+    - "§7 ⊠§6 Ударов§c§l -x10"       
+    - "§7 ⊠§b Опыт§а +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 400000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * -10"
+  - "booster player %player% add stats_clicks * -10"
+  - "booster player %player% add money * -10"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"     
+
+#3
+
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§c§l -x10"     
+    - "§7 ⊠§e Монеты§c§l -x10"
+    - "§7 ⊠§6 Ударов§c§l -x10"       
+    - "§7 ⊠§b Опыт§а +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 200000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * -10"
+  - "booster player %player% add stats_clicks * -10"
+  - "booster player %player% add money * -10"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"  
+
+#4
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§c§l +x20"     
+    - "§7 ⊠§e Монеты§c§l +x20"
+    - "§7 ⊠§6 Ударов§c§l +x20"       
+    - "§7 ⊠§b Опыт§а +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 100000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 20"
+  - "booster player %player% add stats_clicks * 20"
+  - "booster player %player% add money * 20"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"        
+#5
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§c§l +x20"     
+    - "§7 ⊠§e Монеты§c§l +x20"
+    - "§7 ⊠§6 Ударов§c§l +x20"       
+    - "§7 ⊠§b Опыт§а +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 300000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 20"
+  - "booster player %player% add stats_clicks * 20"
+  - "booster player %player% add money * 20"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"     
+
+#6
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§c§l -x30"     
+    - "§7 ⊠§e Монеты§c§l -x30"
+    - "§7 ⊠§6 Ударов§c§l -x30"       
+    - "§7 ⊠§b Опыт§а +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 800000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * -30"
+  - "booster player %player% add stats_clicks * -30"
+  - "booster player %player% add money * -30"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"    
+
+#7
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§c§l +x50"     
+    - "§7 ⊠§e Монеты§c§l +x50"
+    - "§7 ⊠§6 Ударов§c§l +x50"       
+    - "§7 ⊠§b Опыт§а +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 10000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 50"
+  - "booster player %player% add stats_clicks * 50"
+  - "booster player %player% add money * 50"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"   
+
+#8
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§c§l +x50"     
+    - "§7 ⊠§e Монеты§c§l +x50"
+    - "§7 ⊠§6 Ударов§c§l +x50"       
+    - "§7 ⊠§b Опыт§а +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 1000000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 50"
+  - "booster player %player% add stats_clicks * 50"
+  - "booster player %player% add money * 50"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks"   
+
+#9
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§c§l +x50"     
+    - "§7 ⊠§e Монеты§c§l +x50"
+    - "§7 ⊠§6 Ударов§c§l +x50"       
+    - "§7 ⊠§b Опыт§а +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 2000000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * 50"
+  - "booster player %player% add stats_clicks * 50"
+  - "booster player %player% add money * 50"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks" 
+
+#8
+- guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§6Перерождение"
+    lore:
+    - ""
+    - "§7Думаешь ты уже готов начать всё"
+    - "§7сначала? Не бойся! Это будет также"
+    - "§7увлекательно, как и до этого. К "
+    - "§7тому же ты получишь награду в виде"
+    - "§7вечных бустеров статиктики:"
+    - ""
+    - "§7 ⊠§c Убийств§c§l -x126"     
+    - "§7 ⊠§e Монеты§c§l -x126"
+    - "§7 ⊠§6 Ударов§c§l -x126"       
+    - "§7 ⊠§b Опыт§а +25%"
+    - ""
+    - "§aДополнительная награда:"
+    - " §6✪ §f+§d 25 Битсов"
+    - " §6✪ §710% на§b Слот для Питомца"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - "§7 ⊠ §fУровень:%ready_level% %current_level%/%need_level%"
+    - ""
+    - "§e▶ Нажмите, чтобы переродиться"  
+    enchantment: {}
+    data: "{\"other\":\"win\"}"
+    unbreakable: false
+    flags: []
+  price: 5000000000000
+  commands:
+  - "scrmsg %player% normal §dВы переродились! | §7Начните жизнь с нуля, с бустером!"
+  - "dnkcontrol %player% reset 1"
+  - "booster player %player% add stats_player_exp * 0.25"
+  - "booster player %player% add stats_kills_players * -126"
+  - "booster player %player% add stats_clicks * -126"
+  - "booster player %player% add money * -126"
+  - "eco reset %player%"
+  - "mpdb ecoSet %player% 0"
+  - "dnkcontrol %player% set 0"
+  - "chancecmd %player% slot 10"
+  - "sound %player% ui.toast.challenge_complete 1 1.3"
+  - "toast %player% 2 384 §f +25% к статистике | §6Играй быстрее!"
+  - "broad §8[§ai§8]§f Игрок§b %player%§f переродился и начал новую жизнь!"
+  - "morestats %player% level 1 false"
+  - "timety 40 realmcmd %player% location_1 10 teleport"
+  - "morestats %player% bits 25 false"
+  stats:
+    "level":
+      count: 9
+      readyOk: "§a ✔"
+      readyNo: "§c ✖"
+  dropStats:
+  - "level"
+  - "kills_players"
+  - "clicks" 
+
+crystalAddNbt: "rebirth_add_crystals"
+crystalNbt: "rebirth_crystals"
+crystalLore: "§dУровень после ребитха:§f %crystals% уровень"
+crystalNotSupported:
+- "et %player% Вы не можете наложить§d Кристалл Сохранения§f на этот предмет!"
+crystalOk:
+- "st %player% Вы успешно наложили§d Кристалл Сохранения§f на предмет!"
+crystalMaxLevel:
+- "et %player% Ваш предмет имеет максимальное количество§d Кристаллов Сохранения§f в себе!"
+spawnX: 0.0
+spawnY: 70.0
+spawnZ: 0.0
+spawnYaw: 0.0
+spawnPitch: 0.0
+spawnWorld: "world"
+placeholderReplace: "%rebirth%"
+placeholderZeroLevel: "§cНет"
+chatReplace: "%rebirth%"
+chat: "%rebirth%"
+chatMapping:
+- "§aI "
+- "§aII "
+- "§aIII "
+- "§aIV "
+- "§eV "
+- "§eVI "
+- "§eVII "
+- "§eVIII "
+- "§6IX "
+- "§6X "
+- "§6XI "
+- "§6XII "
+- "§cXIII "
+- "§cXIV "
+- "§cXV "
+- "§cXVI "
+- "§3XVII "
+- "§3XVIII " 
+- "§3XIX "
+- "§3XX "
+- "§dXXI "
+- "§dXXII "
+- "§dXXIII "
+- "§dXXIV "
+- "§2XXV "
+- "§2XXVI "
+- "§2XXVII "
+- "§2XXVIII "
+- "§4XXIX "
+- "§4XXX "
+- "§4XXXI "
+- "§4XXXII "
+- "§4XXXIII "
+- "§5XXXIV "
+- "§5XXXV "
+- "§5XXXVI "
+- "§5XXXVII "
+- "§e§lXXXVIII "
+- "§e§lXXXIX "
+- "§e§lXL "
+- "§e§lXLI "
+- "§6§lXLII "
+- "§6§lXLIII "
+- "§6§lXLIV "
+- "§6§lXLV "
+- "§c§lXLVI "
+- "§c§lXLVII "
+- "§c§lXLVIII "
+- "§c§lXLIX "
+- "§d§lL "
+- "§d§lLI "
+- "§d§lLII "
+- "§d§lLIII "
+- "§d§lLIV "
+- "§d§lLV "
+- "§d§lLVI "
+- "§5§lLVII "
+- "§5§lLVIII " 
+- "§5§lLIX "
+- "§5§lLX "
+- "§5§lLXI "
+- "§5§lLXII "
+- "§3§lLXIII "
+- "§3§lLXIV "
+- "§3§lLXV "
+- "§3§lLXVI "
+- "§3§lLXVII "
+- "§3§lLXVIII " 
+- "§3§lLXIX "
+- "§3§lLXX "
+- "§4§lLXXI "
+- "§4§lLXXII "
+- "§4§lLXXIII "
+- "§4§lLXXIV "
+- "§4§lLXXV "
+- "§4§lLXXVI "
+- "§f§lLXXVII "
+- "§f§lLXXVIII " 
+- "§f§lLXXIX "
+- "§f§lLXXX "
+- "§f§lLXXXI "
+- "§f§lLXXXII "
+- "§f§lLXXXIII "
+- "§f§lLXXXIV "
+- "§f§lLXXXV "
+- "§f§lLXXXVI "
+- "§f§lLXXXVII "
+- "§f§lLXXXVIII "
+- "§f§lLXXXIX "
+- "§f§lXC "
+rebirthUsedAllCrystals: "§fИспользовано максимум§d Кристаллов Сохранения"
+rebirthAllowedCrystals: "§c✖ §fУ Вас не использовано §d%allowed%§d Кристаллов Сохранения"
+crystalAlreadyUsed:
+- "et %player% Вы уже наложили§d Кристалл Сохранения§f на этот предмет, в следующий раз сможете сделать это после ребитха!"
+usedCrystalNbt: "used_crystal"
+maxCrystalUsed:
+- "et %player% Вы не можете накладывать больше§d Кристаллов Сохранения§f в этой жизни!"
+usedCrystalsStat: "used_crystals"
+crystalsByRebirth:
+  0: 5
+  1: 5
+  2: 5
+  3: 5
+  4: 5
+  5: 4
+  6: 4
+  7: 4
+  8: 4
+  9: 4
+  10: 3
+  11: 3
+  12: 3
+  13: 3
+  14: 3 
+  15: 2
+  16: 2
+  17: 2
+  18: 2
+  20: 2     
+crystalsByRebirthDefault: 5
+upgradeLore: "%rebirth_crystals%"

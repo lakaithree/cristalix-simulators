@@ -1,0 +1,28 @@
+#Команды, которые запускаются раз в определенное время или каждый день в определенное время
+
+timezone: "GMT+3"
+timers:
+- commands:
+  - "oncecommands booster"
+  perMinuteInHour: []
+  per:
+  - "11:00"
+  - "18:00"  
+- commands:
+  - "softrestart"
+  perMinuteInHour: []
+  per:
+  - "3:00"
+- commands:
+  - "already meco"
+  perMinuteInHour: [0, 20, 40]
+  per: []
+- commands:
+  - mm m s boss-1 1 events,51,75,-53
+  - broadlocal
+  - broadlocal                     §6§lНачался Эвент:§e Сражение с Боссом
+  - broadlocal    §7Чтобы поучаствовать, напишите§f /menu -> События§7, вы телепортируетесь 
+  - broadlocal        §7на арену, ваша цель убить босса и получить ценный дроп с него!
+  - broadlocal
+  perMinuteInHour: [5, 25, 45]
+  per: []

@@ -1,0 +1,1164 @@
+commands:
+
+  "звездочка":
+    inventory:
+      title: "Звездочка"
+      context:
+      - "---------"
+      - "----h---"
+      - "---------"
+      auto:
+        "0":
+          type: "STONE"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+    items:
+    - char: "h"
+      item:
+        type: "GOLD_BLOCK"
+        amount: 1
+        damage: 0
+        name: "§eПолучить звездочку§7 (Потом /suffixes)"
+        lore: []
+        enchantment: {}
+        data: '{"weapons":"claymore"}'
+        unbreakable: false
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+      needStats:
+        sub: 
+          count: 1
+          error: 
+            - "et %player% А вам нельзя ммм"
+      commands:
+      - "st %player% Выдали выдали выдали выдали выдали!!!"  
+      - "titles %player% 100"  
+      - "sound %player% UI.BUTTON.CLICK 1 1"  
+
+
+  "armor":
+    arg: "25c0d771-d143-4bf4-abb8-bae19f56198f"
+    inventory:
+      title: "Броня"
+      context:
+      - "--1---5--"
+      - "--2---6--"
+      - "--3---7--"
+      - "--4---8--"
+      auto:
+        "0":
+          type: "STONE"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+    items:
+    - char: "5"
+      item:
+        type: "SKULL_ITEM"
+        amount: 1
+        damage: 3
+        name: "§6Шлем Золотого ниндзя"
+        lore: 
+          - "¨ffff99Уровень 1"
+          - ""
+          - "§7§oУ вас есть шанс уклониться от удара противника!"
+          - "§7§oС каждым новым уровнем вы будете получать больше"
+          - "§7§oшанс на уклонение удара противника!"
+          - "§7§oПомимо уклонение вы будете получать регенерацию!"
+          - ""
+          - "§eЛегендарный предмет"
+          - ""
+          - "§f䂉§6Для этого действия необходим§f 1 ребитх"
+          - ""
+          - "§e▶ Нажмите, чтобы приобрести за§6 5,000 убийств§e и §d200 битсов"
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]  
+        enchantment: {}
+        data: '{"rebirth_save":1,"legendary_helmet":1,"legendary_armor":1,"SkullOwner":{"Id":"dfb88ad0-8a0c-47bb-b098-ae9700f6ff2a","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjY5ZjExMzU5NjEzMTdhMDRjYWQ4Yjc1YWIyMmE2YTE1NjExZjg5ZjQxNzg5Mjg4OWI2MTNhZjVhNTVhM2UyMyJ9fX0="}]}}}'
+        unbreakable: true
+      needStats:
+        rebirth: 
+          count: 1
+          error: 
+            - "et %player% Недостаточный уровень ребитха!"  
+        kills_players: 
+          count: 5000
+          error: 
+            - "et %player% Вам нужно больше опыта!"
+        bits: 
+          count: 200
+          error: 
+            - "et %player% Вам нужно больше битсов!"              
+      commands:
+      - "sound %player% UI.BUTTON.CLICK 1 1" 
+      - "morestats %player% kills_players -5000 false"
+      - "morestats %player% bits -200"
+      - "getitem %player% legendary_helmet 1"
+      - "text %player% §6Хранитель Оружия§7 >§f Отличная покупка, удачи в бою!"
+
+
+
+    - char: "6"
+      item:
+        type: "LEATHER_CHESTPLATE"
+        amount: 1
+        damage: 0
+        name: "§6Нагрудник Золотого ниндзя"
+        lore: 
+          - "¨ffff99Уровень 1"
+          - ""
+          - "§7§oУ вас есть шанс уклониться от удара противника!"
+          - "§7§oС каждым новым уровнем вы будете получать больше"
+          - "§7§oшанс на уклонение удара противника!"
+          - "§7§oПомимо уклонение вы будете получать регенерацию!"
+          - ""
+          - "§dЭпический предмет"
+          - ""
+          - "§f䂉§6Для этого действия необходим§f 1 ребитх"
+          - ""
+          - "§e▶ Нажмите, чтобы приобрести за§6 5,000 убийств§e и §d300 битсов"
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]  
+        enchantment: {}
+        data: '{"rebirth_save":1,"legendary_chestplate":1,"legendary_armor":1,"color":16766464}'
+        unbreakable: true
+      needStats:
+        rebirth: 
+          count: 1
+          error: 
+            - "et %player% Недостаточный уровень ребитха!"  
+        kills_players: 
+          count: 5000
+          error: 
+            - "et %player% Вам нужно больше опыта!"
+        bits: 
+          count: 300
+          error: 
+            - "et %player% Вам нужно больше битсов!"     
+      commands:
+      - "sound %player% UI.BUTTON.CLICK 1 1" 
+      - "morestats %player% kills_players -5000 false"
+      - "getitem %player% legendary_chestplate 1"
+      - "morestats %player% bits -300"
+      - "text %player% §6Хранитель Оружия§7 >§f Отличная покупка, удачи в бою!"
+
+
+
+    - char: "7"
+      item:
+        type: "LEATHER_LEGGINGS"
+        amount: 1
+        damage: 0
+        name: "§6Штаны Золотого ниндзя"
+        lore: 
+          - "¨ffff99Уровень 1"
+          - ""
+          - "§7§oУ вас есть шанс уклониться от удара противника!"
+          - "§7§oС каждым новым уровнем вы будете получать больше"
+          - "§7§oшанс на уклонение удара противника!"
+          - "§7§oПомимо уклонение вы будете получать регенерацию!"
+          - ""
+          - "§dЭпический предмет"
+          - ""
+          - "§f䂉§6Для этого действия необходим§f 1 ребитх"
+          - ""
+          - "§e▶ Нажмите, чтобы приобрести за§6 5,000 убийств§e и §d250 битсов"
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]  
+        enchantment: {}
+        data: '{"rebirth_save":1,"legendary_leggings":1,"legendary_armor":1,"color":16766464}'
+        unbreakable: true
+      needStats:
+        rebirth: 
+          count: 1
+          error: 
+            - "et %player% Недостаточный уровень ребитха!"  
+        kills_players: 
+          count: 5000
+          error: 
+            - "et %player% Вам нужно больше опыта!"
+        bits: 
+          count: 250
+          error: 
+            - "et %player% Вам нужно больше битсов!"     
+      commands:
+      - "sound %player% UI.BUTTON.CLICK 1 1" 
+      - "morestats %player% kills_players -5000 false"
+      - "getitem %player% legendary_leggings 1"
+      - "morestats %player% bits -250"
+      - "text %player% §6Хранитель Оружия§7 >§f Отличная покупка, удачи в бою!"
+
+
+    - char: "8"
+      item:
+        type: "LEATHER_BOOTS"
+        amount: 1
+        damage: 0
+        name: "§6Ботинки Золотого ниндзя"
+        lore: 
+          - "¨ffff99Уровень 1"
+          - ""
+          - "§7§oУ вас есть шанс уклониться от удара противника!"
+          - "§7§oС каждым новым уровнем вы будете получать больше"
+          - "§7§oшанс на уклонение удара противника!"
+          - "§7§oПомимо уклонение вы будете получать регенерацию!"
+          - ""
+          - "§dЭпический предмет"
+          - ""
+          - "§f䂉§6Для этого действия необходим§f 1 ребитх"
+          - ""
+          - "§e▶ Нажмите, чтобы приобрести за§6 5,000 убийств§e и §d150 битсов"
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]  
+        enchantment: {}
+        data: '{"rebirth_save":1,"legendary_boots":1,"legendary_armor":1,"color":16766464}'
+        unbreakable: true
+      needStats:
+        rebirth: 
+          count: 1
+          error: 
+            - "et %player% Недостаточный уровень ребитха!"  
+        kills_players: 
+          count: 5000
+          error: 
+            - "et %player% Вам нужно больше опыта!"
+        bits: 
+          count: 150
+          error: 
+            - "et %player% Вам нужно больше битсов!"   
+      commands:
+      - "sound %player% UI.BUTTON.CLICK 1 1" 
+      - "morestats %player% kills_players -5000 false"
+      - "getitem %player% legendary_boots 1" 
+      - "morestats %player% bits -150"  
+      - "text %player% §6Хранитель Оружия§7 >§f Отличная покупка, удачи в бою!"
+
+
+
+    - char: "1"
+      item:
+        type: "SKULL_ITEM"
+        amount: 1
+        damage: 3
+        name: "§dШлем Тёмного ниндзя"
+        lore: 
+          - "¨ffff99Уровень 1"
+          - ""
+          - "§7§oУ вас есть шанс уклониться от удара противника!"
+          - "§7§oС каждым новым уровнем вы будете получать больше"
+          - "§7§oшанс на уклонение удара противника!"
+          - ""
+          - "§dЭпический предмет"
+          - ""
+          - "§f䂉§6Для этого действия необходим§f 1 ребитх"
+          - ""
+          - "§e▶ Нажмите, чтобы приобрести за§6 5,000 убийств"
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]  
+        enchantment: {}
+        data: '{"rebirth_save":1,"normal_helmet":1,"normal_armor":1,"SkullOwner":{"Id":"062ce076-ad55-4bad-9737-769604748aba","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmY3MzMyNjk2MTRmZThhOWFlODlmNWM1ODI4NmFhNTNiOWUzODNmYzRkYzU3ZTM3ZWNiZmE1ZTkzYSJ9fX0="}]}}}'
+        unbreakable: true
+      needStats:
+        rebirth: 
+          count: 1
+          error: 
+            - "et %player% Недостаточный уровень ребитха!"  
+        kills_players: 
+          count: 5000
+          error: 
+            - "et %player% Вам нужно больше опыта!"     
+      commands:
+      - "sound %player% UI.BUTTON.CLICK 1 1" 
+      - "morestats %player% kills_players -5000 false"
+      - "getitem %player% normal_helmet 1"
+      - "text %player% §6Хранитель Оружия§7 >§f Отличная покупка, удачи в бою!"
+
+
+    - char: "2"
+      item:
+        type: "LEATHER_CHESTPLATE"
+        amount: 1
+        damage: 0
+        name: "§dНагрудник Тёмного ниндзя"
+        lore: 
+          - "¨ffff99Уровень 1"
+          - ""
+          - "§7§oУ вас есть шанс уклониться от удара противника!"
+          - "§7§oС каждым новым уровнем вы будете получать больше"
+          - "§7§oшанс на уклонение удара противника!"
+          - ""
+          - "§dЭпический предмет"
+          - ""
+          - "§f䂉§6Для этого действия необходим§f 1 ребитх"
+          - ""
+          - "§e▶ Нажмите, чтобы приобрести за§6 5,000 убийств"
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]  
+        enchantment: {}
+        data: '{"rebirth_save":1,"normal_chestplate":1,"normal_armor":1,"color":0}'
+        unbreakable: true
+      needStats:
+        rebirth: 
+          count: 1
+          error: 
+            - "et %player% Недостаточный уровень ребитха!"  
+        kills_players: 
+          count: 5000
+          error: 
+            - "et %player% Вам нужно больше опыта!"     
+      commands:
+      - "sound %player% UI.BUTTON.CLICK 1 1" 
+      - "morestats %player% kills_players -5000 false"
+      - "getitem %player% normal_chestplate 1"
+      - "text %player% §6Хранитель Оружия§7 >§f Отличная покупка, удачи в бою!"
+
+
+
+    - char: "3"
+      item:
+        type: "LEATHER_LEGGINGS"
+        amount: 1
+        damage: 0
+        name: "§dШтаны Тёмного ниндзя"
+        lore: 
+          - "¨ffff99Уровень 1"
+          - ""
+          - "§7§oУ вас есть шанс уклониться от удара противника!"
+          - "§7§oС каждым новым уровнем вы будете получать больше"
+          - "§7§oшанс на уклонение удара противника!"
+          - ""
+          - "§dЭпический предмет"
+          - ""
+          - "§f䂉§6Для этого действия необходим§f 1 ребитх"
+          - ""
+          - "§e▶ Нажмите, чтобы приобрести за§6 5,000 убийств"
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]  
+        enchantment: {}
+        data: '{"rebirth_save":1,"normal_leggins":1,"normal_armor":1,"color":0}'
+        unbreakable: true
+      needStats:
+        rebirth: 
+          count: 1
+          error: 
+            - "et %player% Недостаточный уровень ребитха!"  
+        kills_players: 
+          count: 5000
+          error: 
+            - "et %player% Вам нужно больше опыта!"     
+      commands:
+      - "sound %player% UI.BUTTON.CLICK 1 1" 
+      - "morestats %player% kills_players -5000 false"
+      - "getitem %player% normal_leggings 1"
+      - "text %player% §6Хранитель Оружия§7 >§f Отличная покупка, удачи в бою!"
+
+
+
+    - char: "4"
+      item:
+        type: "LEATHER_BOOTS"
+        amount: 1
+        damage: 0
+        name: "§dБотинки Тёмного ниндзя"
+        lore: 
+          - "¨ffff99Уровень 1"
+          - ""
+          - "§7§oУ вас есть шанс уклониться от удара противника!"
+          - "§7§oС каждым новым уровнем вы будете получать больше"
+          - "§7§oшанс на уклонение удара противника!"
+          - ""
+          - "§dЭпический предмет"
+          - ""
+          - "§f䂉§6Для этого действия необходим§f 1 ребитх"
+          - ""
+          - "§e▶ Нажмите, чтобы приобрести за§6 5,000 убийств"
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]  
+        enchantment: {}
+        data: '{"rebirth_save":1,"normal_boots":1,"normal_armor":1,"color":0}'
+        unbreakable: true
+      needStats:
+        rebirth: 
+          count: 1
+          error: 
+            - "et %player% Недостаточный уровень ребитха!"  
+        kills_players: 
+          count: 5000
+          error: 
+            - "et %player% Вам нужно больше опыта!"     
+      commands:
+      - "sound %player% UI.BUTTON.CLICK 1 1" 
+      - "morestats %player% kills_players -5000 false"
+      - "getitem %player% normal_boots 1" 
+      - "text %player% §6Хранитель Оружия§7 >§f Отличная покупка, удачи в бою!"     
+
+  "epic":
+    arg: "25c0d771-d143-4bf4-abb8-bae19f56198f"
+    inventory:
+      title: "Эпические катаны"
+      context:
+      - "---------"
+      - "-1-2-3-4-"
+      - "---------"
+      auto:
+        "0":
+          type: "STONE"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+    items:
+    - char: "1"
+      item:
+        type: "DIAMOND_SWORD"
+        amount: 1
+        damage: 0
+        name: "§bКоса души"
+        lore: 
+          - "¨ffff99Уровень 1"
+          - ""
+          - "§7Улучшайте катану, чтобы зарабатывать больше"
+          - "§7монет и быстрее прокачивать свой уровень!"
+          - ""
+          - "§dУровень после ребитха:§f 1 уровень"
+          - ""
+          - "§7Вы можете сохранить уровень предмета, после"
+          - "§7ребитха, используя§d Кристаллы Сохранения"
+          - ""
+          - "§7§oДанная катана дает шанс на убийство игрока!"
+          - ""
+          - "§dЭпический предмет"
+          - ""
+          - "§f䂉§6Для этого действия необходима§f Подписка Супер Игрок"
+          - ""
+          - "§e▶ Нажмите, чтобы приобрести за§d 150 битсов"
+        enchantment: {}
+        data: "{\"katana\":1,\"weapons\":\"azure_scythe\",\"kill_katana\":1,\"fight\":\"kill\"}"
+        unbreakable: true
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+      needStats:
+        sub: 
+          count: 1
+          error: 
+            - "et %player% Вам нужна подписка Супер Игрок!"  
+        bits: 
+          count: 150
+          error: 
+            - "et %player% Вам нужно больше битсов!"     
+      commands:
+      - "sudo %player% epic 25c0d771-d143-4bf4-abb8-bae19f56198f"  
+      - "sound %player% UI.BUTTON.CLICK 1 1" 
+      - "morestats %player% bits -150"
+      - "getitem %player% kill_katana 1"
+      - "text %player% §6Хранитель Оружия§7 >§f Отличная покупка, удачи в бою!"
+
+    - char: "2"
+      item:
+        type: "DIAMOND_SWORD"
+        amount: 1
+        damage: 0
+        name: "§eДенежный топор"
+        lore: 
+          - "¨ffff99Уровень 1"
+          - ""
+          - "§7Улучшайте катану, чтобы зарабатывать больше"
+          - "§7монет и быстрее прокачивать свой уровень!"
+          - ""
+          - "§dУровень после ребитха:§f 1 уровень"
+          - ""
+          - "§7Вы можете сохранить уровень предмета, после"
+          - "§7ребитха, используя§d Кристаллы Сохранения"
+          - ""
+          - "§7§oДанная катана дает вам шанс получить 1-5% от"
+          - "§7§oвашего баланса, когда вы бьете игрока!"
+          - ""
+          - "§dЭпический предмет"
+          - ""
+          - "§f䂉§6Для этого действия необходим§f 10 ребитх"
+          - ""
+          - "§e▶ Нажмите, чтобы приобрести за§b 500,000 опыта"
+        enchantment: {}
+        data: "{\"katana\":1,\"weapons\":\"skeletonaxe\",\"money_katana\":1,\"fight\":\"money\"}"
+        unbreakable: true
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+      needStats:
+        rebirth: 
+          count: 10
+          error: 
+            - "et %player% Недостаточный уровень ребитха!"  
+        player_exp: 
+          count: 500000
+          error: 
+            - "et %player% Вам нужно больше опыта!"     
+      commands:
+      - "sudo %player% epic 25c0d771-d143-4bf4-abb8-bae19f56198f"  
+      - "sound %player% UI.BUTTON.CLICK 1 1" 
+      - "morestats %player% player_exp -500000 false"
+      - "getitem %player% money_katana 1"
+      - "text %player% §6Хранитель Оружия§7 >§f Отличная покупка, удачи в бою!"
+
+    - char: "3"
+      item:
+        type: "DIAMOND_SWORD"
+        amount: 1
+        damage: 0
+        name: "§dОглушающая катана"
+        lore: 
+          - "¨ffff99Уровень 1"
+          - ""
+          - "§7Улучшайте катану, чтобы зарабатывать больше"
+          - "§7монет и быстрее прокачивать свой уровень!"
+          - ""
+          - "§dУровень после ребитха:§f 1 уровень"
+          - ""
+          - "§7Вы можете сохранить уровень предмета, после"
+          - "§7ребитха, используя§d Кристаллы Сохранения"
+          - ""
+          - "§7§oДанная катана дает вам шанс оглушить игрока!"
+          - ""
+          - "§dЭпический предмет"
+          - ""
+          - "§f䂉§6Для этого действия необходим§f 3 ребитх"
+          - ""
+          - "§e▶ Нажмите, чтобы приобрести за§b 100,000 опыта"
+        enchantment: {}
+        data: "{\"katana\":1,\"weapons\":\"crimsoncleaver\",\"wizard_katana\":1,\"fight\":\"wizard\"}"
+        unbreakable: true
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+      needStats:
+        rebirth: 
+          count: 3
+          error: 
+            - "et %player% Недостаточный уровень ребитха!"  
+        player_exp: 
+          count: 100000
+          error: 
+            - "et %player% Вам нужно больше опыта!"     
+      commands:
+      - "sudo %player% epic 25c0d771-d143-4bf4-abb8-bae19f56198f"  
+      - "sound %player% UI.BUTTON.CLICK 1 1" 
+      - "morestats %player% player_exp -100000 false"
+      - "getitem %player% wizard_katana 1"
+      - "text %player% §6Хранитель Оружия§7 >§f Отличная покупка, удачи в бою!"
+
+    - char: "4"
+      item:
+        type: "DIAMOND_SWORD"
+        amount: 1
+        damage: 0
+        name: "§bКатана мощности"
+        lore: 
+          - "¨ffff99Уровень 1"
+          - ""
+          - "§7Улучшайте катану, чтобы зарабатывать больше"
+          - "§7монет и быстрее прокачивать свой уровень!"
+          - ""
+          - "§dУровень после ребитха:§f 1 уровень"
+          - ""
+          - "§7Вы можете сохранить уровень предмета, после"
+          - "§7ребитха, используя§d Кристаллы Сохранения"
+          - ""
+          - "§7§oДанной катаной вы будете получать в 2 раза"
+          - "§7§oбольше ударов, когда бьете игрока!"
+          - ""
+          - "§dЭпический предмет"
+          - ""
+          - "§f䂉§6Для этого действия необходим§f 1 ребитх"
+          - ""
+          - "§e▶ Нажмите, чтобы приобрести за§b 50,000 опыта"
+        enchantment: {}
+        data: "{\"katana\":1,\"weapons\":\"runic\",\"click_katana\":1,\"fight\":\"click\"}"
+        unbreakable: true
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+      needStats:
+        rebirth: 
+          count: 1
+          error: 
+            - "et %player% Недостаточный уровень ребитха!"  
+        player_exp: 
+          count: 50000
+          error: 
+            - "et %player% Вам нужно больше опыта!"     
+      commands:
+      - "sudo %player% epic 25c0d771-d143-4bf4-abb8-bae19f56198f"  
+      - "sound %player% UI.BUTTON.CLICK 1 1" 
+      - "morestats %player% player_exp -50000 false"   
+      - "getitem %player% click_katana 1"   
+      - "text %player% §6Хранитель Оружия§7 >§f Отличная покупка, удачи в бою!"      
+
+  "blacksmith":
+    arg: "25c0d771-d143-4bf4-abb8-bae19f56198f"
+    inventory:
+      title: "Мастер оружия"
+      context:
+      - "---------"
+      - "--k---a--"
+      - "---------"
+      auto:
+        "0":
+          type: "STONE"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+    items:
+    - char: "k"
+      item:
+        type: "DIAMOND_SWORD"
+        amount: 1
+        damage: 0
+        name: "§dЭпические катаны"
+        lore: 
+          - ""
+          - "§7Отройте для себя совершенно новые"
+          - "§7катаны новой мощности!"
+          - ""
+          - "§7Данные катаны можно прокачать до ¨ffff9945 уровня"
+          - ""
+          - "§e▶ Нажмите, чтобы посмотреть"
+        enchantment: {}
+        data: '{"weapons":"runic"}'
+        unbreakable: false
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+      commands:
+      - "sudo %player% epic 25c0d771-d143-4bf4-abb8-bae19f56198f"  
+      - "sound %player% UI.BUTTON.CLICK 1 1" 
+
+    - char: "a"
+      item:
+        type: "LEATHER_CHESTPLATE"
+        amount: 1
+        damage: 0
+        name: "§bБроня"
+        lore: 
+          - ""
+          - "§7Покупай и прокачивай броню, она"
+          - "§7даст тебе возможность уклониться"
+          - "§7от удара противника!"
+          - ""
+          - "§e▶ Нажмите, чтобы посмотреть"
+        enchantment: {}
+        data: '{"color":0}'
+        unbreakable: false
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+      commands:
+      - "sudo %player% armor 25c0d771-d143-4bf4-abb8-bae19f56198f"  
+      - "sound %player% UI.BUTTON.CLICK 1 1"
+  
+  "katanasell":
+    arg: "kekwtflul1"
+    inventory:
+      title: "Сенсей"
+      context:
+      - "---------"
+      - "----h---"
+      - "---------"
+      auto:
+        "0":
+          type: "STONE"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+    items:
+    - char: "h"
+      item:
+        type: "DIAMOND_SWORD"
+        amount: 1
+        damage: 0
+        name: "§aПродать катану"
+        lore: 
+          - ""
+          - "§7Возьмите в руку катану, которую хотите"
+          - "§7продать, за продажу вы получите монеты"
+          - "§7относительно вашего баланса! У катан нет"
+          - "§7фиксированной цены!"
+          - ""
+          - "§6Для этого действия нужен§f 5 уровень"
+          - ""
+          - "§e▶ Нажмите, чтобы продать"
+        enchantment: {}
+        data: '{"weapons":"claymore"}'
+        unbreakable: false
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+      needStats:
+        level: 
+          count: 5
+          error: 
+            - "et %player% Ваш уровень слишком мал!"
+      commands:
+      - "sudo %player% itemtrade 5646de86-eacf-4b01-8962-28c3c52d365c true"  
+      - "sound %player% UI.BUTTON.CLICK 1 1"   
+  "вернитемоюкатанупожалуйста":
+    inventory:
+      title: "Ладно, держи"
+      context:
+      - "---------"
+      - "----h---"
+      - "---------"
+      auto:
+        "0":
+          type: "STONE"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+    items:
+    - char: "h"
+      item:
+        type: "TOTEM"
+        amount: 1
+        damage: 0
+        name: "§aНажмите, чтобы получить катану"
+        lore: []
+        enchantment: {}
+        data: '{"other":"player1"}'
+        unbreakable: false
+        flags: []
+      commands:
+      - "getitem %player% normal_katana 1"   
+  "settings":
+    inventory:
+      title: "Настройки"
+      context:
+      - "---------"
+      - "--h---v--"
+      - "---------"
+      auto:
+        "0":
+          type: "STONE"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+    items:
+    - char: "h"
+      item:
+        type: "TOTEM"
+        amount: 1
+        damage: 0
+        name: "§bСкрыть игроков"
+        lore: 
+          - ""
+          - "§7Внимание! После скрытия вы не будете видеть"
+          - "§7игроков, не советуем вам идти на PvP арену,"
+          - "§7когда у вас выключена данная настройка!"
+          - ""
+          - "§e▶ Нажмите, чтобы изменить"
+        enchantment: {}
+        data: '{"other":"player1"}'
+        unbreakable: false
+        flags: []
+      commands:
+      - "sudo %player% hide"   
+      - "sound %player% UI.BUTTON.CLICK 1 1"      
+    - char: "v"
+      item:
+        type: "CLAY_BALL"
+        amount: 1
+        damage: 0
+        name: "§bОповещения от§f 㾣"
+        lore: 
+          - ""
+          - "§7Надоела надпись на экране, что вам начислены"
+          - "§f㾣§7, §7вы можете скрыть это оповещение здесь!"
+          - ""
+          - "§e▶ Нажмите, чтобы изменить"
+        enchantment: {}
+        data: '{"other":"settings1"}'
+        unbreakable: false
+        flags: []
+      commands:
+      - "sudo %player% checkvote"     
+#  "old":
+#    inventory:
+#      title: "События"
+#      context:
+#      - "---------"
+#      - "--k---b--"
+#      - "---------"
+#      auto:
+#        "0":
+#          type: "STONE"
+#          amount: 1
+#          damage: 0
+#          name: ""
+#          lore: []
+#          enchantment: {}
+#          data: "{}"
+#          unbreakable: false
+#          flags: []
+#    items:
+#    - char: "b"
+#      item:
+#        type: "CLAY_BALL"
+#        amount: 1
+#        damage: 0
+#        name: "§6Сражение с Боссом"
+#        lore: 
+#          - ""
+#          - "§7Каждый час на сервере спавнится босс,"
+#          - "§7одолев которого ты получишь ценные"
+#          - "§7награды, а также много опыта!"
+#          - ""
+#          - "§e▶ Нажмите, чтобы телепортироваться"
+#        enchantment: {}
+#        data: '{"other":"villager"}'
+#        unbreakable: false
+#        flags: []
+#      commands:
+#      - "sudo %player% loc boss"      
+#    - char: "k"
+#      item:
+#        type: "CLAY_BALL"
+#        amount: 1
+#        damage: 0
+#        name: "§bЦарь Горы"
+#        lore: 
+#          - ""
+#          - "§7Держись как можно дольше на§c Блоках Редстоуна§7,"
+#          - "§7пока вокруг тебя будет идти настоящее сражение!"
+#          - "§7Каждую секунду ты будешь получать монеты.."
+#          - ""
+#          - "§e▶ Нажмите, чтобы телепортироваться"
+#        enchantment: {}
+#        data: '{"other":"collection"}'
+#        unbreakable: false
+#        flags: []
+#      commands:
+#      - "sudo %player% loc koth"    
+  "sell":
+    arg: "e7c13d3d-ac38-11e8-8374-1cb72caa35fd"
+    inventory:
+      title: "Учёный"
+      context:
+      - "---------"
+      - "--s---u--"
+      - "---------"
+      auto:
+        "0":
+          type: "STONE"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+    items:
+    - char: "s"
+      item:
+        type: "CLAY_BALL"
+        amount: 1
+        damage: 0
+        name: "§eПродать§f 㾣"
+        lore: 
+          - ""
+          - "§7За§f 㾣§7 вы получите награду в виде"
+          - "§7монет, по курсу§b 1§f 㾣§7 =§6 1 монета§7"
+          - "§7за монеты вы сможете прокачивать свой"
+          - "§7уровень, катану, питомцев и многое другое!"
+          - ""
+          - "§e▶ Нажмите, чтобы продать"
+        enchantment: {}
+        data: '{"other":"bank"}'
+        unbreakable: false
+        flags: []
+      commands:
+      - "sudo %player% dnksell 2bef303f-4f0d-40d7-860f-807cfa3d2e83"  
+
+    - char: "u"
+      item:
+        type: "CLAY_BALL"
+        amount: 1
+        damage: 0
+        name: "§bУлучшить вместимость"
+        lore: 
+          - ""
+          - "§7Улучшайте вместимость и вы сможете"
+          - "§7держать больше§f 㾣§7 одновременно!"
+          - ""
+          - "§e▶ Нажмите, чтобы улучшить"
+        enchantment: {}
+        data: '{"other":"settings1"}'
+        unbreakable: false
+        flags: []
+      commands:
+      - "sudo %player% dnk"        
+  "menu":
+    inventory:
+      title: "Симулятор Катаны"
+      context:
+      - "----q----"
+      - "b-------p"
+      - "--w-e-r--"
+      - "---u-v---"
+      - "-s------t"
+      auto:
+        "0":
+          type: "STONE"
+          amount: 1
+          damage: 0
+          name: ""
+          lore: []
+          enchantment: {}
+          data: "{}"
+          unbreakable: false
+          flags: []
+    items:
+    - char: "v"
+      item:
+        type: "CLAY_BALL"
+        amount: 1
+        damage: 0
+        name: "§dДеревня"
+        lore: 
+          - ""
+          - "§7Это древняя деревня, в которой живут"
+          - "§7очень мудрые и сильные воины, они"
+          - "§7помогут тебе добыть новую экипировку!"
+          - ""
+          - "§e▶ Нажмите, чтобы телепортироваться"
+        enchantment: {}
+        data: '{"other":"villager"}'
+        unbreakable: false
+        flags: []
+      commands:
+      - "realmcmd %player% village 10 teleport"          
+    - char: "s"
+      item:
+        type: "CLAY_BALL"
+        amount: 1
+        damage: 0
+        name: "§eНастройки"
+        lore: 
+          - "§8Быстрый доступ: /settings"
+          - ""
+          - "§7Здесь вы можете настроить некоторые"
+          - "§7оповещения, а также скрыть игроков!"
+          - ""
+          - "§e▶ Нажмите, чтобы посмотреть"
+        enchantment: {}
+        data: '{"other":"settings"}'
+        unbreakable: false
+        flags: []
+      commands:
+      - "sudo %player% settings"           
+    - char: "u"
+      item:
+        type: "CLAY_BALL"
+        amount: 1
+        damage: 0
+        name: "§bУлучшить вместимость§f 㾣"
+        lore: 
+          - "§8Быстрый доступ: /dnk"          
+          - ""
+          - "§7Улучшайте вместимость и вы сможете"
+          - "§7держать больше§f 㾣§7 одновременно!"
+          - ""
+          - "§e▶ Нажмите, чтобы улучшить"
+        enchantment: {}
+        data: '{"other":"settings1"}'
+        unbreakable: false
+        flags: []
+      commands:
+      - "sudo %player% dnk"        
+    - char: "b"
+      item:
+        type: "CLAY_BALL"
+        amount: 1
+        damage: 0
+        name: "§6События"
+        lore: 
+          - ""
+          - "§7Сражайся с игроками в различных событиях,"
+          - "§7таких как Захват флага, Царь горы и Битва"
+          - "§7с боссом, за что ты получишь хорошие награды!"
+          - ""
+          - "§e▶ Нажмите, чтобы телепортироваться"
+        enchantment: {}
+        data: '{"other":"collection"}'
+        unbreakable: false
+        flags: []
+      commands:
+      - "realmcmd %player% events 10 teleport"      
+    - char: "p"
+      item:
+        type: "CLAY_BALL"
+        amount: 1
+        damage: 0
+        name: "§eПитомцы"
+        lore: 
+          - "§8Быстрый доступ: /pet"
+          - ""
+          - "§7Открывайте новых питомцев из§b Ящика с"
+          - "§bПитомцами§7, они дадут вам дополнительный"
+          - "§7бустер, также вы сможете прокачать их!"
+          - ""
+          - "§e▶ Нажмите, чтобы посмотреть"
+        enchantment: {}
+        data: '{"other":"pets"}'
+        unbreakable: false
+        flags: []
+      commands:
+      - "sudo %player% pet"      
+    - char: "q"
+      item:
+        type: "CLAY_BALL"
+        amount: 1
+        damage: 0
+        name: "§bЛокации"
+        lore: 
+          - "§8Быстрый доступ: /locations"
+          - ""
+          - "§7Чем выше локация, тем больше заработок"
+          - "§7на ней и быстрее сражения с игроками!"
+          - "§7Посмотри и поиграй на всех локациях!"
+          - ""
+          - "§e▶ Нажмите, чтобы посмотреть"
+        enchantment: {}
+        data: '{"other":"guild_world"}'
+        unbreakable: false
+        flags: []
+      commands:
+      - "sudo %player% locations"
+
+    - char: "w"
+      item:
+        type: "DIAMOND_SWORD"
+        amount: 1
+        damage: 0
+        name: "§cКатаны"
+        lore: 
+          - "§8Быстрый доступ: /upgrade"
+          - ""
+          - "§7Прокачивай свою катану и получай"
+          - "§7больше монет за различные действия!"
+          - ""
+          - "§7Также, сущесвует много различных катан,"
+          - "§7поиграй со всеми и найди подходящую "
+          - "§7именно для тебя! Каждая из катан имеет"
+          - "§7свою уникальную способность! Находи"
+          - "§7новые катаны, открывая§6 Ящик с Катанами"
+          - ""
+          - "  §f⊞ §bОтталкивающее копьё"
+          - "  §f⊞ §6Огненная катана"
+          - "  §f⊞ §cКатана Восстановления"
+          - "  §f⊞ §aОтравляющая катана"
+          - "  §f⊞ §bМорозная катана"
+          - "  §f⊞ §eТесак"
+          - "  §f⊞ §eКоса Молнии"
+          - "  §f⊞ §9Ослепляющий жезл"
+          - "  §cНовое! §f⊞ §dКатана Мага"
+          - "  §cНовое! §f⊞ §aКатана Уменьшения"
+          - ""
+          - "  §7Также существует§c Легендарная Катана§7,"
+          - "  §7которую можно приобрести в§f /donate"
+          - ""
+          - "§e▶ Нажмите, чтобы прокачать катану"
+          - "§e  Нужно держать катану в руке!"
+        enchantment: {}
+        data: '{"weapons":"claymore"}'
+        unbreakable: false
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+      commands:
+      - "sudo %player% upgrade"      
+
+
+    - char: "e"
+      item:
+        type: "CLAY_BALL"
+        amount: 1
+        damage: 0
+        name: "§dПерерождение"
+        lore: 
+          - "§8Быстрый доступ: /rebirth"
+          - ""
+          - "§7Дошёл до конца и хочешь попробовать всё"
+          - "§7с начала? Это будет также увлекательно,"
+          - "§7как и до этого! К тому же ты получишь"
+          - "§7различные дополнительные бустеры к"
+          - "§7своей последующей статистики!"
+          - ""
+          - "§7Используй§d Кристаллы Сохранения§7, которые"
+          - "§7ты можешь получать убивая игроков, или купив"
+          - "§7в /donate, они помогут сохранить уровень катаны"
+          - "§7при перерождении и поможет тебе начать всё"
+          - "§7намного проще, чем это было в начале игры!"
+          - ""
+          - "§e▶ Нажмите, чтобы переродиться"
+        enchantment: {}
+        data: '{"other":"reload"}'
+        unbreakable: false
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+      commands:
+      - "sudo %player% rebirth"      
+
+
+    - char: "r"
+      item:
+        type: "EXP_BOTTLE"
+        amount: 1
+        damage: 0
+        name: "§6Уровень"
+        lore: 
+          - "§8Быстрый доступ: /level"
+          - ""
+          - "§7Прокачивай свой уровень и открывай новые"
+          - "§7локации, также ты получишь за это много"
+          - "§bОпыта§7, а ещё получишь шанс на§6 Ключ"
+          - "§6от Ящика с Катанами§7 или§b Питомцами"
+          - ""
+          - "§e▶ Нажмите, чтобы прокачать уровень"
+        enchantment: {}
+        data: '{"other":"reload"}'
+        unbreakable: false
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+      commands:
+      - "sudo %player% level"      
+
+    - char: "t"
+      item:
+        type: "CLAY_BALL"
+        amount: 1
+        damage: 0
+        name: "§bВнутриигровые покупки"
+        lore: 
+          - "§8Быстрый доступ: /donate"
+          - ""
+          - "§7Покупай ценные предметы и уникальные"
+          - "§7возможности, ускорь свою игру!"
+          - ""
+          - "§750% потраченных кристалликов вернется"
+          - "§7вам на счёт после закрытия симулятора!"
+          - ""
+          - "§e▶ Нажмите, чтобы посмотреть"
+        enchantment: {}
+        data: '{"other":"guild_bank"}'
+        unbreakable: false
+        flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+      commands:
+      - "sudo %player% donate"        

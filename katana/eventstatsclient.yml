@@ -1,0 +1,31 @@
+#Статистические эвенты, где игроку надо набрать больше всех определенной статистики за определенный период
+
+events:
+  "clicks":
+    stat: "event_clicks"
+    startCommands:
+    - broadlocal
+    - broadlocal                      §e§lНачался эвент:§f Боксер
+    - broadlocal             §7Совершите больше всех ударов за§6 5 минут§7 и   
+    - broadlocal             §7если вы войдете в топ 3 этого эвента - то
+    - broadlocal                  §7сможете получить хорошую награду!  
+    - broadlocal   
+    endCommands:       
+    - broadlocal
+    - broadlocal                         §e§lИтоги эвента:§f Боксер
+    - broadlocal               §7Участвующие игроки получили свою награду!
+    - broadlocal                §7Новый эвент состоится ровно через час!     
+    - broadlocal                  
+    - broadlocal                        §c1. %top1%§7 -§f %top1_stat%
+    - broadlocal                        §62. %top2%§7 -§f %top2_stat%
+    - broadlocal                        §e3. %top3%§7 -§f %top3_stat%
+    - broadlocal    
+    - cc give p Normal 1 %top1_raw%
+    - cc give p Pets 2 %top2_raw%
+    - cc give p Pets 1 %top3_raw%
+    - randommoney %top1_raw% 50 150
+    - randommoney %top2_raw% 50 100
+    - randommoney %top3_raw% 25 100
+defaultReadable: "не существует"
+defaultStat: "0"
+defaultRaw: "_-+-_"

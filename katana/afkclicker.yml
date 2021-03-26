@@ -1,0 +1,6 @@
+#Добавляет возможность получения игроком статы в АФК режиме
+
+table: "afkclicker"
+timingsInTicks: 4
+commands:
+- "morestats %player% clicks 1 true"

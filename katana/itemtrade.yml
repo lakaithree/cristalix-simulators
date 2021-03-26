@@ -1,0 +1,108 @@
+args:
+  "5646de86-eacf-4b01-8962-28c3c52d365c":
+    cmdOk:
+    - "st %player% Вы успешно продали катану!"
+    - "randommoney %player% 1.5 3.5"
+    cmdNo:
+    - "et %player% У вас нет подходящих предметов!"
+    nbtMapping:
+      "magic_katana":
+        type: "AIR"
+        amount: 1
+        damage: 0
+        name: ""
+        lore: []
+        enchantment: {}
+        data: "{}"
+        unbreakable: false
+        flags: []            
+      "size_katana":
+        type: "AIR"
+        amount: 1
+        damage: 0
+        name: ""
+        lore: []
+        enchantment: {}
+        data: "{}"
+        unbreakable: false
+        flags: []            
+      "knockback_katana":
+        type: "AIR"
+        amount: 1
+        damage: 0
+        name: ""
+        lore: []
+        enchantment: {}
+        data: "{}"
+        unbreakable: false
+        flags: []           
+      "burn_katana":
+        type: "AIR"
+        amount: 1
+        damage: 0
+        name: ""
+        lore: []
+        enchantment: {}
+        data: "{}"
+        unbreakable: false
+        flags: []           
+      "heal_katana":
+        type: "AIR"
+        amount: 1
+        damage: 0
+        name: ""
+        lore: []
+        enchantment: {}
+        data: "{}"
+        unbreakable: false
+        flags: []                       
+      "poison_katana":
+        type: "AIR"
+        amount: 1
+        damage: 0
+        name: ""
+        lore: []
+        enchantment: {}
+        data: "{}"
+        unbreakable: false
+        flags: []  
+      "slow_katana":
+        type: "AIR"
+        amount: 1
+        damage: 0
+        name: ""
+        lore: []
+        enchantment: {}
+        data: "{}"
+        unbreakable: false
+        flags: []  
+      "ninja_katana":
+        type: "AIR"
+        amount: 1
+        damage: 0
+        name: ""
+        lore: []
+        enchantment: {}
+        data: "{}"
+        unbreakable: false
+        flags: []                          
+      "thor_katana":
+        type: "AIR"
+        amount: 1
+        damage: 0
+        name: ""
+        lore: []
+        enchantment: {}
+        data: "{}"
+        unbreakable: false
+        flags: [] 
+      "blind_katana":
+        type: "AIR"
+        amount: 1
+        damage: 0
+        name: ""
+        lore: []
+        enchantment: {}
+        data: "{}"
+        unbreakable: false
+        flags: []                 

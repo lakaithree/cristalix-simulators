@@ -1,0 +1,20 @@
+#Плейсхолдеры и настройка игрового чата
+
+msg: "§8[%world%§8] §7<§6%lvl% Ур.§7> %player% %rebirth%%color%»§f %msg%"
+defaultWorld: "§6Другое"
+worlds:
+  "world": "¨bef574Ацтеки"
+  "location_2": "§eПляж"
+  "location_3": "¨8c00ffКиберпанк"
+  "location_4": "¨6666ffКосмос"
+  "location_5": "§cКитай"
+  "location_6": "¨00ccccАтлантида"
+  "location_7": "¨19b80bЛес"
+  "village": "§dДеревня"
+  "location_8": "¨40e59fГород"
+  "location_9": "¨ebdf50Алтарь"
+  "events": "§6Эвенты"
+localchatEnabled: true
+localchatDistance: 5000
+localchatWorld: "§bL"
+enabled: true

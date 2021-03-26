@@ -1,0 +1,2032 @@
+x-katana-kill: &kill_katana
+  item:
+    type: "DIAMOND_SWORD"
+    amount: 1
+    damage: 0
+    name: "§bКоса души"
+    lore: 
+      - "¨ffff99Уровень %level%"
+      - ""
+      - "§7Улучшайте катану, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "%rebirth_crystals%"
+      - ""
+      - "§7Вы можете сохранить уровень предмета, после"
+      - "§7ребитха, используя§d Кристаллы Сохранения"
+      - ""
+      - "§7§oДанная катана дает шанс на убийство игрока!"
+      - ""
+      - "§dЭпический предмет"
+    enchantment: {}
+    data: "{\"katana\":1,\"weapons\":\"azure_scythe\",\"kill_katana\":1,\"fight\":\"kill\"}"
+    unbreakable: true
+    flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§bУлучшить предмет"
+    lore:
+    - ""
+    - "§7Улучшайте катану, чтобы зарабатывать больше"
+    - "§7монет и быстрее прокачивать свой уровень!"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - ""
+    - "§e▶ Нажмите, чтобы улучшить предмет"
+    enchantment: {}
+    data: "{\"other\":\"crafting\"}"
+    unbreakable: false
+    flags: []
+  priceFormula: money 
+  formula: []
+  commands:
+  - "st %player% Вы успешно улучшили катану!"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"  
+  setLevelNbt: "katana"
+
+x-katana-money: &money_katana
+  item:
+    type: "DIAMOND_SWORD"
+    amount: 1
+    damage: 0
+    name: "§eДенежный топор"
+    lore: 
+      - "¨ffff99Уровень %level%"
+      - ""
+      - "§7Улучшайте катану, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "%rebirth_crystals%"
+      - ""
+      - "§7Вы можете сохранить уровень предмета, после"
+      - "§7ребитха, используя§d Кристаллы Сохранения"
+      - ""
+      - "§7§oДанная катана дает вам шанс получить 1-5% от"
+      - "§7§oвашего баланса, когда вы бьете игрока!"
+      - ""
+      - "§dЭпический предмет"
+    enchantment: {}
+    data: "{\"katana\":1,\"weapons\":\"skeletonaxe\",\"money_katana\":1,\"fight\":\"money\"}"
+    unbreakable: true
+    flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§bУлучшить предмет"
+    lore:
+    - ""
+    - "§7Улучшайте катану, чтобы зарабатывать больше"
+    - "§7монет и быстрее прокачивать свой уровень!"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - ""
+    - "§e▶ Нажмите, чтобы улучшить предмет"
+    enchantment: {}
+    data: "{\"other\":\"crafting\"}"
+    unbreakable: false
+    flags: []
+  priceFormula: money 
+  formula: []
+  commands:
+  - "st %player% Вы успешно улучшили катану!"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"  
+  setLevelNbt: "katana"
+
+x-katana-wizard: &wizard_katana
+  item:
+    type: "DIAMOND_SWORD"
+    amount: 1
+    damage: 0
+    name: "§dОглушающая катана"
+    lore: 
+      - "¨ffff99Уровень %level%"
+      - ""
+      - "§7Улучшайте катану, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "%rebirth_crystals%"
+      - ""
+      - "§7Вы можете сохранить уровень предмета, после"
+      - "§7ребитха, используя§d Кристаллы Сохранения"
+      - ""
+      - "§7§oДанная катана дает вам шанс оглушить игрока!"
+      - ""
+      - "§dЭпический предмет"
+    enchantment: {}
+    data: "{\"katana\":1,\"weapons\":\"crimsoncleaver\",\"wizard_katana\":1,\"fight\":\"wizard\"}"
+    unbreakable: true
+    flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§bУлучшить предмет"
+    lore:
+    - ""
+    - "§7Улучшайте катану, чтобы зарабатывать больше"
+    - "§7монет и быстрее прокачивать свой уровень!"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - ""
+    - "§e▶ Нажмите, чтобы улучшить предмет"
+    enchantment: {}
+    data: "{\"other\":\"crafting\"}"
+    unbreakable: false
+    flags: []
+  priceFormula: money 
+  formula: []
+  commands:
+  - "st %player% Вы успешно улучшили катану!"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"  
+  setLevelNbt: "katana"
+
+x-katana-click: &click_katana
+  item:
+    type: "DIAMOND_SWORD"
+    amount: 1
+    damage: 0
+    name: "§bКатана мощности"
+    lore: 
+      - "¨ffff99Уровень %level%"
+      - ""
+      - "§7Улучшайте катану, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "%rebirth_crystals%"
+      - ""
+      - "§7Вы можете сохранить уровень предмета, после"
+      - "§7ребитха, используя§d Кристаллы Сохранения"
+      - ""
+      - "§7§oДанной катаной вы будете получать в 2 раза"
+      - "§7§oбольше ударов, когда бьете игрока!"
+      - ""
+      - "§dЭпический предмет"
+    enchantment: {}
+    data: "{\"katana\":1,\"weapons\":\"runic\",\"click_katana\":1,\"fight\":\"click\"}"
+    unbreakable: true
+    flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§bУлучшить предмет"
+    lore:
+    - ""
+    - "§7Улучшайте катану, чтобы зарабатывать больше"
+    - "§7монет и быстрее прокачивать свой уровень!"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - ""
+    - "§e▶ Нажмите, чтобы улучшить предмет"
+    enchantment: {}
+    data: "{\"other\":\"crafting\"}"
+    unbreakable: false
+    flags: []
+  priceFormula: money 
+  formula: []
+  commands:
+  - "st %player% Вы успешно улучшили катану!"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"  
+  setLevelNbt: "katana"
+
+
+
+
+
+
+
+x-katana-normal: &normal_katana
+  item:
+    type: "DIAMOND_SWORD"
+    amount: 1
+    damage: 0
+    name: "§aОбычная Катана"
+    lore: 
+      - "¨ffff99Уровень %level%"
+      - ""
+      - "§7Улучшайте катану, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "%rebirth_crystals%"
+      - ""
+      - "§7Вы можете сохранить уровень предмета, после"
+      - "§7ребитха, используя§d Кристаллы Сохранения"
+      - ""
+      - "§7§oДанная катана не имеет никаких способностей!"
+      - ""
+      - "§aОбычный предмет"
+    enchantment: {}
+    data: "{\"katana\":1,\"weapons\":\"claymore\",\"normal_katana\":1}"
+    unbreakable: true
+    flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§bУлучшить предмет"
+    lore:
+    - ""
+    - "§7Улучшайте катану, чтобы зарабатывать больше"
+    - "§7монет и быстрее прокачивать свой уровень!"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - ""
+    - "§e▶ Нажмите, чтобы улучшить предмет"
+    enchantment: {}
+    data: "{\"other\":\"crafting\"}"
+    unbreakable: false
+    flags: []
+  priceFormula: money 
+  formula: []
+  commands:
+  - "st %player% Вы успешно улучшили катану!"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"  
+  setLevelNbt: "katana"
+
+x-katana-knockback: &knockback_katana
+  item:
+    type: "DIAMOND_SWORD"
+    amount: 1
+    damage: 0
+    name: "§bОтталкивающее копьё"
+    lore: 
+      - "¨ffff99Уровень %level%"
+      - ""
+      - "§7Улучшайте катану, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "%rebirth_crystals%"
+      - ""
+      - "§7Вы можете сохранить уровень предмета, после"
+      - "§7ребитха, используя§d Кристаллы Сохранения"
+      - ""
+      - "§7§oДанная катана имеет повышенную отдачу!"
+      - ""
+      - "§6Редкий предмет"
+    enchantment:
+      KNOCKBACK: 1
+    data: "{\"katana\":1,\"weapons\":\"polearm\",\"knockback_katana\":1}"
+    unbreakable: true
+    flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§bУлучшить предмет"
+    lore:
+    - ""
+    - "§7Улучшайте катану, чтобы зарабатывать больше"
+    - "§7монет и быстрее прокачивать свой уровень!"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - ""
+    - "§e▶ Нажмите, чтобы улучшить предмет"
+    enchantment: {}
+    data: "{\"other\":\"crafting\"}"
+    unbreakable: false
+    flags: []
+  priceFormula: money 
+  formula: []
+  commands:
+  - "st %player% Вы успешно улучшили катану!"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"  
+  setLevelNbt: "katana"
+
+x-katana-burn: &burn_katana
+  item:
+    type: "DIAMOND_SWORD"
+    amount: 1
+    damage: 0
+    name: "§6Огненная катана"
+    lore: 
+      - "¨ffff99Уровень %level%"
+      - ""
+      - "§7Улучшайте катану, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "%rebirth_crystals%"
+      - ""
+      - "§7Вы можете сохранить уровень предмета, после"
+      - "§7ребитха, используя§d Кристаллы Сохранения"
+      - ""
+      - "§7§oДанная катана дает вам шанс поджечь игрока!"
+      - ""
+      - "§6Редкий предмет"
+    enchantment: {}
+    data: "{\"katana\":1,\"weapons\":\"dragon\",\"burn_katana\":1,\"fight\":\"burn\"}"
+    unbreakable: true
+    flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§bУлучшить предмет"
+    lore:
+    - ""
+    - "§7Улучшайте катану, чтобы зарабатывать больше"
+    - "§7монет и быстрее прокачивать свой уровень!"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - ""
+    - "§e▶ Нажмите, чтобы улучшить предмет"
+    enchantment: {}
+    data: "{\"other\":\"crafting\"}"
+    unbreakable: false
+    flags: []
+  priceFormula: money 
+  formula: []
+  commands:
+  - "st %player% Вы успешно улучшили катану!"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"  
+  setLevelNbt: "katana"
+
+
+x-katana-heal: &heal_katana
+  item:
+    type: "DIAMOND_SWORD"
+    amount: 1
+    damage: 0
+    name: "§cКатана Восстановления"
+    lore: 
+      - "¨ffff99Уровень %level%"
+      - ""
+      - "§7Улучшайте катану, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "%rebirth_crystals%"
+      - ""
+      - "§7Вы можете сохранить уровень предмета, после"
+      - "§7ребитха, используя§d Кристаллы Сохранения"
+      - ""
+      - "§7§oДанная катана дает вам шанс отрегенерировать здоровье!"
+      - ""
+      - "§6Редкий предмет"
+    enchantment: {}
+    data: "{\"katana\":1,\"weapons\":\"bloodyvengeance\",\"heal_katana\":1,\"fight\":\"heal\"}"
+    unbreakable: true
+    flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§bУлучшить предмет"
+    lore:
+    - ""
+    - "§7Улучшайте катану, чтобы зарабатывать больше"
+    - "§7монет и быстрее прокачивать свой уровень!"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - ""
+    - "§e▶ Нажмите, чтобы улучшить предмет"
+    enchantment: {}
+    data: "{\"other\":\"crafting\"}"
+    unbreakable: false
+    flags: []
+  priceFormula: money 
+  formula: []
+  commands:
+  - "st %player% Вы успешно улучшили катану!"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"  
+  setLevelNbt: "katana"
+
+
+x-katana-poison: &poison_katana
+  item:
+    type: "DIAMOND_SWORD"
+    amount: 1
+    damage: 0
+    name: "§aОтравляющая катана"
+    lore: 
+      - "¨ffff99Уровень %level%"
+      - ""
+      - "§7Улучшайте катану, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "%rebirth_crystals%"
+      - ""
+      - "§7Вы можете сохранить уровень предмета, после"
+      - "§7ребитха, используя§d Кристаллы Сохранения"
+      - ""
+      - "§7§oДанная катана дает вам шанс отравить игрока!"
+      - ""
+      - "§6Редкий предмет"
+    enchantment: {}
+    data: "{\"katana\":1,\"weapons\":\"nature\",\"poison_katana\":1,\"fight\":\"poison\"}"
+    unbreakable: true
+    flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§bУлучшить предмет"
+    lore:
+    - ""
+    - "§7Улучшайте катану, чтобы зарабатывать больше"
+    - "§7монет и быстрее прокачивать свой уровень!"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - ""
+    - "§e▶ Нажмите, чтобы улучшить предмет"
+    enchantment: {}
+    data: "{\"other\":\"crafting\"}"
+    unbreakable: false
+    flags: []
+  priceFormula: money 
+  formula: []
+  commands:
+  - "st %player% Вы успешно улучшили катану!"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"  
+  setLevelNbt: "katana"
+
+
+x-katana-slow: &slow_katana
+  item:
+    type: "DIAMOND_SWORD"
+    amount: 1
+    damage: 0
+    name: "§bМорозная катана"
+    lore: 
+      - "¨ffff99Уровень %level%"
+      - ""
+      - "§7Улучшайте катану, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "%rebirth_crystals%"
+      - ""
+      - "§7Вы можете сохранить уровень предмета, после"
+      - "§7ребитха, используя§d Кристаллы Сохранения"
+      - ""
+      - "§7§oДанная катана дает вам шанс заморозить игрока!"
+      - ""
+      - "§6Редкий предмет"
+    enchantment: {}
+    data: "{\"katana\":1,\"weapons\":\"azure_sabre\",\"slow_katana\":1,\"fight\":\"slow\"}"
+    unbreakable: true
+    flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§bУлучшить предмет"
+    lore:
+    - ""
+    - "§7Улучшайте катану, чтобы зарабатывать больше"
+    - "§7монет и быстрее прокачивать свой уровень!"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - ""
+    - "§e▶ Нажмите, чтобы улучшить предмет"
+    enchantment: {}
+    data: "{\"other\":\"crafting\"}"
+    unbreakable: false
+    flags: []
+  priceFormula: money 
+  formula: []
+  commands:
+  - "st %player% Вы успешно улучшили катану!"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"  
+  setLevelNbt: "katana"
+
+x-katana-ninja: &ninja_katana
+  item:
+    type: "DIAMOND_SWORD"
+    amount: 1
+    damage: 0
+    name: "§eТесак"
+    lore: 
+      - "¨ffff99Уровень %level%"
+      - ""
+      - "§7Улучшайте катану, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "%rebirth_crystals%"
+      - ""
+      - "§7Вы можете сохранить уровень предмета, после"
+      - "§7ребитха, используя§d Кристаллы Сохранения"
+      - ""
+      - "§7§oДанная катана дает вам шанс войти в режим ниндзя!"
+      - ""
+      - "§6Редкий предмет"
+    enchantment: {}
+    data: "{\"katana\":1,\"weapons\":\"cleaver\",\"ninja_katana\":1,\"fight\":\"ninja\"}"
+    unbreakable: true
+    flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§bУлучшить предмет"
+    lore:
+    - ""
+    - "§7Улучшайте катану, чтобы зарабатывать больше"
+    - "§7монет и быстрее прокачивать свой уровень!"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - ""
+    - "§e▶ Нажмите, чтобы улучшить предмет"
+    enchantment: {}
+    data: "{\"other\":\"crafting\"}"
+    unbreakable: false
+    flags: []
+  priceFormula: money 
+  formula: []
+  commands:
+  - "st %player% Вы успешно улучшили катану!"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"  
+  setLevelNbt: "katana"
+
+
+x-katana-thor: &thor_katana
+  item:
+    type: "DIAMOND_SWORD"
+    amount: 1
+    damage: 0
+    name: "§eКоса Молнии"
+    lore: 
+      - "¨ffff99Уровень %level%"
+      - ""
+      - "§7Улучшайте катану, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "%rebirth_crystals%"
+      - ""
+      - "§7Вы можете сохранить уровень предмета, после"
+      - "§7ребитха, используя§d Кристаллы Сохранения"
+      - ""
+      - "§7§oДанная катана дает вам шанс ударить игрока молнией!"
+      - ""
+      - "§6Редкий предмет"
+    enchantment: {}
+    data: "{\"katana\":1,\"weapons\":\"vindicator\",\"thor_katana\":1,\"fight\":\"thor\"}"
+    unbreakable: true
+    flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§bУлучшить предмет"
+    lore:
+    - ""
+    - "§7Улучшайте катану, чтобы зарабатывать больше"
+    - "§7монет и быстрее прокачивать свой уровень!"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - ""
+    - "§e▶ Нажмите, чтобы улучшить предмет"
+    enchantment: {}
+    data: "{\"other\":\"crafting\"}"
+    unbreakable: false
+    flags: []
+  priceFormula: money 
+  formula: []
+  commands:
+  - "st %player% Вы успешно улучшили катану!"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"  
+  setLevelNbt: "katana"
+
+
+x-katana-blind: &blind_katana
+  item:
+    type: "DIAMOND_SWORD"
+    amount: 1
+    damage: 0
+    name: "§9Ослепляющий жезл"
+    lore: 
+      - "¨ffff99Уровень %level%"
+      - ""
+      - "§7Улучшайте катану, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "%rebirth_crystals%"
+      - ""
+      - "§7Вы можете сохранить уровень предмета, после"
+      - "§7ребитха, используя§d Кристаллы Сохранения"
+      - ""
+      - "§7§oДанная катана дает вам шанс ослепить игрока!"
+      - ""
+      - "§6Редкий предмет"
+    enchantment: {}
+    data: "{\"katana\":1,\"weapons\":\"mace\",\"blind_katana\":1,\"fight\":\"blind\"}"
+    unbreakable: true
+    flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§bУлучшить предмет"
+    lore:
+    - ""
+    - "§7Улучшайте катану, чтобы зарабатывать больше"
+    - "§7монет и быстрее прокачивать свой уровень!"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - ""
+    - "§e▶ Нажмите, чтобы улучшить предмет"
+    enchantment: {}
+    data: "{\"other\":\"crafting\"}"
+    unbreakable: false
+    flags: []
+  priceFormula: money 
+  formula: []
+  commands:
+  - "st %player% Вы успешно улучшили катану!"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"  
+  setLevelNbt: "katana"
+
+x-katana-legendary: &legendary_katana
+  item:
+    type: "DIAMOND_SWORD"
+    amount: 1
+    damage: 0
+    name: "§c§lЛЕГЕНДАРНАЯ КАТАНА"
+    lore: 
+      - "¨ffff99Уровень %level%"
+      - ""
+      - "§7Улучшайте катану, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "%rebirth_crystals%"
+      - ""
+      - "§7Вы можете сохранить уровень предмета, после"
+      - "§7ребитха, используя§d Кристаллы Сохранения"
+      - ""
+      - "§7§oДанная катана дает вам возможности всех других катан!"
+      - ""
+      - "§eЛегендарный предмет"
+    enchantment: {}
+    data: "{\"katana\":1,\"weapons\":\"spider\",\"legendary_katana\":1,\"fight\":\"leg_1, leg_2, leg_3, leg_4, leg_5, leg_6, leg_7\"}"
+    unbreakable: true
+    flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§bУлучшить предмет"
+    lore:
+    - ""
+    - "§7Улучшайте катану, чтобы зарабатывать больше"
+    - "§7монет и быстрее прокачивать свой уровень!"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - ""
+    - "§e▶ Нажмите, чтобы улучшить предмет"
+    enchantment: {}
+    data: "{\"other\":\"crafting\"}"
+    unbreakable: false
+    flags: []
+  priceFormula: money 
+  formula: []
+  commands:
+  - "st %player% Вы успешно улучшили катану!"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"  
+  setLevelNbt: "katana"
+
+
+
+
+
+x-legendary-helmet: &legendary_helmet
+  item:
+    type: "SKULL_ITEM"
+    amount: 1
+    damage: 3
+    name: "§6Шлем Золотого ниндзя"
+    lore: 
+      - "¨ffff99Уровень %level%"
+      - ""
+      - "§7§oУ вас есть шанс уклониться от удара противника!"
+      - "§7§oС каждым новым уровнем вы будете получать больше"
+      - "§7§oшанс на уклонение удара противника!"
+      - "§7§oПомимо уклонение вы будете получать регенерацию!"
+      - ""
+      - "§eЛегендарный предмет"
+    enchantment: {}
+    data: '{"rebirth_save":1,"legendary_helmet":1,"legendary_armor":1,"SkullOwner":{"Id":"dfb88ad0-8a0c-47bb-b098-ae9700f6ff2a","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjY5ZjExMzU5NjEzMTdhMDRjYWQ4Yjc1YWIyMmE2YTE1NjExZjg5ZjQxNzg5Mjg4OWI2MTNhZjVhNTVhM2UyMyJ9fX0="}]}}}'
+    unbreakable: true
+    flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§bУлучшить предмет"
+    lore:
+    - ""
+    - "§7Улучшайте броню, чтобы сражаться с игроками"
+    - "§7намного проще. Побеждайте своих врагов чаще!"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - ""
+    - "§e▶ Нажмите, чтобы улучшить предмет"
+    enchantment: {}
+    data: "{\"other\":\"crafting\"}"
+    unbreakable: false
+    flags: []
+  priceFormula: clicks
+  formula: []
+  commands:
+  - "st %player% Вы успешно улучшили катану!"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"  
+  setLevelNbt: "legendary_armor"
+
+
+
+x-normal-helmet: &normal_helmet
+  item:
+    type: "SKULL_ITEM"
+    amount: 1
+    damage: 3
+    name: "§dШлем Тёмного ниндзя"
+    lore: 
+      - "¨ffff99Уровень %level%"
+      - ""
+      - "§7§oУ вас есть шанс уклониться от удара противника!"
+      - "§7§oС каждым новым уровнем вы будете получать больше"
+      - "§7§oшанс на уклонение удара противника!"
+      - ""
+      - "§dЭпический предмет"
+    enchantment: {}
+    data: '{"rebirth_save":1,"normal_helmet":1,"normal_armor":1,"SkullOwner":{"Id":"062ce076-ad55-4bad-9737-769604748aba","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmY3MzMyNjk2MTRmZThhOWFlODlmNWM1ODI4NmFhNTNiOWUzODNmYzRkYzU3ZTM3ZWNiZmE1ZTkzYSJ9fX0="}]}}}'
+    unbreakable: true
+    flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§bУлучшить предмет"
+    lore:
+    - ""
+    - "§7Улучшайте броню, чтобы сражаться с игроками"
+    - "§7намного проще. Побеждайте своих врагов чаще!"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - ""
+    - "§e▶ Нажмите, чтобы улучшить предмет"
+    enchantment: {}
+    data: "{\"other\":\"crafting\"}"
+    unbreakable: false
+    flags: []
+  priceFormula: clicks
+  formula: []
+  commands:
+  - "st %player% Вы успешно улучшили катану!"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"  
+  setLevelNbt: "normal_armor"
+
+
+x-normal-chestplate: &normal_chestplate
+  item:
+    type: "LEATHER_CHESTPLATE"
+    amount: 1
+    damage: 0
+    name: "§dНагрудник Тёмного ниндзя"
+    lore: 
+      - "¨ffff99Уровень %level%"
+      - ""
+      - "§7§oУ вас есть шанс уклониться от удара противника!"
+      - "§7§oС каждым новым уровнем вы будете получать больше"
+      - "§7§oшанс на уклонение удара противника!"
+      - ""
+      - "§dЭпический предмет"
+    enchantment: {}
+    data: '{"rebirth_save":1,"normal_chestplate":1,"normal_armor":1,"color":0}'
+    unbreakable: true
+    flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§bУлучшить предмет"
+    lore:
+    - ""
+    - "§7Улучшайте броню, чтобы сражаться с игроками"
+    - "§7намного проще. Побеждайте своих врагов чаще!"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - ""
+    - "§e▶ Нажмите, чтобы улучшить предмет"
+    enchantment: {}
+    data: "{\"other\":\"crafting\"}"
+    unbreakable: false
+    flags: []
+  priceFormula: clicks
+  formula: []
+  commands:
+  - "st %player% Вы успешно улучшили катану!"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"  
+  setLevelNbt: "normal_armor"
+
+x-normal-leggings: &normal_leggings
+  item:
+    type: "LEATHER_LEGGINGS"
+    amount: 1
+    damage: 0
+    name: "§dШтаны Тёмного ниндзя"
+    lore: 
+      - "¨ffff99Уровень %level%"
+      - ""
+      - "§7§oУ вас есть шанс уклониться от удара противника!"
+      - "§7§oС каждым новым уровнем вы будете получать больше"
+      - "§7§oшанс на уклонение удара противника!"
+      - ""
+      - "§dЭпический предмет"
+    enchantment: {}
+    data: '{"rebirth_save":1,"normal_leggings":1,"normal_armor":1,"color":0}'
+    unbreakable: true
+    flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§bУлучшить предмет"
+    lore:
+    - ""
+    - "§7Улучшайте броню, чтобы сражаться с игроками"
+    - "§7намного проще. Побеждайте своих врагов чаще!"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - ""
+    - "§e▶ Нажмите, чтобы улучшить предмет"
+    enchantment: {}
+    data: "{\"other\":\"crafting\"}"
+    unbreakable: false
+    flags: []
+  priceFormula: clicks
+  formula: []
+  commands:
+  - "st %player% Вы успешно улучшили катану!"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"  
+  setLevelNbt: "normal_armor"
+
+x-normal-boots: &normal_boots
+  item:
+    type: "LEATHER_BOOTS"
+    amount: 1
+    damage: 0
+    name: "§dБотинки Тёмного ниндзя"
+    lore: 
+      - "¨ffff99Уровень %level%"
+      - ""
+      - "§7§oУ вас есть шанс уклониться от удара противника!"
+      - "§7§oС каждым новым уровнем вы будете получать больше"
+      - "§7§oшанс на уклонение удара противника!"
+      - ""
+      - "§dЭпический предмет"
+    enchantment: {}
+    data: '{"rebirth_save":1,"normal_boots":1,"normal_armor":1,"color":0}'
+    unbreakable: true
+    flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§bУлучшить предмет"
+    lore:
+    - ""
+    - "§7Улучшайте броню, чтобы сражаться с игроками"
+    - "§7намного проще. Побеждайте своих врагов чаще!"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - ""
+    - "§e▶ Нажмите, чтобы улучшить предмет"
+    enchantment: {}
+    data: "{\"other\":\"crafting\"}"
+    unbreakable: false
+    flags: []
+  priceFormula: clicks
+  formula: []
+  commands:
+  - "st %player% Вы успешно улучшили катану!"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"  
+  setLevelNbt: "normal_armor"
+
+x-legendary-chestplate: &legendary_chestplate
+  item:
+    type: "LEATHER_CHESTPLATE"
+    amount: 1
+    damage: 0
+    name: "§6Нагрудник Золотого ниндзя"
+    lore: 
+      - "¨ffff99Уровень %level%"
+      - ""
+      - "§7§oУ вас есть шанс уклониться от удара противника!"
+      - "§7§oС каждым новым уровнем вы будете получать больше"
+      - "§7§oшанс на уклонение удара противника!"
+      - "§7§oПомимо уклонение вы будете получать регенерацию!"      
+      - ""
+      - "§eЛегендарный предмет"
+    enchantment: {}
+    data: '{"rebirth_save":1,"legendary_chestplate":1,"legendary_armor":1,"color":16766464}'
+    unbreakable: true
+    flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§bУлучшить предмет"
+    lore:
+    - ""
+    - "§7Улучшайте броню, чтобы сражаться с игроками"
+    - "§7намного проще. Побеждайте своих врагов чаще!"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - ""
+    - "§e▶ Нажмите, чтобы улучшить предмет"
+    enchantment: {}
+    data: "{\"other\":\"crafting\"}"
+    unbreakable: false
+    flags: []
+  priceFormula: clicks
+  formula: []
+  commands:
+  - "st %player% Вы успешно улучшили катану!"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"  
+  setLevelNbt: "legendary_armor"
+
+x-legendary-leggings: &legendary_leggings
+  item:
+    type: "LEATHER_LEGGINGS"
+    amount: 1
+    damage: 0
+    name: "§6Штаны Золотого ниндзя"
+    lore: 
+      - "¨ffff99Уровень %level%"
+      - ""
+      - "§7§oУ вас есть шанс уклониться от удара противника!"
+      - "§7§oС каждым новым уровнем вы будете получать больше"
+      - "§7§oшанс на уклонение удара противника!"
+      - "§7§oПомимо уклонение вы будете получать регенерацию!"      
+      - ""
+      - "§eЛегендарный предмет"
+    enchantment: {}
+    data: '{"rebirth_save":1,"legendary_leggings":1,"legendary_armor":1,"color":16766464}'
+    unbreakable: true
+    flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§bУлучшить предмет"
+    lore:
+    - ""
+    - "§7Улучшайте броню, чтобы сражаться с игроками"
+    - "§7намного проще. Побеждайте своих врагов чаще!"    
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - ""
+    - "§e▶ Нажмите, чтобы улучшить предмет"
+    enchantment: {}
+    data: "{\"other\":\"crafting\"}"
+    unbreakable: false
+    flags: []
+  priceFormula: clicks
+  formula: []
+  commands:
+  - "st %player% Вы успешно улучшили катану!"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"  
+  setLevelNbt: "legendary_armor"
+
+x-legendary-boots: &legendary_boots
+  item:
+    type: "LEATHER_BOOTS"
+    amount: 1
+    damage: 0
+    name: "§6Ботинки Золотого ниндзя"
+    lore: 
+      - "¨ffff99Уровень %level%"
+      - ""
+      - "§7§oУ вас есть шанс уклониться от удара противника!"
+      - "§7§oС каждым новым уровнем вы будете получать больше"
+      - "§7§oшанс на уклонение удара противника!"
+      - "§7§oПомимо уклонение вы будете получать регенерацию!"      
+      - ""
+      - "§eЛегендарный предмет"
+    enchantment: {}
+    data: '{"rebirth_save":1,"legendary_boots":1,"legendary_armor":1,"color":16766464}'
+    unbreakable: true
+    flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§bУлучшить предмет"
+    lore:
+    - ""
+    - "§7Улучшайте броню, чтобы сражаться с игроками"
+    - "§7намного проще. Побеждайте своих врагов чаще!"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - ""
+    - "§e▶ Нажмите, чтобы улучшить предмет"
+    enchantment: {}
+    data: "{\"other\":\"crafting\"}"
+    unbreakable: false
+    flags: []
+  priceFormula: clicks
+  formula: []
+  commands:
+  - "st %player% Вы успешно улучшили катану!"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"  
+  setLevelNbt: "legendary_armor"
+x-katana-size: &size_katana
+  item:
+    type: "DIAMOND_SWORD"
+    amount: 1
+    damage: 0
+    name: "§aКатана Уменьшения"
+    lore: 
+      - "¨ffff99Уровень %level%"
+      - ""
+      - "§7Улучшайте катану, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "%rebirth_crystals%"
+      - ""
+      - "§7Вы можете сохранить уровень предмета, после"
+      - "§7ребитха, используя§d Кристаллы Сохранения"
+      - ""
+      - "§7§oДанная катана временно уменьшает тебя!"
+      - ""
+      - "§6Редкий предмет"
+    enchantment: {}
+    data: "{\"katana\":1,\"weapons\":\"crimsoncleaver\",\"size_katana\":1,\"fight\":\"size\"}"
+    unbreakable: true
+    flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§bУлучшить предмет"
+    lore:
+    - ""
+    - "§7Улучшайте катану, чтобы зарабатывать больше"
+    - "§7монет и быстрее прокачивать свой уровень!"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - ""
+    - "§e▶ Нажмите, чтобы улучшить предмет"
+    enchantment: {}
+    data: "{\"other\":\"crafting\"}"
+    unbreakable: false
+    flags: []
+  priceFormula: money 
+  formula: []
+  commands:
+  - "st %player% Вы успешно улучшили катану!"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"  
+  setLevelNbt: "katana"
+
+x-katana-magic: &magic_katana
+  item:
+    type: "DIAMOND_SWORD"
+    amount: 1
+    damage: 0
+    name: "§dКатана Мага"
+    lore: 
+      - "¨ffff99Уровень %level%"
+      - ""
+      - "§7Улучшайте катану, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "%rebirth_crystals%"
+      - ""
+      - "§7Вы можете сохранить уровень предмета, после"
+      - "§7ребитха, используя§d Кристаллы Сохранения"
+      - ""
+      - "§7§oДанная катана перемешивает хотбар противника!"
+      - ""
+      - "§6Редкий предмет"
+    enchantment: {}
+    data: "{\"katana\":1,\"weapons\":\"bludgeon\",\"magic_katana\":1,\"fight\":\"magic\"}"
+    unbreakable: true
+    flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE", "HIDE_ENCHANTS"]
+  guiItem:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§bУлучшить предмет"
+    lore:
+    - ""
+    - "§7Улучшайте катану, чтобы зарабатывать больше"
+    - "§7монет и быстрее прокачивать свой уровень!"
+    - ""
+    - "§6Необходимая статистика"
+    - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+    - ""
+    - "§e▶ Нажмите, чтобы улучшить предмет"
+    enchantment: {}
+    data: "{\"other\":\"crafting\"}"
+    unbreakable: false
+    flags: []
+  priceFormula: money 
+  formula: []
+  commands:
+  - "st %player% Вы успешно улучшили катану!"
+  - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"  
+  setLevelNbt: "katana"
+
+inventory:
+  title: "Улучшение предмета"
+  context:
+  - "----i----"
+
+maxLevel:
+- "et %player% Предмет имеет максимальный уровень!"
+formula:
+  "money": 
+    formula: "1.81*(last+75)"
+    readyOk: "§a ✔"
+    readyNo: "§c ✖"  
+  "money_normal_shovel":
+    formula: "1.81*(last+50)"
+    readyOk: "§a ✔"
+    readyNo: "§c ✖"  
+  "clicks": 
+    formula: "5*(last+50000)"
+    readyOk: "§a ✔"
+    readyNo: "§c ✖"               
+moneyOk: "§a ✔"
+moneyNo: "§c ✖"
+moreMoney:
+- "et %player% У вас недостаточно монет для улучшения предмета!"
+moreStats:
+  "kills_mobs":
+  - "et %player% Вам нужно больше убитых существ!"   
+  "clicks":
+  - "et %player% Вам нужно больше ударов!"   
+itemNone:
+- "et %player% Возьмите предмет в руку, чтобы улучшить его!"
+items:
+  "crystal":
+  - item:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§dКристалл Сохранения"
+      lore: 
+        - ""
+        - "§7Используйте его кликнув§d Кристаллом§7 по"
+        - "§7своей Катане, чтобы сохранить её уровень"
+        - "§7при своём будующем перерождении!"
+        - ""
+        - "§dЭпический предмет"
+      enchantment: {}
+      data: '{"rebirth_add_crystals":1,"simulators":"save_crystal","rebirth_save":1}'
+      unbreakable: true
+      flags: ["HIDE_ATTRIBUTES", "HIDE_UNBREAKABLE"]
+    guiItem:
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§bУлучшить предмет"
+      lore:
+      - ""
+      - "§7Улучшайте кирку, чтобы зарабатывать больше"
+      - "§7монет и быстрее прокачивать свой уровень!"
+      - ""
+      - "§6Необходимая статистика"
+      - "§7 ⊠ §fМонеты:%ready_money% %current_money%/%need_money%"
+      - ""
+      - "§e▶ Нажмите, чтобы улучшить предмет"
+      enchantment: {}
+      data: "{\"other\":\"crafting\"}"
+      unbreakable: false
+      flags: []
+    priceFormula: money 
+    formula: []
+    commands:
+    - "st %player% Вы успешно улучшили кирку!"
+    - "sound %player% ENTITY.PLAYER.LEVELUP 0.5 2"  
+
+  "legendary_katana":
+  - *legendary_katana   
+  - *legendary_katana   
+  - *legendary_katana   
+  - *legendary_katana   
+  - *legendary_katana          
+  - *legendary_katana   
+  - *legendary_katana   
+  - *legendary_katana   
+  - *legendary_katana   
+  - *legendary_katana
+  - *legendary_katana   
+  - *legendary_katana   
+  - *legendary_katana   
+  - *legendary_katana   
+  - *legendary_katana          
+  - *legendary_katana   
+  - *legendary_katana   
+  - *legendary_katana   
+  - *legendary_katana   
+  - *legendary_katana
+  - *legendary_katana   
+  - *legendary_katana   
+  - *legendary_katana   
+  - *legendary_katana   
+  - *legendary_katana          
+  - *legendary_katana   
+  - *legendary_katana   
+  - *legendary_katana   
+  - *legendary_katana   
+  - *legendary_katana
+  - *legendary_katana   
+  - *legendary_katana   
+  - *legendary_katana   
+  - *legendary_katana   
+  - *legendary_katana          
+  - *legendary_katana   
+  - *legendary_katana   
+  - *legendary_katana   
+  - *legendary_katana   
+  - *legendary_katana
+  - *legendary_katana
+  - *legendary_katana
+  - *legendary_katana
+  - *legendary_katana
+  - *legendary_katana
+  - *legendary_katana
+  - *legendary_katana
+  - *legendary_katana
+  - *legendary_katana
+  - *legendary_katana
+
+  "normal_katana":
+  - *normal_katana   
+  - *normal_katana   
+  - *normal_katana   
+  - *normal_katana   
+  - *normal_katana          
+  - *normal_katana   
+  - *normal_katana   
+  - *normal_katana   
+  - *normal_katana   
+  - *normal_katana
+  - *normal_katana   
+  - *normal_katana   
+  - *normal_katana   
+  - *normal_katana   
+  - *normal_katana          
+  - *normal_katana   
+  - *normal_katana   
+  - *normal_katana   
+  - *normal_katana   
+  - *normal_katana
+  - *normal_katana   
+  - *normal_katana   
+  - *normal_katana   
+  - *normal_katana   
+  - *normal_katana          
+  - *normal_katana   
+  - *normal_katana   
+  - *normal_katana   
+  - *normal_katana   
+  - *normal_katana
+  - *normal_katana   
+  - *normal_katana   
+  - *normal_katana   
+  - *normal_katana   
+  - *normal_katana          
+  - *normal_katana   
+  - *normal_katana   
+  - *normal_katana   
+  - *normal_katana   
+  - *normal_katana
+
+  "knockback_katana":
+  - *knockback_katana   
+  - *knockback_katana   
+  - *knockback_katana   
+  - *knockback_katana   
+  - *knockback_katana          
+  - *knockback_katana   
+  - *knockback_katana   
+  - *knockback_katana   
+  - *knockback_katana   
+  - *knockback_katana
+  - *knockback_katana   
+  - *knockback_katana   
+  - *knockback_katana   
+  - *knockback_katana   
+  - *knockback_katana          
+  - *knockback_katana   
+  - *knockback_katana   
+  - *knockback_katana   
+  - *knockback_katana   
+  - *knockback_katana
+  - *knockback_katana   
+  - *knockback_katana   
+  - *knockback_katana   
+  - *knockback_katana   
+  - *knockback_katana          
+  - *knockback_katana   
+  - *knockback_katana   
+  - *knockback_katana   
+  - *knockback_katana   
+  - *knockback_katana
+  - *knockback_katana   
+  - *knockback_katana   
+  - *knockback_katana   
+  - *knockback_katana   
+  - *knockback_katana          
+  - *knockback_katana   
+  - *knockback_katana   
+  - *knockback_katana   
+  - *knockback_katana   
+  - *knockback_katana          
+
+  "burn_katana":
+  - *burn_katana   
+  - *burn_katana   
+  - *burn_katana   
+  - *burn_katana   
+  - *burn_katana          
+  - *burn_katana   
+  - *burn_katana   
+  - *burn_katana   
+  - *burn_katana   
+  - *burn_katana
+  - *burn_katana   
+  - *burn_katana   
+  - *burn_katana   
+  - *burn_katana   
+  - *burn_katana          
+  - *burn_katana   
+  - *burn_katana   
+  - *burn_katana   
+  - *burn_katana   
+  - *burn_katana
+  - *burn_katana   
+  - *burn_katana   
+  - *burn_katana   
+  - *burn_katana   
+  - *burn_katana          
+  - *burn_katana   
+  - *burn_katana   
+  - *burn_katana   
+  - *burn_katana   
+  - *burn_katana
+  - *burn_katana   
+  - *burn_katana   
+  - *burn_katana   
+  - *burn_katana   
+  - *burn_katana          
+  - *burn_katana   
+  - *burn_katana   
+  - *burn_katana   
+  - *burn_katana   
+  - *burn_katana   
+
+  "heal_katana":
+  - *heal_katana   
+  - *heal_katana   
+  - *heal_katana   
+  - *heal_katana   
+  - *heal_katana          
+  - *heal_katana   
+  - *heal_katana   
+  - *heal_katana   
+  - *heal_katana   
+  - *heal_katana
+  - *heal_katana   
+  - *heal_katana   
+  - *heal_katana   
+  - *heal_katana   
+  - *heal_katana          
+  - *heal_katana   
+  - *heal_katana   
+  - *heal_katana   
+  - *heal_katana   
+  - *heal_katana
+  - *heal_katana   
+  - *heal_katana   
+  - *heal_katana   
+  - *heal_katana   
+  - *heal_katana          
+  - *heal_katana   
+  - *heal_katana   
+  - *heal_katana   
+  - *heal_katana   
+  - *heal_katana
+  - *heal_katana   
+  - *heal_katana   
+  - *heal_katana   
+  - *heal_katana   
+  - *heal_katana          
+  - *heal_katana   
+  - *heal_katana   
+  - *heal_katana   
+  - *heal_katana   
+  - *heal_katana  
+
+  "poison_katana":
+  - *poison_katana   
+  - *poison_katana   
+  - *poison_katana   
+  - *poison_katana   
+  - *poison_katana          
+  - *poison_katana   
+  - *poison_katana   
+  - *poison_katana   
+  - *poison_katana   
+  - *poison_katana
+  - *poison_katana   
+  - *poison_katana   
+  - *poison_katana   
+  - *poison_katana   
+  - *poison_katana          
+  - *poison_katana   
+  - *poison_katana   
+  - *poison_katana   
+  - *poison_katana   
+  - *poison_katana
+  - *poison_katana   
+  - *poison_katana   
+  - *poison_katana   
+  - *poison_katana   
+  - *poison_katana          
+  - *poison_katana   
+  - *poison_katana   
+  - *poison_katana   
+  - *poison_katana   
+  - *poison_katana
+  - *poison_katana   
+  - *poison_katana   
+  - *poison_katana   
+  - *poison_katana   
+  - *poison_katana          
+  - *poison_katana   
+  - *poison_katana   
+  - *poison_katana   
+  - *poison_katana   
+  - *poison_katana  
+
+  "slow_katana":
+  - *slow_katana   
+  - *slow_katana   
+  - *slow_katana   
+  - *slow_katana   
+  - *slow_katana          
+  - *slow_katana   
+  - *slow_katana   
+  - *slow_katana   
+  - *slow_katana   
+  - *slow_katana
+  - *slow_katana   
+  - *slow_katana   
+  - *slow_katana   
+  - *slow_katana   
+  - *slow_katana          
+  - *slow_katana   
+  - *slow_katana   
+  - *slow_katana   
+  - *slow_katana   
+  - *slow_katana
+  - *slow_katana   
+  - *slow_katana   
+  - *slow_katana   
+  - *slow_katana   
+  - *slow_katana          
+  - *slow_katana   
+  - *slow_katana   
+  - *slow_katana   
+  - *slow_katana   
+  - *slow_katana
+  - *slow_katana   
+  - *slow_katana   
+  - *slow_katana   
+  - *slow_katana   
+  - *slow_katana          
+  - *slow_katana   
+  - *slow_katana   
+  - *slow_katana   
+  - *slow_katana   
+  - *slow_katana    
+
+  "ninja_katana":
+  - *ninja_katana   
+  - *ninja_katana   
+  - *ninja_katana   
+  - *ninja_katana   
+  - *ninja_katana          
+  - *ninja_katana   
+  - *ninja_katana   
+  - *ninja_katana   
+  - *ninja_katana   
+  - *ninja_katana
+  - *ninja_katana   
+  - *ninja_katana   
+  - *ninja_katana   
+  - *ninja_katana   
+  - *ninja_katana          
+  - *ninja_katana   
+  - *ninja_katana   
+  - *ninja_katana   
+  - *ninja_katana   
+  - *ninja_katana
+  - *ninja_katana   
+  - *ninja_katana   
+  - *ninja_katana   
+  - *ninja_katana   
+  - *ninja_katana          
+  - *ninja_katana   
+  - *ninja_katana   
+  - *ninja_katana   
+  - *ninja_katana   
+  - *ninja_katana
+  - *ninja_katana   
+  - *ninja_katana   
+  - *ninja_katana   
+  - *ninja_katana   
+  - *ninja_katana          
+  - *ninja_katana   
+  - *ninja_katana   
+  - *ninja_katana   
+  - *ninja_katana   
+  - *ninja_katana  
+
+  "thor_katana":
+  - *thor_katana   
+  - *thor_katana   
+  - *thor_katana   
+  - *thor_katana   
+  - *thor_katana          
+  - *thor_katana   
+  - *thor_katana   
+  - *thor_katana   
+  - *thor_katana   
+  - *thor_katana
+  - *thor_katana   
+  - *thor_katana   
+  - *thor_katana   
+  - *thor_katana   
+  - *thor_katana          
+  - *thor_katana   
+  - *thor_katana   
+  - *thor_katana   
+  - *thor_katana   
+  - *thor_katana
+  - *thor_katana   
+  - *thor_katana   
+  - *thor_katana   
+  - *thor_katana   
+  - *thor_katana          
+  - *thor_katana   
+  - *thor_katana   
+  - *thor_katana   
+  - *thor_katana   
+  - *thor_katana
+  - *thor_katana   
+  - *thor_katana   
+  - *thor_katana   
+  - *thor_katana   
+  - *thor_katana          
+  - *thor_katana   
+  - *thor_katana   
+  - *thor_katana   
+  - *thor_katana   
+  - *thor_katana   
+
+  "blind_katana":
+  - *blind_katana   
+  - *blind_katana   
+  - *blind_katana   
+  - *blind_katana   
+  - *blind_katana          
+  - *blind_katana   
+  - *blind_katana   
+  - *blind_katana   
+  - *blind_katana   
+  - *blind_katana
+  - *blind_katana   
+  - *blind_katana   
+  - *blind_katana   
+  - *blind_katana   
+  - *blind_katana          
+  - *blind_katana   
+  - *blind_katana   
+  - *blind_katana   
+  - *blind_katana   
+  - *blind_katana
+  - *blind_katana   
+  - *blind_katana   
+  - *blind_katana   
+  - *blind_katana   
+  - *blind_katana          
+  - *blind_katana   
+  - *blind_katana   
+  - *blind_katana   
+  - *blind_katana   
+  - *blind_katana
+  - *blind_katana   
+  - *blind_katana   
+  - *blind_katana   
+  - *blind_katana   
+  - *blind_katana          
+  - *blind_katana   
+  - *blind_katana   
+  - *blind_katana   
+  - *blind_katana   
+  - *blind_katana  
+
+  "click_katana":
+  - *click_katana   
+  - *click_katana   
+  - *click_katana   
+  - *click_katana   
+  - *click_katana          
+  - *click_katana   
+  - *click_katana   
+  - *click_katana   
+  - *click_katana   
+  - *click_katana
+  - *click_katana   
+  - *click_katana   
+  - *click_katana   
+  - *click_katana   
+  - *click_katana          
+  - *click_katana   
+  - *click_katana   
+  - *click_katana   
+  - *click_katana   
+  - *click_katana
+  - *click_katana   
+  - *click_katana   
+  - *click_katana   
+  - *click_katana   
+  - *click_katana          
+  - *click_katana   
+  - *click_katana   
+  - *click_katana   
+  - *click_katana   
+  - *click_katana
+  - *click_katana   
+  - *click_katana   
+  - *click_katana   
+  - *click_katana   
+  - *click_katana          
+  - *click_katana   
+  - *click_katana   
+  - *click_katana   
+  - *click_katana   
+  - *click_katana   
+  - *click_katana   
+  - *click_katana   
+  - *click_katana   
+  - *click_katana   
+  - *click_katana 
+
+  "wizard_katana":
+  - *wizard_katana   
+  - *wizard_katana   
+  - *wizard_katana   
+  - *wizard_katana   
+  - *wizard_katana          
+  - *wizard_katana   
+  - *wizard_katana   
+  - *wizard_katana   
+  - *wizard_katana   
+  - *wizard_katana
+  - *wizard_katana   
+  - *wizard_katana   
+  - *wizard_katana   
+  - *wizard_katana   
+  - *wizard_katana          
+  - *wizard_katana   
+  - *wizard_katana   
+  - *wizard_katana   
+  - *wizard_katana   
+  - *wizard_katana
+  - *wizard_katana   
+  - *wizard_katana   
+  - *wizard_katana   
+  - *wizard_katana   
+  - *wizard_katana          
+  - *wizard_katana   
+  - *wizard_katana   
+  - *wizard_katana   
+  - *wizard_katana   
+  - *wizard_katana
+  - *wizard_katana   
+  - *wizard_katana   
+  - *wizard_katana   
+  - *wizard_katana   
+  - *wizard_katana          
+  - *wizard_katana   
+  - *wizard_katana   
+  - *wizard_katana   
+  - *wizard_katana   
+  - *wizard_katana   
+  - *wizard_katana   
+  - *wizard_katana   
+  - *wizard_katana   
+  - *wizard_katana   
+  - *wizard_katana    
+
+  "money_katana":
+  - *money_katana   
+  - *money_katana   
+  - *money_katana   
+  - *money_katana   
+  - *money_katana          
+  - *money_katana   
+  - *money_katana   
+  - *money_katana   
+  - *money_katana   
+  - *money_katana
+  - *money_katana   
+  - *money_katana   
+  - *money_katana   
+  - *money_katana   
+  - *money_katana          
+  - *money_katana   
+  - *money_katana   
+  - *money_katana   
+  - *money_katana   
+  - *money_katana
+  - *money_katana   
+  - *money_katana   
+  - *money_katana   
+  - *money_katana   
+  - *money_katana          
+  - *money_katana   
+  - *money_katana   
+  - *money_katana   
+  - *money_katana   
+  - *money_katana
+  - *money_katana   
+  - *money_katana   
+  - *money_katana   
+  - *money_katana   
+  - *money_katana          
+  - *money_katana   
+  - *money_katana   
+  - *money_katana   
+  - *money_katana   
+  - *money_katana   
+  - *money_katana   
+  - *money_katana   
+  - *money_katana   
+  - *money_katana   
+  - *money_katana  
+
+  "kill_katana":
+  - *kill_katana   
+  - *kill_katana   
+  - *kill_katana   
+  - *kill_katana   
+  - *kill_katana          
+  - *kill_katana   
+  - *kill_katana   
+  - *kill_katana   
+  - *kill_katana   
+  - *kill_katana
+  - *kill_katana   
+  - *kill_katana   
+  - *kill_katana   
+  - *kill_katana   
+  - *kill_katana          
+  - *kill_katana   
+  - *kill_katana   
+  - *kill_katana   
+  - *kill_katana   
+  - *kill_katana
+  - *kill_katana   
+  - *kill_katana   
+  - *kill_katana   
+  - *kill_katana   
+  - *kill_katana          
+  - *kill_katana   
+  - *kill_katana   
+  - *kill_katana   
+  - *kill_katana   
+  - *kill_katana
+  - *kill_katana   
+  - *kill_katana   
+  - *kill_katana   
+  - *kill_katana   
+  - *kill_katana          
+  - *kill_katana   
+  - *kill_katana   
+  - *kill_katana   
+  - *kill_katana   
+  - *kill_katana   
+  - *kill_katana   
+  - *kill_katana   
+  - *kill_katana   
+  - *kill_katana   
+  - *kill_katana      
+
+  "normal_helmet":
+  - *normal_helmet   
+  - *normal_helmet   
+  - *normal_helmet   
+  - *normal_helmet   
+  - *normal_helmet          
+  - *normal_helmet   
+  - *normal_helmet   
+  - *normal_helmet   
+  - *normal_helmet   
+  - *normal_helmet  
+
+  "normal_chestplate":
+  - *normal_chestplate   
+  - *normal_chestplate   
+  - *normal_chestplate   
+  - *normal_chestplate   
+  - *normal_chestplate          
+  - *normal_chestplate   
+  - *normal_chestplate   
+  - *normal_chestplate   
+  - *normal_chestplate   
+  - *normal_chestplate 
+
+  "normal_leggings":
+  - *normal_leggings   
+  - *normal_leggings   
+  - *normal_leggings   
+  - *normal_leggings   
+  - *normal_leggings          
+  - *normal_leggings   
+  - *normal_leggings   
+  - *normal_leggings   
+  - *normal_leggings   
+  - *normal_leggings 
+
+  "normal_boots":
+  - *normal_boots   
+  - *normal_boots   
+  - *normal_boots   
+  - *normal_boots   
+  - *normal_boots          
+  - *normal_boots   
+  - *normal_boots   
+  - *normal_boots   
+  - *normal_boots   
+  - *normal_boots       
+
+  "legendary_helmet":
+  - *legendary_helmet   
+  - *legendary_helmet   
+  - *legendary_helmet   
+  - *legendary_helmet   
+  - *legendary_helmet          
+  - *legendary_helmet   
+  - *legendary_helmet   
+  - *legendary_helmet   
+  - *legendary_helmet   
+  - *legendary_helmet  
+
+  "legendary_chestplate":
+  - *legendary_chestplate   
+  - *legendary_chestplate   
+  - *legendary_chestplate   
+  - *legendary_chestplate   
+  - *legendary_chestplate          
+  - *legendary_chestplate   
+  - *legendary_chestplate   
+  - *legendary_chestplate   
+  - *legendary_chestplate   
+  - *legendary_chestplate 
+
+  "legendary_leggings":
+  - *legendary_leggings   
+  - *legendary_leggings   
+  - *legendary_leggings   
+  - *legendary_leggings   
+  - *legendary_leggings          
+  - *legendary_leggings   
+  - *legendary_leggings   
+  - *legendary_leggings   
+  - *legendary_leggings   
+  - *legendary_leggings 
+
+  "legendary_boots":
+  - *legendary_boots   
+  - *legendary_boots   
+  - *legendary_boots   
+  - *legendary_boots   
+  - *legendary_boots          
+  - *legendary_boots   
+  - *legendary_boots   
+  - *legendary_boots   
+  - *legendary_boots   
+  - *legendary_boots   
+
+  "size_katana":
+  - *size_katana   
+  - *size_katana   
+  - *size_katana   
+  - *size_katana   
+  - *size_katana          
+  - *size_katana   
+  - *size_katana   
+  - *size_katana   
+  - *size_katana   
+  - *size_katana
+  - *size_katana   
+  - *size_katana   
+  - *size_katana   
+  - *size_katana   
+  - *size_katana          
+  - *size_katana   
+  - *size_katana   
+  - *size_katana   
+  - *size_katana   
+  - *size_katana
+  - *size_katana   
+  - *size_katana   
+  - *size_katana   
+  - *size_katana   
+  - *size_katana          
+  - *size_katana   
+  - *size_katana   
+  - *size_katana   
+  - *size_katana   
+  - *size_katana
+  - *size_katana   
+  - *size_katana   
+  - *size_katana   
+  - *size_katana   
+  - *size_katana          
+  - *size_katana   
+  - *size_katana   
+  - *size_katana   
+  - *size_katana   
+  - *size_katana   
+  - *size_katana   
+  - *size_katana   
+  - *size_katana   
+  - *size_katana   
+  - *size_katana  
+
+  "magic_katana":
+  - *magic_katana   
+  - *magic_katana   
+  - *magic_katana   
+  - *magic_katana   
+  - *magic_katana          
+  - *magic_katana   
+  - *magic_katana   
+  - *magic_katana   
+  - *magic_katana   
+  - *magic_katana
+  - *magic_katana   
+  - *magic_katana   
+  - *magic_katana   
+  - *magic_katana   
+  - *magic_katana          
+  - *magic_katana   
+  - *magic_katana   
+  - *magic_katana   
+  - *magic_katana   
+  - *magic_katana
+  - *magic_katana   
+  - *magic_katana   
+  - *magic_katana   
+  - *magic_katana   
+  - *magic_katana          
+  - *magic_katana   
+  - *magic_katana   
+  - *magic_katana   
+  - *magic_katana   
+  - *magic_katana
+  - *magic_katana   
+  - *magic_katana   
+  - *magic_katana   
+  - *magic_katana   
+  - *magic_katana          
+  - *magic_katana   
+  - *magic_katana   
+  - *magic_katana   
+  - *magic_katana   
+  - *magic_katana   
+  - *magic_katana   
+  - *magic_katana   
+  - *magic_katana   
+  - *magic_katana   
+  - *magic_katana  

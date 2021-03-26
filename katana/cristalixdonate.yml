@@ -1,0 +1,70 @@
+#GUI внутриигровых покупок
+
+startDesc: "Покупка - "
+allowBonuses: true
+errorMsg: "§8[§ci§]§f %error%"
+fatalError: "§8[§ci§]§f всё очень плохо, пиши админам"
+descNeed: true
+descInventory:
+  title: ""
+  context:
+  - "---------"
+  - "-aaa-ddd-"
+  - "-aaaiddd-"
+  - "-aaa-ddd-"
+  - "---------"
+  auto:
+    "1":
+      type: "CLAY_BALL"
+      amount: 1
+      damage: 0
+      name: "§eБаланс"
+      lore: 
+        - ""
+        - "§bКристаликов:§f %balance%"
+        - "§7§o50% кристалликов возвращаются"
+        - "§7§oна счёт после закрытия симулятора"
+        - ""  
+        - ""
+      enchantment: {}
+      data: "{\"other\":\"guild_bank\"}"
+      unbreakable: false
+      flags: []
+deny:
+  type: "CONCRETE"
+  amount: 1
+  damage: 14
+  name: "§cОтмена покупки"
+  lore: []
+  enchantment: {}
+  data: "{}"
+  unbreakable: false
+  flags: []
+allow:
+  type: "CONCRETE"
+  amount: 1
+  damage: 5
+  name: "§aПодтверждаю покупку"
+  lore: []
+  enchantment: {}
+  data: "{}"
+  unbreakable: false
+  flags: []
+bank:
+    type: "CLAY_BALL"
+    amount: 1
+    damage: 0
+    name: "§eБаланс"
+    lore: 
+      - ""
+      - " §f⊞ §bКристаликов:§f %balance%"
+      - ""
+      - "§7§o   50% кристаликов возвращаются на"
+      - "§7§o   счёт после закрытия симулятора"
+      - "§7§o   в виде ¨b980d1Сим-Коинов§7§o, за которые вы"
+      - "§7§o   можете приобрести что-то также"
+      - "§7§o   как и за кристаллики в§f /donate"
+    enchantment: {}
+    data: "{\"other\":\"guild_bank\"}"
+    unbreakable: false
+    flags: []  

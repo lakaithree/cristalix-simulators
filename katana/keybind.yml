@@ -1,0 +1,6 @@
+mapping:
+  "U": "upgrade"
+  "L": "level"
+  "M": "locations"
+  "H": "spawn"
+  "I": "menu"

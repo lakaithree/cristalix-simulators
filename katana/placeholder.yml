@@ -1,0 +1,15 @@
+updateIntervalInTicks: 20
+name: "¨ffd700Симулятор"
+lines:
+- "§fУровень: §6%level% Ур."
+- "§fОпыт: §b%player_exp%"
+- "§fРебитх:§d %rebirth%"
+- "§fДНК:§a %dnk%§7/%max_dnk%"
+- ""
+- "§fБитсов:§d %bits%"
+- ""
+- "§fУдаров:§e %clicks%"
+- "§fУбийств:§6 %kills_players%"
+- "§fСмертей:§c %deaths%"
+- ""
+- "§fОнлайн:§6 %online%"

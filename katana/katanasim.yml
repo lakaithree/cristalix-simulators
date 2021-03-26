@@ -1,0 +1,702 @@
+locations:
+  "world": 
+    damage: 3.0
+    boost: 1.2
+    respawn:
+        x: 0.5
+        y: 69
+        z: 21.5
+        yaw: 0
+        pitch: 0
+  "location_2": 
+    damage: 2.75
+    boost: 1.4
+    respawn:
+        x: 0.5
+        y: 69
+        z: 21.5
+        yaw: 0
+        pitch: 0
+  "location_3": 
+    damage: 2.5
+    boost: 1.6
+    respawn:
+        x: 0.5
+        y: 69
+        z: 21.5
+        yaw: 0
+        pitch: 0
+  "location_4": 
+    damage: 2.25
+    boost: 1.8
+    respawn:
+        x: 0.5
+        y: 69
+        z: 21.5
+        yaw: 0
+        pitch: 0
+  "location_5": 
+    damage: 2.0
+    boost: 2.0
+    respawn:
+        x: 0.5
+        y: 69
+        z: 21.5
+        yaw: 0
+        pitch: 0
+  "location_6": 
+    damage: 1.75
+    boost: 2.2
+    respawn:
+        x: 0.5
+        y: 69
+        z: 21.5
+        yaw: 0
+        pitch: 0
+  "location_7": 
+    damage: 1.5
+    boost: 2.4
+    respawn:
+        x: 0.5
+        y: 69
+        z: 21.5
+        yaw: 0
+        pitch: 0
+  "location_8": 
+    damage: 1.25
+    boost: 2.6
+    respawn:
+        x: 0.5
+        y: 69
+        z: 21.5
+        yaw: 0
+        pitch: 0
+  "location_9": 
+    damage: 1.0
+    boost: 2.8   
+    respawn:
+        x: 0.5
+        y: 69
+        z: 21.5
+        yaw: 0
+        pitch: 0 
+katanaNBT: "katana"
+giveMoneyCommands:
+- checkvote %player% scrmsg %player% normal §f | §b+ %money%§f 㾣
+- dnkadd %player% %money%
+
+katanas:
+  1:
+    moneyOnKill: 10.0
+    moneyOnClick: 1.0
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  2:
+    moneyOnKill: 22.0
+    moneyOnClick: 2.25
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  3:
+    moneyOnKill: 35.0
+    moneyOnClick: 3.56
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  4:
+    moneyOnKill: 40.0
+    moneyOnClick: 4.95
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  5:
+    moneyOnKill: 50.0
+    moneyOnClick: 5.44
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар 
+  6:
+    moneyOnKill: 60.0
+    moneyOnClick: 6.05
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  7:
+    moneyOnKill: 70.0
+    moneyOnClick: 7.81
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  8:
+    moneyOnKill: 80.0
+    moneyOnClick: 8.76
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  9:
+    moneyOnKill: 90.0
+    moneyOnClick: 9.96
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  10:
+    moneyOnKill: 100.0
+    moneyOnClick: 10.45
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар 
+  11:
+    moneyOnKill: 110.0
+    moneyOnClick: 11.31
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  12:
+    moneyOnKill: 110.0
+    moneyOnClick: 11.64
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  13:
+    moneyOnKill: 140.0
+    moneyOnClick: 14.55
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  14:
+    moneyOnKill: 180.0
+    moneyOnClick: 18.18
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  15:
+    moneyOnKill: 220.0
+    moneyOnClick: 22.73
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар 
+  16:
+    moneyOnKill: 280.0
+    moneyOnClick: 28.42
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  17:
+    moneyOnKill: 350.0
+    moneyOnClick: 35.52
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  18:
+    moneyOnKill: 440.0
+    moneyOnClick: 44.40
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  19:
+    moneyOnKill: 550.0
+    moneyOnClick: 55.51
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  20:
+    moneyOnKill: 690.0
+    moneyOnClick: 69.39
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар 
+  21:
+    moneyOnKill: 860.0
+    moneyOnClick: 86.73
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  22:
+    moneyOnKill: 1080.0
+    moneyOnClick: 108.42
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  23:
+    moneyOnKill: 1350.0
+    moneyOnClick: 135.52
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  24:
+    moneyOnKill: 1690.0
+    moneyOnClick: 169.40
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  25:
+    moneyOnKill: 2110.0
+    moneyOnClick: 211.75
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар 
+  26:
+    moneyOnKill: 2640.0
+    moneyOnClick: 264.0
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  27:
+    moneyOnKill: 3300.0
+    moneyOnClick: 330.0
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  28:
+    moneyOnKill: 4130.0
+    moneyOnClick: 413.0
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  29:
+    moneyOnKill: 5160.0
+    moneyOnClick: 516.0
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  30:
+    moneyOnKill: 6460.0
+    moneyOnClick: 646.0
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар 
+  31:
+    moneyOnKill: 8070.0
+    moneyOnClick: 807.0
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  32:
+    moneyOnKill: 10090.0
+    moneyOnClick: 1009.0
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  33:
+    moneyOnKill: 12620.0
+    moneyOnClick: 1262.0
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  34:
+    moneyOnKill: 15770.0
+    moneyOnClick: 1577.0
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  35:
+    moneyOnKill: 19720.0
+    moneyOnClick: 1972.0
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар 
+  36:
+    moneyOnKill: 24650.0
+    moneyOnClick: 2465.0
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  37:
+    moneyOnKill: 30810.0
+    moneyOnClick: 3081.0
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  38:
+    moneyOnKill: 38510.0
+    moneyOnClick: 3851.0
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  39:
+    moneyOnKill: 48140.0
+    moneyOnClick: 4814.0
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  40:
+    moneyOnKill: 60180.0
+    moneyOnClick: 6018.0
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар 
+  41:
+    moneyOnKill: 75230.0
+    moneyOnClick: 7523.0
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  42:
+    moneyOnKill: 94030.0
+    moneyOnClick: 9403.0
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  43:
+    moneyOnKill: 117540.0
+    moneyOnClick: 11754.0
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  44:
+    moneyOnKill: 14690.0
+    moneyOnClick: 14693.0
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  45:
+    moneyOnKill: 183670.0
+    moneyOnClick: 18367.0
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар                                     
+  46:
+    moneyOnKill: 229580.0
+    moneyOnClick: 22958.0
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  47:
+    moneyOnKill: 286980.0
+    moneyOnClick: 28698.0
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  48:
+    moneyOnKill: 358730.0
+    moneyOnClick: 35873.0
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  49:
+    moneyOnKill: 448410.0
+    moneyOnClick: 44841.0
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар
+  50:
+    moneyOnKill: 560510.0
+    moneyOnClick: 56051.0
+    killCommands:
+    - sound %player% ENTITY.ARMORSTAND.BREAK 2 1       
+    - morestats %player% player_exp 10 true
+    - scrmsg %player% action §eСражение§6 ➜ §f+1 Убийство игрока
+    clickCommands:
+    - sound %player% ENTITY.ITEM.PICKUP 0.1 1
+    - morestats %player% player_exp 1 true
+    - morestats %player% clicks 1 true
+    - scrmsg %player% action §eДействие§6 ➜ §f+1 Удар                
+moneyOnDeath: 2.5
+cooldownInMillis: 250
+table: "katanasim"
+clickerTable: "katanasim_clicker"
+clickerTimeInTicks: 4
+commandsOnDeath:
+- "et %player% Вы умерли и потеряли§6 %money% монет§f, будьте аккуратнее!"
+chance: 0.5
+chanceCommands:
+- "getitem %player% crystal 1"
+- "st Вам повезло и вы нашли§d Кристалл Сохранения§f, пока сражались!"
+respawnCommands:
+- scrmsg %player% action §eДействие§6 ➜ §f+1 Смерть 
+- sound %player% ENTITY.ITEM.PICKUP 0.1 1 

@@ -1,0 +1,5 @@
+start: 5
+streakCommands:
+- "broadlocal §8[§ai§8]§f Игрок %player%§f совершил уже§6 %n% убийств§f подряд. Остановите его!"
+streakBreakCommands:
+- "broadlocal §8[§ai§8]§f Серия убийств игрока %player%§f была прервана игроком %breaker%"
